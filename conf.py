@@ -69,3 +69,10 @@ html_theme_options = {
 html_logo = 'docs/images/logo.png'
 
 html_favicon = 'docs/images/favicon.ico'
+
+html_context = {
+  'display_github': True,
+  'github_user': 'TissUUmaps',
+  'github_repo': 'TissUUmaps-docs',
+  'github_version': 'master/',
+}
