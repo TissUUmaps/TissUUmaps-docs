@@ -6,10 +6,16 @@
 Welcome to TissUUmaps's documentation!
 ======================================
 
+This page hosts the documentation for TissUUmaps |version|.
+
+.. sidebar:: Work in progress!
+
+   This page is mostly empty for now. We are working actively on writing this documentation, more content will be available soon!
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-  docs/intro/index
-  docs/starting/index
-  docs/sharing/index
+   docs/intro/index
+   docs/starting/index
+   docs/sharing/index
