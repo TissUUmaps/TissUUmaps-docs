@@ -10,6 +10,6 @@ Welcome to TissUUmaps's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-  docs/intro/index
-  docs/starting/index
-  docs/sharing/index
+   docs/intro/index
+   docs/starting/index
+   docs/sharing/index

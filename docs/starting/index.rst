@@ -9,3 +9,4 @@ Getting started
   markers
   regions
   projects
+  plugins
