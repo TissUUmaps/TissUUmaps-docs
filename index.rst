@@ -6,7 +6,7 @@
 Welcome to TissUUmaps's documentation!
 ======================================
 
-This page hosts the documentation for TissUUmaps |version|.
+This page hosts the documentation for TissUUmaps 3.0.
 
 .. sidebar:: Work in progress!
 
