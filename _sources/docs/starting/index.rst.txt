@@ -9,4 +9,5 @@ Getting started
   markers
   regions
   projects
+  capture
   plugins
