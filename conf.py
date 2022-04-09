@@ -82,3 +82,12 @@ html_context = {
 }
 
 autodoc_member_order = 'bysource'
+
+# -- Copy the modules documentation ------------------------------------------
+
+from urllib.request import urlretrieve
+
+urlretrieve (
+    "https://raw.githubusercontent.com/TissUUmaps/TissUUmaps/master/CHANGELOG.md",
+    "docs/intro/versions.md"
+)
