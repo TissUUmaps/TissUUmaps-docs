@@ -5,5 +5,11 @@ channels:
   - defaults
 dependencies:
   - libvips=8.12.2
-  - pip=22.0.4
   - python=3.9.12
+  - pip=22.0.4
+    - readthedocs-sphinx-search==0.1.0
+    - myst-parser==0.15.1
+    - sphinx-rtd-theme==0.5.2
+    - sphinx-panels==0.6.0
+    - sphinx-jsonschema==1.17.2
+    - tissuumaps>=3.0.8.5
