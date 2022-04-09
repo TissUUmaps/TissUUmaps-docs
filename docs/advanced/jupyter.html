@@ -102,7 +102,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../starting/index.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sharing/index.html">Sharing projects</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Advanced usage</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Jupyter notebooks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Jupyter notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tissuumaps-jupyter">tissuumaps.jupyter</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -185,6 +188,88 @@
 
 <span class="n">viewer</span><span class="o">.</span><span class="n">screenshot</span><span class="p">()</span>
 </pre></div>
+</div>
+<span class="target" id="module-tissuumaps.jupyter"></span><div class="section" id="tissuumaps-jupyter">
+<h2>tissuumaps.jupyter<a class="headerlink" href="#tissuumaps-jupyter" title="Permalink to this headline">¶</a></h2>
+<p>Module used to run TissUUmaps from a Jupyter Notebook or from Jupyter Lab.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tissuumaps.jupyter.opentmap">
+<span class="sig-prename descclassname"><span class="pre">tissuumaps.jupyter.</span></span><span class="sig-name descname"><span class="pre">opentmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">700</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tissuumaps/jupyter.html#opentmap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tissuumaps.jupyter.opentmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open a tmap project</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – The path to a tmap file</p></li>
+<li><p><strong>port</strong> (<em>int</em>) – The port to run the TissUUmaps server</p></li>
+<li><p><strong>host</strong> (<em>str</em>) – The host to run the TissUUmaps server</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – The height of the jupyter iframe</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The TissUUmaps viewer</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tissuumaps.jupyter.TissUUmapsViewer" title="tissuumaps.jupyter.TissUUmapsViewer">TissUUmapsViewer</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tissuumaps.jupyter.loaddata">
+<span class="sig-prename descclassname"><span class="pre">tissuumaps.jupyter.</span></span><span class="sig-name descname"><span class="pre">loaddata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">images</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csvFiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xSelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'x'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ySelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'y'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keySelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nameSelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorSelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">piechartSelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shapeSelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaleSelector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixedShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaleFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colormap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compositeMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'source-over'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundingBox</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">700</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmapFilename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_project'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plugins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tissuumaps/jupyter.html#loaddata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tissuumaps.jupyter.loaddata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load data in TissUUmaps</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>images</strong> (<em>list</em><em> | </em><em>str</em>) – List of images or single image to display</p></li>
+<li><p><strong>csvFiles</strong> (list <a href="#id1"><span class="problematic" id="id2">|</span></a>str) – List of csv files or single csv file to display</p></li>
+<li><p><strong>xSelector</strong> (<em>str</em>) – Name of the csv column defining the X coordinates</p></li>
+<li><p><strong>ySelector</strong> (<em>str</em>) – Name of the csv column defining the Y coordinates</p></li>
+<li><p><strong>keySelector</strong> (<em>str</em>) – Name of the csv column defining the grouping key</p></li>
+<li><p><strong>nameSelector</strong> (<em>str</em>) – Name of the csv column defining the group name</p></li>
+<li><p><strong>colorSelector</strong> (<em>str</em>) – Name of the csv column defining the group color</p></li>
+<li><p><strong>piechartSelector</strong> (<em>str</em>) – Name of the csv column defining pie-charts</p></li>
+<li><p><strong>shapeSelector</strong> (<em>str</em>) – Name of the csv column defining markers’ shape</p></li>
+<li><p><strong>scaleSelector</strong> (<em>str</em>) – Name of the csv column defining markers’ scale</p></li>
+<li><p><strong>fixedShape</strong> (<em>int</em>) – Name of the markers’ shape</p></li>
+<li><p><strong>scaleFactor</strong> (<em>int</em>) – Global scale of markers</p></li>
+<li><p><strong>colormap</strong> (<em>str</em>) – Name of the colormap used if colorSelector is set</p></li>
+<li><p><strong>compositeMode</strong> – (str): Composite mode used for images</p></li>
+<li><p><strong>boundingBox</strong> (<em>list</em>) – [X,Y,W,H] of the bounding box to display</p></li>
+<li><p><strong>port</strong> (<em>int</em>) – The port to run the TissUUmaps server</p></li>
+<li><p><strong>host</strong> (<em>str</em>) – The host to run the TissUUmaps server</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – The height of the jupyter iframe</p></li>
+<li><p><strong>tmapFilename</strong> (<em>str</em>) – Name of the project file that will be created</p></li>
+<li><p><strong>plugins</strong> (<em>list</em>) – List of plugins to add to the tmap project</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The TissUUmaps viewer</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#tissuumaps.jupyter.TissUUmapsViewer" title="tissuumaps.jupyter.TissUUmapsViewer">TissUUmapsViewer</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tissuumaps.jupyter.TissUUmapsViewer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tissuumaps.jupyter.</span></span><span class="sig-name descname"><span class="pre">TissUUmapsViewer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">server</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">700</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tissuumaps/jupyter.html#TissUUmapsViewer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tissuumaps.jupyter.TissUUmapsViewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class representing a TissUUmaps viewer instance</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tissuumaps.jupyter.TissUUmapsViewer.screenshot">
+<span class="sig-name descname"><span class="pre">screenshot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tissuumaps/jupyter.html#TissUUmapsViewer.screenshot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tissuumaps.jupyter.TissUUmapsViewer.screenshot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Capture the TissUUmaps viewport and display image in the Notebook.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tissuumaps.jupyter.TissUUmapsServer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tissuumaps.jupyter.</span></span><span class="sig-name descname"><span class="pre">TissUUmapsServer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">slideDir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.0.0.0'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/tissuumaps/jupyter.html#TissUUmapsServer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tissuumaps.jupyter.TissUUmapsServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class representing a TissUUmaps server instance</p>
+</dd></dl>
+
 </div>
 </div>
 
