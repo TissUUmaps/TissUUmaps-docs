@@ -180,6 +180,16 @@
             
   <div class="tex2jax_ignore mathjax_ignore section" id="docker-container">
 <h1>Docker container<a class="headerlink" href="#docker-container" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li><p>Start the docker container <code class="docutils literal notranslate"><span class="pre">cavenel/tissuumaps:latest</span></code> from Docker Hub:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it -p <span class="m">56733</span>:80 --name<span class="o">=</span>tissuumaps -v /path/to/local/images:/mnt/data cavenel/tissuumaps:latest
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Place your images in the local folder <code class="docutils literal notranslate"><span class="pre">/path/to/local/images/share</span></code>.</p></li>
+<li><p>Open <a class="reference external" href="http://127.0.0.1:56733/">http://127.0.0.1:56733/</a> in your favorite browser.</p></li>
+</ol>
 </div>
 
 

@@ -190,9 +190,20 @@
 <h1>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="supported-image-formats">
 <h2>Supported image formats<a class="headerlink" href="#supported-image-formats" title="Permalink to this headline">¶</a></h2>
-<!--
-Talk about OpenSlide formats and VIPS supported formats
--->
+<p>TissUUmaps can read whole slide images in any format recognized by the <a class="reference external" href="https://openslide.org/api/python/#openslide-python">OpenSlide library</a>:</p>
+<ul class="simple">
+<li><p>Aperio (.svs, .tif)</p></li>
+<li><p>Hamamatsu (.ndpi, .vms, .vmu)</p></li>
+<li><p>Leica (.scn)</p></li>
+<li><p>MIRAX (.mrxs)</p></li>
+<li><p>Philips (.tiff)</p></li>
+<li><p>Sakura (.svslide)</p></li>
+<li><p>Trestle (.tif)</p></li>
+<li><p>Ventana (.bif, .tif)</p></li>
+<li><p>Generic tiled TIFF (.tif)</p></li>
+</ul>
+<p>TissUUmaps will automatically convert any other format into a pyramidal tiff (in a temporary <code class="docutils literal notranslate"><span class="pre">.tissuumaps</span></code> folder created in the original image folder) using <a class="reference external" href="https://github.com/libvips/libvips">vips</a>.</p>
+<p>If your image fails to open, try converting it to <code class="docutils literal notranslate"><span class="pre">tif</span></code> format using an external tool.</p>
 </div>
 <div class="section" id="load-images">
 <h2>Load images<a class="headerlink" href="#load-images" title="Permalink to this headline">¶</a></h2>

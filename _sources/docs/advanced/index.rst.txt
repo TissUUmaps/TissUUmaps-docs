@@ -6,3 +6,5 @@ Advanced usage
   :maxdepth: 2
 
   jupyter
+  napari
+  anndata

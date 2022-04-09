@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Regions &mdash; TissUUmaps 3.0 documentation</title>
+  <title>Napari &mdash; TissUUmaps 3.0 documentation</title>
   
 
   
@@ -48,8 +48,8 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Projects" href="projects.html" />
-    <link rel="prev" title="Markers" href="markers.html" /> 
+    <link rel="next" title="AnnData" href="anndata.html" />
+    <link rel="prev" title="Jupyter notebooks" href="jupyter.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,24 +100,17 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting started</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="images.html">Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="markers.html">Markers</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Regions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#supported-region-formats">Supported region formats</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#draw-regions">Draw Regions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#analyze-regions">Analyze Regions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#load-regions">Load Regions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-regions">Export Regions</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="projects.html">Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="capture.html">Exporting screenshots</a></li>
-<li class="toctree-l2"><a class="reference internal" href="plugins.html">Plugins</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../starting/index.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sharing/index.html">Sharing projects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Advanced usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Napari</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#export-from-napari">Export from Napari</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="anndata.html">AnnData</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -166,16 +159,16 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">Getting started</a> &raquo;</li>
+          <li><a href="index.html">Advanced usage</a> &raquo;</li>
         
-      <li>Regions</li>
+      <li>Napari</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
             
-              <a href="https://github.com/TissUUmaps/TissUUmaps-docs/blob/master/docs/starting/regions.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/TissUUmaps/TissUUmaps-docs/blob/master/docs/advanced/napari.md" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -189,36 +182,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="tex2jax_ignore mathjax_ignore section" id="regions">
-<h1>Regions<a class="headerlink" href="#regions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="supported-region-formats">
-<h2>Supported region formats<a class="headerlink" href="#supported-region-formats" title="Permalink to this headline">¶</a></h2>
-<p>TissUUmaps can read and write region files in the <a class="reference external" href="https://geojson.org/">GeoJSON</a> format.</p>
-<p>Only a subset of the GeoJSON format is supported, as TissUUmaps uses only polygonal regions:</p>
-<p><strong>Main types</strong>:</p>
-<ul class="simple">
-<li><p>Feature</p></li>
-<li><p>FeatureCollection</p></li>
-<li><p>GeometryCollection</p></li>
-</ul>
-<p><strong>Geometries</strong>:</p>
-<ul class="simple">
-<li><p>Polygon</p></li>
-<li><p>Multipolygon</p></li>
-</ul>
-<p>The coordinate system must be the same as the image and marker coordinate systems.</p>
-</div>
-<div class="section" id="draw-regions">
-<h2>Draw Regions<a class="headerlink" href="#draw-regions" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="analyze-regions">
-<h2>Analyze Regions<a class="headerlink" href="#analyze-regions" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="load-regions">
-<h2>Load Regions<a class="headerlink" href="#load-regions" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="export-regions">
-<h2>Export Regions<a class="headerlink" href="#export-regions" title="Permalink to this headline">¶</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="napari">
+<h1>Napari<a class="headerlink" href="#napari" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="export-from-napari">
+<h2>Export from Napari<a class="headerlink" href="#export-from-napari" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -228,8 +195,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="projects.html" class="btn btn-neutral float-right" title="Projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="markers.html" class="btn btn-neutral float-left" title="Markers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="anndata.html" class="btn btn-neutral float-right" title="AnnData" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="jupyter.html" class="btn btn-neutral float-left" title="Jupyter notebooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
