@@ -35,7 +35,11 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx_panels',
     'sphinx.ext.autosectionlabel',
-    'sphinx_search.extension'
+    'sphinx_search.extension',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.viewcode',
+    'sphinx-jsonschema'
 ]
 source_suffix = [
     '.rst', '.md'
@@ -76,3 +80,5 @@ html_context = {
   'github_repo': 'TissUUmaps-docs',
   'github_version': 'master/',
 }
+
+autodoc_member_order = 'bysource'

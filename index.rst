@@ -19,3 +19,4 @@ This page hosts the documentation for TissUUmaps 3.0.
    docs/intro/index
    docs/starting/index
    docs/sharing/index
+   docs/advanced/index
