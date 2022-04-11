@@ -17,3 +17,7 @@ python:
   
 conda:
     environment: environment.yml
+
+# Build PDF
+formats:
+  - pdf
