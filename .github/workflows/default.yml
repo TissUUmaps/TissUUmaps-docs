@@ -14,11 +14,17 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Install libvips
       run: sudo apt-get install -y libvips
-    - name: Build and Commit
-      uses: sphinx-notes/pages@v2
+    - name: Build html
+      uses: ammaraskar/sphinx-action@master
       with:
-        documentation_path: .
-        requirements_path: ./requirements.txt
+        docs-folder: "docs/"
+        build-command: "sphinx-build -b html . _build"
+    - name: Build pdf
+      uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "./"
+        pre-build-command: "apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
+        build-command: "make latexpdf"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
