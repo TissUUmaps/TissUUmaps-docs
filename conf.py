@@ -19,7 +19,7 @@
 
 project = 'TissUUmaps'
 copyright = '2022, The TissUUmaps Team'
-author = 'N. Pielawski, A. Andersson, C. Avenel, A. Behanova, \
+author = 'N. Pielawski, A. Andersson, C. Avenel, A. Behanova, \\and \
     E. Chelebian, A. Klemm, D. Nysjö, L. Solorzano, C. Wählby'
 
 # The full version, including alpha/beta/rc tags
