@@ -197,14 +197,39 @@
 </div>
 <div class="section" id="make-your-own-plugin">
 <h2>Make your own plugin<a class="headerlink" href="#make-your-own-plugin" title="Permalink to this headline">¶</a></h2>
-<p>Download the Plugin Template python and javascript files from the <a class="reference external" href="https://tissuumaps.github.io/TissUUmaps/plugins/">Plugin Update Site</a> and put them in your local folder <code class="docutils literal notranslate"><span class="pre">$USER_PATH/.tissuumaps/plugins/</span></code>.</p>
+<p>Download the Plugin Template python and javascript files from the <a class="reference external" href="https://tissuumaps.github.io/TissUUmaps/plugins/">Plugin Update Site</a> and put both files in your local folder <code class="docutils literal notranslate"><span class="pre">$USER_PATH/.tissuumaps/plugins/</span></code>. You can then change the plugin name and add your own options and functions.</p>
 <div class="section" id="javascript-file">
 <h3>Javascript file<a class="headerlink" href="#javascript-file" title="Permalink to this headline">¶</a></h3>
-<p>You can access the javascript API <a class="reference external" href="https://tissuumaps.github.io/TissUUmapsCore/">here</a>.</p>
+<p>When loading a plugin, the function <code class="docutils literal notranslate"><span class="pre">PluginName.init(container)</span></code> will be called. The <code class="docutils literal notranslate"><span class="pre">container</span></code> is an html Element that will be added to the plugin menu. Use this element to add options and texts related to your plugin.</p>
+<p><img alt="plugin container" src="../../_images/plugin_container.png" /></p>
+<p>Here is a minimal example of plugin:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">Plugin_template</span><span class="p">;</span>
+<span class="nx">Plugin_template</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span><span class="s2">&quot;Template Plugin&quot;</span>
+<span class="p">}</span>
+ 
+<span class="cm">/**</span>
+<span class="cm"> * This method is called when the document is loaded.</span>
+<span class="cm"> * The container element is a div where the plugin options will be displayed. */</span>
+<span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">init</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">container</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">container</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;Hello world&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>You can access the TissUUmaps javascript API <a class="reference external" href="https://tissuumaps.github.io/TissUUmapsCore/">here</a>.</p>
 </div>
 <div class="section" id="python-file">
 <h3>Python file<a class="headerlink" href="#python-file" title="Permalink to this headline">¶</a></h3>
 <p>You only need to use the Python file if your plugin needs to do processing on the server side. For pure javascript plugins, you can leave this file empty.</p>
+<p>The python file should implement the class <code class="docutils literal notranslate"><span class="pre">Plugin</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Plugin</span> <span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">app</span> <span class="o">=</span> <span class="n">app</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">app</span></code> object being the flask application running the TissUUmaps server.</p>
+<p>You can call a Python method inside the <code class="docutils literal notranslate"><span class="pre">Plugin</span></code> class from Javascript using Ajax and the Python API. The endpoint for a method <code class="docutils literal notranslate"><span class="pre">methodName</span></code> of the plugin <code class="docutils literal notranslate"><span class="pre">PluginName</span></code> will be: <code class="docutils literal notranslate"><span class="pre">/plugins/methodName/functionName</span></code>. Data can be transmitted through Ajax as stringified JSON, and will be available as a parameter inside the method.</p>
+<p>See the Plugin Template for a working example of Javascript / Python communication.</p>
 </div>
 </div>
 </div>
