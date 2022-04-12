@@ -91,6 +91,10 @@ latex_documents = [
      'manual'),
 ]
 
+latex_elements = {
+  'extraclassoptions': 'openany,oneside'
+}
+
 latex_domain_indices = False
 latex_use_modindex = False
 
