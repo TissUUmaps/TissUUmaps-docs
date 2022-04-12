@@ -17,7 +17,7 @@ jobs:
     - name: Build html
       uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "docs/"
+        docs-folder: "./"
         build-command: "sphinx-build -b html . _build"
     - name: Build pdf
       uses: ammaraskar/sphinx-action@master
