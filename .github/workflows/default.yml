@@ -12,18 +12,13 @@ jobs:
     - uses: actions/checkout@master
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Build html
-      uses: ammaraskar/sphinx-action@master
+    - name: Install libvips
+      run: sudo apt-get install -y libvips latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+    - name: Build and Commit
+      uses: cavenel/sphinx-pages@v2
       with:
-        docs-folder: "./"
-        pre-build-command: "apt-get update && apt-get install -y libvips gcc && apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        build-command: "sphinx-build -b html . _build"
-    - name: Build pdf
-      uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "./"
-        pre-build-command: "apt-get update && apt-get install -y libvips gcc && apt-get update -y && apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended"
-        build-command: "make latexpdf"
+        documentation_path: .
+        requirements_path: ./requirements.txt
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
