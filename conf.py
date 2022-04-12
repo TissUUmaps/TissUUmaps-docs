@@ -91,6 +91,9 @@ latex_documents = [
      'manual'),
 ]
 
+latex_domain_indices = False
+latex_use_modindex = False
+
 # -- Copy the modules documentation ------------------------------------------
 
 from urllib.request import urlretrieve
