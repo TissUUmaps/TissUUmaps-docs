@@ -8,6 +8,8 @@ Welcome to TissUUmaps's documentation!
 
 This page hosts the documentation for TissUUmaps 3.0.
 
+For more information on the TissUUmaps project, including video tutorials and demos, visit our website: `https://tissuumaps.github.io <https://tissuumaps.github.io>`_.
+
 .. sidebar:: Work in progress!
 
    This page is mostly empty for now. We are working actively on writing this documentation, more content will be available soon!
