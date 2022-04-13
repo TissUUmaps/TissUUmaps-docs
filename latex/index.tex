@@ -61,7 +61,7 @@
 
 
 \title{TissUUmaps}
-\date{Apr 12, 2022}
+\date{Apr 13, 2022}
 \release{3.0}
 \author{Nicolas Pielawski\and Axel Andersson\and Christophe Avenel\and Andrea Behanova\and Eduard Chelebian\and Anna Klemm\and Fredrik Nysjö\and Leslie Solorzano\and Carolina Wählby}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -517,6 +517,1073 @@ The coordinate system must be the same as the image and marker coordinate system
 
 \subsection{The tmap file format}
 \label{\detokenize{docs/starting/projects:the-tmap-file-format}}
+\sphinxAtStartPar
+The tmap format contains image layers, saved markers, regions, and settings. It is highly recommended to create tmap files by saving projects from TissUUmaps applications, but you can also edit the files manually to add or change project’s settings.
+
+\sphinxAtStartPar
+The tmap format uses json, with the following specifications:
+
+
+\subsubsection{Tmap specifications}
+\label{\detokenize{docs/starting/projects:tmap-specifications}}\label{\detokenize{docs/starting/projects:tmap-specifications}}
+
+\begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{4}{\X{1}{4}|}}
+\hline
+
+\endfirsthead
+
+\multicolumn{4}{c}%
+{\makebox[0pt]{\sphinxtablecontinued{\tablename\ \thetable{} \textendash{} continued from previous page}}}\\
+\hline
+
+\endhead
+
+\hline
+\multicolumn{4}{r}{\makebox[0pt][r]{\sphinxtablecontinued{continues on next page}}}\\
+\endfoot
+
+\endlastfoot
+
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxstartmulticolumn{4}%
+\begin{varwidth}[t]{\sphinxcolwidth{4}{4}}
+\sphinxAtStartPar
+properties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{2}{4}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+filename
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+Name of the project
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{4}&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{3}{8}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+layers
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{8}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{8}&\begin{itemize}
+\item {} 
+\end{itemize}
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:layer}]{\sphinxcrossref{Layer}}}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{3}{14}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+layerOpacities
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{14}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+patternProperties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{14}&\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\textasciicircum{}{[}0\sphinxhyphen{}9{]}+\$
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{integer}
+\\
+\hline\sphinxmultirow{3}{21}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+layerVisibilities
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{21}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+patternProperties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{21}&\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\textasciicircum{}{[}0\sphinxhyphen{}9{]}+\$
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\sphinxmultirow{3}{28}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+layerFilters
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{28}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+patternProperties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{28}&\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\textasciicircum{}{[}0\sphinxhyphen{}9{]}+\$
+
+\end{itemize}
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:layerfilter}]{\sphinxcrossref{LayerFilter}}}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{3}{34}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+filters
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{34}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{34}&\begin{itemize}
+\item {} 
+\end{itemize}
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+compositeMode
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{3}{43}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+markerFiles
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{43}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{43}&\begin{itemize}
+\item {} 
+\end{itemize}
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:markerfile}]{\sphinxcrossref{MarkerFile}}}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{2}{49}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+regions
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+GeoJSON object, see {\hyperref[\detokenize{docs/starting/regions:regions}]{\sphinxcrossref{\DUrole{std,std-ref}{Regions section}}}}.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{49}&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+regionFile
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{2}{56}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+regionFiles
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{56}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{3}{60}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+plugins
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{60}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{60}&\begin{itemize}
+\item {} 
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\sphinxmultirow{2}{67}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+hideTabs
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+Hide tabs of markers dataset. Only use when you have a unique marker tab.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{67}&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{3}{71}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+settings
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{71}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{71}&\begin{itemize}
+\item {} 
+\end{itemize}
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:setting}]{\sphinxcrossref{Setting}}}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
+\end{longtable}\sphinxatlongtableend\end{savenotes}
+
+
+\paragraph{Layer}
+\label{\detokenize{docs/starting/projects:layer}}\label{\detokenize{docs/starting/projects:layer}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabular}[t]{|*{3}{\X{1}{3}|}}
+\hline
+
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
+\sphinxAtStartPar
+properties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{name}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{tileSource}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\paragraph{LayerFilter}
+\label{\detokenize{docs/starting/projects:layerfilter}}\label{\detokenize{docs/starting/projects:layerfilter}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabular}[t]{|*{4}{\X{1}{4}|}}
+\hline
+
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxstartmulticolumn{4}%
+\begin{varwidth}[t]{\sphinxcolwidth{4}{4}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{4}{4}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
+\item {} 
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{4}&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+properties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{4}&\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{name}
+
+\end{itemize}
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{4}&\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{value}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\paragraph{Filter}
+\label{\detokenize{docs/starting/projects:filter}}\label{\detokenize{docs/starting/projects:filter}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+
+\sphinxAtStartPar
+enum
+&
+\sphinxAtStartPar
+Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, Invert, Greyscale, Threshold, Erosion, Dilation
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\paragraph{MarkerFile}
+\label{\detokenize{docs/starting/projects:markerfile}}\label{\detokenize{docs/starting/projects:markerfile}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabular}[t]{|*{3}{\X{1}{3}|}}
+\hline
+\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
+\sphinxAtStartPar
+A button linked to a marker dataset
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
+\sphinxAtStartPar
+properties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{title}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+comment
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{name}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+autoLoad
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{uid}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\sphinxmultirow{2}{20}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{expectedHeader}
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+List of input text options
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{20}&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\\
+\hline\sphinxmultirow{2}{24}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{expectedRadios}
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+List of radio options
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{24}&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{path}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\sphinxmultirow{3}{31}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+settings
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{array}
+\\
+\cline{2-3}\sphinxtablestrut{31}&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+items
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{31}&\begin{itemize}
+\item {} 
+\end{itemize}
+&
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/starting/projects:setting}]{\sphinxcrossref{Setting}}}
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\paragraph{Setting}
+\label{\detokenize{docs/starting/projects:setting}}\label{\detokenize{docs/starting/projects:setting}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabular}[t]{|*{3}{\X{1}{3}|}}
+\hline
+
+\sphinxAtStartPar
+type
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+\sphinxstyleemphasis{object}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
+\sphinxAtStartPar
+properties
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{function}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{module}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{value}
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{number}
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\subsubsection{Example of tmap file}
+\label{\detokenize{docs/starting/projects:example-of-tmap-file}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}filename\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}TissUUmaps\PYGZus{}Example.tmap\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}layers\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Round1\PYGZus{}A.tif\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}tileSource\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}images/Round1\PYGZus{}A.tif.dzi\PYGZdq{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Round1\PYGZus{}C.tif\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}tileSource\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}images/Round1\PYGZus{}C.tif.dzi\PYGZdq{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{],}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}layerOpacities\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}0\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}1\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}1\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}1\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}layerVisibilities\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}0\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}1\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}layerFilters\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}0\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{            }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Color\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}value\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}0,100,0\PYGZdq{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{],}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}1\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{            }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Color\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}value\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}0,100,0\PYGZdq{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{]}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}filters\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{        }\PYG{l+s+s2}{\PYGZdq{}Color\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{],}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}compositeMode\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}lighter\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}markerFiles\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{        }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}autoLoad\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}comment\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}expectedHeader\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}X\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}global\PYGZus{}x\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}Y\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}global\PYGZus{}y\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}cmap\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}null\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}gr\PYGZus{}dict\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}gb\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Gene\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}gb\PYGZus{}name\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}opacity\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}1\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}pie\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}null\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}pie\PYGZus{}dict\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}scale\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}null\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}scale\PYGZus{}factor\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}0.5\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}null\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}fixed\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}cross\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}gr\PYGZus{}dict\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}tooltip\PYGZus{}fmt\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}expectedRadios\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}gr\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}gr\PYGZus{}dict\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}gr\PYGZus{}key\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}cb\PYGZus{}gr\PYGZus{}rand\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}pie\PYGZus{}check\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}scale\PYGZus{}check\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}col\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}fixed\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}gr\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}gr\PYGZus{}dict\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}shape\PYGZus{}gr\PYGZus{}rand\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{} markers\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}path\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}./istdeco\PYGZus{}codes\PYGZus{}n.csv\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}title\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Download markers\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}uid\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}uniquetab\PYGZdq{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{],}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}regions\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}\PYGZcb{},}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}plugins\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{        }\PYG{l+s+s2}{\PYGZdq{}Spot\PYGZus{}Inspector\PYGZdq{}}
+\PYG{+w}{    }\PYG{p}{],}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}hideTabs\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}settings\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[]}
+\PYG{p}{\PYGZcb{}}
+\end{sphinxVerbatim}
+
 \sphinxstepscope
 
 

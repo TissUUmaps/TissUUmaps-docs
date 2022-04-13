@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.12)  12 APR 2022 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.13)  13 APR 2022 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,7 +642,27 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count296
 \l__pdf_internal_box=\box112
 )
-(./index.aux)
+(./index.aux
+
+LaTeX Warning: Label `docs/starting/projects:tmap-specifications' multiply defi
+ned.
+
+
+LaTeX Warning: Label `docs/starting/projects:layer' multiply defined.
+
+
+LaTeX Warning: Label `docs/starting/projects:layerfilter' multiply defined.
+
+
+LaTeX Warning: Label `docs/starting/projects:filter' multiply defined.
+
+
+LaTeX Warning: Label `docs/starting/projects:markerfile' multiply defined.
+
+
+LaTeX Warning: Label `docs/starting/projects:setting' multiply defined.
+
+)
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -795,54 +815,67 @@ File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 Chapter 2.
 [6
 
-] [7]
-<plugin_container.png, id=316, 479.54156pt x 170.13562pt>
+] [7] [8]
+Overfull \hbox (3.62727pt too wide) in paragraph at lines 1216--1216
+[]\T1/qtm/m/n/10 enum| 
+ []
+
+[9] [10]
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1499.
+
+ [11] [12]
+<plugin_container.png, id=376, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 548.
+Package pdftex.def Info: plugin_container.png  used on input line 1615.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
-LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 554.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 559.
- [8 <./plugin_container.png>] [9]
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 1626.
+
+ [13 <./plugin_container.png>]
 Chapter 3.
-[10
+[14
 
 ]
 Chapter 4.
-[11
+[15
 
-] [12] (./index.ind [13]
+] [16] (./index.ind [17]
 Underfull \hbox (badness 6461) in paragraph at lines 21--23
 []\T1/txtt/m/n/10 screenshot() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 tis-su-umaps.jup
 yter.TissUUmapsViewer
  []
 
-[14
+[18
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 891.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 891.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1958.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1958.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 891.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 891.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1958.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1958.
+
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: E87441EC070BEF1C043F9ECFC2A63F05;6957.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 891.
+(rerunfilecheck)             Checksum: FA2A6ECDC4EE6D93ECF1229BC0490DBF;7814.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1958.
  ) 
 Here is how much of TeX's memory you used:
- 13965 strings out of 483183
- 200241 string characters out of 5966292
- 478498 words of memory out of 5000000
- 28523 multiletter control sequences out of 15000+600000
+ 14015 strings out of 483183
+ 201110 string characters out of 5966292
+ 642835 words of memory out of 5000000
+ 28561 multiletter control sequences out of 15000+600000
  586876 words of font info for 67 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 38i,11n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/e
-nc/dvips/tex-gyre/q-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
+ 38i,12n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf/fonts/
+enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy5.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/shar
 e/texmf/fonts/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/fonts/type1/pub
@@ -851,10 +884,10 @@ usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/ty
 pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on index.pdf (16 pages, 222573 bytes).
+Output written on index.pdf (20 pages, 237358 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 90 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 522 words of extra memory for PDF output out of 10000 (max. 10000000)
 
