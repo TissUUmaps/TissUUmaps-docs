@@ -99,10 +99,12 @@ latex_domain_indices = False
 latex_use_modindex = False
 
 # -- Copy the modules documentation ------------------------------------------
+try:
+    from urllib.request import urlretrieve
 
-from urllib.request import urlretrieve
-
-urlretrieve (
-    "https://raw.githubusercontent.com/TissUUmaps/TissUUmaps/master/CHANGELOG.md",
-    "docs/intro/versions.md"
-)
+    urlretrieve (
+        "https://raw.githubusercontent.com/TissUUmaps/TissUUmaps/master/CHANGELOG.md",
+        "docs/intro/versions.md"
+    )
+except:
+    print ("No internet connection, continuing without updating CHANGELOG.md")
