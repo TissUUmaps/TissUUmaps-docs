@@ -216,68 +216,85 @@ The tmap format uses json, with the following specifications:
                 "type": "object",
                 "properties": {
                     "X": {
+                        "description": "Name of CSV column used for X-coordinate",
                         "type": "string"
                     },
                     "Y": {
+                        "description": "Name of CSV column used for Y-coordinate",
                         "type": "string"
                     },
                     "gb_col": {
+                        "description": "Name of CSV column to group markers by",
                         "type": "string",
                         "default": "null"
                     },
                     "gb_name": {
+                        "description": "Name of alternative CSV column to show for group instead of gb_col",
                         "type": "string",
                         "default": "null"
                     },
                     "cb_cmap": {
+                        "description": "Name of colorscale to use for color mapping",
                         "type": "string",
                         "default": ""
                     },
                     "cb_col": {
+                        "description": "Name of CSV column containing scalar values for color mapping or hexadecimal colors",
                         "type": "string",
                         "default": "null"
                     },
                     "cb_gr_dict": {
+                        "description": "TODO",
                         "type": "string",
                         "default": ""
                     },
                     "scale_col": {
+                        "description": "Name of CSV column containing scalar values for changing the size of markers",
                         "type": "string",
                         "default": "null"
                     },
                     "scale_factor": {
+                        "description": "Numerical value for a fixed scale factor to be applied to markers",
                         "type": "string",
                         "default": "1"
                     },
                     "pie_col": {
+                        "description": "Name of CSV column containing data for pie chart sectors",
                         "type": "string",
                         "default": "null"
                     },
                     "pie_dict": {
+                        "description": "TODO",
                         "type": "string",
                         "default": ""
                     },
                     "shape_col": {
+                        "description": "Name of CSV column containing a name or an index for marker shape",
                         "type": "string",
                         "default": "null"
                     },
                     "shape_fixed": {
+                        "description": "Name of a fixed marker shape to be use for all markers",
                         "type": "string",
                         "default": "cross"
                     },
                     "shape_gr_dict": {
+                        "description": "TODO",
                         "type": "string",
                         "default": ""
                     },
                     "opacity_col": {
+                        "description": "Name of CSV column containing scalar values for opacities",
                         "type": "string",
                         "default": "null"
                     },
                     "opacity": {
+                        "description": "Numerical value for a fixed opacity factor to be applied to markers",
                         "type": "string",
                         "default": "1"
                     },
                     "tooltip_fmt": {
+                        "description": "TODO",
                         "type": "string",
                         "default": ""
                     }
