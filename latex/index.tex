@@ -1489,10 +1489,22 @@ items
 \paragraph{ExpectedHeader}
 \label{\detokenize{docs/starting/projects:expectedheader}}\label{\detokenize{docs/starting/projects:expectedheader}}
 
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabular}[t]{|*{3}{\X{1}{3}|}}
+\begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{3}{\X{1}{3}|}}
 \hline
+
+\endfirsthead
+
+\multicolumn{3}{c}%
+{\makebox[0pt]{\sphinxtablecontinued{\tablename\ \thetable{} \textendash{} continued from previous page}}}\\
+\hline
+
+\endhead
+
+\hline
+\multicolumn{3}{r}{\makebox[0pt][r]{\sphinxtablecontinued{continues on next page}}}\\
+\endfoot
+
+\endlastfoot
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
@@ -1546,12 +1558,17 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{2}{11}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 gb\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1559,12 +1576,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{11}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{16}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 gb\_name
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1572,12 +1601,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{16}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{21}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_cmap
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1585,12 +1626,21 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{21}&
+\sphinxAtStartPar
+default
+&\\
+\hline\sphinxmultirow{2}{26}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1598,12 +1648,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{26}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{31}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_gr\_dict
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1611,12 +1673,21 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{31}&
+\sphinxAtStartPar
+default
+&\\
+\hline\sphinxmultirow{2}{36}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 scale\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1624,12 +1695,49 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{36}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{41}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+scale\_factor
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\cline{2-3}\sphinxtablestrut{41}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+1
+\\
+\hline\sphinxmultirow{2}{46}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 pie\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1637,12 +1745,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{46}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{51}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 pie\_dict
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1650,12 +1770,21 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{51}&
+\sphinxAtStartPar
+default
+&\\
+\hline\sphinxmultirow{2}{56}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1663,12 +1792,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{56}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{61}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_fixed
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1676,12 +1817,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{61}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+cross
+\\
+\hline\sphinxmultirow{2}{66}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_gr\_dict
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1689,12 +1842,21 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{66}&
+\sphinxAtStartPar
+default
+&\\
+\hline\sphinxmultirow{2}{71}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 opacity\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1702,12 +1864,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{71}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+null
+\\
+\hline\sphinxmultirow{2}{76}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 opacity
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1715,12 +1889,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{76}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+1
+\\
+\hline\sphinxmultirow{2}{81}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 tooltip\_fmt
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1728,19 +1914,33 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
+\cline{2-3}\sphinxtablestrut{81}&
+\sphinxAtStartPar
+default
+&\\
 \hline
-\end{tabular}
-\par
-\sphinxattableend\end{savenotes}
+\end{longtable}\sphinxatlongtableend\end{savenotes}
 
 
 \paragraph{ExpectedRadios}
 \label{\detokenize{docs/starting/projects:expectedradios}}\label{\detokenize{docs/starting/projects:expectedradios}}
 
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabular}[t]{|*{3}{\X{1}{3}|}}
+\begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{3}{\X{1}{3}|}}
 \hline
+
+\endfirsthead
+
+\multicolumn{3}{c}%
+{\makebox[0pt]{\sphinxtablecontinued{\tablename\ \thetable{} \textendash{} continued from previous page}}}\\
+\hline
+
+\endhead
+
+\hline
+\multicolumn{3}{r}{\makebox[0pt][r]{\sphinxtablecontinued{continues on next page}}}\\
+\endfoot
+
+\endlastfoot
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
@@ -1768,12 +1968,17 @@ properties
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{2}{5}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1781,12 +1986,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{5}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{10}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_gr
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1794,12 +2011,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{10}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+true
+\\
+\hline\sphinxmultirow{2}{15}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_gr\_rand
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1807,12 +2036,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{15}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{20}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_gr\_dict
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1820,12 +2061,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{20}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{25}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 cb\_gr\_key
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1833,12 +2086,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{25}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+true
+\\
+\hline\sphinxmultirow{2}{30}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 pie\_check
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1846,12 +2111,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{30}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{35}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 scale\_check
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1859,12 +2136,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{35}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{40}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_gr
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1872,12 +2161,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{40}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+true
+\\
+\hline\sphinxmultirow{2}{45}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_gr\_rand
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1885,12 +2186,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{45}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+true
+\\
+\hline\sphinxmultirow{2}{50}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_gr\_dict
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1898,12 +2211,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{50}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{55}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_col
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1911,12 +2236,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{55}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{60}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 shape\_fixed
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1924,12 +2261,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{60}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{65}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 opacity\_check
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1937,12 +2286,24 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{65}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{70}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \_no\_outline
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &
 \sphinxAtStartPar
 type
@@ -1950,10 +2311,15 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
+\cline{2-3}\sphinxtablestrut{70}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
 \hline
-\end{tabular}
-\par
-\sphinxattableend\end{savenotes}
+\end{longtable}\sphinxatlongtableend\end{savenotes}
 
 
 \paragraph{Setting}
