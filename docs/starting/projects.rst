@@ -286,6 +286,7 @@ Example of tmap file
                     "gb_col": "Gene",
                     "gb_name": "",
                     "opacity": "1",
+                    "opacity_col": "null",
                     "pie_col": "null",
                     "pie_dict": "",
                     "scale_col": "null",
@@ -307,7 +308,8 @@ Example of tmap file
                     "shape_fixed": false,
                     "shape_gr": true,
                     "shape_gr_dict": false,
-                    "shape_gr_rand": true
+                    "shape_gr_rand": true,
+                    "opacity_check": false
                 },
                 "name": " markers",
                 "path": "./istdeco_codes_n.csv",
