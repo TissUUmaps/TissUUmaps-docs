@@ -177,12 +177,10 @@ The tmap format uses json, with the following specifications:
                     "type": "string"
                     },
                     "expectedHeader": {
-                        "description": "List of input text options",
-                        "type": "object"
+                        "$ref": "#definitions/ExpectedHeader"
                     },
                     "expectedRadios": {
-                        "description": "List of radio options",
-                        "type": "object"
+                        "$ref": "#definitions/ExpectedRadios"
                     },
                     "path": {
                     "type": "string"
@@ -203,6 +201,46 @@ The tmap format uses json, with the following specifications:
                     "expectedHeader",
                     "expectedRadios",
                     "path"
+                ]
+            },
+            "ExpectedHeader": {
+                "description": "List of input text options",
+                "type": "object",
+                "properties": {
+                    "function": {
+                    "type": "string"
+                    },
+                    "module": {
+                    "type": "string"
+                    },
+                    "value": {
+                    "type": "number"
+                    }
+                },
+                "required": [
+                    "function",
+                    "module",
+                    "value"
+                ]
+            },
+            "ExpectedRadios": {
+                "description": "List of radio options",
+                "type": "object",
+                "properties": {
+                    "function": {
+                    "type": "string"
+                    },
+                    "module": {
+                    "type": "string"
+                    },
+                    "value": {
+                    "type": "number"
+                    }
+                },
+                "required": [
+                    "function",
+                    "module",
+                    "value"
                 ]
             },
             "Setting": {
