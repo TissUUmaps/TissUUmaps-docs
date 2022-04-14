@@ -1218,6 +1218,34 @@ Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, 
 \sphinxattableend\end{savenotes}
 
 
+\paragraph{ColorScale}
+\label{\detokenize{docs/starting/projects:colorscale}}\label{\detokenize{docs/starting/projects:colorscale}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{2}}
+\sphinxAtStartPar
+TissUUmaps supports most of the color scales available in the D3.js library. See \sphinxurl{https://github.com/d3/d3-scale-chromatic} for reference. Note: the colors for ‘interpolatRainbow’ is currently overridden by a custom Turbo\sphinxhyphen{}like color scale in version 3.0.x of TissUUmaps.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
+\sphinxAtStartPar
+enum
+&
+\sphinxAtStartPar
+interpolateCubehelixDefault, interpolateRainbow, interpolateWarm, interpolateCool, interpolateViridis, interpolateMagma, interpolateInferno, interpolatePlasma, interpolateBlues, interpolateBrBG, interpolateBuGn, interpolateBuPu, interpolateCividis, interpolateGnBu, interpolateGreens, interpolateGreys, interpolateOrRd, interpolateOranges, interpolatePRGn, interpolatePiYG, interpolatePuBu, interpolatePuBuGn, interpolatePuOr, interpolatePuRd, interpolatePurples, interpolateRdBu, interpolateRdGy, interpolateRdPu, interpolateRdYlBu, interpolateRdYlGn, interpolateReds, interpolateSinebow, interpolateSpectral, interpolateTurbo, interpolateYlGn, interpolateYlGnBu, interpolateYlOrBr, interpolateYlOrRd
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
 \paragraph{MarkerFile}
 \label{\detokenize{docs/starting/projects:markerfile}}\label{\detokenize{docs/starting/projects:markerfile}}
 
@@ -1546,7 +1574,7 @@ properties
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column containing marker X\sphinxhyphen{}coordinates
+Name of CSV column to use as X\sphinxhyphen{}coordinate
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1572,7 +1600,7 @@ type
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column containing marker Y\sphinxhyphen{}coordinates
+Name of CSV column to use as Y\sphinxhyphen{}coordinate
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1664,7 +1692,7 @@ cb\_cmap
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of D3 colorscale to be used for color mapping
+Name of D3 color scale to be used for color mapping. See {\hyperref[\detokenize{docs/starting/projects:colorscale}]{\sphinxcrossref{\DUrole{std,std-ref}{ColorScale}}}} for valid string values.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2587,7 +2615,15 @@ false
 \centering
 \begin{tabular}[t]{|*{3}{\X{1}{3}|}}
 \hline
-
+\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
+\sphinxAtStartPar
+TODO
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%

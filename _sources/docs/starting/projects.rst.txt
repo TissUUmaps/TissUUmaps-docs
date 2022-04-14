@@ -157,6 +157,10 @@ The tmap format uses json, with the following specifications:
                         "Saturation","Gamma","Invert","Greyscale",
                         "Threshold","Erosion","Dilation"]
             },
+            "ColorScale": {
+                "description": "TissUUmaps supports most of the color scales available in the D3.js library. See https://github.com/d3/d3-scale-chromatic for reference. Note: the colors for 'interpolatRainbow' is currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.",
+                "enum": ["interpolateCubehelixDefault", "interpolateRainbow", "interpolateWarm", "interpolateCool", "interpolateViridis", "interpolateMagma", "interpolateInferno", "interpolatePlasma", "interpolateBlues", "interpolateBrBG", "interpolateBuGn", "interpolateBuPu", "interpolateCividis", "interpolateGnBu", "interpolateGreens", "interpolateGreys", "interpolateOrRd", "interpolateOranges", "interpolatePRGn", "interpolatePiYG", "interpolatePuBu", "interpolatePuBuGn", "interpolatePuOr", "interpolatePuRd", "interpolatePurples", "interpolateRdBu", "interpolateRdGy", "interpolateRdPu", "interpolateRdYlBu", "interpolateRdYlGn", "interpolateReds", "interpolateSinebow", "interpolateSpectral", "interpolateTurbo", "interpolateYlGn", "interpolateYlGnBu", "interpolateYlOrBr", "interpolateYlOrRd"]
+            },
             "MarkerFile": {
                 "description": "Description of settings and GUI objects for a marker dataset loaded from CSV file",
                 "type": "object",
@@ -216,11 +220,11 @@ The tmap format uses json, with the following specifications:
                 "type": "object",
                 "properties": {
                     "X": {
-                        "description": "Name of CSV column containing marker X-coordinates",
+                        "description": "Name of CSV column to use as X-coordinate",
                         "type": "string"
                     },
                     "Y": {
-                        "description": "Name of CSV column containing marker Y-coordinates",
+                        "description": "Name of CSV column to use as Y-coordinate",
                         "type": "string"
                     },
                     "gb_col": {
@@ -234,7 +238,7 @@ The tmap format uses json, with the following specifications:
                         "default": "null"
                     },
                     "cb_cmap": {
-                        "description": "Name of D3 colorscale to be used for color mapping",
+                        "description": "Name of D3 color scale to be used for color mapping. See :ref:`ColorScale` for valid string values.",
                         "type": "string",
                         "default": ""
                     },
@@ -382,6 +386,7 @@ The tmap format uses json, with the following specifications:
                 "required": []
             },
             "Setting": {
+                "description": "TODO",
                 "type": "object",
                 "properties": {
                     "function": {
