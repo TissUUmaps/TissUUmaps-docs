@@ -6,7 +6,7 @@
 Welcome to TissUUmaps's documentation!
 ======================================
 
-This page hosts the documentation for TissUUmaps 3.0.
+This page hosts the documentation for TissUUmaps 3.0. You can find a pdf version of thie documentation `here <https://tissuumaps.github.io/TissUUmaps-docs/index.pdf>`_.
 
 For more information on the TissUUmaps project, including video tutorials and demos, visit our website: `https://tissuumaps.github.io <https://tissuumaps.github.io>`_.
 
