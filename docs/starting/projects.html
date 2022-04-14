@@ -483,65 +483,83 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>A button linked to a marker dataset</p></td>
+<tr class="row-odd"><td colspan="3"><p>Description of settings and GUI objects for a marker dataset loaded from CSV file</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>title</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Name of marker button</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>comment</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Optional description text shown next to marker button</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
 <li><p><strong>name</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Name of marker tab</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>autoLoad</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If the CSV file for the marker dataset should be automatically loaded when the TMAP project is opened. If this is false, the user has to instead click on the marker button to load the dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>uid</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>A unique numeric identifier for the marker dataset</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td><ul class="simple">
 <li><p><strong>expectedHeader</strong></p></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#expectedheader"><span class="std std-ref">ExpectedHeader</span></a></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-odd"><td><ul class="simple">
 <li><p><strong>expectedRadios</strong></p></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#expectedradios"><span class="std std-ref">ExpectedRadios</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>path</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Relative file path to CSV file for marker dataset</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
 <tr class="row-even"><td rowspan="3"><ul class="simple">
@@ -571,7 +589,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>List of input text options</p></td>
+<tr class="row-odd"><td colspan="3"><p>Input field values for settings in a marker tab</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -579,25 +597,116 @@
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
 <tr class="row-even"><td><ul class="simple">
-<li><p><strong>function</strong></p></li>
+<li><p><strong>X</strong></p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
 <tr class="row-odd"><td><ul class="simple">
-<li><p><strong>module</strong></p></li>
+<li><p><strong>Y</strong></p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
 <tr class="row-even"><td><ul class="simple">
-<li><p><strong>value</strong></p></li>
+<li><p>gb_col</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
-<td><p><em>number</em></p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>gb_name</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>cb_cmap</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>cb_col</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>cb_gr_dict</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>scale_col</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>pie_col</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>pie_dict</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>shape_col</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>shape_fixed</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>shape_gr_dict</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>opacity_col</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>opacity</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>tooltip_fmt</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -611,7 +720,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>List of radio options</p></td>
+<tr class="row-odd"><td colspan="3"><p>Radio button state and checkbox state for settings in a marker tab</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -619,25 +728,102 @@
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
 <tr class="row-even"><td><ul class="simple">
-<li><p><strong>function</strong></p></li>
+<li><p>cb_col</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
-<td><p><em>string</em></p></td>
+<td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><ul class="simple">
-<li><p><strong>module</strong></p></li>
+<li><p>cb_gr</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
-<td><p><em>string</em></p></td>
+<td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-even"><td><ul class="simple">
-<li><p><strong>value</strong></p></li>
+<li><p>cb_gr_rand</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
-<td><p><em>number</em></p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>cb_gr_dict</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>cb_gr_key</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>pie_check</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>scale_check</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>shape_gr</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>shape_gr_rand</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>shape_gr_dict</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>shape_col</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>shape_fixed</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>opacity_check</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>_no_outline</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
 </tr>
 </tbody>
 </table>

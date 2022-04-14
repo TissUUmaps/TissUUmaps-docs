@@ -158,23 +158,30 @@ The tmap format uses json, with the following specifications:
                         "Threshold","Erosion","Dilation"]
             },
             "MarkerFile": {
-                "description": "A button linked to a marker dataset",
+                "description": "Description of settings and GUI objects for a marker dataset loaded from CSV file",
                 "type": "object",
                 "properties": {
                     "title": {
-                    "type": "string"
+                        "description": "Name of marker button",
+                        "type": "string"
                     },
                     "comment": {
-                    "type": "string"
+                        "description": "Optional description text shown next to marker button",
+                        "type": "string",
+                        "default": ""
                     },
                     "name": {
-                    "type": "string"
+                        "description": "Name of marker tab",
+                        "type": "string"
                     },
                     "autoLoad": {
-                    "type": "boolean"
+                        "description": "If the CSV file for the marker dataset should be automatically loaded when the TMAP project is opened. If this is false, the user has to instead click on the marker button to load the dataset.",
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "uid": {
-                    "type": "string"
+                        "description": "A unique numeric identifier for the marker dataset",
+                        "type": "string"
                     },
                     "expectedHeader": {
                         "$ref": "#definitions/ExpectedHeader"
@@ -183,9 +190,10 @@ The tmap format uses json, with the following specifications:
                         "$ref": "#definitions/ExpectedRadios"
                     },
                     "path": {
-                    "type": "string"
+                        "description": "Relative file path to CSV file for marker dataset",
+                        "type": "string"
                     },
-                    "settings": { 
+                    "settings": {
                         "type": "array",
                         "items": [
                             {
@@ -204,44 +212,111 @@ The tmap format uses json, with the following specifications:
                 ]
             },
             "ExpectedHeader": {
-                "description": "List of input text options",
+                "description": "Input field values for settings in a marker tab",
                 "type": "object",
                 "properties": {
-                    "function": {
-                    "type": "string"
+                    "X": {
+                        "type": "string"
                     },
-                    "module": {
-                    "type": "string"
+                    "Y": {
+                        "type": "string"
                     },
-                    "value": {
-                    "type": "number"
+                    "gb_col": {
+                        "type": "string"
+                    },
+                    "gb_name": {
+                        "type": "string"
+                    },
+                    "cb_cmap": {
+                        "type": "string"
+                    },
+                    "cb_col": {
+                        "type": "string"
+                    },
+                    "cb_gr_dict": {
+                        "type": "string"
+                    },
+                    "scale_col": {
+                        "type": "string"
+                    },
+                    "pie_col": {
+                        "type": "string"
+                    },
+                    "pie_dict": {
+                        "type": "string"
+                    },
+                    "shape_col": {
+                        "type": "string"
+                    },
+                    "shape_fixed": {
+                        "type": "string"
+                    },
+                    "shape_gr_dict": {
+                        "type": "string"
+                    },
+                    "opacity_col": {
+                        "type": "string"
+                    },
+                    "opacity": {
+                        "type": "string"
+                    },
+                    "tooltip_fmt": {
+                        "type": "string"
                     }
                 },
                 "required": [
-                    "function",
-                    "module",
-                    "value"
+                    "X",
+                    "Y"
                 ]
             },
             "ExpectedRadios": {
-                "description": "List of radio options",
+                "description": "Radio button state and checkbox state for settings in a marker tab",
                 "type": "object",
                 "properties": {
-                    "function": {
-                    "type": "string"
+                    "cb_col": {
+                        "type": "boolean"
                     },
-                    "module": {
-                    "type": "string"
+                    "cb_gr": {
+                        "type": "boolean"
                     },
-                    "value": {
-                    "type": "number"
+                    "cb_gr_rand": {
+                        "type": "boolean"
+                    },
+                    "cb_gr_dict": {
+                        "type": "boolean"
+                    },
+                    "cb_gr_key": {
+                        "type": "boolean"
+                    },
+                    "pie_check": {
+                        "type": "boolean"
+                    },
+                    "scale_check": {
+                        "type": "boolean"
+                    },
+                    "shape_gr": {
+                        "type": "boolean"
+                    },
+                    "shape_gr_rand": {
+                        "type": "boolean"
+                    },
+                    "shape_gr_dict": {
+                        "type": "boolean"
+                    },
+                    "shape_col": {
+                        "type": "boolean"
+                    },
+                    "shape_fixed": {
+                        "type": "boolean"
+                    },
+                    "opacity_check": {
+                        "type": "boolean"
+                    },
+                    "_no_outline": {
+                        "type": "boolean"
                     }
                 },
-                "required": [
-                    "function",
-                    "module",
-                    "value"
-                ]
+                "required": []
             },
             "Setting": {
                 "type": "object",

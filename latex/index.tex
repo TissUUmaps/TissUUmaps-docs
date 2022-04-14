@@ -1228,7 +1228,7 @@ Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, 
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
-A button linked to a marker dataset
+Description of settings and GUI objects for a marker dataset loaded from CSV file
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1252,65 +1252,141 @@ properties
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{2}{5}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{title}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+Name of marker button
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{5}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{3}{9}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 comment
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+Optional description text shown next to marker button
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{9}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{9}&
+\sphinxAtStartPar
+default
+&\\
+\hline\sphinxmultirow{2}{15}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{name}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+Name of marker tab
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{15}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{3}{19}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 autoLoad
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If the CSV file for the marker dataset should be automatically loaded when the TMAP project is opened. If this is false, the user has to instead click on the marker button to load the dataset.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{19}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\hline\begin{itemize}
+\cline{2-3}\sphinxtablestrut{19}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{2}{25}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{uid}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+A unique numeric identifier for the marker dataset
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{25}&
 \sphinxAtStartPar
 type
 &
@@ -1345,20 +1421,33 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{2}{33}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{path}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+Relative file path to CSV file for marker dataset
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{33}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\sphinxmultirow{3}{27}{%
+\hline\sphinxmultirow{3}{37}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -1376,7 +1465,7 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{array}
 \\
-\cline{2-3}\sphinxtablestrut{27}&\sphinxstartmulticolumn{2}%
+\cline{2-3}\sphinxtablestrut{37}&\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
 items
@@ -1384,7 +1473,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-3}\sphinxtablestrut{27}&\begin{itemize}
+\cline{2-3}\sphinxtablestrut{37}&\begin{itemize}
 \item {} 
 \end{itemize}
 &
@@ -1407,7 +1496,7 @@ items
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
-List of input text options
+Input field values for settings in a marker tab
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1434,7 +1523,7 @@ properties
 \hline\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{function}
+\sphinxstylestrong{X}
 
 \end{itemize}
 &
@@ -1447,7 +1536,7 @@ type
 \hline\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{module}
+\sphinxstylestrong{Y}
 
 \end{itemize}
 &
@@ -1460,7 +1549,7 @@ type
 \hline\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{value}
+gb\_col
 
 \end{itemize}
 &
@@ -1468,7 +1557,176 @@ type
 type
 &
 \sphinxAtStartPar
-\sphinxstyleemphasis{number}
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+gb\_name
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+cb\_cmap
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+cb\_col
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+cb\_gr\_dict
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+scale\_col
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+pie\_col
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+pie\_dict
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_col
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_fixed
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_gr\_dict
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+opacity\_col
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+opacity
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+tooltip\_fmt
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
 \\
 \hline
 \end{tabular}
@@ -1486,7 +1744,7 @@ type
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
-List of radio options
+Radio button state and checkbox state for settings in a marker tab
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1513,7 +1771,7 @@ properties
 \hline\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{function}
+cb\_col
 
 \end{itemize}
 &
@@ -1521,12 +1779,12 @@ properties
 type
 &
 \sphinxAtStartPar
-\sphinxstyleemphasis{string}
+\sphinxstyleemphasis{boolean}
 \\
 \hline\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{module}
+cb\_gr
 
 \end{itemize}
 &
@@ -1534,12 +1792,12 @@ type
 type
 &
 \sphinxAtStartPar
-\sphinxstyleemphasis{string}
+\sphinxstyleemphasis{boolean}
 \\
 \hline\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{value}
+cb\_gr\_rand
 
 \end{itemize}
 &
@@ -1547,7 +1805,150 @@ type
 type
 &
 \sphinxAtStartPar
-\sphinxstyleemphasis{number}
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+cb\_gr\_dict
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+cb\_gr\_key
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+pie\_check
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+scale\_check
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_gr
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_gr\_rand
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_gr\_dict
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_col
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_fixed
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+opacity\_check
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\hline\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\_no\_outline
+
+\end{itemize}
+&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
 \\
 \hline
 \end{tabular}
