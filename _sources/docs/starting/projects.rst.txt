@@ -180,7 +180,7 @@ The tmap format uses json, with the following specifications:
                         "default": "false"
                     },
                     "uid": {
-                        "description": "A unique numeric identifier for the marker dataset",
+                        "description": "A unique identifier used internally for the marker dataset",
                         "type": "string"
                     },
                     "expectedHeader": {
