@@ -45,21 +45,21 @@
 \contentsline {paragraph}{Filter}{10}{paragraph*.10}%
 \contentsline {paragraph}{MarkerFile}{10}{paragraph*.11}%
 \contentsline {paragraph}{ExpectedHeader}{10}{paragraph*.12}%
-\contentsline {paragraph}{ExpectedRadios}{11}{paragraph*.13}%
+\contentsline {paragraph}{ExpectedRadios}{12}{paragraph*.13}%
 \contentsline {paragraph}{Setting}{12}{paragraph*.14}%
-\contentsline {subsubsection}{Example of tmap file}{12}{subsubsection*.15}%
+\contentsline {subsubsection}{Example of tmap file}{13}{subsubsection*.15}%
 \contentsline {section}{\numberline {2.5}Exporting screenshots}{14}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Plugins}{14}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Load plugins}{14}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{14}{subsection.2.6.2}%
-\contentsline {subsubsection}{Javascript file}{14}{subsubsection*.16}%
-\contentsline {subsubsection}{Python file}{15}{subsubsection*.17}%
-\contentsline {chapter}{\numberline {3}Sharing projects}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Apache server}{16}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Docker container}{16}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Advanced usage}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Jupyter notebooks}{17}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{17}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Napari}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}AnnData}{19}{section.4.3}%
-\contentsline {chapter}{Index}{20}{section*.24}%
+\contentsline {section}{\numberline {2.6}Plugins}{15}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Load plugins}{15}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{15}{subsection.2.6.2}%
+\contentsline {subsubsection}{Javascript file}{15}{subsubsection*.16}%
+\contentsline {subsubsection}{Python file}{16}{subsubsection*.17}%
+\contentsline {chapter}{\numberline {3}Sharing projects}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Apache server}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Docker container}{17}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Advanced usage}{18}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Jupyter notebooks}{18}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{18}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Napari}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}AnnData}{20}{section.4.3}%
+\contentsline {chapter}{Index}{21}{section*.24}%
