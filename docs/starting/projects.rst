@@ -222,46 +222,64 @@ The tmap format uses json, with the following specifications:
                         "type": "string"
                     },
                     "gb_col": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
                     },
                     "gb_name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
                     },
                     "cb_cmap": {
-                        "type": "string"
+                        "type": "string",
+                        "default": ""
                     },
                     "cb_col": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
                     },
                     "cb_gr_dict": {
-                        "type": "string"
+                        "type": "string",
+                        "default": ""
                     },
                     "scale_col": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
+                    },
+                    "scale_factor": {
+                        "type": "string",
+                        "default": "1"
                     },
                     "pie_col": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
                     },
                     "pie_dict": {
-                        "type": "string"
+                        "type": "string",
+                        "default": ""
                     },
                     "shape_col": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
                     },
                     "shape_fixed": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "cross"
                     },
                     "shape_gr_dict": {
-                        "type": "string"
+                        "type": "string",
+                        "default": ""
                     },
                     "opacity_col": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "null"
                     },
                     "opacity": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "1"
                     },
                     "tooltip_fmt": {
-                        "type": "string"
+                        "type": "string",
+                        "default": ""
                     }
                 },
                 "required": [
@@ -274,46 +292,60 @@ The tmap format uses json, with the following specifications:
                 "type": "object",
                 "properties": {
                     "cb_col": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "cb_gr": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "true"
                     },
                     "cb_gr_rand": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "cb_gr_dict": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "cb_gr_key": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "true"
                     },
                     "pie_check": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "scale_check": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "shape_gr": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "true"
                     },
                     "shape_gr_rand": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "true"
                     },
                     "shape_gr_dict": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "shape_col": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "shape_fixed": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "opacity_check": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     },
                     "_no_outline": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": "false"
                     }
                 },
                 "required": []
