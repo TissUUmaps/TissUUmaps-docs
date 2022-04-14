@@ -216,35 +216,35 @@ The tmap format uses json, with the following specifications:
                 "type": "object",
                 "properties": {
                     "X": {
-                        "description": "Name of CSV column used for X-coordinate",
+                        "description": "Name of CSV column containing marker X-coordinates",
                         "type": "string"
                     },
                     "Y": {
-                        "description": "Name of CSV column used for Y-coordinate",
+                        "description": "Name of CSV column containing marker Y-coordinates",
                         "type": "string"
                     },
                     "gb_col": {
-                        "description": "Name of CSV column to group markers by",
+                        "description": "Name of CSV column to use as key to group markers by",
                         "type": "string",
                         "default": "null"
                     },
                     "gb_name": {
-                        "description": "Name of alternative CSV column to show for group instead of gb_col",
+                        "description": "Name of CSV column to display for groups instead of group key value",
                         "type": "string",
                         "default": "null"
                     },
                     "cb_cmap": {
-                        "description": "Name of colorscale to use for color mapping",
+                        "description": "Name of D3 colorscale to be used for color mapping",
                         "type": "string",
                         "default": ""
                     },
                     "cb_col": {
-                        "description": "Name of CSV column containing scalar values for color mapping or hexadecimal colors",
+                        "description": "Name of CSV column containing scalar values for color mapping, or hexadecimal colors",
                         "type": "string",
                         "default": "null"
                     },
                     "cb_gr_dict": {
-                        "description": "TODO",
+                        "description": "JSON string specifying a custom dictionary for group colors",
                         "type": "string",
                         "default": ""
                     },
@@ -274,12 +274,12 @@ The tmap format uses json, with the following specifications:
                         "default": "null"
                     },
                     "shape_fixed": {
-                        "description": "Name of a fixed marker shape to be use for all markers",
+                        "description": "Name of a single fixed shape to be used for all markers",
                         "type": "string",
                         "default": "cross"
                     },
                     "shape_gr_dict": {
-                        "description": "TODO",
+                        "description": "JSON string specifying a custom dictionary for group shapes",
                         "type": "string",
                         "default": ""
                     },
@@ -294,7 +294,7 @@ The tmap format uses json, with the following specifications:
                         "default": "1"
                     },
                     "tooltip_fmt": {
-                        "description": "TODO",
+                        "description": "Custom formatting string used for overlay displayed over selected markers; see (TODO).",
                         "type": "string",
                         "default": ""
                     }
@@ -309,58 +309,72 @@ The tmap format uses json, with the following specifications:
                 "type": "object",
                 "properties": {
                     "cb_col": {
+                        "description": "If markers should be colored by data in CSV column",
                         "type": "boolean",
                         "default": "false"
                     },
                     "cb_gr": {
+                        "description": "If markers should be colored by group",
                         "type": "boolean",
                         "default": "true"
                     },
                     "cb_gr_rand": {
+                        "description": "If group color should be generated randomly",
                         "type": "boolean",
                         "default": "false"
                     },
                     "cb_gr_dict": {
+                        "description": "If group color should be read from custom dictionary",
                         "type": "boolean",
                         "default": "false"
                     },
                     "cb_gr_key": {
+                        "description": "If group color should be generated from group key",
                         "type": "boolean",
                         "default": "true"
                     },
                     "pie_check": {
+                        "description": "If markers should be rendered as pie charts",
                         "type": "boolean",
                         "default": "false"
                     },
                     "scale_check": {
-                        "type": "boolean",
-                        "default": "false"
-                    },
-                    "shape_gr": {
-                        "type": "boolean",
-                        "default": "true"
-                    },
-                    "shape_gr_rand": {
-                        "type": "boolean",
-                        "default": "true"
-                    },
-                    "shape_gr_dict": {
+                        "description": "If markers should be scaled by data in CSV column",
                         "type": "boolean",
                         "default": "false"
                     },
                     "shape_col": {
+                        "description": "If markers should get their shape from data in CSV column",
+                        "type": "boolean",
+                        "default": "false"
+                    },
+                    "shape_gr": {
+                        "description": "If markers should get their shape from group",
+                        "type": "boolean",
+                        "default": "true"
+                    },
+                    "shape_gr_rand": {
+                        "description": "If group shape should be generated randomly",
+                        "type": "boolean",
+                        "default": "true"
+                    },
+                    "shape_gr_dict": {
+                        "description": "If group shape should be read from custom dictionary",
                         "type": "boolean",
                         "default": "false"
                     },
                     "shape_fixed": {
+                        "description": "If a single fixed shape should be used for all markers",
                         "type": "boolean",
                         "default": "false"
                     },
                     "opacity_check": {
+                        "description": "If markers should get their opacities from data in CSV column",
                         "type": "boolean",
                         "default": "false"
                     },
                     "_no_outline": {
+                        "description": "If marker shapes should be rendered without outline",
                         "type": "boolean",
                         "default": "false"
                     }
