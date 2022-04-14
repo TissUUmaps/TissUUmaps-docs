@@ -600,7 +600,7 @@
 <li><p><strong>X</strong></p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of CSV column used for X-coordinate</p></td>
+<td colspan="2"><p>Name of CSV column containing marker X-coordinates</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -609,7 +609,7 @@
 <li><p><strong>Y</strong></p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of CSV column used for Y-coordinate</p></td>
+<td colspan="2"><p>Name of CSV column containing marker Y-coordinates</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -618,7 +618,7 @@
 <li><p>gb_col</p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of CSV column to group markers by</p></td>
+<td colspan="2"><p>Name of CSV column to use as key to group markers by</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -630,7 +630,7 @@
 <li><p>gb_name</p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of alternative CSV column to show for group instead of gb_col</p></td>
+<td colspan="2"><p>Name of CSV column to display for groups instead of group key value</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -642,7 +642,7 @@
 <li><p>cb_cmap</p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of colorscale to use for color mapping</p></td>
+<td colspan="2"><p>Name of D3 colorscale to be used for color mapping</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -654,7 +654,7 @@
 <li><p>cb_col</p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of CSV column containing scalar values for color mapping or hexadecimal colors</p></td>
+<td colspan="2"><p>Name of CSV column containing scalar values for color mapping, or hexadecimal colors</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -666,7 +666,7 @@
 <li><p>cb_gr_dict</p></li>
 </ul>
 </td>
-<td colspan="2"><p>TODO</p></td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for group colors</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -738,7 +738,7 @@
 <li><p>shape_fixed</p></li>
 </ul>
 </td>
-<td colspan="2"><p>Name of a fixed marker shape to be use for all markers</p></td>
+<td colspan="2"><p>Name of a single fixed shape to be used for all markers</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -750,7 +750,7 @@
 <li><p>shape_gr_dict</p></li>
 </ul>
 </td>
-<td colspan="2"><p>TODO</p></td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for group shapes</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -786,7 +786,7 @@
 <li><p>tooltip_fmt</p></li>
 </ul>
 </td>
-<td colspan="2"><p>TODO</p></td>
+<td colspan="2"><p>Custom formatting string used for overlay displayed over selected markers; see (TODO).</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -813,141 +813,169 @@
 </tr>
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>cb_col</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If markers should be colored by data in CSV column</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>cb_gr</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If markers should be colored by group</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>
 <td><p>true</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>cb_gr_rand</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If group color should be generated randomly</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>cb_gr_dict</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If group color should be read from custom dictionary</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>cb_gr_key</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If group color should be generated from group key</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td><p>true</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>pie_check</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If markers should be rendered as pie charts</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>scale_check</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If markers should be scaled by data in CSV column</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
-<li><p>shape_gr</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td><p><em>boolean</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>default</p></td>
-<td><p>true</p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
-<li><p>shape_gr_rand</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td><p><em>boolean</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>default</p></td>
-<td><p>true</p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
-<li><p>shape_gr_dict</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td><p><em>boolean</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>default</p></td>
-<td><p>false</p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>shape_col</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If markers should get their shape from data in CSV column</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should get their shape from group</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr_rand</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group shape should be generated randomly</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr_dict</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group shape should be read from custom dictionary</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>shape_fixed</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If a single fixed shape should be used for all markers</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>opacity_check</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If markers should get their opacities from data in CSV column</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
 <li><p>_no_outline</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>If marker shapes should be rendered without outline</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>

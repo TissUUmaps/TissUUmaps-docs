@@ -46,9 +46,9 @@
 \contentsline {paragraph}{MarkerFile}{10}{paragraph*.11}%
 \contentsline {paragraph}{ExpectedHeader}{10}{paragraph*.12}%
 \contentsline {paragraph}{ExpectedRadios}{12}{paragraph*.13}%
-\contentsline {paragraph}{Setting}{12}{paragraph*.14}%
+\contentsline {paragraph}{Setting}{13}{paragraph*.14}%
 \contentsline {subsubsection}{Example of tmap file}{13}{subsubsection*.15}%
-\contentsline {section}{\numberline {2.5}Exporting screenshots}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Exporting screenshots}{15}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Plugins}{15}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Load plugins}{15}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{15}{subsection.2.6.2}%

@@ -1546,7 +1546,7 @@ properties
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column used for X\sphinxhyphen{}coordinate
+Name of CSV column containing marker X\sphinxhyphen{}coordinates
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1572,7 +1572,7 @@ type
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column used for Y\sphinxhyphen{}coordinate
+Name of CSV column containing marker Y\sphinxhyphen{}coordinates
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1598,7 +1598,7 @@ gb\_col
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column to group markers by
+Name of CSV column to use as key to group markers by
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1631,7 +1631,7 @@ gb\_name
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of alternative CSV column to show for group instead of gb\_col
+Name of CSV column to display for groups instead of group key value
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1664,7 +1664,7 @@ cb\_cmap
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of colorscale to use for color mapping
+Name of D3 colorscale to be used for color mapping
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1694,7 +1694,7 @@ cb\_col
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column containing scalar values for color mapping or hexadecimal colors
+Name of CSV column containing scalar values for color mapping, or hexadecimal colors
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1727,7 +1727,7 @@ cb\_gr\_dict
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-TODO
+JSON string specifying a custom dictionary for group colors
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1919,7 +1919,7 @@ shape\_fixed
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of a fixed marker shape to be use for all markers
+Name of a single fixed shape to be used for all markers
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1952,7 +1952,7 @@ shape\_gr\_dict
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-TODO
+JSON string specifying a custom dictionary for group shapes
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2048,7 +2048,7 @@ tooltip\_fmt
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-TODO
+Custom formatting string used for overlay displayed over selected markers; see (TODO).
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2114,7 +2114,7 @@ properties
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{2}{5}{%
+\hline\sphinxmultirow{3}{5}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2125,7 +2125,15 @@ cb\_col
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If markers should be colored by data in CSV column
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{5}&
 \sphinxAtStartPar
 type
 &
@@ -2139,7 +2147,7 @@ default
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{10}{%
+\hline\sphinxmultirow{3}{11}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2150,21 +2158,29 @@ cb\_gr
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If markers should be colored by group
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{11}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{10}&
+\cline{2-3}\sphinxtablestrut{11}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
 true
 \\
-\hline\sphinxmultirow{2}{15}{%
+\hline\sphinxmultirow{3}{17}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2175,21 +2191,29 @@ cb\_gr\_rand
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If group color should be generated randomly
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{17}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{15}&
+\cline{2-3}\sphinxtablestrut{17}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{20}{%
+\hline\sphinxmultirow{3}{23}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2200,21 +2224,29 @@ cb\_gr\_dict
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If group color should be read from custom dictionary
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{23}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{20}&
+\cline{2-3}\sphinxtablestrut{23}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{25}{%
+\hline\sphinxmultirow{3}{29}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2225,21 +2257,29 @@ cb\_gr\_key
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If group color should be generated from group key
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{29}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{25}&
+\cline{2-3}\sphinxtablestrut{29}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
 true
 \\
-\hline\sphinxmultirow{2}{30}{%
+\hline\sphinxmultirow{3}{35}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2250,32 +2290,15 @@ pie\_check
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-type
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{boolean}
-\\
-\cline{2-3}\sphinxtablestrut{30}&
-\sphinxAtStartPar
-default
-&
-\sphinxAtStartPar
-false
-\\
-\hline\sphinxmultirow{2}{35}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-scale\_check
-
-\end{itemize}
+If markers should be rendered as pie charts
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
-&
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{35}&
 \sphinxAtStartPar
 type
 &
@@ -2289,82 +2312,40 @@ default
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{40}{%
+\hline\sphinxmultirow{3}{41}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-shape\_gr
+scale\_check
 
 \end{itemize}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If markers should be scaled by data in CSV column
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{41}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{40}&
-\sphinxAtStartPar
-default
-&
-\sphinxAtStartPar
-true
-\\
-\hline\sphinxmultirow{2}{45}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-shape\_gr\_rand
-
-\end{itemize}
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
-&
-\sphinxAtStartPar
-type
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{boolean}
-\\
-\cline{2-3}\sphinxtablestrut{45}&
-\sphinxAtStartPar
-default
-&
-\sphinxAtStartPar
-true
-\\
-\hline\sphinxmultirow{2}{50}{%
-\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-shape\_gr\_dict
-
-\end{itemize}
-\par
-\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
-}%
-&
-\sphinxAtStartPar
-type
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{boolean}
-\\
-\cline{2-3}\sphinxtablestrut{50}&
+\cline{2-3}\sphinxtablestrut{41}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{55}{%
+\hline\sphinxmultirow{3}{47}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2375,57 +2356,114 @@ shape\_col
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If markers should get their shape from data in CSV column
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{47}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{55}&
+\cline{2-3}\sphinxtablestrut{47}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{60}{%
+\hline\sphinxmultirow{3}{53}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-shape\_fixed
+shape\_gr
 
 \end{itemize}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If markers should get their shape from group
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{53}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{60}&
+\cline{2-3}\sphinxtablestrut{53}&
 \sphinxAtStartPar
 default
 &
 \sphinxAtStartPar
-false
+true
 \\
-\hline\sphinxmultirow{2}{65}{%
+\hline\sphinxmultirow{3}{59}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-opacity\_check
+shape\_gr\_rand
 
 \end{itemize}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If group shape should be generated randomly
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{59}&
+\sphinxAtStartPar
+type
 &
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\cline{2-3}\sphinxtablestrut{59}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+true
+\\
+\hline\sphinxmultirow{3}{65}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_gr\_dict
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If group shape should be read from custom dictionary
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{65}&
 \sphinxAtStartPar
 type
 &
@@ -2439,7 +2477,73 @@ default
 \sphinxAtStartPar
 false
 \\
-\hline\sphinxmultirow{2}{70}{%
+\hline\sphinxmultirow{3}{71}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+shape\_fixed
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If a single fixed shape should be used for all markers
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{71}&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\cline{2-3}\sphinxtablestrut{71}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{3}{77}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+opacity\_check
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If markers should get their opacities from data in CSV column
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{77}&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{boolean}
+\\
+\cline{2-3}\sphinxtablestrut{77}&
+\sphinxAtStartPar
+default
+&
+\sphinxAtStartPar
+false
+\\
+\hline\sphinxmultirow{3}{83}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
 \begin{itemize}
 \item {} 
@@ -2450,14 +2554,22 @@ false
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+If marker shapes should be rendered without outline
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{83}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{boolean}
 \\
-\cline{2-3}\sphinxtablestrut{70}&
+\cline{2-3}\sphinxtablestrut{83}&
 \sphinxAtStartPar
 default
 &
