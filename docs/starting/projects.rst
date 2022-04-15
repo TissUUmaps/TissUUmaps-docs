@@ -161,11 +161,11 @@ The tmap format uses json, with the following specifications:
                         "Threshold","Erosion","Dilation"]
             },
             "ColorScale": {
-                "description": "TissUUmaps supports most of the color scales available in the D3.js library. See https://github.com/d3/d3-scale-chromatic for reference. Note: the colors for 'interpolatRainbow' is currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.",
+                "description": "TissUUmaps supports most of the color scales available in the D3.js library. See https://github.com/d3/d3-scale-chromatic for reference. Note: the colors for 'interpolateRainbow' is currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.",
                 "enum": ["interpolateCubehelixDefault", "interpolateRainbow", "interpolateWarm", "interpolateCool", "interpolateViridis", "interpolateMagma", "interpolateInferno", "interpolatePlasma", "interpolateBlues", "interpolateBrBG", "interpolateBuGn", "interpolateBuPu", "interpolateCividis", "interpolateGnBu", "interpolateGreens", "interpolateGreys", "interpolateOrRd", "interpolateOranges", "interpolatePRGn", "interpolatePiYG", "interpolatePuBu", "interpolatePuBuGn", "interpolatePuOr", "interpolatePuRd", "interpolatePurples", "interpolateRdBu", "interpolateRdGy", "interpolateRdPu", "interpolateRdYlBu", "interpolateRdYlGn", "interpolateReds", "interpolateSinebow", "interpolateSpectral", "interpolateTurbo", "interpolateYlGn", "interpolateYlGnBu", "interpolateYlOrBr", "interpolateYlOrRd"]
             },
             "Shape": {
-                "description": "TissUUmaps supports most of the marker shapes that are also used by the Napari software, https://napari.org. In addition to the name strings listed below, shapes can also be specified by a corresponding index in range 0-13.",
+                "description": "TissUUmaps supports most of the marker shapes that are also used by the Napari software, https://napari.org. In addition to the name strings listed below, shape can also be specified by a corresponding index in range 0-13.",
                 "enum": ["cross", "diamond", "square", "triangle up", "star", "clobber", "disc", "hbar", "vbar", "tailed arrow", "triangle down", "ring", "x", "arrow"]
             },
             "MarkerFile": {
