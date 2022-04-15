@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{Tmap specifications}{8}{subsubsection*.7}%
 \contentsline {paragraph}{Layer}{9}{paragraph*.8}%
 \contentsline {paragraph}{LayerFilter}{9}{paragraph*.9}%
-\contentsline {paragraph}{Filter}{9}{paragraph*.10}%
+\contentsline {paragraph}{Filter}{10}{paragraph*.10}%
 \contentsline {paragraph}{ColorScale}{10}{paragraph*.11}%
 \contentsline {paragraph}{Shape}{10}{paragraph*.12}%
 \contentsline {paragraph}{MarkerFile}{11}{paragraph*.13}%
