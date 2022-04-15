@@ -186,12 +186,12 @@ The tmap format uses json, with the following specifications:
                         "type": "string"
                     },
                     "autoLoad": {
-                        "description": "If the CSV file for the marker dataset should be automatically loaded when the TMAP project is opened. If this is false, the user has to instead click on the marker button to load the dataset.",
+                        "description": "If the CSV file for the marker dataset should be automatically loaded when the TMAP project is opened. If this is false, the user instead has to click on the marker button in the GUI to load the dataset.",
                         "type": "boolean",
                         "default": "false"
                     },
                     "uid": {
-                        "description": "A unique identifier used internally for the marker dataset",
+                        "description": "A unique identifier used internally by TissUUmaps to reference the marker dataset",
                         "type": "string"
                     },
                     "expectedHeader": {
@@ -201,7 +201,7 @@ The tmap format uses json, with the following specifications:
                         "$ref": "#definitions/ExpectedRadios"
                     },
                     "path": {
-                        "description": "Relative file path to CSV file for marker dataset",
+                        "description": "Relative file path to CSV file in which marker data is stored",
                         "type": "string"
                     },
                     "settings": {
@@ -210,7 +210,8 @@ The tmap format uses json, with the following specifications:
                             {
                             "$ref": "#/definitions/Setting"
                             }
-                        ]
+                        ],
+                        "default": "[]"
                     }
                 },
                 "required": [
