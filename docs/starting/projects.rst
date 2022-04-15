@@ -164,6 +164,10 @@ The tmap format uses json, with the following specifications:
                 "description": "TissUUmaps supports most of the color scales available in the D3.js library. See https://github.com/d3/d3-scale-chromatic for reference. Note: the colors for 'interpolatRainbow' is currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.",
                 "enum": ["interpolateCubehelixDefault", "interpolateRainbow", "interpolateWarm", "interpolateCool", "interpolateViridis", "interpolateMagma", "interpolateInferno", "interpolatePlasma", "interpolateBlues", "interpolateBrBG", "interpolateBuGn", "interpolateBuPu", "interpolateCividis", "interpolateGnBu", "interpolateGreens", "interpolateGreys", "interpolateOrRd", "interpolateOranges", "interpolatePRGn", "interpolatePiYG", "interpolatePuBu", "interpolatePuBuGn", "interpolatePuOr", "interpolatePuRd", "interpolatePurples", "interpolateRdBu", "interpolateRdGy", "interpolateRdPu", "interpolateRdYlBu", "interpolateRdYlGn", "interpolateReds", "interpolateSinebow", "interpolateSpectral", "interpolateTurbo", "interpolateYlGn", "interpolateYlGnBu", "interpolateYlOrBr", "interpolateYlOrRd"]
             },
+            "Shape": {
+                "description": "TissUUmaps supports most of the marker shapes that are also used by the Napari software, https://napari.org. In addition to the name strings listed below, shapes can also be specified by a corresponding index in range 0-13.",
+                "enum": ["cross", "diamond", "square", "triangle up", "star", "clobber", "disc", "hbar", "vbar", "tailed arrow", "triangle down", "ring", "x", "arrow"]
+            },
             "MarkerFile": {
                 "description": "Description of settings and GUI objects for a marker dataset loaded from CSV file. Required properties are shown in **bold** text.",
                 "type": "object",
@@ -276,17 +280,17 @@ The tmap format uses json, with the following specifications:
                         "default": ""
                     },
                     "shape_col": {
-                        "description": "Name of CSV column containing a name or an index for marker shape",
+                        "description": "Name of CSV column containing a name or an index for marker shape. See also :ref:`Shape`.",
                         "type": "string",
                         "default": "null"
                     },
                     "shape_fixed": {
-                        "description": "Name of a single fixed shape to be used for all markers",
+                        "description": "Name or index of a single fixed shape to be used for all markers. See :ref:`Shape` for valid string values.",
                         "type": "string",
                         "default": "cross"
                     },
                     "shape_gr_dict": {
-                        "description": "JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: '{\"key1\": \"square\", \"key2\": \"diamond\", \"key3\": \"triangle up\"}'",
+                        "description": "JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: '{\"key1\": \"square\", \"key2\": \"diamond\", \"key3\": \"triangle up\"}'. See also :ref:`Shape`.",
                         "type": "string",
                         "default": ""
                     },
