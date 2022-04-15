@@ -71,7 +71,7 @@ The TMAP format uses JSON, with the following specifications:
                 ]
             },
             "filters": {
-                "description": "List of filters shown as active filters in the GUI under the Layers tab",
+                "description": "List of filters shown as active filters in the GUI under the Image layers tab",
                 "type": "array",
                 "items": [
                     { "$ref": "#definitions/Filter" }
