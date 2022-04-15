@@ -9,13 +9,13 @@ Saving and loading projects
 
 
 ======================
-The tmap file format
+The TMAP file format
 ======================
 
 
-The tmap format contains image layers, saved markers, regions, and settings. It is highly recommended to create tmap files by saving projects from TissUUmaps applications, but you can also edit the files manually to add or change project's settings.
+The TMAP format contains image layers, saved markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps applications, but you can also edit the files manually to add or change project's settings.
 
-The tmap format uses json, with the following specifications:
+The TMAP format uses JSON, with the following specifications:
 
 .. jsonschema::
     :lift_definitions:
@@ -24,7 +24,7 @@ The tmap format uses json, with the following specifications:
 
     {
         "$schema": "http://json-schema.org/draft-04/schema#",
-        "title": "Tmap specifications",
+        "title": "TMAP project specifications",
         "description": "TODO. Required properties are shown in **bold** text",
         "type": "object",
         "properties": {
@@ -429,7 +429,7 @@ The tmap format uses json, with the following specifications:
     }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Example of tmap file
+Example of a .tmap file
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
