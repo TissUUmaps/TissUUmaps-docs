@@ -299,7 +299,7 @@
 <td colspan="2"><p><em>array</em></p></td>
 </tr>
 <tr class="row-even"><td><p>default</p></td>
-<td colspan="2"><p>[]</p></td>
+<td colspan="2"><p>[“Saturation”, “Brightness”, “Contrast”]</p></td>
 </tr>
 <tr class="row-odd"><td colspan="3"><p>items</p></td>
 </tr>
@@ -464,14 +464,14 @@
 <col style="width: 25%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="4"><p>TODO. Required properties are shown in <strong>bold</strong> text</p></td>
+<tr class="row-odd"><td colspan="4"><p>Description of an image filter to be applied to the pixels in an image layer. Required properties are shown in <strong>bold</strong> text</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="3"><p><em>array</em></p></td>
 </tr>
 <tr class="row-odd"><td colspan="4"><p>items</p></td>
 </tr>
-<tr class="row-even"><td rowspan="4"><ul class="simple">
+<tr class="row-even"><td rowspan="6"><ul class="simple">
 <li></li>
 </ul>
 </td>
@@ -480,17 +480,22 @@
 </tr>
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>name</strong></p></li>
 </ul>
 </td>
-<td colspan="2"><p><a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a></p></td>
+<td colspan="2"><p>Filter name. See <a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a> for more details.</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>value</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Filter parameter. See <a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a> for more details.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
 </tbody>
@@ -504,7 +509,9 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>enum</p></td>
+<tr class="row-odd"><td colspan="2"><p>TissUUmaps supports most filters available in OpenSeadragon via the <a class="reference external" href="https://github.com/usnistgov/OpenSeadragonFiltering">https://github.com/usnistgov/OpenSeadragonFiltering</a> plugin.</p></td>
+</tr>
+<tr class="row-even"><td><p>enum</p></td>
 <td><p>Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, Invert, Greyscale, Threshold, Erosion, Dilation</p></td>
 </tr>
 </tbody>

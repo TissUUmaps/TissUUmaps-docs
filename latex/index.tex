@@ -810,7 +810,7 @@ default
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{[}{]}
+{[}“Saturation”, “Brightness”, “Contrast”{]}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1248,7 +1248,7 @@ type
 \sphinxstartmulticolumn{4}%
 \begin{varwidth}[t]{\sphinxcolwidth{4}{4}}
 \sphinxAtStartPar
-TODO. Required properties are shown in \sphinxstylestrong{bold} text
+Description of an image filter to be applied to the pixels in an image layer. Required properties are shown in \sphinxstylestrong{bold} text
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1272,7 +1272,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{4}{5}{%
+\hline\sphinxmultirow{6}{5}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1299,27 +1299,52 @@ properties
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{5}&\begin{itemize}
+\cline{2-4}\sphinxtablestrut{5}&\sphinxmultirow{2}{9}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{name}
 
 \end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}}
+Filter name. See {\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}} for more details.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{5}&\begin{itemize}
+\cline{3-4}\sphinxtablestrut{5}&\sphinxtablestrut{9}&
+\sphinxAtStartPar
+type
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{string}
+\\
+\cline{2-4}\sphinxtablestrut{5}&\sphinxmultirow{2}{13}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{value}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+Filter parameter. See {\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}} for more details.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{3-4}\sphinxtablestrut{5}&\sphinxtablestrut{13}&
 \sphinxAtStartPar
 type
 &
@@ -1339,7 +1364,15 @@ type
 \centering
 \begin{tabulary}{\linewidth}[t]{|T|T|}
 \hline
-
+\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{2}}
+\sphinxAtStartPar
+TissUUmaps supports most filters available in OpenSeadragon via the \sphinxurl{https://github.com/usnistgov/OpenSeadragonFiltering} plugin.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
 \sphinxAtStartPar
 enum
 &
