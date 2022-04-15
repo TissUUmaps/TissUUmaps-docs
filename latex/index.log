@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.15)  15 APR 2022 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.15)  15 APR 2022 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,55 +825,56 @@ Chapter 2.
 [6
 
 ] [7] [8]
-Overfull \hbox (3.62727pt too wide) in paragraph at lines 1216--1216
+Overfull \hbox (3.62727pt too wide) in paragraph at lines 1240--1240
 []\T1/qtm/m/n/10 enum| 
  []
 
-[9] [10] [11] [12] [13]
+[9] [10] [11] [12]
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 2694.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 2718.
 
- [14]
-Underfull \vbox (badness 10000) detected at line 2782
+ [13]
+Underfull \vbox (badness 10000) detected at line 2806
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2782
+Underfull \vbox (badness 10000) detected at line 2806
  []
 
-[15]
-<plugin_container.png, id=410, 479.54156pt x 170.13562pt>
+[14]
+<plugin_container.png, id=406, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 2816.
+Package pdftex.def Info: plugin_container.png  used on input line 2840.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
+ [15 <./plugin_container.png>]
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 2827.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 2851.
 
- [16 <./plugin_container.png>] [17]
+ [16]
 Chapter 3.
-[18
+[17
 
 ]
 Chapter 4.
-[19
+[18
 
-] [20] (./index.ind [21]
+] [19] (./index.ind [20]
 Underfull \hbox (badness 6461) in paragraph at lines 21--23
 []\T1/txtt/m/n/10 screenshot() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 tis-su-umaps.jup
 yter.TissUUmapsViewer
  []
 
-[22
+[21
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3159.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3159.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3183.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3183.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3159.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3159.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3183.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3183.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: BFE577CDCA027FC1550FAF66CC6E4F0A;8196.
@@ -881,13 +882,13 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3159.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3183.
  ) 
 Here is how much of TeX's memory you used:
- 14062 strings out of 483183
- 201889 string characters out of 5966292
- 630246 words of memory out of 5000000
- 28599 multiletter control sequences out of 15000+600000
+ 14059 strings out of 483183
+ 201844 string characters out of 5966292
+ 642095 words of memory out of 5000000
+ 28597 multiletter control sequences out of 15000+600000
  586876 words of font info for 67 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,13n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -901,10 +902,10 @@ usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/ty
 pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on index.pdf (24 pages, 248605 bytes).
+Output written on index.pdf (23 pages, 248814 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
  546 words of extra memory for PDF output out of 10000 (max. 10000000)
 

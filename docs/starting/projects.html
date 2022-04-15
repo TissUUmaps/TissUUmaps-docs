@@ -210,53 +210,39 @@
 <col style="width: 25%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>type</p></td>
+<tr class="row-odd"><td colspan="4"><p>TODO. Required properties are shown in <strong>bold</strong> text</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td colspan="3"><p><em>object</em></p></td>
 </tr>
-<tr class="row-even"><td colspan="4"><p>properties</p></td>
+<tr class="row-odd"><td colspan="4"><p>properties</p></td>
 </tr>
-<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p>filename</p></li>
 </ul>
 </td>
 <td colspan="3"><p>Name of the project</p></td>
 </tr>
-<tr class="row-even"><td><p>type</p></td>
+<tr class="row-odd"><td><p>type</p></td>
 <td colspan="2"><p><em>string</em></p></td>
 </tr>
-<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>layers</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td colspan="2"><p><em>array</em></p></td>
 </tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#layer">Layer</a></p></td>
 </tr>
-<tr class="row-even"><td rowspan="3"><ul class="simple">
-<li><p>layerOpacities</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>object</em></p></td>
-</tr>
-<tr class="row-odd"><td colspan="3"><p>patternProperties</p></td>
-</tr>
-<tr class="row-even"><td><ul class="simple">
-<li><p>^[0-9]+$</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td><p><em>integer</em></p></td>
-</tr>
 <tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>layerVisibilities</p></li>
+<li><p>layerOpacities</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
@@ -269,10 +255,10 @@
 </ul>
 </td>
 <td><p>type</p></td>
-<td><p><em>boolean</em></p></td>
+<td><p><em>integer</em></p></td>
 </tr>
 <tr class="row-even"><td rowspan="3"><ul class="simple">
-<li><p>layerFilters</p></li>
+<li><p>layerVisibilities</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
@@ -284,97 +270,26 @@
 <li><p>^[0-9]+$</p></li>
 </ul>
 </td>
-<td colspan="2"><p><a class="reference internal" href="#layerfilter">LayerFilter</a></p></td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
 </tr>
 <tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>filters</p></li>
+<li><p>layerFilters</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
-</tr>
-<tr class="row-odd"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td colspan="2"><p><a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a></p></td>
-</tr>
-<tr class="row-even"><td><ul class="simple">
-<li><p>compositeMode</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>string</em></p></td>
-</tr>
-<tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>markerFiles</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
-</tr>
-<tr class="row-odd"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td colspan="2"><p><a class="reference internal" href="#markerfile">MarkerFile</a></p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
-<li><p>regions</p></li>
-</ul>
-</td>
-<td colspan="3"><p>GeoJSON object, see <a class="reference internal" href="regions.html#regions"><span class="std std-ref">Regions section</span></a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
-<li><p>regionFile</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>string</em></p></td>
-</tr>
-<tr class="row-odd"><td rowspan="2"><ul class="simple">
-<li><p>regionFiles</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
-</tr>
-<tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>plugins</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
+<tr class="row-even"><td colspan="3"><p>patternProperties</p></td>
 </tr>
 <tr class="row-odd"><td><ul class="simple">
-<li></li>
+<li><p>^[0-9]+$</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
-<td><p><em>string</em></p></td>
-</tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
-<li><p>hideTabs</p></li>
-</ul>
-</td>
-<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
-</tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td colspan="2"><p><em>boolean</em></p></td>
+<td colspan="2"><p><a class="reference internal" href="#layerfilter">LayerFilter</a></p></td>
 </tr>
 <tr class="row-even"><td rowspan="3"><ul class="simple">
-<li><p>settings</p></li>
+<li><p>filters</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
@@ -383,6 +298,93 @@
 <tr class="row-odd"><td colspan="3"><p>items</p></td>
 </tr>
 <tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>compositeMode</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>markerFiles</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#markerfile">MarkerFile</a></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<li><p>regions</p></li>
+</ul>
+</td>
+<td colspan="3"><p>GeoJSON object, see <a class="reference internal" href="regions.html#regions"><span class="std std-ref">Regions section</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>regionFile</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p>regionFiles</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>plugins</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<li><p>hideTabs</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>settings</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
@@ -399,19 +401,21 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>type</p></td>
+<tr class="row-odd"><td colspan="3"><p>TODO. Required properties are shown in <strong>bold</strong> text</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
-<tr class="row-even"><td colspan="3"><p>properties</p></td>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td><ul class="simple">
 <li><p><strong>name</strong></p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-odd"><td><ul class="simple">
 <li><p><strong>tileSource</strong></p></li>
 </ul>
 </td>
@@ -431,27 +435,29 @@
 <col style="width: 25%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>type</p></td>
+<tr class="row-odd"><td colspan="4"><p>TODO. Required properties are shown in <strong>bold</strong> text</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td colspan="3"><p><em>array</em></p></td>
 </tr>
-<tr class="row-even"><td colspan="4"><p>items</p></td>
+<tr class="row-odd"><td colspan="4"><p>items</p></td>
 </tr>
-<tr class="row-odd"><td rowspan="4"><ul class="simple">
+<tr class="row-even"><td rowspan="4"><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
-<tr class="row-even"><td colspan="3"><p>properties</p></td>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td><ul class="simple">
 <li><p><strong>name</strong></p></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-odd"><td><ul class="simple">
 <li><p><strong>value</strong></p></li>
 </ul>
 </td>
@@ -500,7 +506,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>Description of settings and GUI objects for a marker dataset loaded from CSV file</p></td>
+<tr class="row-odd"><td colspan="3"><p>Description of settings and GUI objects for a marker dataset loaded from CSV file. Required properties are shown in <strong>bold</strong> text.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -606,7 +612,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>Input field values for settings in a marker tab</p></td>
+<tr class="row-odd"><td colspan="3"><p>Input field values for settings in a marker tab. Required properties are shown in <strong>bold</strong> text.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -823,7 +829,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>Radio button state and checkbox state for settings in a marker tab</p></td>
+<tr class="row-odd"><td colspan="3"><p>Radio button state and checkbox state for settings in a marker tab. Required properties are shown in <strong>bold</strong> text.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -1010,7 +1016,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>TODO</p></td>
+<tr class="row-odd"><td colspan="3"><p>TODO. Required properties are shown in <strong>bold</strong> text.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>

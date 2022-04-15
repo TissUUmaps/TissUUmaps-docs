@@ -25,6 +25,7 @@ The tmap format uses json, with the following specifications:
     {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "title": "Tmap specifications",
+        "description": "TODO. Required properties are shown in **bold** text",
         "type": "object",
         "properties": {
             "filename": {
@@ -119,6 +120,7 @@ The tmap format uses json, with the following specifications:
         },
         "definitions": {
             "Layer": {
+                "description": "TODO. Required properties are shown in **bold** text",
                 "type": "object",
                 "properties": {
                     "name": {
@@ -134,6 +136,7 @@ The tmap format uses json, with the following specifications:
                 ]
             },
             "LayerFilter": {
+                "description": "TODO. Required properties are shown in **bold** text",
                 "type": "array",
                 "items": [
                     {
@@ -162,7 +165,7 @@ The tmap format uses json, with the following specifications:
                 "enum": ["interpolateCubehelixDefault", "interpolateRainbow", "interpolateWarm", "interpolateCool", "interpolateViridis", "interpolateMagma", "interpolateInferno", "interpolatePlasma", "interpolateBlues", "interpolateBrBG", "interpolateBuGn", "interpolateBuPu", "interpolateCividis", "interpolateGnBu", "interpolateGreens", "interpolateGreys", "interpolateOrRd", "interpolateOranges", "interpolatePRGn", "interpolatePiYG", "interpolatePuBu", "interpolatePuBuGn", "interpolatePuOr", "interpolatePuRd", "interpolatePurples", "interpolateRdBu", "interpolateRdGy", "interpolateRdPu", "interpolateRdYlBu", "interpolateRdYlGn", "interpolateReds", "interpolateSinebow", "interpolateSpectral", "interpolateTurbo", "interpolateYlGn", "interpolateYlGnBu", "interpolateYlOrBr", "interpolateYlOrRd"]
             },
             "MarkerFile": {
-                "description": "Description of settings and GUI objects for a marker dataset loaded from CSV file",
+                "description": "Description of settings and GUI objects for a marker dataset loaded from CSV file. Required properties are shown in **bold** text.",
                 "type": "object",
                 "properties": {
                     "title": {
@@ -216,7 +219,7 @@ The tmap format uses json, with the following specifications:
                 ]
             },
             "ExpectedHeader": {
-                "description": "Input field values for settings in a marker tab",
+                "description": "Input field values for settings in a marker tab. Required properties are shown in **bold** text.",
                 "type": "object",
                 "properties": {
                     "X": {
@@ -309,7 +312,7 @@ The tmap format uses json, with the following specifications:
                 ]
             },
             "ExpectedRadios": {
-                "description": "Radio button state and checkbox state for settings in a marker tab",
+                "description": "Radio button state and checkbox state for settings in a marker tab. Required properties are shown in **bold** text.",
                 "type": "object",
                 "properties": {
                     "cb_col": {
@@ -386,7 +389,7 @@ The tmap format uses json, with the following specifications:
                 "required": []
             },
             "Setting": {
-                "description": "TODO",
+                "description": "TODO. Required properties are shown in **bold** text.",
                 "type": "object",
                 "properties": {
                     "function": {
