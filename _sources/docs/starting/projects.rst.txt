@@ -243,7 +243,7 @@ The tmap format uses json, with the following specifications:
                         "default": ""
                     },
                     "cb_col": {
-                        "description": "Name of CSV column containing scalar values for color mapping, or hexadecimal colors",
+                        "description": "Name of CSV column containing scalar values for color mapping or hexadecimal RGB colors in format '#ff0000'",
                         "type": "string",
                         "default": "null"
                     },
