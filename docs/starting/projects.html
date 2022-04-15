@@ -344,7 +344,7 @@
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
 <tr class="row-even"><td><p>default</p></td>
-<td colspan="2"></td>
+<td colspan="2"><p>{}</p></td>
 </tr>
 <tr class="row-odd"><td rowspan="2"><ul class="simple">
 <li><p>regionFile</p></li>
@@ -368,8 +368,41 @@
 </tr>
 <tr class="row-odd"><td colspan="3"><p>items</p></td>
 </tr>
-<tr class="row-even"><td rowspan="4"><ul class="simple">
+<tr class="row-even"><td rowspan="5"><ul class="simple">
 <li><p>plugins</p></li>
+</ul>
+</td>
+<td colspan="3"><p>List of plugins to load with the project. See also the <a class="reference internal" href="plugins.html#plugins"><span class="std std-ref">Plugins section</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>hideTabs</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><ul class="simple">
+<li><p>settings</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
@@ -381,37 +414,6 @@
 <tr class="row-even"><td colspan="3"><p>items</p></td>
 </tr>
 <tr class="row-odd"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td><p><em>string</em></p></td>
-</tr>
-<tr class="row-even"><td rowspan="3"><ul class="simple">
-<li><p>hideTabs</p></li>
-</ul>
-</td>
-<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
-</tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td colspan="2"><p><em>boolean</em></p></td>
-</tr>
-<tr class="row-even"><td><p>default</p></td>
-<td colspan="2"><p>false</p></td>
-</tr>
-<tr class="row-odd"><td rowspan="4"><ul class="simple">
-<li><p>settings</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
-<tr class="row-even"><td><p>default</p></td>
-<td colspan="2"><p>[]</p></td>
-</tr>
-<tr class="row-odd"><td colspan="3"><p>items</p></td>
-</tr>
-<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
@@ -783,7 +785,7 @@
 <li><p>pie_dict</p></li>
 </ul>
 </td>
-<td colspan="2"><p>TODO</p></td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: ‘{0: “#ff0000”, 1: “#00ff00”, 2: “#0000ff”}’. If no dictionary is specified, TissUUmaps will use a default color palette instead.</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -855,7 +857,7 @@
 <li><p>tooltip_fmt</p></li>
 </ul>
 </td>
-<td colspan="2"><p>Custom formatting string used for overlay displayed over selected markers; see (TODO).</p></td>
+<td colspan="2"><p>Custom formatting string used for displaying metadata about a selected marker. See <a class="reference external" href="https://github.com/TissUUmaps/TissUUmaps/issues/2">https://github.com/TissUUmaps/TissUUmaps/issues/2</a> for an overview of the grammer and keywords. If no string is specified, TissUUmaps will show default metadata depending on the context.</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>

@@ -938,6 +938,8 @@ type
 default
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+\{\}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1014,7 +1016,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{4}{73}{%
+\hline\sphinxmultirow{5}{73}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1025,7 +1027,15 @@ plugins
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+List of plugins to load with the project. See also the {\hyperref[\detokenize{docs/starting/plugins:plugins}]{\sphinxcrossref{\DUrole{std,std-ref}{Plugins section}}}}.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{73}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -1065,7 +1075,7 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\sphinxmultirow{3}{82}{%
+\hline\sphinxmultirow{3}{83}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1084,7 +1094,7 @@ Hide tabs of markers dataset. Only use when you have a unique marker tab.
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{82}&
+\cline{2-4}\sphinxtablestrut{83}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -1095,7 +1105,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{82}&
+\cline{2-4}\sphinxtablestrut{83}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -1106,7 +1116,7 @@ false
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{4}{88}{%
+\hline\sphinxmultirow{4}{89}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1128,7 +1138,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{88}&
+\cline{2-4}\sphinxtablestrut{89}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -1139,7 +1149,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{88}&\sphinxstartmulticolumn{3}%
+\cline{2-4}\sphinxtablestrut{89}&\sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
 \sphinxAtStartPar
 items
@@ -1147,7 +1157,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{88}&\begin{itemize}
+\cline{2-4}\sphinxtablestrut{89}&\begin{itemize}
 \item {} 
 \end{itemize}
 &\sphinxstartmulticolumn{2}%
@@ -2043,7 +2053,7 @@ pie\_dict
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-TODO
+JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: ‘\{0: “\#ff0000”, 1: “\#00ff00”, 2: “\#0000ff”\}’. If no dictionary is specified, TissUUmaps will use a default color palette instead.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2235,7 +2245,7 @@ tooltip\_fmt
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Custom formatting string used for overlay displayed over selected markers; see (TODO).
+Custom formatting string used for displaying metadata about a selected marker. See \sphinxurl{https://github.com/TissUUmaps/TissUUmaps/issues/2} for an overview of the grammer and keywords. If no string is specified, TissUUmaps will show default metadata depending on the context.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
