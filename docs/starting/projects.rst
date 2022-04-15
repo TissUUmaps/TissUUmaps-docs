@@ -13,7 +13,7 @@ The TMAP file format
 ======================
 
 
-The TMAP format contains image layers, saved markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps applications, but you can also edit the files manually to add or change project's settings.
+The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects' settings, or generate them as exported data from other software for import in TissUUmaps.
 
 The TMAP format uses JSON, with the following specifications:
 
@@ -25,7 +25,7 @@ The TMAP format uses JSON, with the following specifications:
     {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "title": "TMAP project specifications",
-        "description": "TODO. Required properties are shown in **bold** text",
+        "description": "Description of image layers, markers, regions, and settings of a project. Required properties are shown in **bold** text",
         "type": "object",
         "properties": {
             "filename": {
@@ -71,6 +71,7 @@ The TMAP format uses JSON, with the following specifications:
                 ]
             },
             "filters": {
+                "description": "List of filters shown as active filters in the GUI under the Layers tab",
                 "type": "array",
                 "items": [
                     { "$ref": "#definitions/Filter" }
@@ -78,7 +79,9 @@ The TMAP format uses JSON, with the following specifications:
                 "default": "[\"Saturation\", \"Brightness\", \"Contrast\"]"
             },
             "compositeMode": {
-                "type": "string"
+                "description": "Mode defining how image layers will be merged (composited) with each other. Valid string values are \"source-over\" and \"lighter\", which correspond to 'Channels' and 'Composite' in the GUI.",
+                "type": "string",
+                "default": "source-over"
             },
             "markerFiles": { 
                 "type": "array",
@@ -88,8 +91,8 @@ The TMAP format uses JSON, with the following specifications:
                 "default": "[]"
             },
             "regions": {
-                "type": "object",
                 "description": "GeoJSON object, see :ref:`Regions section<regions>`.",
+                "type": "object",
                 "default": "{}"
             },
             "regionFile": {
@@ -124,13 +127,15 @@ The TMAP format uses JSON, with the following specifications:
         },
         "definitions": {
             "Layer": {
-                "description": "TODO. Required properties are shown in **bold** text",
+                "description": "Description of an image layer. Required properties are shown in **bold** text",
                 "type": "object",
                 "properties": {
                     "name": {
+                        "description": "Name of the image layer",
                         "type": "string"
                     },
                     "tileSource": {
+                        "description": "Relative path to an image file in a supported format. See also the :ref:`Images section<images>`.",
                         "type": "string"
                     }
                 },
@@ -403,7 +408,7 @@ The TMAP format uses JSON, with the following specifications:
                 "required": []
             },
             "Setting": {
-                "description": "TODO. Required properties are shown in **bold** text.",
+                "description": "[Add description]. Required properties are shown in **bold** text.",
                 "type": "object",
                 "properties": {
                     "function": {
