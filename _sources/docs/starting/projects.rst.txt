@@ -251,7 +251,7 @@ The tmap format uses json, with the following specifications:
                         "default": "null"
                     },
                     "cb_gr_dict": {
-                        "description": "JSON string specifying a custom dictionary for group colors",
+                        "description": "JSON string specifying a custom dictionary for mapping group keys to group colors. Example: '{\"key1\": \"#ff0000\", \"key2\": \"#00ff00\", \"key3\": \"#0000ff\"}'",
                         "type": "string",
                         "default": ""
                     },
@@ -286,7 +286,7 @@ The tmap format uses json, with the following specifications:
                         "default": "cross"
                     },
                     "shape_gr_dict": {
-                        "description": "JSON string specifying a custom dictionary for group shapes",
+                        "description": "JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: '{\"key1\": \"square\", \"key2\": \"diamond\", \"key3\": \"triangle up\"}'",
                         "type": "string",
                         "default": ""
                     },
