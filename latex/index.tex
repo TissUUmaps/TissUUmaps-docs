@@ -1270,6 +1270,34 @@ interpolateCubehelixDefault, interpolateRainbow, interpolateWarm, interpolateCoo
 \sphinxattableend\end{savenotes}
 
 
+\paragraph{Shape}
+\label{\detokenize{docs/starting/projects:shape}}\label{\detokenize{docs/starting/projects:shape}}
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{2}}
+\sphinxAtStartPar
+TissUUmaps supports most of the marker shapes that are also used by the Napari software, \sphinxurl{https://napari.org}. In addition to the name strings listed below, shapes can also be specified by a corresponding index in range 0\sphinxhyphen{}13.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
+\sphinxAtStartPar
+enum
+&
+\sphinxAtStartPar
+cross, diamond, square, triangle up, star, clobber, disc, hbar, vbar, tailed arrow, triangle down, ring, x, arrow
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
 \paragraph{MarkerFile}
 \label{\detokenize{docs/starting/projects:markerfile}}\label{\detokenize{docs/starting/projects:markerfile}}
 
@@ -1938,7 +1966,7 @@ shape\_col
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column containing a name or an index for marker shape
+Name of CSV column containing a name or an index for marker shape. See also {\hyperref[\detokenize{docs/starting/projects:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}}.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1971,7 +1999,7 @@ shape\_fixed
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of a single fixed shape to be used for all markers
+Name or index of a single fixed shape to be used for all markers. See {\hyperref[\detokenize{docs/starting/projects:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}} for valid string values.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2004,7 +2032,7 @@ shape\_gr\_dict
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ‘\{“key1”: “square”, “key2”: “diamond”, “key3”: “triangle up”\}’
+JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ‘\{“key1”: “square”, “key2”: “diamond”, “key3”: “triangle up”\}’. See also {\hyperref[\detokenize{docs/starting/projects:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}}.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
