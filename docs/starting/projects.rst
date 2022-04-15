@@ -75,7 +75,7 @@ The tmap format uses json, with the following specifications:
                 "items": [
                     { "$ref": "#definitions/Filter" }
                 ],
-                "default": "[]"
+                "default": "[\"Saturation\", \"Brightness\", \"Contrast\"]"
             },
             "compositeMode": {
                 "type": "string"
@@ -140,14 +140,18 @@ The tmap format uses json, with the following specifications:
                 ]
             },
             "LayerFilter": {
-                "description": "TODO. Required properties are shown in **bold** text",
+                "description": "Description of an image filter to be applied to the pixels in an image layer. Required properties are shown in **bold** text",
                 "type": "array",
                 "items": [
                     {
                     "type": "object",
                     "properties": {
-                        "name": { "$ref": "#definitions/Filter" },
+                        "name": {
+                            "description": "Filter name. See :ref:`Filter` for more details.",
+                            "type": "string"
+                        },
                         "value": {
+                            "description": "Filter parameter. See :ref:`Filter` for more details.",
                             "type": "string"
                         }
                     },
@@ -159,6 +163,7 @@ The tmap format uses json, with the following specifications:
                 ]
             },
             "Filter": {
+                "description": "TissUUmaps supports most filters available in OpenSeadragon via the https://github.com/usnistgov/OpenSeadragonFiltering plugin.",
                 "enum": ["Color","Brightness", "Exposure", "Hue", 
                         "Contrast", "Vibrance", "Noise", 
                         "Saturation","Gamma","Invert","Greyscale",
