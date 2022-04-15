@@ -90,7 +90,7 @@ The tmap format uses json, with the following specifications:
             "regions": {
                 "type": "object",
                 "description": "GeoJSON object, see :ref:`Regions section<regions>`.",
-                "default": ""
+                "default": "{}"
             },
             "regionFile": {
                 "type": "string",
@@ -102,6 +102,7 @@ The tmap format uses json, with the following specifications:
                 "default": "[]"
             },
             "plugins": {
+                "description": "List of plugins to load with the project. See also the :ref:`Plugins section<plugins>`.",
                 "type": "array",
                 "items": [
                     { "type": "string" }
@@ -279,7 +280,7 @@ The tmap format uses json, with the following specifications:
                         "default": "null"
                     },
                     "pie_dict": {
-                        "description": "TODO",
+                        "description": "JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: '{0: \"#ff0000\", 1: \"#00ff00\", 2: \"#0000ff\"}'. If no dictionary is specified, TissUUmaps will use a default color palette instead.",
                         "type": "string",
                         "default": ""
                     },
@@ -309,7 +310,7 @@ The tmap format uses json, with the following specifications:
                         "default": "1"
                     },
                     "tooltip_fmt": {
-                        "description": "Custom formatting string used for overlay displayed over selected markers; see (TODO).",
+                        "description": "Custom formatting string used for displaying metadata about a selected marker. See https://github.com/TissUUmaps/TissUUmaps/issues/2 for an overview of the grammer and keywords. If no string is specified, TissUUmaps will show default metadata depending on the context.",
                         "type": "string",
                         "default": ""
                     }
