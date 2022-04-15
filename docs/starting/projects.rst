@@ -36,7 +36,8 @@ The tmap format uses json, with the following specifications:
                 "type": "array",
                 "items": [
                     { "$ref" : "#/definitions/Layer"}
-                ]
+                ],
+                "default": "[]"
             },
             "layerOpacities": {
                 "type": "object",
@@ -73,7 +74,8 @@ The tmap format uses json, with the following specifications:
                 "type": "array",
                 "items": [
                     { "$ref": "#definitions/Filter" }
-                ]
+                ],
+                "default": "[]"
             },
             "compositeMode": {
                 "type": "string"
@@ -81,41 +83,42 @@ The tmap format uses json, with the following specifications:
             "markerFiles": { 
                 "type": "array",
                 "items": [
-                    {
-                    "$ref": "#/definitions/MarkerFile"
-                    }
-                ]
+                    { "$ref": "#/definitions/MarkerFile" }
+                ],
+                "default": "[]"
             },
             "regions": {
                 "type": "object",
-                "description": "GeoJSON object, see :ref:`Regions section<regions>`."
+                "description": "GeoJSON object, see :ref:`Regions section<regions>`.",
+                "default": ""
             },
             "regionFile": {
-                "type": "string"
+                "type": "string",
+                "default": ""
             },
             "regionFiles": {
                 "type": "array",
-                "items": {}
+                "items": {},
+                "default": "[]"
             },
             "plugins": {
                 "type": "array",
                 "items": [
-                    {
-                    "type": "string"
-                    }
-                ]
+                    { "type": "string" }
+                ],
+                "default": "[]"
             },
             "hideTabs": {
                 "description": "Hide tabs of markers dataset. Only use when you have a unique marker tab.",
-                "type": "boolean"
+                "type": "boolean",
+                "default": "false"
             },
             "settings": { 
                 "type": "array",
                 "items": [
-                    {
-                    "$ref": "#/definitions/Setting"
-                    }
-                ]
+                    { "$ref": "#/definitions/Setting" }
+                ],
+                "default": "[]"
             }
         },
         "definitions": {
@@ -415,6 +418,7 @@ The tmap format uses json, with the following specifications:
             }
         },
         "required": [
+            "filename"
         ]
     }
 
