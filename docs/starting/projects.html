@@ -107,9 +107,9 @@
 <li class="toctree-l2"><a class="reference internal" href="regions.html">Regions</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Projects</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#saving-and-loading-projects">Saving and loading projects</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#the-tmap-file-format">The tmap file format</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tmap-specifications">Tmap specifications</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-of-tmap-file">Example of tmap file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-tmap-file-format">The TMAP file format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tmap-project-specifications">TMAP project specifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-of-a-tmap-file">Example of a .tmap file</a></li>
 </ul>
 </li>
 </ul>
@@ -197,11 +197,11 @@
 <h2>Saving and loading projects<a class="headerlink" href="#saving-and-loading-projects" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="the-tmap-file-format">
-<h2>The tmap file format<a class="headerlink" href="#the-tmap-file-format" title="Permalink to this headline">¶</a></h2>
-<p>The tmap format contains image layers, saved markers, regions, and settings. It is highly recommended to create tmap files by saving projects from TissUUmaps applications, but you can also edit the files manually to add or change project’s settings.</p>
-<p>The tmap format uses json, with the following specifications:</p>
-<div class="section" id="tmap-specifications">
-<span id="tmap-specifications"></span><h3>Tmap specifications<a class="headerlink" href="#tmap-specifications" title="Permalink to this headline">¶</a></h3>
+<h2>The TMAP file format<a class="headerlink" href="#the-tmap-file-format" title="Permalink to this headline">¶</a></h2>
+<p>The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects’ settings, or generate them as exported data from other software for import in TissUUmaps.</p>
+<p>The TMAP format uses JSON, with the following specifications:</p>
+<div class="section" id="tmap-project-specifications">
+<span id="tmap-project-specifications"></span><h3>TMAP project specifications<a class="headerlink" href="#tmap-project-specifications" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 25%" />
@@ -210,7 +210,7 @@
 <col style="width: 25%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="4"><p>TODO. Required properties are shown in <strong>bold</strong> text</p></td>
+<tr class="row-odd"><td colspan="4"><p>Description of image layers, markers, regions, and settings of a project. Required properties are shown in <strong>bold</strong> text</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="3"><p><em>object</em></p></td>
@@ -291,92 +291,45 @@
 </td>
 <td colspan="2"><p><a class="reference internal" href="#layerfilter">LayerFilter</a></p></td>
 </tr>
-<tr class="row-odd"><td rowspan="4"><ul class="simple">
+<tr class="row-odd"><td rowspan="5"><ul class="simple">
 <li><p>filters</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="3"><p>List of filters shown as active filters in the GUI under the Layers tab</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>array</em></p></td>
 </tr>
-<tr class="row-even"><td><p>default</p></td>
+<tr class="row-odd"><td><p>default</p></td>
 <td colspan="2"><p>[“Saturation”, “Brightness”, “Contrast”]</p></td>
 </tr>
-<tr class="row-odd"><td colspan="3"><p>items</p></td>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-odd"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>compositeMode</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="3"><p>Mode defining how image layers will be merged (composited) with each other. Valid string values are “source-over” and “lighter”, which correspond to ‘Channels’ and ‘Composite’ in the GUI.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td colspan="2"><p><em>string</em></p></td>
 </tr>
-<tr class="row-even"><td rowspan="4"><ul class="simple">
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>source-over</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
 <li><p>markerFiles</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td colspan="2"><p><em>array</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
-<td colspan="2"><p>[]</p></td>
-</tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
-</tr>
-<tr class="row-odd"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td colspan="2"><p><a class="reference internal" href="#markerfile">MarkerFile</a></p></td>
-</tr>
-<tr class="row-even"><td rowspan="3"><ul class="simple">
-<li><p>regions</p></li>
-</ul>
-</td>
-<td colspan="3"><p>GeoJSON object, see <a class="reference internal" href="regions.html#regions"><span class="std std-ref">Regions section</span></a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td colspan="2"><p><em>object</em></p></td>
-</tr>
-<tr class="row-even"><td><p>default</p></td>
-<td colspan="2"><p>{}</p></td>
-</tr>
-<tr class="row-odd"><td rowspan="2"><ul class="simple">
-<li><p>regionFile</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>string</em></p></td>
-</tr>
-<tr class="row-even"><td><p>default</p></td>
-<td colspan="2"></td>
-</tr>
-<tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>regionFiles</p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
-<tr class="row-even"><td><p>default</p></td>
-<td colspan="2"><p>[]</p></td>
-</tr>
-<tr class="row-odd"><td colspan="3"><p>items</p></td>
-</tr>
-<tr class="row-even"><td rowspan="5"><ul class="simple">
-<li><p>plugins</p></li>
-</ul>
-</td>
-<td colspan="3"><p>List of plugins to load with the project. See also the <a class="reference internal" href="plugins.html#plugins"><span class="std std-ref">Plugins section</span></a>.</p></td>
-</tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td colspan="2"><p><em>array</em></p></td>
-</tr>
 <tr class="row-even"><td><p>default</p></td>
 <td colspan="2"><p>[]</p></td>
 </tr>
@@ -386,23 +339,32 @@
 <li></li>
 </ul>
 </td>
-<td><p>type</p></td>
-<td><p><em>string</em></p></td>
+<td colspan="2"><p><a class="reference internal" href="#markerfile">MarkerFile</a></p></td>
 </tr>
 <tr class="row-odd"><td rowspan="3"><ul class="simple">
-<li><p>hideTabs</p></li>
+<li><p>regions</p></li>
 </ul>
 </td>
-<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
+<td colspan="3"><p>GeoJSON object, see <a class="reference internal" href="regions.html#regions"><span class="std std-ref">Regions section</span></a>.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
-<td colspan="2"><p><em>boolean</em></p></td>
+<td colspan="2"><p><em>object</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>default</p></td>
-<td colspan="2"><p>false</p></td>
+<td colspan="2"><p>{}</p></td>
 </tr>
-<tr class="row-even"><td rowspan="4"><ul class="simple">
-<li><p>settings</p></li>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p>regionFile</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>regionFiles</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
@@ -413,7 +375,52 @@
 </tr>
 <tr class="row-even"><td colspan="3"><p>items</p></td>
 </tr>
+<tr class="row-odd"><td rowspan="5"><ul class="simple">
+<li><p>plugins</p></li>
+</ul>
+</td>
+<td colspan="3"><p>List of plugins to load with the project. See also the <a class="reference internal" href="plugins.html#plugins"><span class="std std-ref">Plugins section</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
+</tr>
 <tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>hideTabs</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
+<li><p>settings</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>
@@ -430,25 +437,29 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>TODO. Required properties are shown in <strong>bold</strong> text</p></td>
+<tr class="row-odd"><td colspan="3"><p>Description of an image layer. Required properties are shown in <strong>bold</strong> text</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>name</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Name of the image layer</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>tileSource</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Relative path to an image file in a supported format. See also the <a class="reference internal" href="images.html#images"><span class="std std-ref">Images section</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
 </tbody>
@@ -525,7 +536,7 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="2"><p>TissUUmaps supports most of the color scales available in the D3.js library. See <a class="reference external" href="https://github.com/d3/d3-scale-chromatic">https://github.com/d3/d3-scale-chromatic</a> for reference. Note: the colors for ‘interpolateRainbow’ is currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.</p></td>
+<tr class="row-odd"><td colspan="2"><p>TissUUmaps supports most of the color scales available in the D3.js library. See <a class="reference external" href="https://github.com/d3/d3-scale-chromatic">https://github.com/d3/d3-scale-chromatic</a> for reference. Note: the colors for ‘interpolateRainbow’ are currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.</p></td>
 </tr>
 <tr class="row-even"><td><p>enum</p></td>
 <td><p>interpolateCubehelixDefault, interpolateRainbow, interpolateWarm, interpolateCool, interpolateViridis, interpolateMagma, interpolateInferno, interpolatePlasma, interpolateBlues, interpolateBrBG, interpolateBuGn, interpolateBuPu, interpolateCividis, interpolateGnBu, interpolateGreens, interpolateGreys, interpolateOrRd, interpolateOranges, interpolatePRGn, interpolatePiYG, interpolatePuBu, interpolatePuBuGn, interpolatePuOr, interpolatePuRd, interpolatePurples, interpolateRdBu, interpolateRdGy, interpolateRdPu, interpolateRdYlBu, interpolateRdYlGn, interpolateReds, interpolateSinebow, interpolateSpectral, interpolateTurbo, interpolateYlGn, interpolateYlGnBu, interpolateYlOrBr, interpolateYlOrRd</p></td>
@@ -1071,7 +1082,7 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>TODO. Required properties are shown in <strong>bold</strong> text.</p></td>
+<tr class="row-odd"><td colspan="3"><p>[Add description]. Required properties are shown in <strong>bold</strong> text.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
@@ -1103,8 +1114,8 @@
 </table>
 </div>
 </div>
-<div class="section" id="example-of-tmap-file">
-<h3>Example of tmap file<a class="headerlink" href="#example-of-tmap-file" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="example-of-a-tmap-file">
+<h3>Example of a .tmap file<a class="headerlink" href="#example-of-a-tmap-file" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TissUUmaps_Example.tmap&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>

@@ -38,8 +38,8 @@
 \contentsline {subsection}{\numberline {2.3.5}Export Regions}{7}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}Projects}{7}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Saving and loading projects}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}The tmap file format}{7}{subsection.2.4.2}%
-\contentsline {subsubsection}{Tmap specifications}{8}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {2.4.2}The TMAP file format}{7}{subsection.2.4.2}%
+\contentsline {subsubsection}{TMAP project specifications}{8}{subsubsection*.7}%
 \contentsline {paragraph}{Layer}{9}{paragraph*.8}%
 \contentsline {paragraph}{LayerFilter}{9}{paragraph*.9}%
 \contentsline {paragraph}{Filter}{10}{paragraph*.10}%
@@ -49,7 +49,7 @@
 \contentsline {paragraph}{ExpectedHeader}{11}{paragraph*.14}%
 \contentsline {paragraph}{ExpectedRadios}{13}{paragraph*.15}%
 \contentsline {paragraph}{Setting}{14}{paragraph*.16}%
-\contentsline {subsubsection}{Example of tmap file}{14}{subsubsection*.17}%
+\contentsline {subsubsection}{Example of a .tmap file}{14}{subsubsection*.17}%
 \contentsline {section}{\numberline {2.5}Exporting screenshots}{16}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Plugins}{16}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Load plugins}{16}{subsection.2.6.1}%

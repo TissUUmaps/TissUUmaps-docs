@@ -515,17 +515,17 @@ The coordinate system must be the same as the image and marker coordinate system
 \subsection{Saving and loading projects}
 \label{\detokenize{docs/starting/projects:saving-and-loading-projects}}
 
-\subsection{The tmap file format}
+\subsection{The TMAP file format}
 \label{\detokenize{docs/starting/projects:the-tmap-file-format}}
 \sphinxAtStartPar
-The tmap format contains image layers, saved markers, regions, and settings. It is highly recommended to create tmap files by saving projects from TissUUmaps applications, but you can also edit the files manually to add or change project’s settings.
+The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects’ settings, or generate them as exported data from other software for import in TissUUmaps.
 
 \sphinxAtStartPar
-The tmap format uses json, with the following specifications:
+The TMAP format uses JSON, with the following specifications:
 
 
-\subsubsection{Tmap specifications}
-\label{\detokenize{docs/starting/projects:tmap-specifications}}\label{\detokenize{docs/starting/projects:tmap-specifications}}
+\subsubsection{TMAP project specifications}
+\label{\detokenize{docs/starting/projects:tmap-project-specifications}}\label{\detokenize{docs/starting/projects:tmap-project-specifications}}
 
 \begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{4}{\X{1}{4}|}}
 \hline
@@ -546,7 +546,7 @@ The tmap format uses json, with the following specifications:
 \sphinxstartmulticolumn{4}%
 \begin{varwidth}[t]{\sphinxcolwidth{4}{4}}
 \sphinxAtStartPar
-TODO. Required properties are shown in \sphinxstylestrong{bold} text
+Description of image layers, markers, regions, and settings of a project. Required properties are shown in \sphinxstylestrong{bold} text
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -782,7 +782,7 @@ patternProperties
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{4}{37}{%
+\hline\sphinxmultirow{5}{37}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -793,7 +793,15 @@ filters
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 }%
-&
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+List of filters shown as active filters in the GUI under the Layers tab
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{37}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -834,13 +842,26 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{3}{46}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 compositeMode
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+\sphinxAtStartPar
+Mode defining how image layers will be merged (composited) with each other. Valid string values are “source\sphinxhyphen{}over” and “lighter”, which correspond to ‘Channels’ and ‘Composite’ in the GUI.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-4}\sphinxtablestrut{46}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -851,7 +872,18 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{4}{48}{%
+\cline{2-4}\sphinxtablestrut{46}&
+\sphinxAtStartPar
+default
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\sphinxAtStartPar
+source\sphinxhyphen{}over
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline\sphinxmultirow{4}{52}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -873,7 +905,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{48}&
+\cline{2-4}\sphinxtablestrut{52}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -884,7 +916,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{48}&\sphinxstartmulticolumn{3}%
+\cline{2-4}\sphinxtablestrut{52}&\sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
 \sphinxAtStartPar
 items
@@ -892,7 +924,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{48}&\begin{itemize}
+\cline{2-4}\sphinxtablestrut{52}&\begin{itemize}
 \item {} 
 \end{itemize}
 &\sphinxstartmulticolumn{2}%
@@ -903,7 +935,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{3}{56}{%
+\hline\sphinxmultirow{3}{60}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -922,7 +954,7 @@ GeoJSON object, see {\hyperref[\detokenize{docs/starting/regions:regions}]{\sphi
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{56}&
+\cline{2-4}\sphinxtablestrut{60}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -933,7 +965,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{56}&
+\cline{2-4}\sphinxtablestrut{60}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -944,7 +976,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{2}{62}{%
+\hline\sphinxmultirow{2}{66}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -966,7 +998,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{62}&
+\cline{2-4}\sphinxtablestrut{66}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -975,7 +1007,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{3}{67}{%
+\hline\sphinxmultirow{3}{71}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -997,7 +1029,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{67}&
+\cline{2-4}\sphinxtablestrut{71}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -1008,7 +1040,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{67}&\sphinxstartmulticolumn{3}%
+\cline{2-4}\sphinxtablestrut{71}&\sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
 \sphinxAtStartPar
 items
@@ -1016,7 +1048,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{5}{73}{%
+\hline\sphinxmultirow{5}{77}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1035,7 +1067,7 @@ List of plugins to load with the project. See also the {\hyperref[\detokenize{do
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{73}&
+\cline{2-4}\sphinxtablestrut{77}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -1046,7 +1078,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{73}&
+\cline{2-4}\sphinxtablestrut{77}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -1057,7 +1089,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{73}&\sphinxstartmulticolumn{3}%
+\cline{2-4}\sphinxtablestrut{77}&\sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
 \sphinxAtStartPar
 items
@@ -1065,7 +1097,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{73}&\begin{itemize}
+\cline{2-4}\sphinxtablestrut{77}&\begin{itemize}
 \item {} 
 \end{itemize}
 &
@@ -1075,7 +1107,7 @@ type
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\sphinxmultirow{3}{83}{%
+\hline\sphinxmultirow{3}{87}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1094,7 +1126,7 @@ Hide tabs of markers dataset. Only use when you have a unique marker tab.
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{83}&
+\cline{2-4}\sphinxtablestrut{87}&
 \sphinxAtStartPar
 type
 &\sphinxstartmulticolumn{2}%
@@ -1105,7 +1137,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{83}&
+\cline{2-4}\sphinxtablestrut{87}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -1116,7 +1148,7 @@ false
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\sphinxmultirow{4}{89}{%
+\hline\sphinxmultirow{4}{93}{%
 \begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
 \begin{itemize}
 \item {} 
@@ -1138,7 +1170,7 @@ type
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{89}&
+\cline{2-4}\sphinxtablestrut{93}&
 \sphinxAtStartPar
 default
 &\sphinxstartmulticolumn{2}%
@@ -1149,7 +1181,7 @@ default
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{89}&\sphinxstartmulticolumn{3}%
+\cline{2-4}\sphinxtablestrut{93}&\sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
 \sphinxAtStartPar
 items
@@ -1157,7 +1189,7 @@ items
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\cline{2-4}\sphinxtablestrut{89}&\begin{itemize}
+\cline{2-4}\sphinxtablestrut{93}&\begin{itemize}
 \item {} 
 \end{itemize}
 &\sphinxstartmulticolumn{2}%
@@ -1182,7 +1214,7 @@ items
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
-TODO. Required properties are shown in \sphinxstylestrong{bold} text
+Description of an image layer. Required properties are shown in \sphinxstylestrong{bold} text
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1206,26 +1238,52 @@ properties
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{2}{5}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{name}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+Name of the image layer
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{5}&
 \sphinxAtStartPar
 type
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{string}
 \\
-\hline\begin{itemize}
+\hline\sphinxmultirow{2}{9}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{3}}
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 \sphinxstylestrong{tileSource}
 
 \end{itemize}
-&
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxAtStartPar
+Relative path to an image file in a supported format. See also the {\hyperref[\detokenize{docs/starting/images:images}]{\sphinxcrossref{\DUrole{std,std-ref}{Images section}}}}.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\cline{2-3}\sphinxtablestrut{9}&
 \sphinxAtStartPar
 type
 &
@@ -1395,7 +1453,7 @@ Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, 
 \sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{2}}
 \sphinxAtStartPar
-TissUUmaps supports most of the color scales available in the D3.js library. See \sphinxurl{https://github.com/d3/d3-scale-chromatic} for reference. Note: the colors for ‘interpolateRainbow’ is currently overridden by a custom Turbo\sphinxhyphen{}like color scale in version 3.0.x of TissUUmaps.
+TissUUmaps supports most of the color scales available in the D3.js library. See \sphinxurl{https://github.com/d3/d3-scale-chromatic} for reference. Note: the colors for ‘interpolateRainbow’ are currently overridden by a custom Turbo\sphinxhyphen{}like color scale in version 3.0.x of TissUUmaps.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2820,7 +2878,7 @@ false
 \sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{3}}
 \sphinxAtStartPar
-TODO. Required properties are shown in \sphinxstylestrong{bold} text.
+{[}Add description{]}. Required properties are shown in \sphinxstylestrong{bold} text.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2889,8 +2947,8 @@ type
 \sphinxattableend\end{savenotes}
 
 
-\subsubsection{Example of tmap file}
-\label{\detokenize{docs/starting/projects:example-of-tmap-file}}
+\subsubsection{Example of a .tmap file}
+\label{\detokenize{docs/starting/projects:example-of-a-tmap-file}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{p}{\PYGZob{}}
 \PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}filename\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}TissUUmaps\PYGZus{}Example.tmap\PYGZdq{}}\PYG{p}{,}
