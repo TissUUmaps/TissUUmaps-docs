@@ -285,7 +285,7 @@ The TMAP format uses JSON, with the following specifications:
                         "default": "1"
                     },
                     "pie_col": {
-                        "description": "Name of CSV column containing data for pie chart sectors",
+                        "description": "Name of CSV column containing data for pie chart sectors. TissUUmaps expects labels and numerical values for sectors to be separated by ':' characters in the CSV column data.",
                         "type": "string",
                         "default": "null"
                     },
