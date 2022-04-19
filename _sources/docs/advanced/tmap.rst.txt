@@ -1,17 +1,6 @@
-************
-Projects
-************
-
-==============================
-Saving and loading projects
-==============================
-
-
-
-======================
+************************
 The TMAP file format
-======================
-
+************************
 
 The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects' settings, or generate them as exported data from other software for import in TissUUmaps.
 
@@ -115,7 +104,7 @@ The TMAP format uses JSON, with the following specifications:
                 ]
             },
             "rotate": {
-                "description": "Angle of rotation of the view in degrees. Only 0, 90, 180 and 270 degrees are supported.",
+                "description": "Angle of rotation of the view in degrees. Only multiples of 90 degrees are supported.",
                 "type": "integer",
                 "default": "0"
             },

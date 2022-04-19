@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.19)  19 APR 2022 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.19)  19 APR 2022 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,35 +644,35 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 )
 (./index.aux
 
-LaTeX Warning: Label `docs/starting/projects:tmap-project-specifications' multi
-ply defined.
+LaTeX Warning: Label `docs/advanced/tmap:tmap-project-specifications' multiply 
+defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:layer' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:layer' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:layerfilter' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:layerfilter' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:filter' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:filter' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:colorscale' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:colorscale' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:shape' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:shape' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:markerfile' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:markerfile' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:expectedheader' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:expectedheader' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:expectedradios' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:expectedradios' multiply defined.
 
 
-LaTeX Warning: Label `docs/starting/projects:setting' multiply defined.
+LaTeX Warning: Label `docs/advanced/tmap:setting' multiply defined.
 
 )
 \openout1 = `index.aux'.
@@ -827,76 +827,73 @@ File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 Chapter 2.
 [6
 
-] [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 1676--1676
+] [7]
+<plugin_container.png, id=364, 479.54156pt x 170.13562pt>
+File: plugin_container.png Graphic file (type png)
+<use plugin_container.png>
+Package pdftex.def Info: plugin_container.png  used on input line 554.
+(pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 560.
+LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 565.
+ [8 <./plugin_container.png>] [9]
+Chapter 3.
+[10
+
+]
+Chapter 4.
+[11
+
+] [12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 2054--2054
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
 
-[10] [11] [12] [13]
-LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 3222.
-
- [14]
-Underfull \vbox (badness 10000) detected at line 3310
+[15] [16] [17] [18] [19] [20]
+Underfull \vbox (badness 10000) detected at line 3688
  []
 
 
-Underfull \vbox (badness 10000) detected at line 3310
+Underfull \vbox (badness 10000) detected at line 3688
  []
 
-[15] [16]
-<plugin_container.png, id=432, 479.54156pt x 170.13562pt>
-File: plugin_container.png Graphic file (type png)
-<use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 3344.
-(pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
-LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 3355.
-
- [17 <./plugin_container.png>]
-Chapter 3.
-[18
-
-]
-Chapter 4.
-[19
-
-] [20] (./index.ind [21]
+[21] (./index.ind [22]
 Underfull \hbox (badness 6461) in paragraph at lines 21--23
 []\T1/txtt/m/n/10 screenshot() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 tis-su-umaps.jup
 yter.TissUUmapsViewer
  []
 
-[22
+[23
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3687.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3687.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3694.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3694.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3687.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3687.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3694.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3694.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 62EB2447571363B427500EC95EBD7FF1;8346.
+(rerunfilecheck)             Checksum: 686EDABECA292C812770949212B2313C;8364.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3687.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3694.
  ) 
 Here is how much of TeX's memory you used:
  14070 strings out of 483183
- 202064 string characters out of 5966292
- 646255 words of memory out of 5000000
- 28606 multiletter control sequences out of 15000+600000
+ 202073 string characters out of 5966292
+ 642680 words of memory out of 5000000
+ 28605 multiletter control sequences out of 15000+600000
  586876 words of font info for 67 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,13n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texmf/fonts/
-enc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/e
+nc/dvips/tex-gyre/q-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy5.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/shar
 e/texmf/fonts/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/fonts/type1/pub
@@ -905,10 +902,10 @@ usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/ty
 pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on index.pdf (24 pages, 255571 bytes).
+Output written on index.pdf (25 pages, 256387 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 505 compressed objects within 6 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 565 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 113 named destinations out of 1000 (max. 500000)
  554 words of extra memory for PDF output out of 10000 (max. 10000000)
 

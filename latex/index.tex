@@ -78,7 +78,7 @@
 
 
 \sphinxAtStartPar
-This page hosts the documentation for TissUUmaps 3.0. You can find a pdf version of thie documentation \sphinxhref{https://tissuumaps.github.io/TissUUmaps-docs/index.pdf}{here}.
+This page hosts the documentation for TissUUmaps 3.0. You can find a pdf version of this documentation \sphinxhref{https://tissuumaps.github.io/TissUUmaps-docs/index.pdf\%3E}{here}.
 
 \sphinxAtStartPar
 For more information on the TissUUmaps project, including video tutorials and demos, visit our website: \sphinxurl{https://tissuumaps.github.io}.
@@ -515,8 +515,386 @@ The coordinate system must be the same as the image and marker coordinate system
 \subsection{Saving and loading projects}
 \label{\detokenize{docs/starting/projects:saving-and-loading-projects}}
 
-\subsection{The TMAP file format}
-\label{\detokenize{docs/starting/projects:the-tmap-file-format}}
+
+\sphinxAtStartPar
+For more information on the tmap file format and specifications, see {\hyperref[\detokenize{docs/advanced/tmap:the-tmap-file-format}]{\sphinxcrossref{\DUrole{std,std-ref}{The TMAP file format}}}}.
+
+\sphinxstepscope
+
+
+\section{Exporting screenshots}
+\label{\detokenize{docs/starting/capture:exporting-screenshots}}\label{\detokenize{docs/starting/capture::doc}}
+\sphinxAtStartPar
+TissUUmaps allows high resolution capture of the image viewport. Go to \sphinxcode{\sphinxupquote{Menu \textgreater{} File \textgreater{} Capture viewport}} and chose a zoom factor for export (1 = screen resolution).
+
+\sphinxAtStartPar
+The screen capture will contain all filtered layers, markers, and regions. Note that legends will not be part of the export and must be added manually.
+
+\sphinxstepscope
+
+
+\section{Plugins}
+\label{\detokenize{docs/starting/plugins:plugins}}\label{\detokenize{docs/starting/plugins::doc}}
+
+\subsection{Load plugins}
+\label{\detokenize{docs/starting/plugins:load-plugins}}
+
+\subsection{Make your own plugin}
+\label{\detokenize{docs/starting/plugins:make-your-own-plugin}}
+\sphinxAtStartPar
+Download the Plugin Template python and javascript files from the \sphinxhref{https://tissuumaps.github.io/TissUUmaps/plugins/}{Plugin Update Site} and put both files in your local folder \sphinxcode{\sphinxupquote{\$USER\_PATH/.tissuumaps/plugins/}}. You can then change the plugin name and add your own options and functions.
+
+
+\subsubsection{Javascript file}
+\label{\detokenize{docs/starting/plugins:javascript-file}}
+\sphinxAtStartPar
+When loading a plugin, the function \sphinxcode{\sphinxupquote{PluginName.init(container)}} will be called. The \sphinxcode{\sphinxupquote{container}} is an html Element that will be added to the plugin menu. Use this element to add options and texts related to your plugin.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{plugin_container}.png}
+
+\sphinxAtStartPar
+Here is a minimal example of plugin:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{var} \PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{;}
+\PYG{n+nx}{Plugin\PYGZus{}template} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{name}\PYG{o}{:}\PYG{l+s+s2}{\PYGZdq{}Template Plugin\PYGZdq{}}
+\PYG{p}{\PYGZcb{}}
+ 
+\PYG{c+cm}{/**}
+\PYG{c+cm}{ * This method is called when the document is loaded.}
+\PYG{c+cm}{ * The container element is a div where the plugin options will be displayed. */}
+\PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{.}\PYG{n+nx}{init} \PYG{o}{=} \PYG{k+kd}{function} \PYG{p}{(}\PYG{n+nx}{container}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{n+nx}{container}\PYG{p}{.}\PYG{n+nx}{innerHTML} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Hello world\PYGZdq{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+You can access the TissUUmaps javascript API \sphinxhref{https://tissuumaps.github.io/TissUUmapsCore/}{here}.
+
+
+\subsubsection{Python file}
+\label{\detokenize{docs/starting/plugins:python-file}}
+\sphinxAtStartPar
+You only need to use the Python file if your plugin needs to do processing on the server side. For pure javascript plugins, you can leave this file empty.
+
+\sphinxAtStartPar
+The python file should implement the class \sphinxcode{\sphinxupquote{Plugin}}:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{class} \PYG{n+nc}{Plugin} \PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{app}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{app} \PYG{o}{=} \PYG{n}{app}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The \sphinxcode{\sphinxupquote{app}} object being the flask application running the TissUUmaps server.
+
+\sphinxAtStartPar
+You can call a Python method inside the \sphinxcode{\sphinxupquote{Plugin}} class from Javascript using Ajax and the Python API. The endpoint for a method \sphinxcode{\sphinxupquote{methodName}} of the plugin \sphinxcode{\sphinxupquote{PluginName}} will be: \sphinxcode{\sphinxupquote{/plugins/methodName/functionName}}. Data can be transmitted through Ajax as stringified JSON, and will be available as a parameter inside the method.
+
+\sphinxAtStartPar
+See the Plugin Template for a working example of Javascript / Python communication.
+
+\sphinxstepscope
+
+
+\chapter{Sharing projects}
+\label{\detokenize{docs/sharing/index:sharing-projects}}\label{\detokenize{docs/sharing/index::doc}}
+\sphinxstepscope
+
+
+\section{Apache server}
+\label{\detokenize{docs/sharing/apache:apache-server}}\label{\detokenize{docs/sharing/apache::doc}}
+\sphinxAtStartPar
+TissUUmaps projects can be exported into static webpages, that can be uploaded to any Apache server.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Save your project from TissUUmaps (\sphinxcode{\sphinxupquote{menu \textgreater{} File \textgreater{} Save project}})
+
+\item {} 
+\sphinxAtStartPar
+Export to static page (\sphinxcode{\sphinxupquote{menu \textgreater{} File \textgreater{} Export to static webpage}})
+
+\item {} 
+\sphinxAtStartPar
+Copy the exported folder on your Apache server
+
+\end{enumerate}
+
+\sphinxstepscope
+
+
+\section{Docker container}
+\label{\detokenize{docs/sharing/docker:docker-container}}\label{\detokenize{docs/sharing/docker::doc}}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Start the docker container \sphinxcode{\sphinxupquote{cavenel/tissuumaps:latest}} from Docker Hub:
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+docker run \PYGZhy{}it \PYGZhy{}p \PYG{l+m}{56733}:80 \PYGZhy{}\PYGZhy{}name\PYG{o}{=}tissuumaps \PYGZhy{}v /path/to/local/images:/mnt/data cavenel/tissuumaps:latest
+\end{sphinxVerbatim}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Place your images in the local folder \sphinxcode{\sphinxupquote{/path/to/local/images/share}}.
+
+\item {} 
+\sphinxAtStartPar
+Open \sphinxurl{http://127.0.0.1:56733/} in your favorite browser.
+
+\end{enumerate}
+
+\sphinxstepscope
+
+
+\chapter{Advanced usage}
+\label{\detokenize{docs/advanced/index:advanced-usage}}\label{\detokenize{docs/advanced/index::doc}}
+\sphinxstepscope
+
+
+\section{Jupyter notebooks}
+\label{\detokenize{docs/advanced/jupyter:jupyter-notebooks}}\label{\detokenize{docs/advanced/jupyter::doc}}
+\sphinxAtStartPar
+TissUUmaps can easily be used inside a Jupyter Notebook or Jupyter Lab.
+
+\sphinxAtStartPar
+Simple example to load an image in TissUUmaps:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{tissuumaps}\PYG{n+nn}{.}\PYG{n+nn}{jupyter} \PYG{k}{as} \PYG{n+nn}{tj}
+\PYG{n}{viewer} \PYG{o}{=} \PYG{n}{tj}\PYG{o}{.}\PYG{n}{loaddata}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{image.png}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{)}
+
+\PYG{n}{viewer}\PYG{o}{.}\PYG{n}{screenshot}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+\phantomsection\label{\detokenize{docs/advanced/jupyter:module-tissuumaps.jupyter}}\index{module@\spxentry{module}!tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}}\index{tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}!module@\spxentry{module}}
+
+\subsection{tissuumaps.jupyter}
+\label{\detokenize{docs/advanced/jupyter:tissuumaps-jupyter}}
+\sphinxAtStartPar
+Module used to run TissUUmaps from a Jupyter Notebook or from Jupyter Lab.
+\index{opentmap() (in module tissuumaps.jupyter)@\spxentry{opentmap()}\spxextra{in module tissuumaps.jupyter}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.opentmap}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{opentmap}}}{\emph{\DUrole{n}{path}}, \emph{\DUrole{n}{port}\DUrole{o}{=}\DUrole{default_value}{5100}}, \emph{\DUrole{n}{host}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}localhost\textquotesingle{}}}, \emph{\DUrole{n}{height}\DUrole{o}{=}\DUrole{default_value}{700}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Open a tmap project
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{path}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The path to a tmap file
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{port}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The port to run the TissUUmaps server
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{host}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The host to run the TissUUmaps server
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{height}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The height of the jupyter iframe
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+The TissUUmaps viewer
+
+\item[{Return type}] \leavevmode
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer}]{\sphinxcrossref{TissUUmapsViewer}}}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{loaddata() (in module tissuumaps.jupyter)@\spxentry{loaddata()}\spxextra{in module tissuumaps.jupyter}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.loaddata}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{loaddata}}}{\emph{\DUrole{n}{images}\DUrole{o}{=}\DUrole{default_value}{{[}{]}}}, \emph{\DUrole{n}{csvFiles}\DUrole{o}{=}\DUrole{default_value}{{[}{]}}}, \emph{\DUrole{n}{xSelector}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}x\textquotesingle{}}}, \emph{\DUrole{n}{ySelector}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}y\textquotesingle{}}}, \emph{\DUrole{n}{keySelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{nameSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{colorSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{piechartSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{shapeSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{scaleSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{fixedShape}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{scaleFactor}\DUrole{o}{=}\DUrole{default_value}{1}}, \emph{\DUrole{n}{colormap}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{compositeMode}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}source\sphinxhyphen{}over\textquotesingle{}}}, \emph{\DUrole{n}{boundingBox}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{port}\DUrole{o}{=}\DUrole{default_value}{5100}}, \emph{\DUrole{n}{host}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}localhost\textquotesingle{}}}, \emph{\DUrole{n}{height}\DUrole{o}{=}\DUrole{default_value}{700}}, \emph{\DUrole{n}{tmapFilename}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}\_project\textquotesingle{}}}, \emph{\DUrole{n}{plugins}\DUrole{o}{=}\DUrole{default_value}{{[}{]}}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Load data in TissUUmaps
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{images}} (\sphinxstyleliteralemphasis{\sphinxupquote{list}}\sphinxstyleliteralemphasis{\sphinxupquote{ | }}\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} List of images or single image to display
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{csvFiles}} (list {\color{red}\bfseries{}|}str) \textendash{} List of csv files or single csv file to display
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{xSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the X coordinates
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{ySelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the Y coordinates
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{keySelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the grouping key
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{nameSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the group name
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{colorSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the group color
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{piechartSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining pie\sphinxhyphen{}charts
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{shapeSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining markers’ shape
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{scaleSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining markers’ scale
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{fixedShape}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} Name of the markers’ shape
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{scaleFactor}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} Global scale of markers
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{colormap}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the colormap used if colorSelector is set
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{compositeMode}} \textendash{} (str): Composite mode used for images
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{boundingBox}} (\sphinxstyleliteralemphasis{\sphinxupquote{list}}) \textendash{} {[}X,Y,W,H{]} of the bounding box to display
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{port}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The port to run the TissUUmaps server
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{host}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The host to run the TissUUmaps server
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{height}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The height of the jupyter iframe
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{tmapFilename}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the project file that will be created
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{plugins}} (\sphinxstyleliteralemphasis{\sphinxupquote{list}}) \textendash{} List of plugins to add to the tmap project
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+\sphinxAtStartPar
+The TissUUmaps viewer
+
+\item[{Return type}] \leavevmode
+\sphinxAtStartPar
+{\hyperref[\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer}]{\sphinxcrossref{TissUUmapsViewer}}}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{TissUUmapsViewer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsViewer}\spxextra{class in tissuumaps.jupyter}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{TissUUmapsViewer}}}{\emph{\DUrole{n}{server}}, \emph{\DUrole{n}{image}}, \emph{\DUrole{n}{height}\DUrole{o}{=}\DUrole{default_value}{700}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Class representing a TissUUmaps viewer instance
+\index{screenshot() (tissuumaps.jupyter.TissUUmapsViewer method)@\spxentry{screenshot()}\spxextra{tissuumaps.jupyter.TissUUmapsViewer method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer.screenshot}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{screenshot}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Capture the TissUUmaps viewport and display image in the Notebook.
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{TissUUmapsServer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsServer}\spxextra{class in tissuumaps.jupyter}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsServer}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{TissUUmapsServer}}}{\emph{\DUrole{n}{slideDir}}, \emph{\DUrole{n}{port}\DUrole{o}{=}\DUrole{default_value}{5000}}, \emph{\DUrole{n}{host}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}0.0.0.0\textquotesingle{}}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Class representing a TissUUmaps server instance
+
+\end{fulllineitems}
+
+
+\sphinxstepscope
+
+
+\section{Napari}
+\label{\detokenize{docs/advanced/napari:napari}}\label{\detokenize{docs/advanced/napari::doc}}
+\sphinxAtStartPar
+Napari features an important hub containing 118 plugins at the time of writing, many of them expanding further the capabilities of Napari when dealing with biomedical imaging. We thus created our own plugin to allow users to work in Napari, benefit from the tools, scripting and existing plugins, and easily visualize and share the output of their research through TissUUmaps.
+
+\sphinxAtStartPar
+The \sphinxhref{https://github.com/TissUUmaps/napari-tissuumaps}{Napari\sphinxhyphen{}TissUUmaps plugin} is available on Napari Hub which makes the installation trivial: from the Napari install/uninstall plugins menu, the \sphinxcode{\sphinxupquote{napari\sphinxhyphen{}tissuumaps}} appears in the list and can be installed with a single click. Alternatively, the plugin can be installed with the Python package manager: \sphinxcode{\sphinxupquote{pip install napari\sphinxhyphen{}tissuumaps}}.
+
+\sphinxAtStartPar
+The plugin can export all standard Napari layers, such as images, labels, points, and shapes and preserves the metadata (opacity, visibility), but also the objects parameters (e.g.: label colors, marker colors and symbols, etc…). To export a TissUUmaps project, care must be taken to save all layers of interest and type in a name with the extension \sphinxcode{\sphinxupquote{.tmap}}, e.g.: \sphinxcode{\sphinxupquote{myProject.tmap}}. This is important for Napari to delegate the saving of the files to the plugin. A folder is created and contains all the necessary files and can be loaded in the TissUUmaps server, software, Jupyter Notebook, or shared with the community.
+
+\sphinxAtStartPar
+The project folders generated by the plugin contain the metadata in a \sphinxcode{\sphinxupquote{main.tmap}} file, along with folders for each Napari layer types: images, labels, points and regions. Images and labels are saved as plain tif images, points are saved as CSV files, and shapes are saved as GeoJSON. We hope that the use of a simple structure and widespread file formats can simplify the modifying and updating of the TissUUmaps project when prototyping with e.g. Jupyter Notebooks.
+The source code is available at \sphinxurl{https://github.com/TissUUmaps/napari-tissuumaps} under the permissive MIT license.
+A demonstration of the Cellpose plugin of Napari being exported to the TissUUmaps web viewer is available at: \sphinxurl{https://tissuumaps.github.io/tutorials/\#napari}.
+
+\sphinxstepscope
+
+
+\section{AnnData}
+\label{\detokenize{docs/advanced/anndata:anndata}}\label{\detokenize{docs/advanced/anndata::doc}}
+\sphinxAtStartPar
+Work in progress
+
+\sphinxstepscope
+
+
+\section{The TMAP file format}
+\label{\detokenize{docs/advanced/tmap:the-tmap-file-format}}\label{\detokenize{docs/advanced/tmap::doc}}
 \sphinxAtStartPar
 The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects’ settings, or generate them as exported data from other software for import in TissUUmaps.
 
@@ -524,8 +902,8 @@ The TMAP format contains a description of image layers, markers, regions, and se
 The TMAP format uses JSON, with the following specifications:
 
 
-\subsubsection{TMAP project specifications}
-\label{\detokenize{docs/starting/projects:tmap-project-specifications}}\label{\detokenize{docs/starting/projects:tmap-project-specifications}}
+\subsection{TMAP project specifications}
+\label{\detokenize{docs/advanced/tmap:tmap-project-specifications}}\label{\detokenize{docs/advanced/tmap:tmap-project-specifications}}
 
 \begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{4}{\X{1}{4}|}}
 \hline
@@ -647,7 +1025,7 @@ items
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:layer}]{\sphinxcrossref{Layer}}}
+{\hyperref[\detokenize{docs/advanced/tmap:layer}]{\sphinxcrossref{Layer}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -777,7 +1155,7 @@ patternProperties
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:layerfilter}]{\sphinxcrossref{LayerFilter}}}
+{\hyperref[\detokenize{docs/advanced/tmap:layerfilter}]{\sphinxcrossref{LayerFilter}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -837,7 +1215,7 @@ items
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}}
+{\hyperref[\detokenize{docs/advanced/tmap:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1091,7 +1469,7 @@ rotate
 &\sphinxstartmulticolumn{3}%
 \begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
 \sphinxAtStartPar
-Angle of rotation of the view in degrees. Only 0, 90, 180 and 270 degrees are supported.
+Angle of rotation of the view in degrees. Only multiples of 90 degrees are supported.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1165,7 +1543,7 @@ items
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:markerfile}]{\sphinxcrossref{MarkerFile}}}
+{\hyperref[\detokenize{docs/advanced/tmap:markerfile}]{\sphinxcrossref{MarkerFile}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1430,7 +1808,7 @@ items
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:setting}]{\sphinxcrossref{Setting}}}
+{\hyperref[\detokenize{docs/advanced/tmap:setting}]{\sphinxcrossref{Setting}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1439,8 +1817,8 @@ items
 \end{longtable}\sphinxatlongtableend\end{savenotes}
 
 
-\paragraph{Layer}
-\label{\detokenize{docs/starting/projects:layer}}\label{\detokenize{docs/starting/projects:layer}}
+\subsubsection{Layer}
+\label{\detokenize{docs/advanced/tmap:layer}}\label{\detokenize{docs/advanced/tmap:layer}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -1531,8 +1909,8 @@ type
 \sphinxattableend\end{savenotes}
 
 
-\paragraph{LayerFilter}
-\label{\detokenize{docs/starting/projects:layerfilter}}\label{\detokenize{docs/starting/projects:layerfilter}}
+\subsubsection{LayerFilter}
+\label{\detokenize{docs/advanced/tmap:layerfilter}}\label{\detokenize{docs/advanced/tmap:layerfilter}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -1606,7 +1984,7 @@ properties
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-Filter name. See {\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}} for more details.
+Filter name. See {\hyperref[\detokenize{docs/advanced/tmap:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}} for more details.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1632,7 +2010,7 @@ type
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
 \sphinxAtStartPar
-Filter parameter. See {\hyperref[\detokenize{docs/starting/projects:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}} for more details.
+Filter parameter. See {\hyperref[\detokenize{docs/advanced/tmap:filter}]{\sphinxcrossref{\DUrole{std,std-ref}{Filter}}}} for more details.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1650,8 +2028,8 @@ type
 \sphinxattableend\end{savenotes}
 
 
-\paragraph{Filter}
-\label{\detokenize{docs/starting/projects:filter}}\label{\detokenize{docs/starting/projects:filter}}
+\subsubsection{Filter}
+\label{\detokenize{docs/advanced/tmap:filter}}\label{\detokenize{docs/advanced/tmap:filter}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -1678,8 +2056,8 @@ Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, 
 \sphinxattableend\end{savenotes}
 
 
-\paragraph{ColorScale}
-\label{\detokenize{docs/starting/projects:colorscale}}\label{\detokenize{docs/starting/projects:colorscale}}
+\subsubsection{ColorScale}
+\label{\detokenize{docs/advanced/tmap:colorscale}}\label{\detokenize{docs/advanced/tmap:colorscale}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -1706,8 +2084,8 @@ interpolateCubehelixDefault, interpolateRainbow, interpolateWarm, interpolateCoo
 \sphinxattableend\end{savenotes}
 
 
-\paragraph{Shape}
-\label{\detokenize{docs/starting/projects:shape}}\label{\detokenize{docs/starting/projects:shape}}
+\subsubsection{Shape}
+\label{\detokenize{docs/advanced/tmap:shape}}\label{\detokenize{docs/advanced/tmap:shape}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -1734,8 +2112,8 @@ cross, diamond, square, triangle up, star, clobber, disc, hbar, vbar, tailed arr
 \sphinxattableend\end{savenotes}
 
 
-\paragraph{MarkerFile}
-\label{\detokenize{docs/starting/projects:markerfile}}\label{\detokenize{docs/starting/projects:markerfile}}
+\subsubsection{MarkerFile}
+\label{\detokenize{docs/advanced/tmap:markerfile}}\label{\detokenize{docs/advanced/tmap:markerfile}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -1951,7 +2329,7 @@ type
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:expectedheader}]{\sphinxcrossref{\DUrole{std,std-ref}{ExpectedHeader}}}}
+{\hyperref[\detokenize{docs/advanced/tmap:expectedheader}]{\sphinxcrossref{\DUrole{std,std-ref}{ExpectedHeader}}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -1965,7 +2343,7 @@ expectedRadios
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:expectedradios}]{\sphinxcrossref{\DUrole{std,std-ref}{ExpectedRadios}}}}
+{\hyperref[\detokenize{docs/advanced/tmap:expectedradios}]{\sphinxcrossref{\DUrole{std,std-ref}{ExpectedRadios}}}}
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2034,7 +2412,7 @@ items
 \end{itemize}
 &
 \sphinxAtStartPar
-{\hyperref[\detokenize{docs/starting/projects:setting}]{\sphinxcrossref{Setting}}}
+{\hyperref[\detokenize{docs/advanced/tmap:setting}]{\sphinxcrossref{Setting}}}
 \\
 \hline
 \end{tabular}
@@ -2042,8 +2420,8 @@ items
 \sphinxattableend\end{savenotes}
 
 
-\paragraph{ExpectedHeader}
-\label{\detokenize{docs/starting/projects:expectedheader}}\label{\detokenize{docs/starting/projects:expectedheader}}
+\subsubsection{ExpectedHeader}
+\label{\detokenize{docs/advanced/tmap:expectedheader}}\label{\detokenize{docs/advanced/tmap:expectedheader}}
 
 \begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{3}{\X{1}{3}|}}
 \hline
@@ -2220,7 +2598,7 @@ cb\_cmap
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of D3 color scale to be used for color mapping. See {\hyperref[\detokenize{docs/starting/projects:colorscale}]{\sphinxcrossref{\DUrole{std,std-ref}{ColorScale}}}} for valid string values.
+Name of D3 color scale to be used for color mapping. See {\hyperref[\detokenize{docs/advanced/tmap:colorscale}]{\sphinxcrossref{\DUrole{std,std-ref}{ColorScale}}}} for valid string values.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2442,7 +2820,7 @@ shape\_col
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name of CSV column containing a name or an index for marker shape. See also {\hyperref[\detokenize{docs/starting/projects:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}}.
+Name of CSV column containing a name or an index for marker shape. See also {\hyperref[\detokenize{docs/advanced/tmap:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}}.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2475,7 +2853,7 @@ shape\_fixed
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-Name or index of a single fixed shape to be used for all markers. See {\hyperref[\detokenize{docs/starting/projects:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}} for valid string values.
+Name or index of a single fixed shape to be used for all markers. See {\hyperref[\detokenize{docs/advanced/tmap:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}} for valid string values.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2508,7 +2886,7 @@ shape\_gr\_dict
 &\sphinxstartmulticolumn{2}%
 \begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
 \sphinxAtStartPar
-JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ‘\{“key1”: “square”, “key2”: “diamond”, “key3”: “triangle up”\}’. See also {\hyperref[\detokenize{docs/starting/projects:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}}.
+JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ‘\{“key1”: “square”, “key2”: “diamond”, “key3”: “triangle up”\}’. See also {\hyperref[\detokenize{docs/advanced/tmap:shape}]{\sphinxcrossref{\DUrole{std,std-ref}{Shape}}}}.
 \par
 \vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
 \sphinxstopmulticolumn
@@ -2624,8 +3002,8 @@ default
 \end{longtable}\sphinxatlongtableend\end{savenotes}
 
 
-\paragraph{ExpectedRadios}
-\label{\detokenize{docs/starting/projects:expectedradios}}\label{\detokenize{docs/starting/projects:expectedradios}}
+\subsubsection{ExpectedRadios}
+\label{\detokenize{docs/advanced/tmap:expectedradios}}\label{\detokenize{docs/advanced/tmap:expectedradios}}
 
 \begin{savenotes}\sphinxatlongtablestart\begin{longtable}[c]{|*{3}{\X{1}{3}|}}
 \hline
@@ -3136,8 +3514,8 @@ false
 \end{longtable}\sphinxatlongtableend\end{savenotes}
 
 
-\paragraph{Setting}
-\label{\detokenize{docs/starting/projects:setting}}\label{\detokenize{docs/starting/projects:setting}}
+\subsubsection{Setting}
+\label{\detokenize{docs/advanced/tmap:setting}}\label{\detokenize{docs/advanced/tmap:setting}}
 
 \begin{savenotes}\sphinxattablestart
 \centering
@@ -3215,8 +3593,8 @@ type
 \sphinxattableend\end{savenotes}
 
 
-\subsubsection{Example of a .tmap file}
-\label{\detokenize{docs/starting/projects:example-of-a-tmap-file}}
+\subsection{Example of a .tmap file}
+\label{\detokenize{docs/advanced/tmap:example-of-a-tmap-file}}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{p}{\PYGZob{}}
 \PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}filename\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}TissUUmaps\PYGZus{}Example.tmap\PYGZdq{}}\PYG{p}{,}
@@ -3308,377 +3686,6 @@ type
 \PYG{+w}{    }\PYG{n+nt}{\PYGZdq{}settings\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[]}
 \PYG{p}{\PYGZcb{}}
 \end{sphinxVerbatim}
-
-\sphinxstepscope
-
-
-\section{Exporting screenshots}
-\label{\detokenize{docs/starting/capture:exporting-screenshots}}\label{\detokenize{docs/starting/capture::doc}}
-\sphinxAtStartPar
-TissUUmaps allows high resolution capture of the image viewport. Go to \sphinxcode{\sphinxupquote{Menu \textgreater{} File \textgreater{} Capture viewport}} and chose a zoom factor for export (1 = screen resolution).
-
-\sphinxAtStartPar
-The screen capture will contain all filtered layers, markers, and regions. Note that legends will not be part of the export and must be added manually.
-
-\sphinxstepscope
-
-
-\section{Plugins}
-\label{\detokenize{docs/starting/plugins:plugins}}\label{\detokenize{docs/starting/plugins::doc}}
-
-\subsection{Load plugins}
-\label{\detokenize{docs/starting/plugins:load-plugins}}
-
-\subsection{Make your own plugin}
-\label{\detokenize{docs/starting/plugins:make-your-own-plugin}}
-\sphinxAtStartPar
-Download the Plugin Template python and javascript files from the \sphinxhref{https://tissuumaps.github.io/TissUUmaps/plugins/}{Plugin Update Site} and put both files in your local folder \sphinxcode{\sphinxupquote{\$USER\_PATH/.tissuumaps/plugins/}}. You can then change the plugin name and add your own options and functions.
-
-
-\subsubsection{Javascript file}
-\label{\detokenize{docs/starting/plugins:javascript-file}}
-\sphinxAtStartPar
-When loading a plugin, the function \sphinxcode{\sphinxupquote{PluginName.init(container)}} will be called. The \sphinxcode{\sphinxupquote{container}} is an html Element that will be added to the plugin menu. Use this element to add options and texts related to your plugin.
-
-\sphinxAtStartPar
-\sphinxincludegraphics{{plugin_container}.png}
-
-\sphinxAtStartPar
-Here is a minimal example of plugin:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k+kd}{var} \PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{;}
-\PYG{n+nx}{Plugin\PYGZus{}template} \PYG{o}{=} \PYG{p}{\PYGZob{}}
-    \PYG{n+nx}{name}\PYG{o}{:}\PYG{l+s+s2}{\PYGZdq{}Template Plugin\PYGZdq{}}
-\PYG{p}{\PYGZcb{}}
- 
-\PYG{c+cm}{/**}
-\PYG{c+cm}{ * This method is called when the document is loaded.}
-\PYG{c+cm}{ * The container element is a div where the plugin options will be displayed. */}
-\PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{.}\PYG{n+nx}{init} \PYG{o}{=} \PYG{k+kd}{function} \PYG{p}{(}\PYG{n+nx}{container}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-    \PYG{n+nx}{container}\PYG{p}{.}\PYG{n+nx}{innerHTML} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Hello world\PYGZdq{}}\PYG{p}{;}
-\PYG{p}{\PYGZcb{}}
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-You can access the TissUUmaps javascript API \sphinxhref{https://tissuumaps.github.io/TissUUmapsCore/}{here}.
-
-
-\subsubsection{Python file}
-\label{\detokenize{docs/starting/plugins:python-file}}
-\sphinxAtStartPar
-You only need to use the Python file if your plugin needs to do processing on the server side. For pure javascript plugins, you can leave this file empty.
-
-\sphinxAtStartPar
-The python file should implement the class \sphinxcode{\sphinxupquote{Plugin}}:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k}{class} \PYG{n+nc}{Plugin} \PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
-    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{app}\PYG{p}{)}\PYG{p}{:}
-        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{app} \PYG{o}{=} \PYG{n}{app}
-\end{sphinxVerbatim}
-
-\sphinxAtStartPar
-The \sphinxcode{\sphinxupquote{app}} object being the flask application running the TissUUmaps server.
-
-\sphinxAtStartPar
-You can call a Python method inside the \sphinxcode{\sphinxupquote{Plugin}} class from Javascript using Ajax and the Python API. The endpoint for a method \sphinxcode{\sphinxupquote{methodName}} of the plugin \sphinxcode{\sphinxupquote{PluginName}} will be: \sphinxcode{\sphinxupquote{/plugins/methodName/functionName}}. Data can be transmitted through Ajax as stringified JSON, and will be available as a parameter inside the method.
-
-\sphinxAtStartPar
-See the Plugin Template for a working example of Javascript / Python communication.
-
-\sphinxstepscope
-
-
-\chapter{Sharing projects}
-\label{\detokenize{docs/sharing/index:sharing-projects}}\label{\detokenize{docs/sharing/index::doc}}
-\sphinxstepscope
-
-
-\section{Apache server}
-\label{\detokenize{docs/sharing/apache:apache-server}}\label{\detokenize{docs/sharing/apache::doc}}
-\sphinxAtStartPar
-TissUUmaps projects can be exported into static webpages, that can be uploaded to any Apache server.
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Save your project from TissUUmaps (\sphinxcode{\sphinxupquote{menu \textgreater{} File \textgreater{} Save project}})
-
-\item {} 
-\sphinxAtStartPar
-Export to static page (\sphinxcode{\sphinxupquote{menu \textgreater{} File \textgreater{} Export to static webpage}})
-
-\item {} 
-\sphinxAtStartPar
-Copy the exported folder on your Apache server
-
-\end{enumerate}
-
-\sphinxstepscope
-
-
-\section{Docker container}
-\label{\detokenize{docs/sharing/docker:docker-container}}\label{\detokenize{docs/sharing/docker::doc}}\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Start the docker container \sphinxcode{\sphinxupquote{cavenel/tissuumaps:latest}} from Docker Hub:
-
-\end{enumerate}
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-docker run \PYGZhy{}it \PYGZhy{}p \PYG{l+m}{56733}:80 \PYGZhy{}\PYGZhy{}name\PYG{o}{=}tissuumaps \PYGZhy{}v /path/to/local/images:/mnt/data cavenel/tissuumaps:latest
-\end{sphinxVerbatim}
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Place your images in the local folder \sphinxcode{\sphinxupquote{/path/to/local/images/share}}.
-
-\item {} 
-\sphinxAtStartPar
-Open \sphinxurl{http://127.0.0.1:56733/} in your favorite browser.
-
-\end{enumerate}
-
-\sphinxstepscope
-
-
-\chapter{Advanced usage}
-\label{\detokenize{docs/advanced/index:advanced-usage}}\label{\detokenize{docs/advanced/index::doc}}
-\sphinxstepscope
-
-
-\section{Jupyter notebooks}
-\label{\detokenize{docs/advanced/jupyter:jupyter-notebooks}}\label{\detokenize{docs/advanced/jupyter::doc}}
-\sphinxAtStartPar
-TissUUmaps can easily be used inside a Jupyter Notebook or Jupyter Lab.
-
-\sphinxAtStartPar
-Simple example to load an image in TissUUmaps:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k+kn}{import} \PYG{n+nn}{tissuumaps}\PYG{n+nn}{.}\PYG{n+nn}{jupyter} \PYG{k}{as} \PYG{n+nn}{tj}
-\PYG{n}{viewer} \PYG{o}{=} \PYG{n}{tj}\PYG{o}{.}\PYG{n}{loaddata}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{image.png}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}\PYG{p}{)}
-
-\PYG{n}{viewer}\PYG{o}{.}\PYG{n}{screenshot}\PYG{p}{(}\PYG{p}{)}
-\end{sphinxVerbatim}
-\phantomsection\label{\detokenize{docs/advanced/jupyter:module-tissuumaps.jupyter}}\index{module@\spxentry{module}!tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}}\index{tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}!module@\spxentry{module}}
-
-\subsection{tissuumaps.jupyter}
-\label{\detokenize{docs/advanced/jupyter:tissuumaps-jupyter}}
-\sphinxAtStartPar
-Module used to run TissUUmaps from a Jupyter Notebook or from Jupyter Lab.
-\index{opentmap() (in module tissuumaps.jupyter)@\spxentry{opentmap()}\spxextra{in module tissuumaps.jupyter}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.opentmap}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{opentmap}}}{\emph{\DUrole{n}{path}}, \emph{\DUrole{n}{port}\DUrole{o}{=}\DUrole{default_value}{5100}}, \emph{\DUrole{n}{host}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}localhost\textquotesingle{}}}, \emph{\DUrole{n}{height}\DUrole{o}{=}\DUrole{default_value}{700}}}{}
-\pysigstopsignatures
-\sphinxAtStartPar
-Open a tmap project
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{path}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The path to a tmap file
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{port}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The port to run the TissUUmaps server
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{host}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The host to run the TissUUmaps server
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{height}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The height of the jupyter iframe
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-The TissUUmaps viewer
-
-\item[{Return type}] \leavevmode
-\sphinxAtStartPar
-{\hyperref[\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer}]{\sphinxcrossref{TissUUmapsViewer}}}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{loaddata() (in module tissuumaps.jupyter)@\spxentry{loaddata()}\spxextra{in module tissuumaps.jupyter}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.loaddata}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{loaddata}}}{\emph{\DUrole{n}{images}\DUrole{o}{=}\DUrole{default_value}{{[}{]}}}, \emph{\DUrole{n}{csvFiles}\DUrole{o}{=}\DUrole{default_value}{{[}{]}}}, \emph{\DUrole{n}{xSelector}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}x\textquotesingle{}}}, \emph{\DUrole{n}{ySelector}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}y\textquotesingle{}}}, \emph{\DUrole{n}{keySelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{nameSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{colorSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{piechartSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{shapeSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{scaleSelector}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{fixedShape}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{scaleFactor}\DUrole{o}{=}\DUrole{default_value}{1}}, \emph{\DUrole{n}{colormap}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{compositeMode}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}source\sphinxhyphen{}over\textquotesingle{}}}, \emph{\DUrole{n}{boundingBox}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{port}\DUrole{o}{=}\DUrole{default_value}{5100}}, \emph{\DUrole{n}{host}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}localhost\textquotesingle{}}}, \emph{\DUrole{n}{height}\DUrole{o}{=}\DUrole{default_value}{700}}, \emph{\DUrole{n}{tmapFilename}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}\_project\textquotesingle{}}}, \emph{\DUrole{n}{plugins}\DUrole{o}{=}\DUrole{default_value}{{[}{]}}}}{}
-\pysigstopsignatures
-\sphinxAtStartPar
-Load data in TissUUmaps
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{images}} (\sphinxstyleliteralemphasis{\sphinxupquote{list}}\sphinxstyleliteralemphasis{\sphinxupquote{ | }}\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} List of images or single image to display
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{csvFiles}} (list {\color{red}\bfseries{}|}str) \textendash{} List of csv files or single csv file to display
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{xSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the X coordinates
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{ySelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the Y coordinates
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{keySelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the grouping key
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{nameSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the group name
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{colorSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining the group color
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{piechartSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining pie\sphinxhyphen{}charts
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{shapeSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining markers’ shape
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{scaleSelector}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the csv column defining markers’ scale
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{fixedShape}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} Name of the markers’ shape
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{scaleFactor}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} Global scale of markers
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{colormap}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the colormap used if colorSelector is set
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{compositeMode}} \textendash{} (str): Composite mode used for images
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{boundingBox}} (\sphinxstyleliteralemphasis{\sphinxupquote{list}}) \textendash{} {[}X,Y,W,H{]} of the bounding box to display
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{port}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The port to run the TissUUmaps server
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{host}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} The host to run the TissUUmaps server
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{height}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} The height of the jupyter iframe
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{tmapFilename}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Name of the project file that will be created
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{plugins}} (\sphinxstyleliteralemphasis{\sphinxupquote{list}}) \textendash{} List of plugins to add to the tmap project
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-\sphinxAtStartPar
-The TissUUmaps viewer
-
-\item[{Return type}] \leavevmode
-\sphinxAtStartPar
-{\hyperref[\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer}]{\sphinxcrossref{TissUUmapsViewer}}}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{TissUUmapsViewer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsViewer}\spxextra{class in tissuumaps.jupyter}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{TissUUmapsViewer}}}{\emph{\DUrole{n}{server}}, \emph{\DUrole{n}{image}}, \emph{\DUrole{n}{height}\DUrole{o}{=}\DUrole{default_value}{700}}}{}
-\pysigstopsignatures
-\sphinxAtStartPar
-Class representing a TissUUmaps viewer instance
-\index{screenshot() (tissuumaps.jupyter.TissUUmapsViewer method)@\spxentry{screenshot()}\spxextra{tissuumaps.jupyter.TissUUmapsViewer method}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsViewer.screenshot}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{screenshot}}}{}{}
-\pysigstopsignatures
-\sphinxAtStartPar
-Capture the TissUUmaps viewport and display image in the Notebook.
-
-\end{fulllineitems}
-
-
-\end{fulllineitems}
-
-\index{TissUUmapsServer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsServer}\spxextra{class in tissuumaps.jupyter}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{docs/advanced/jupyter:tissuumaps.jupyter.TissUUmapsServer}}
-\pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{tissuumaps.jupyter.}}\sphinxbfcode{\sphinxupquote{TissUUmapsServer}}}{\emph{\DUrole{n}{slideDir}}, \emph{\DUrole{n}{port}\DUrole{o}{=}\DUrole{default_value}{5000}}, \emph{\DUrole{n}{host}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}0.0.0.0\textquotesingle{}}}}{}
-\pysigstopsignatures
-\sphinxAtStartPar
-Class representing a TissUUmaps server instance
-
-\end{fulllineitems}
-
-
-\sphinxstepscope
-
-
-\section{Napari}
-\label{\detokenize{docs/advanced/napari:napari}}\label{\detokenize{docs/advanced/napari::doc}}
-\sphinxAtStartPar
-Napari features an important hub containing 118 plugins at the time of writing, many of them expanding further the capabilities of Napari when dealing with biomedical imaging. We thus created our own plugin to allow users to work in Napari, benefit from the tools, scripting and existing plugins, and easily visualize and share the output of their research through TissUUmaps.
-
-\sphinxAtStartPar
-The \sphinxhref{https://github.com/TissUUmaps/napari-tissuumaps}{Napari\sphinxhyphen{}TissUUmaps plugin} is available on Napari Hub which makes the installation trivial: from the Napari install/uninstall plugins menu, the \sphinxcode{\sphinxupquote{napari\sphinxhyphen{}tissuumaps}} appears in the list and can be installed with a single click. Alternatively, the plugin can be installed with the Python package manager: \sphinxcode{\sphinxupquote{pip install napari\sphinxhyphen{}tissuumaps}}.
-
-\sphinxAtStartPar
-The plugin can export all standard Napari layers, such as images, labels, points, and shapes and preserves the metadata (opacity, visibility), but also the objects parameters (e.g.: label colors, marker colors and symbols, etc…). To export a TissUUmaps project, care must be taken to save all layers of interest and type in a name with the extension \sphinxcode{\sphinxupquote{.tmap}}, e.g.: \sphinxcode{\sphinxupquote{myProject.tmap}}. This is important for Napari to delegate the saving of the files to the plugin. A folder is created and contains all the necessary files and can be loaded in the TissUUmaps server, software, Jupyter Notebook, or shared with the community.
-
-\sphinxAtStartPar
-The project folders generated by the plugin contain the metadata in a \sphinxcode{\sphinxupquote{main.tmap}} file, along with folders for each Napari layer types: images, labels, points and regions. Images and labels are saved as plain tif images, points are saved as CSV files, and shapes are saved as GeoJSON. We hope that the use of a simple structure and widespread file formats can simplify the modifying and updating of the TissUUmaps project when prototyping with e.g. Jupyter Notebooks.
-The source code is available at \sphinxurl{https://github.com/TissUUmaps/napari-tissuumaps} under the permissive MIT license.
-A demonstration of the Cellpose plugin of Napari being exported to the TissUUmaps web viewer is available at: \sphinxurl{https://tissuumaps.github.io/tutorials/\#napari}.
-
-\sphinxstepscope
-
-
-\section{AnnData}
-\label{\detokenize{docs/advanced/anndata:anndata}}\label{\detokenize{docs/advanced/anndata::doc}}
-\sphinxAtStartPar
-Work in progress
 
 
 

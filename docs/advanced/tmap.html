@@ -1,0 +1,1345 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>The TMAP file format &mdash; TissUUmaps 3.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/rtd_sphinx_search.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/js/rtd_sphinx_search.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="AnnData" href="anndata.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #a31a25" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> TissUUmaps
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../starting/index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sharing/index.html">Sharing projects</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Advanced usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="napari.html">Napari</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anndata.html">AnnData</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">The TMAP file format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tmap-project-specifications">TMAP project specifications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#layer">Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#layerfilter">LayerFilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter">Filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#colorscale">ColorScale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shape">Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#markerfile">MarkerFile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#expectedheader">ExpectedHeader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#expectedradios">ExpectedRadios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting">Setting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-of-a-tmap-file">Example of a .tmap file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">TissUUmaps</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Advanced usage</a> &raquo;</li>
+        
+      <li>The TMAP file format</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/TissUUmaps/TissUUmaps-docs/blob/master/docs/advanced/tmap.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-tmap-file-format">
+<h1>The TMAP file format<a class="headerlink" href="#the-tmap-file-format" title="Permalink to this headline">¶</a></h1>
+<p>The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects’ settings, or generate them as exported data from other software for import in TissUUmaps.</p>
+<p>The TMAP format uses JSON, with the following specifications:</p>
+<div class="section" id="tmap-project-specifications">
+<span id="tmap-project-specifications"></span><h2>TMAP project specifications<a class="headerlink" href="#tmap-project-specifications" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="4"><p>Description of image layers, markers, regions, and settings of a project. Required properties are shown in <strong>bold</strong> text</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="3"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="4"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>filename</strong></p></li>
+</ul>
+</td>
+<td colspan="3"><p>Name of the project</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><ul class="simple">
+<li><p>layers</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#layer">Layer</a></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>layerOpacities</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>patternProperties</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>^[0-9]+$</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>integer</em></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>layerVisibilities</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>patternProperties</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p>^[0-9]+$</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>layerFilters</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>patternProperties</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>^[0-9]+$</p></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#layerfilter">LayerFilter</a></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="5"><ul class="simple">
+<li><p>filters</p></li>
+</ul>
+</td>
+<td colspan="3"><p>List of filters shown as active filters in the GUI under the Image layers tab</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>[“Saturation”, “Brightness”, “Contrast”]</p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>compositeMode</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Mode defining how image layers will be merged (composited) with each other. Valid string values are “source-over” and “lighter”, which correspond to ‘Channels’ and ‘Composite’ in the GUI.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>source-over</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>mpp</p></li>
+</ul>
+</td>
+<td colspan="3"><p>The image scale in Microns Per Pixels. If not null, then adds a scale bar to the viewer. Set to 0 to display the scale bar in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>float</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="12"><ul class="simple">
+<li><p>boundingBox</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Bounding box used to set initial zoom and pan on the view when loading the project.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>null</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>x</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Left coordinate of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>y</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Top coordinate of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>width</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Width of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>height</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Height of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>rotate</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Angle of rotation of the view in degrees. Only multiples of 90 degrees are supported.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>integer</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
+<li><p>markerFiles</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#markerfile">MarkerFile</a></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>regions</p></li>
+</ul>
+</td>
+<td colspan="3"><p>GeoJSON object, see <a class="reference internal" href="../starting/regions.html#regions"><span class="std std-ref">Regions section</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>{}</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p>regionFile</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>regionFiles</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="5"><ul class="simple">
+<li><p>plugins</p></li>
+</ul>
+</td>
+<td colspan="3"><p>List of plugins to load with the project. See also the <a class="reference internal" href="../starting/plugins.html#plugins"><span class="std std-ref">Plugins section</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-even"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>hideTabs</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Hide tabs of markers dataset. Only use when you have a unique marker tab.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
+<li><p>settings</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>array</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>[]</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#setting">Setting</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="layer">
+<span id="layer"></span><h3>Layer<a class="headerlink" href="#layer" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>Description of an image layer. Required properties are shown in <strong>bold</strong> text</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>name</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of the image layer</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>tileSource</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Relative path to an image file in a supported format. See also the <a class="reference internal" href="../starting/images.html#images"><span class="std std-ref">Images section</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="layerfilter">
+<span id="layerfilter"></span><h3>LayerFilter<a class="headerlink" href="#layerfilter" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="4"><p>Description of an image filter to be applied to the pixels in an image layer. Required properties are shown in <strong>bold</strong> text</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="3"><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="4"><p>items</p></td>
+</tr>
+<tr class="row-even"><td rowspan="6"><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>name</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Filter name. See <a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a> for more details.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>value</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Filter parameter. See <a class="reference internal" href="#filter"><span class="std std-ref">Filter</span></a> for more details.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="filter">
+<span id="filter"></span><h3>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p>TissUUmaps supports most filters available in OpenSeadragon via the <a class="reference external" href="https://github.com/usnistgov/OpenSeadragonFiltering">https://github.com/usnistgov/OpenSeadragonFiltering</a> plugin.</p></td>
+</tr>
+<tr class="row-even"><td><p>enum</p></td>
+<td><p>Color, Brightness, Exposure, Hue, Contrast, Vibrance, Noise, Saturation, Gamma, Invert, Greyscale, Threshold, Erosion, Dilation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="colorscale">
+<span id="colorscale"></span><h3>ColorScale<a class="headerlink" href="#colorscale" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p>TissUUmaps supports most of the color scales available in the D3.js library. See <a class="reference external" href="https://github.com/d3/d3-scale-chromatic">https://github.com/d3/d3-scale-chromatic</a> for reference. Note: the colors for ‘interpolateRainbow’ are currently overridden by a custom Turbo-like color scale in version 3.0.x of TissUUmaps.</p></td>
+</tr>
+<tr class="row-even"><td><p>enum</p></td>
+<td><p>interpolateCubehelixDefault, interpolateRainbow, interpolateWarm, interpolateCool, interpolateViridis, interpolateMagma, interpolateInferno, interpolatePlasma, interpolateBlues, interpolateBrBG, interpolateBuGn, interpolateBuPu, interpolateCividis, interpolateGnBu, interpolateGreens, interpolateGreys, interpolateOrRd, interpolateOranges, interpolatePRGn, interpolatePiYG, interpolatePuBu, interpolatePuBuGn, interpolatePuOr, interpolatePuRd, interpolatePurples, interpolateRdBu, interpolateRdGy, interpolateRdPu, interpolateRdYlBu, interpolateRdYlGn, interpolateReds, interpolateSinebow, interpolateSpectral, interpolateTurbo, interpolateYlGn, interpolateYlGnBu, interpolateYlOrBr, interpolateYlOrRd</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="shape">
+<span id="shape"></span><h3>Shape<a class="headerlink" href="#shape" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="2"><p>TissUUmaps supports most of the marker shapes that are also used by the Napari software, <a class="reference external" href="https://napari.org">https://napari.org</a>. In addition to the name strings listed below, shape can also be specified by a corresponding index in range 0-13.</p></td>
+</tr>
+<tr class="row-even"><td><p>enum</p></td>
+<td><p>cross, diamond, square, triangle up, star, clobber, disc, hbar, vbar, tailed arrow, triangle down, ring, x, arrow</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="markerfile">
+<span id="markerfile"></span><h3>MarkerFile<a class="headerlink" href="#markerfile" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>Description of settings and GUI objects for a marker dataset loaded from CSV file. Required properties are shown in <strong>bold</strong> text.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>title</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of marker button</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>comment</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Optional description text shown next to marker button</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<li><p><strong>name</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of marker tab</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>autoLoad</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If the CSV file for the marker dataset should be automatically loaded when the TMAP project is opened. If this is false, the user instead has to click on the marker button in the GUI to load the dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>hideSettings</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Hide markers’ settings and add a toggle button instead.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<li><p>uid</p></li>
+</ul>
+</td>
+<td colspan="2"><p>A unique identifier used internally by TissUUmaps to reference the marker dataset</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>expectedHeader</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#expectedheader"><span class="std std-ref">ExpectedHeader</span></a></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p>expectedRadios</p></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#expectedradios"><span class="std std-ref">ExpectedRadios</span></a></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<li><p><strong>path</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Relative file path to CSV file in which marker data is stored. If array of string, then a dropdown is created instead of a button.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em> / <em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
+<li><p>settings</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>array</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>[]</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p><a class="reference internal" href="#setting">Setting</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="expectedheader">
+<span id="expectedheader"></span><h3>ExpectedHeader<a class="headerlink" href="#expectedheader" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>Input field values for settings in a marker tab. Required properties are shown in <strong>bold</strong> text.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>X</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column to use as X-coordinate</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>Y</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column to use as Y-coordinate</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>gb_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column to use as key to group markers by</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>gb_name</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column to display for groups instead of group key value</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>cb_cmap</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of D3 color scale to be used for color mapping. See <a class="reference internal" href="#colorscale"><span class="std std-ref">ColorScale</span></a> for valid string values.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>cb_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column containing scalar values for color mapping or hexadecimal RGB colors in format ‘#ff0000’</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>cb_gr_dict</p></li>
+</ul>
+</td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping group keys to group colors. Example: ‘{“key1”: “#ff0000”, “key2”: “#00ff00”, “key3”: “#0000ff”}’</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>scale_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column containing scalar values for changing the size of markers</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>scale_factor</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Numerical value for a fixed scale factor to be applied to markers</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>pie_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column containing data for pie chart sectors. TissUUmaps expects labels and numerical values for sectors to be separated by ‘:’ characters in the CSV column data.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>pie_dict</p></li>
+</ul>
+</td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: ‘{0: “#ff0000”, 1: “#00ff00”, 2: “#0000ff”}’. If no dictionary is specified, TissUUmaps will use a default color palette instead.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>shape_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column containing a name or an index for marker shape. See also <a class="reference internal" href="#shape"><span class="std std-ref">Shape</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>shape_fixed</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name or index of a single fixed shape to be used for all markers. See <a class="reference internal" href="#shape"><span class="std std-ref">Shape</span></a> for valid string values.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>cross</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr_dict</p></li>
+</ul>
+</td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ‘{“key1”: “square”, “key2”: “diamond”, “key3”: “triangle up”}’. See also <a class="reference internal" href="#shape"><span class="std std-ref">Shape</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>opacity_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of CSV column containing scalar values for opacities</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>null</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>opacity</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Numerical value for a fixed opacity factor to be applied to markers</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>tooltip_fmt</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Custom formatting string used for displaying metadata about a selected marker. See <a class="reference external" href="https://github.com/TissUUmaps/TissUUmaps/issues/2">https://github.com/TissUUmaps/TissUUmaps/issues/2</a> for an overview of the grammer and keywords. If no string is specified, TissUUmaps will show default metadata depending on the context.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="expectedradios">
+<span id="expectedradios"></span><h3>ExpectedRadios<a class="headerlink" href="#expectedradios" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>Radio button state and checkbox state for settings in a marker tab. Required properties are shown in <strong>bold</strong> text.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>cb_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should be colored by data in CSV column</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>cb_gr</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should be colored by group</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>cb_gr_rand</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group color should be generated randomly</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>cb_gr_dict</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group color should be read from custom dictionary</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>cb_gr_key</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group color should be generated from group key</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>pie_check</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should be rendered as pie charts</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>scale_check</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should be scaled by data in CSV column</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>shape_col</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should get their shape from data in CSV column</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should get their shape from group</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr_rand</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group shape should be generated randomly</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>shape_gr_dict</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If group shape should be read from custom dictionary</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>shape_fixed</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If a single fixed shape should be used for all markers</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>opacity_check</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If markers should get their opacities from data in CSV column</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>_no_outline</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If marker shapes should be rendered without outline</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="setting">
+<span id="setting"></span><h3>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>[Add description]. Required properties are shown in <strong>bold</strong> text.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>function</strong></p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li><p><strong>module</strong></p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li><p><strong>value</strong></p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>number</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="example-of-a-tmap-file">
+<h2>Example of a .tmap file<a class="headerlink" href="#example-of-a-tmap-file" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TissUUmaps_Example.tmap&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Round1_A.tif&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;tileSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;images/Round1_A.tif.dzi&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Round1_C.tif&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;tileSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;images/Round1_C.tif.dzi&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;layerOpacities&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;0&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;layerVisibilities&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;0&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;layerFilters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;0&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Color&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0,100,0&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Color&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0,100,0&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;filters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;Color&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;compositeMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lighter&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;markerFiles&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;autoLoad&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;comment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;expectedHeader&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;X&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;global_x&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;Y&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;global_y&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_cmap&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_gr_dict&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;gb_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Gene&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;gb_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;opacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;opacity_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;pie_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;pie_dict&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;scale_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;scale_factor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.5&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;null&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_fixed&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cross&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_gr_dict&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;tooltip_fmt&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;expectedRadios&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_gr&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_gr_dict&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_gr_key&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;cb_gr_rand&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;pie_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;scale_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_col&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_fixed&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_gr&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_gr_dict&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;shape_gr_rand&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="nt">&quot;opacity_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="w">            </span><span class="p">},</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot; markers&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./istdeco_codes_n.csv&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Download markers&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uniquetab&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;regions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;plugins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;Spot_Inspector&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;hideTabs&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="anndata.html" class="btn btn-neutral float-left" title="AnnData" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2022, The TissUUmaps Team.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
