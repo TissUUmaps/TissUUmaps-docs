@@ -323,6 +323,80 @@
 <tr class="row-even"><td><p>default</p></td>
 <td colspan="2"><p>source-over</p></td>
 </tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>mpp</p></li>
+</ul>
+</td>
+<td colspan="3"><p>The image scale in Microns Per Pixels. If not null, then adds a scale bar to the viewer. Set to 0 to display the scale bar in pixels.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>float</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td colspan="2"><p>null</p></td>
+</tr>
+<tr class="row-even"><td rowspan="12"><ul class="simple">
+<li><p>boundingBox</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Bounding box used to set initial zoom and pan on the view when loading the project.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>null</p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>x</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Left coordinate of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>y</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Top coordinate of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>width</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Width of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>height</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Height of the bounding box in pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>float</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>rotate</p></li>
+</ul>
+</td>
+<td colspan="3"><p>Angle of rotation of the view in degrees. Only 0, 90, 180 and 270 degrees are supported.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td colspan="2"><p><em>integer</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td colspan="2"><p>0</p></td>
+</tr>
 <tr class="row-odd"><td rowspan="4"><ul class="simple">
 <li><p>markerFiles</p></li>
 </ul>
@@ -618,49 +692,61 @@
 <tr class="row-odd"><td><p>default</p></td>
 <td><p>false</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
-<li><p><strong>uid</strong></p></li>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>hideSettings</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Hide markers’ settings and add a toggle button instead.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
+<li><p>uid</p></li>
 </ul>
 </td>
 <td colspan="2"><p>A unique identifier used internally by TissUUmaps to reference the marker dataset</p></td>
 </tr>
-<tr class="row-odd"><td><p>type</p></td>
+<tr class="row-even"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
+<tr class="row-odd"><td><ul class="simple">
 <li><p><strong>expectedHeader</strong></p></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#expectedheader"><span class="std std-ref">ExpectedHeader</span></a></p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
-<li><p><strong>expectedRadios</strong></p></li>
+<tr class="row-even"><td><ul class="simple">
+<li><p>expectedRadios</p></li>
 </ul>
 </td>
 <td colspan="2"><p><a class="reference internal" href="#expectedradios"><span class="std std-ref">ExpectedRadios</span></a></p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-odd"><td rowspan="2"><ul class="simple">
 <li><p><strong>path</strong></p></li>
 </ul>
 </td>
-<td colspan="2"><p>Relative file path to CSV file in which marker data is stored</p></td>
+<td colspan="2"><p>Relative file path to CSV file in which marker data is stored. If array of string, then a dropdown is created instead of a button.</p></td>
 </tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td><p><em>string</em></p></td>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>string</em> / <em>array</em></p></td>
 </tr>
-<tr class="row-even"><td rowspan="4"><ul class="simple">
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
 <li><p>settings</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td><p><em>array</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td><p>[]</p></td>
 </tr>
-<tr class="row-even"><td colspan="2"><p>items</p></td>
+<tr class="row-odd"><td colspan="2"><p>items</p></td>
 </tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td><ul class="simple">
 <li></li>
 </ul>
 </td>

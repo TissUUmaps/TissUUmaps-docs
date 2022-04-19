@@ -83,6 +83,42 @@ The TMAP format uses JSON, with the following specifications:
                 "type": "string",
                 "default": "source-over"
             },
+            "mpp": {
+                "description": "The image scale in Microns Per Pixels. If not null, then adds a scale bar to the viewer. Set to 0 to display the scale bar in pixels.",
+                "type": "float",
+                "default": "null"
+            },
+            "boundingBox": {
+                "description": "Bounding box used to set initial zoom and pan on the view when loading the project.",
+                "type": "object",
+                "default": "null",
+                "properties": {
+                    "x": {
+                        "description": "Left coordinate of the bounding box in pixels",
+                        "type": "float"
+                    },
+                    "y": {
+                        "description": "Top coordinate of the bounding box in pixels",
+                        "type": "float"
+                    },
+                    "width": {
+                        "description": "Width of the bounding box in pixels",
+                        "type": "float"
+                    },
+                    "height": {
+                        "description": "Height of the bounding box in pixels",
+                        "type": "float"
+                    }
+                },
+                "required": [
+                    "x","y","width","height"
+                ]
+            },
+            "rotate": {
+                "description": "Angle of rotation of the view in degrees. Only 0, 90, 180 and 270 degrees are supported.",
+                "type": "integer",
+                "default": "0"
+            },
             "markerFiles": { 
                 "type": "array",
                 "items": [
@@ -204,6 +240,11 @@ The TMAP format uses JSON, with the following specifications:
                         "type": "boolean",
                         "default": "false"
                     },
+                    "hideSettings": {
+                        "description": "Hide markers' settings and add a toggle button instead.",
+                        "type": "boolean",
+                        "default": "false"
+                    },
                     "uid": {
                         "description": "A unique identifier used internally by TissUUmaps to reference the marker dataset",
                         "type": "string"
@@ -215,8 +256,8 @@ The TMAP format uses JSON, with the following specifications:
                         "$ref": "#definitions/ExpectedRadios"
                     },
                     "path": {
-                        "description": "Relative file path to CSV file in which marker data is stored",
-                        "type": "string"
+                        "description": "Relative file path to CSV file in which marker data is stored. If array of string, then a dropdown is created instead of a button.",
+                        "type": ["string", "array"]
                     },
                     "settings": {
                         "type": "array",
@@ -231,9 +272,7 @@ The TMAP format uses JSON, with the following specifications:
                 "required": [
                     "title",
                     "name",
-                    "uid",
                     "expectedHeader",
-                    "expectedRadios",
                     "path"
                 ]
             },

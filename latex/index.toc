@@ -40,13 +40,13 @@
 \contentsline {subsection}{\numberline {2.4.1}Saving and loading projects}{7}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}The TMAP file format}{7}{subsection.2.4.2}%
 \contentsline {subsubsection}{TMAP project specifications}{8}{subsubsection*.7}%
-\contentsline {paragraph}{Layer}{9}{paragraph*.8}%
-\contentsline {paragraph}{LayerFilter}{9}{paragraph*.9}%
+\contentsline {paragraph}{Layer}{10}{paragraph*.8}%
+\contentsline {paragraph}{LayerFilter}{10}{paragraph*.9}%
 \contentsline {paragraph}{Filter}{10}{paragraph*.10}%
 \contentsline {paragraph}{ColorScale}{10}{paragraph*.11}%
-\contentsline {paragraph}{Shape}{10}{paragraph*.12}%
+\contentsline {paragraph}{Shape}{11}{paragraph*.12}%
 \contentsline {paragraph}{MarkerFile}{11}{paragraph*.13}%
-\contentsline {paragraph}{ExpectedHeader}{11}{paragraph*.14}%
+\contentsline {paragraph}{ExpectedHeader}{12}{paragraph*.14}%
 \contentsline {paragraph}{ExpectedRadios}{13}{paragraph*.15}%
 \contentsline {paragraph}{Setting}{14}{paragraph*.16}%
 \contentsline {subsubsection}{Example of a .tmap file}{14}{subsubsection*.17}%
@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {2.6}Plugins}{16}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Load plugins}{16}{subsection.2.6.1}%
 \contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{16}{subsection.2.6.2}%
-\contentsline {subsubsection}{Javascript file}{16}{subsubsection*.18}%
+\contentsline {subsubsection}{Javascript file}{17}{subsubsection*.18}%
 \contentsline {subsubsection}{Python file}{17}{subsubsection*.19}%
 \contentsline {chapter}{\numberline {3}Sharing projects}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Apache server}{18}{section.3.1}%
