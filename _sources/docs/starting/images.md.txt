@@ -31,7 +31,7 @@ You can also drag and drop the image from file explorer into TissUUmaps.
 
 ## Apply filters
 
-You can apply several filters on the images. The ones we can be adjusted defaultly are saturation, brightness and contrast. Additionaly, when opening Filter settings menu, there are various other filters, such as exposure, noise, erosion, etc. When you check their box, they are automatically added into the filter panel above. Filter's sliders can be adjusted so that the filter is applied in a desired intensity. Another option in filter settings is merging mode (bottom part), where you can merge the channels as a composite.
+You can apply several filters to the images. The ones we can be adjusted by default are saturation, brightness, and contrast. Additionally, when opening the Filter settings menu, there are various other filters, such as exposure, noise, erosion, etc. When you check their box, they are automatically added to the filter panel above. The filter's sliders can be adjusted so that the filter is applied at the desired intensity. Another option in filter settings is merging mode (bottom part), where you can merge the channels as a composite.
 
 ![filters](images/Filters.png)
 

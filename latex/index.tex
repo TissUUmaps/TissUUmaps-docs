@@ -426,7 +426,7 @@ You can also drag and drop the image from file explorer into TissUUmaps.
 \subsection{Apply filters}
 \label{\detokenize{docs/starting/images:apply-filters}}
 \sphinxAtStartPar
-You can apply several filters on the images. The ones we can be adjusted defaultly are saturation, brightness and contrast. Additionaly, when opening Filter settings menu, there are various other filters, such as exposure, noise, erosion, etc. When you check their box, they are automatically added into the filter panel above. Filter’s sliders can be adjusted so that the filter is applied in a desired intensity. Another option in filter settings is merging mode (bottom part), where you can merge the channels as a composite.
+You can apply several filters to the images. The ones we can be adjusted by default are saturation, brightness, and contrast. Additionally, when opening the Filter settings menu, there are various other filters, such as exposure, noise, erosion, etc. When you check their box, they are automatically added to the filter panel above. The filter’s sliders can be adjusted so that the filter is applied at the desired intensity. Another option in filter settings is merging mode (bottom part), where you can merge the channels as a composite.
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{Filters}.png}
@@ -448,15 +448,78 @@ CSV files can be exported from any spreadsheet program, or any programming langu
 
 \subsection{Load markers}
 \label{\detokenize{docs/starting/markers:load-markers}}
+\sphinxAtStartPar
+You can load the markers when you select the Markers tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
+\sphinxincludegraphics{{markers}.png}
+
 
 \subsection{Markers settings}
 \label{\detokenize{docs/starting/markers:markers-settings}}
+\sphinxAtStartPar
+Before the markers are displayed you have to set up the markers settings.
+
 
 \subsubsection{File and coordinates}
 \label{\detokenize{docs/starting/markers:file-and-coordinates}}
+\sphinxAtStartPar
+The first step is to select the desired file from your computer under the tab File and coordinates \sphinxhyphen{} Choose file.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{load_markers}.png}
+
+\sphinxAtStartPar
+You can change the Tab name to the desired name, so it is easier to navigate between them when there are more tabs.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Tab_name}.png}
+
+\sphinxAtStartPar
+The next step is to select the column names from the .csv file corresponding to the X and Y coordinates.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{XY_coordinates}.png}
+
 
 \subsubsection{Render options}
 \label{\detokenize{docs/starting/markers:render-options}}
+\sphinxAtStartPar
+Here, you can define a key to group by, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the markers. In this example, we use the column genes, where different colors and shapes of markers represent different genes.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{group_by}.png}
+
+\sphinxAtStartPar
+There is an option to display an extra column, for example when the data are clustered but you want to see the original genes and also the cluster names.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{group_by2}.png}
+
+\sphinxAtStartPar
+In Color options, you can select to color by groups where each group has a different color. Then on the right side, you can select the color palette:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Key value \sphinxhyphen{} Colors are generated from the name of the group (first 4 letters). Groups starting with the same letter have similar colors.
+
+\item {} 
+\sphinxAtStartPar
+Randomly \sphinxhyphen{} Colors are generated randomly.
+
+\item {} 
+\sphinxAtStartPar
+Dictionary \sphinxhyphen{} you can insert a specific dictionary in the text area which will be used for generating the colors.
+
+\end{itemize}
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Color_options}.png}
+
+\sphinxAtStartPar
+If you want to color by markers, you have to select the column from the .csv file which will be used to create the colors, and the colormap, but only if the color column is numeral.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Color_options2}.png}
+
 
 \subsubsection{Advanced options}
 \label{\detokenize{docs/starting/markers:advanced-options}}

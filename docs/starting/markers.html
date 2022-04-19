@@ -203,14 +203,36 @@
 </div>
 <div class="section" id="load-markers">
 <h2>Load markers<a class="headerlink" href="#load-markers" title="Permalink to this headline">¶</a></h2>
+<p>You can load the markers when you select the Markers tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
+<img alt="markers" src="../../_images/markers.png" /></p>
 </div>
 <div class="section" id="markers-settings">
 <h2>Markers settings<a class="headerlink" href="#markers-settings" title="Permalink to this headline">¶</a></h2>
+<p>Before the markers are displayed you have to set up the markers settings.</p>
 <div class="section" id="file-and-coordinates">
 <h3>File and coordinates<a class="headerlink" href="#file-and-coordinates" title="Permalink to this headline">¶</a></h3>
+<p>The first step is to select the desired file from your computer under the tab File and coordinates - Choose file.</p>
+<p><img alt="load markers" src="../../_images/load_markers.png" /></p>
+<p>You can change the Tab name to the desired name, so it is easier to navigate between them when there are more tabs.</p>
+<p><img alt="Tab name" src="../../_images/Tab_name.png" /></p>
+<p>The next step is to select the column names from the .csv file corresponding to the X and Y coordinates.</p>
+<p><img alt="XY coordinates" src="../../_images/XY_coordinates.png" /></p>
 </div>
 <div class="section" id="render-options">
 <h3>Render options<a class="headerlink" href="#render-options" title="Permalink to this headline">¶</a></h3>
+<p>Here, you can define a key to group by, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the markers. In this example, we use the column genes, where different colors and shapes of markers represent different genes.</p>
+<p><img alt="group by" src="../../_images/group_by.png" /></p>
+<p>There is an option to display an extra column, for example when the data are clustered but you want to see the original genes and also the cluster names.</p>
+<p><img alt="group by2" src="../../_images/group_by2.png" /></p>
+<p>In Color options, you can select to color by groups where each group has a different color. Then on the right side, you can select the color palette:</p>
+<ul class="simple">
+<li><p>Key value - Colors are generated from the name of the group (first 4 letters). Groups starting with the same letter have similar colors.</p></li>
+<li><p>Randomly - Colors are generated randomly.</p></li>
+<li><p>Dictionary - you can insert a specific dictionary in the text area which will be used for generating the colors.</p></li>
+</ul>
+<p><img alt="Color options" src="../../_images/Color_options.png" /></p>
+<p>If you want to color by markers, you have to select the column from the .csv file which will be used to create the colors, and the colormap, but only if the color column is numeral.</p>
+<p><img alt="Color options2" src="../../_images/Color_options2.png" /></p>
 </div>
 <div class="section" id="advanced-options">
 <h3>Advanced options<a class="headerlink" href="#advanced-options" title="Permalink to this headline">¶</a></h3>
