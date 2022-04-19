@@ -20,9 +20,18 @@ If your image fails to open, try converting it to `tif` format using an external
 
 ## Load images
 
-<!-- 
-You can show how to open image by drag and dropping from File Explorer to TissUUmaps, or through the image menu
--->
+You can load the images when you select the Image layer tab as you can see in the figure below:
+![Image layers](images/image_layers.png)
+
+Then click the button Add image layer and select the desired image from your computer. Subsequently, the image is listed in the Image layer tab. You can load several images into TissUUmaps.
+![Image more layers](images/image_layers_many.png)
+
+You can also drag and drop the image from file explorer into TissUUmaps.
+![drag and drop](images/drag_drop_image.png)
 
 ## Apply filters
+
+You can apply several filters on the images. The ones we can be adjusted defaultly are saturation, brightness and contrast. Additionaly, when opening Filter settings menu, there are various other filters, such as exposure, noise, erosion, etc. When you check their box, they are automatically added into the filter panel above. Filter's sliders can be adjusted so that the filter is applied in a desired intensity. Another option in filter settings is merging mode (bottom part), where you can merge the channels as a composite.
+
+![filters](images/Filters.png)
 
