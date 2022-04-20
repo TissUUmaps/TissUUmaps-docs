@@ -108,12 +108,15 @@
             "default": "{}"
         },
         "regionFile": {
+            "description": "**(Deprecated)** GeoJSON region file loaded on project initialization. Use regionFiles instead.",
             "type": "string",
             "default": ""
         },
         "regionFiles": {
             "type": "array",
-            "items": {},
+            "items": [
+                { "$ref": "#/definitions/RegionFile" }
+            ],
             "default": "[]"
         },
         "plugins": {
@@ -285,7 +288,7 @@
                     "default": "null"
                 },
                 "cb_gr_dict": {
-                    "description": "JSON string specifying a custom dictionary for mapping group keys to group colors. Example: '{\"key1\": \"#ff0000\", \"key2\": \"#00ff00\", \"key3\": \"#0000ff\"}'",
+                    "description": "JSON string specifying a custom dictionary for mapping group keys to group colors. Example: ``'{\"key1\": \"#ff0000\", \"key2\": \"#00ff00\", \"key3\": \"#0000ff\"}'``",
                     "type": "string",
                     "default": ""
                 },
@@ -305,7 +308,7 @@
                     "default": "null"
                 },
                 "pie_dict": {
-                    "description": "JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: '{0: \"#ff0000\", 1: \"#00ff00\", 2: \"#0000ff\"}'. If no dictionary is specified, TissUUmaps will use a default color palette instead.",
+                    "description": "JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: ``'{0: \"#ff0000\", 1: \"#00ff00\", 2: \"#0000ff\"}'``. If no dictionary is specified, TissUUmaps will use a default color palette instead.",
                     "type": "string",
                     "default": ""
                 },
@@ -320,7 +323,7 @@
                     "default": "cross"
                 },
                 "shape_gr_dict": {
-                    "description": "JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: '{\"key1\": \"square\", \"key2\": \"diamond\", \"key3\": \"triangle up\"}'. See also :ref:`Shape`.",
+                    "description": "JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ``'{\"key1\": \"square\", \"key2\": \"diamond\", \"key3\": \"triangle up\"}'``. See also :ref:`Shape`.",
                     "type": "string",
                     "default": ""
                 },
@@ -422,14 +425,53 @@
             },
             "required": []
         },
-        "Setting": {
-            "description": "[Add description]. Required properties are shown in **bold** text.",
+        "RegionFile": {
+            "description": "Description of settings and regions loaded from GeoJSON file. Required properties are shown in **bold** text.",
             "type": "object",
             "properties": {
-                "function": {
+                "title": {
+                    "description": "Name of region button",
+                    "type": "string"
+                },
+                "comment": {
+                    "description": "Optional description text shown next to region button",
+                    "type": "string",
+                    "default": ""
+                },
+                "autoLoad": {
+                    "description": "If the regions should be automatically loaded when the TMAP project is opened. If this is false, the user instead has to click on the region button in the GUI to load the regions.",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "path": {
+                    "description": "Relative file path to GeoJSON file in which marker data is stored. If array of string, then a dropdown is created instead of a button.",
+                    "type": ["string", "array"]
+                },
+                "settings": {
+                    "type": "array",
+                    "items": [
+                        {
+                        "$ref": "#/definitions/Setting"
+                        }
+                    ],
+                    "default": "[]"
+                }
+            },
+            "required": [
+                "title",
+                "path"
+            ]
+        },
+        "Setting": {
+            "description": "Advanced javascript setting, used to change the value of a property in a module, or to call a function in a module. If module.function is a function, then calls ``module.function(value)``, else affects ``value`` to ``module.function``. Required properties are shown in **bold** text.",
+            "type": "object",
+            "properties": {
+                "module": {
+                "description": "Module where the function or property lies.",
                 "type": "string"
                 },
-                "module": {
+                "function": {
+                "description": "Function or property of the given module.",
                 "type": "string"
                 },
                 "value": {
