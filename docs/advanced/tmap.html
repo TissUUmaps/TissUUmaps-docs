@@ -116,6 +116,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#markerfile">MarkerFile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#expectedheader">ExpectedHeader</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#expectedradios">ExpectedRadios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#regionfile">RegionFile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#setting">Setting</a></li>
 </ul>
 </li>
@@ -426,27 +427,35 @@
 <tr class="row-odd"><td><p>default</p></td>
 <td colspan="2"><p>{}</p></td>
 </tr>
-<tr class="row-even"><td rowspan="2"><ul class="simple">
+<tr class="row-even"><td rowspan="3"><ul class="simple">
 <li><p>regionFile</p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="3"><p><strong>(Deprecated)</strong> GeoJSON region file loaded on project initialization. Use regionFiles instead.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td colspan="2"><p><em>string</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td colspan="2"></td>
 </tr>
-<tr class="row-even"><td rowspan="3"><ul class="simple">
+<tr class="row-odd"><td rowspan="4"><ul class="simple">
 <li><p>regionFiles</p></li>
 </ul>
 </td>
 <td><p>type</p></td>
 <td colspan="2"><p><em>array</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>default</p></td>
+<tr class="row-even"><td><p>default</p></td>
 <td colspan="2"><p>[]</p></td>
 </tr>
-<tr class="row-even"><td colspan="3"><p>items</p></td>
+<tr class="row-odd"><td colspan="3"><p>items</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td colspan="2"><p><a class="reference internal" href="#regionfile">RegionFile</a></p></td>
 </tr>
 <tr class="row-odd"><td rowspan="5"><ul class="simple">
 <li><p>plugins</p></li>
@@ -840,7 +849,7 @@
 <li><p>cb_gr_dict</p></li>
 </ul>
 </td>
-<td colspan="2"><p>JSON string specifying a custom dictionary for mapping group keys to group colors. Example: ‘{“key1”: “#ff0000”, “key2”: “#00ff00”, “key3”: “#0000ff”}’</p></td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping group keys to group colors. Example: <code class="docutils literal notranslate"><span class="pre">'{&quot;key1&quot;:</span> <span class="pre">&quot;#ff0000&quot;,</span> <span class="pre">&quot;key2&quot;:</span> <span class="pre">&quot;#00ff00&quot;,</span> <span class="pre">&quot;key3&quot;:</span> <span class="pre">&quot;#0000ff&quot;}'</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -888,7 +897,7 @@
 <li><p>pie_dict</p></li>
 </ul>
 </td>
-<td colspan="2"><p>JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: ‘{0: “#ff0000”, 1: “#00ff00”, 2: “#0000ff”}’. If no dictionary is specified, TissUUmaps will use a default color palette instead.</p></td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping pie chart sector indices to colors. Example: <code class="docutils literal notranslate"><span class="pre">'{0:</span> <span class="pre">&quot;#ff0000&quot;,</span> <span class="pre">1:</span> <span class="pre">&quot;#00ff00&quot;,</span> <span class="pre">2:</span> <span class="pre">&quot;#0000ff&quot;}'</span></code>. If no dictionary is specified, TissUUmaps will use a default color palette instead.</p></td>
 </tr>
 <tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -924,7 +933,7 @@
 <li><p>shape_gr_dict</p></li>
 </ul>
 </td>
-<td colspan="2"><p>JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: ‘{“key1”: “square”, “key2”: “diamond”, “key3”: “triangle up”}’. See also <a class="reference internal" href="#shape"><span class="std std-ref">Shape</span></a>.</p></td>
+<td colspan="2"><p>JSON string specifying a custom dictionary for mapping group keys to group shapes. Example: <code class="docutils literal notranslate"><span class="pre">'{&quot;key1&quot;:</span> <span class="pre">&quot;square&quot;,</span> <span class="pre">&quot;key2&quot;:</span> <span class="pre">&quot;diamond&quot;,</span> <span class="pre">&quot;key3&quot;:</span> <span class="pre">&quot;triangle</span> <span class="pre">up&quot;}'</span></code>. See also <a class="reference internal" href="#shape"><span class="std std-ref">Shape</span></a>.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
@@ -1158,6 +1167,85 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="regionfile">
+<span id="regionfile"></span><h3>RegionFile<a class="headerlink" href="#regionfile" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td colspan="3"><p>Description of settings and regions loaded from GeoJSON file. Required properties are shown in <strong>bold</strong> text.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td colspan="2"><p><em>object</em></p></td>
+</tr>
+<tr class="row-odd"><td colspan="3"><p>properties</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>title</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Name of region button</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="3"><ul class="simple">
+<li><p>comment</p></li>
+</ul>
+</td>
+<td colspan="2"><p>Optional description text shown next to region button</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><ul class="simple">
+<li><p>autoLoad</p></li>
+</ul>
+</td>
+<td colspan="2"><p>If the regions should be automatically loaded when the TMAP project is opened. If this is false, the user instead has to click on the region button in the GUI to load the regions.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p><em>boolean</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>path</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Relative file path to GeoJSON file in which marker data is stored. If array of string, then a dropdown is created instead of a button.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em> / <em>array</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="4"><ul class="simple">
+<li><p>settings</p></li>
+</ul>
+</td>
+<td><p>type</p></td>
+<td><p><em>array</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>default</p></td>
+<td><p>[]</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>items</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p><a class="reference internal" href="#setting">Setting</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="setting">
 <span id="setting"></span><h3>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
@@ -1167,25 +1255,29 @@
 <col style="width: 33%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td colspan="3"><p>[Add description]. Required properties are shown in <strong>bold</strong> text.</p></td>
+<tr class="row-odd"><td colspan="3"><p>Advanced javascript setting, used to change the value of a property in a module, or to call a function in a module. If module.function is a function, then calls <code class="docutils literal notranslate"><span class="pre">module.function(value)</span></code>, else affects <code class="docutils literal notranslate"><span class="pre">value</span></code> to <code class="docutils literal notranslate"><span class="pre">module.function</span></code>. Required properties are shown in <strong>bold</strong> text.</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
 <td colspan="2"><p><em>object</em></p></td>
 </tr>
 <tr class="row-odd"><td colspan="3"><p>properties</p></td>
 </tr>
-<tr class="row-even"><td><ul class="simple">
-<li><p><strong>function</strong></p></li>
-</ul>
-</td>
-<td><p>type</p></td>
-<td><p><em>string</em></p></td>
-</tr>
-<tr class="row-odd"><td><ul class="simple">
+<tr class="row-even"><td rowspan="2"><ul class="simple">
 <li><p><strong>module</strong></p></li>
 </ul>
 </td>
-<td><p>type</p></td>
+<td colspan="2"><p>Module where the function or property lies.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p><em>string</em></p></td>
+</tr>
+<tr class="row-even"><td rowspan="2"><ul class="simple">
+<li><p><strong>function</strong></p></li>
+</ul>
+</td>
+<td colspan="2"><p>Function or property of the given module.</p></td>
+</tr>
+<tr class="row-odd"><td><p>type</p></td>
 <td><p><em>string</em></p></td>
 </tr>
 <tr class="row-even"><td><ul class="simple">

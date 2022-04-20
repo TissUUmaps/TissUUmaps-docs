@@ -56,12 +56,13 @@
 \contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{20}{subsection.4.4.1}%
 \contentsline {subsubsection}{Layer}{22}{subsubsection*.15}%
 \contentsline {subsubsection}{LayerFilter}{22}{subsubsection*.16}%
-\contentsline {subsubsection}{Filter}{22}{subsubsection*.17}%
+\contentsline {subsubsection}{Filter}{23}{subsubsection*.17}%
 \contentsline {subsubsection}{ColorScale}{23}{subsubsection*.18}%
 \contentsline {subsubsection}{Shape}{23}{subsubsection*.19}%
 \contentsline {subsubsection}{MarkerFile}{24}{subsubsection*.20}%
 \contentsline {subsubsection}{ExpectedHeader}{24}{subsubsection*.21}%
 \contentsline {subsubsection}{ExpectedRadios}{26}{subsubsection*.22}%
-\contentsline {subsubsection}{Setting}{27}{subsubsection*.23}%
-\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{27}{subsection.4.4.2}%
-\contentsline {chapter}{Index}{30}{section*.24}%
+\contentsline {subsubsection}{RegionFile}{27}{subsubsection*.23}%
+\contentsline {subsubsection}{Setting}{27}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{28}{subsection.4.4.2}%
+\contentsline {chapter}{Index}{30}{section*.25}%

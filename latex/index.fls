@@ -1,4 +1,4 @@
-PWD /tmp/pages-LYFD2pY7yz/latex
+PWD /tmp/pages-o6m0Up9guw/latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -352,6 +352,9 @@ INPUT ./plugin_container.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/t1xttsl.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ts1-qtmri.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/tcxtt.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qtmr.tfm
 INPUT index.ind
 INPUT index.ind
@@ -371,3 +374,4 @@ INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb
