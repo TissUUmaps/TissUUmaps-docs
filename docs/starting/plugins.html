@@ -204,17 +204,17 @@
 <p>When loading a plugin, the function <code class="docutils literal notranslate"><span class="pre">PluginName.init(container)</span></code> will be called. The <code class="docutils literal notranslate"><span class="pre">container</span></code> is an html Element that will be added to the plugin menu. Use this element to add options and texts related to your plugin.</p>
 <p><img alt="plugin container" src="../../_images/plugin_container.png" /></p>
 <p>Here is a minimal example of plugin:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">Plugin_template</span><span class="p">;</span>
-<span class="nx">Plugin_template</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">name</span><span class="o">:</span><span class="s2">&quot;Template Plugin&quot;</span>
-<span class="p">}</span>
- 
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">Plugin_template</span><span class="p">;</span><span class="w"></span>
+<span class="nx">Plugin_template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="s2">&quot;Template Plugin&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="w"> </span>
 <span class="cm">/**</span>
 <span class="cm"> * This method is called when the document is loaded.</span>
-<span class="cm"> * The container element is a div where the plugin options will be displayed. */</span>
-<span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">init</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">container</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">container</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;Hello world&quot;</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="cm"> * The container element is a div where the plugin options will be displayed. */</span><span class="w"></span>
+<span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">init</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">container</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">container</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello world&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You can access the TissUUmaps javascript API <a class="reference external" href="https://tissuumaps.github.io/TissUUmapsCore/">here</a>.</p>

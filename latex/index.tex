@@ -61,7 +61,7 @@
 
 
 \title{TissUUmaps}
-\date{Apr 20, 2022}
+\date{Apr 28, 2022}
 \release{3.0}
 \author{Nicolas Pielawski\and Axel Andersson\and Christophe Avenel\and Andrea Behanova\and Eduard Chelebian\and Anna Klemm\and Fredrik Nysjö\and Leslie Solorzano\and Carolina Wählby}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -81,7 +81,7 @@
 This page hosts the documentation for TissUUmaps 3.0. You can find a pdf version of this documentation \sphinxhref{https://tissuumaps.github.io/TissUUmaps-docs/index.pdf}{here}.
 
 \sphinxAtStartPar
-For more information on the TissUUmaps project, including video tutorials and demos, visit our website: \sphinxurl{https://tissuumaps.github.io}.
+For more information on the TissUUmaps project, including \sphinxhref{https://tissuumaps.github.io/tutorials/}{video tutorials} and \sphinxhref{https://tissuumaps.github.io/gallery/}{demos}, visit our website: \sphinxurl{https://tissuumaps.github.io}.
 
 \begin{sphinxShadowBox}
 \sphinxstylesidebartitle{Work in progress!}
@@ -636,16 +636,16 @@ When loading a plugin, the function \sphinxcode{\sphinxupquote{PluginName.init(c
 Here is a minimal example of plugin:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k+kd}{var} \PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{;}
-\PYG{n+nx}{Plugin\PYGZus{}template} \PYG{o}{=} \PYG{p}{\PYGZob{}}
-    \PYG{n+nx}{name}\PYG{o}{:}\PYG{l+s+s2}{\PYGZdq{}Template Plugin\PYGZdq{}}
+\PYG{k+kd}{var}\PYG{+w}{ }\PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{;}
+\PYG{n+nx}{Plugin\PYGZus{}template}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{name}\PYG{o}{:}\PYG{l+s+s2}{\PYGZdq{}Template Plugin\PYGZdq{}}
 \PYG{p}{\PYGZcb{}}
- 
+\PYG{+w}{ }
 \PYG{c+cm}{/**}
 \PYG{c+cm}{ * This method is called when the document is loaded.}
 \PYG{c+cm}{ * The container element is a div where the plugin options will be displayed. */}
-\PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{.}\PYG{n+nx}{init} \PYG{o}{=} \PYG{k+kd}{function} \PYG{p}{(}\PYG{n+nx}{container}\PYG{p}{)} \PYG{p}{\PYGZob{}}
-    \PYG{n+nx}{container}\PYG{p}{.}\PYG{n+nx}{innerHTML} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Hello world\PYGZdq{}}\PYG{p}{;}
+\PYG{n+nx}{Plugin\PYGZus{}template}\PYG{p}{.}\PYG{n+nx}{init}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k+kd}{function}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{container}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{container}\PYG{p}{.}\PYG{n+nx}{innerHTML}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Hello world\PYGZdq{}}\PYG{p}{;}
 \PYG{p}{\PYGZcb{}}
 \end{sphinxVerbatim}
 
