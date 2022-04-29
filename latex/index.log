@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.28)  28 APR 2022 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.4.29)  29 APR 2022 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,13 +828,13 @@ LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [3] [4] [5]
 Chapter 2.
-<image_layers.png, id=359, 836.3747pt x 482.55281pt>
+<image_layers.png, id=363, 836.3747pt x 482.55281pt>
 File: image_layers.png Graphic file (type png)
 <use image_layers.png>
-Package pdftex.def Info: image_layers.png  used on input line 415.
+Package pdftex.def Info: image_layers.png  used on input line 444.
 (pdftex.def)             Requested size: 469.77046pt x 271.03767pt.
 
-Underfull \hbox (badness 5008) in paragraph at lines 413--416
+Underfull \hbox (badness 5008) in paragraph at lines 442--445
 \T1/qtm/m/n/10 You can load the im-ages when you se-lect the Im-age layer tab a
 s you can see in the fig-ure be-low:
  []
@@ -842,103 +842,103 @@ s you can see in the fig-ure be-low:
 [6
 
 ]
-<image_layers_many.png, id=365, 904.1278pt x 484.05844pt>
+<image_layers_many.png, id=369, 904.1278pt x 484.05844pt>
 File: image_layers_many.png Graphic file (type png)
 <use image_layers_many.png>
-Package pdftex.def Info: image_layers_many.png  used on input line 419.
+Package pdftex.def Info: image_layers_many.png  used on input line 448.
 (pdftex.def)             Requested size: 469.74908pt x 251.50502pt.
 
-Underfull \hbox (badness 6741) in paragraph at lines 417--420
+Underfull \hbox (badness 6741) in paragraph at lines 446--449
 []\T1/qtm/m/n/10 Then click the but-ton Add im-age layer and se-lect the de-sir
 ed im-age from your com-puter. Sub-se-
  []
 
-<drag_drop_image.png, id=366, 1111.15125pt x 945.5325pt>
+<drag_drop_image.png, id=370, 1111.15125pt x 945.5325pt>
 File: drag_drop_image.png Graphic file (type png)
 <use drag_drop_image.png>
-Package pdftex.def Info: drag_drop_image.png  used on input line 423.
+Package pdftex.def Info: drag_drop_image.png  used on input line 452.
 (pdftex.def)             Requested size: 469.74916pt x 399.74678pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--424
+Underfull \hbox (badness 10000) in paragraph at lines 450--453
 []\T1/qtm/m/n/10 You can also drag and drop the im-age from file ex-plorer into
  Tis-sU-Umaps.
  []
 
 [7 <./image_layers.png> <./image_layers_many.png>]
-<Filters.png, id=373, 374.90062pt x 431.36156pt>
+<Filters.png, id=377, 374.90062pt x 431.36156pt>
 File: Filters.png Graphic file (type png)
 <use Filters.png>
-Package pdftex.def Info: Filters.png  used on input line 432.
+Package pdftex.def Info: Filters.png  used on input line 461.
 (pdftex.def)             Requested size: 374.8997pt x 431.3605pt.
  [8 <./drag_drop_image.png>]
 [9 <./Filters.png>]
-<markers.png, id=383, 902.6222pt x 512.66531pt>
+<markers.png, id=387, 902.6222pt x 512.66531pt>
 File: markers.png Graphic file (type png)
 <use markers.png>
-Package pdftex.def Info: markers.png  used on input line 453.
+Package pdftex.def Info: markers.png  used on input line 482.
 (pdftex.def)             Requested size: 469.76566pt x 266.80652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 \T1/qtm/m/n/10 You can load the mark-ers when you se-lect the Mark-ers tab and 
 click the but-ton + as you can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 \T1/qtm/m/n/10 see in the fig-ure be-low. You can click the plus sev-eral times
  to load var-i-ous marker files.
  []
 
-<load_markers.png, id=384, 362.10281pt x 182.18062pt>
+<load_markers.png, id=388, 362.10281pt x 182.18062pt>
 File: load_markers.png Graphic file (type png)
 <use load_markers.png>
-Package pdftex.def Info: load_markers.png  used on input line 468.
+Package pdftex.def Info: load_markers.png  used on input line 497.
 (pdftex.def)             Requested size: 362.10191pt x 182.18016pt.
-<Tab_name.png, id=385, 361.35pt x 182.18062pt>
+<Tab_name.png, id=389, 361.35pt x 182.18062pt>
 File: Tab_name.png Graphic file (type png)
 <use Tab_name.png>
-Package pdftex.def Info: Tab_name.png  used on input line 474.
+Package pdftex.def Info: Tab_name.png  used on input line 503.
 (pdftex.def)             Requested size: 361.34912pt x 182.18016pt.
 [10 <./markers.png> <./load_markers.png>]
-<XY_coordinates.png, id=391, 359.84438pt x 248.42813pt>
+<XY_coordinates.png, id=395, 359.84438pt x 248.42813pt>
 File: XY_coordinates.png Graphic file (type png)
 <use XY_coordinates.png>
-Package pdftex.def Info: XY_coordinates.png  used on input line 480.
+Package pdftex.def Info: XY_coordinates.png  used on input line 509.
 (pdftex.def)             Requested size: 359.84349pt x 248.42752pt.
-<group_by.png, id=392, 356.0803pt x 286.06876pt>
+<group_by.png, id=396, 356.0803pt x 286.06876pt>
 File: group_by.png Graphic file (type png)
 <use group_by.png>
-Package pdftex.def Info: group_by.png  used on input line 489.
+Package pdftex.def Info: group_by.png  used on input line 518.
 (pdftex.def)             Requested size: 356.07944pt x 286.06805pt.
  [11 <./Tab_name.png> <./XY_coordinates.png>]
-<group_by2.png, id=400, 351.56343pt x 290.58563pt>
+<group_by2.png, id=404, 351.56343pt x 290.58563pt>
 File: group_by2.png Graphic file (type png)
 <use group_by2.png>
-Package pdftex.def Info: group_by2.png  used on input line 495.
+Package pdftex.def Info: group_by2.png  used on input line 524.
 (pdftex.def)             Requested size: 351.56256pt x 290.58492pt.
  [12 <./group_by.png> <./group_by2.png>]
-<Color_options.png, id=407, 350.05782pt x 283.0575pt>
+<Color_options.png, id=411, 350.05782pt x 283.0575pt>
 File: Color_options.png Graphic file (type png)
 <use Color_options.png>
-Package pdftex.def Info: Color_options.png  used on input line 515.
+Package pdftex.def Info: Color_options.png  used on input line 544.
 (pdftex.def)             Requested size: 350.05695pt x 283.0568pt.
-<Color_options2.png, id=408, 346.29375pt x 305.64188pt>
+<Color_options2.png, id=412, 346.29375pt x 305.64188pt>
 File: Color_options2.png Graphic file (type png)
 <use Color_options2.png>
-Package pdftex.def Info: Color_options2.png  used on input line 521.
+Package pdftex.def Info: Color_options2.png  used on input line 550.
 (pdftex.def)             Requested size: 346.2929pt x 305.64111pt.
  [13 <./Color_options.png>]
 [14 <./Color_options2.png>]
-<plugin_container.png, id=422, 479.54156pt x 170.13562pt>
+<plugin_container.png, id=426, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 633.
+Package pdftex.def Info: plugin_container.png  used on input line 662.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
  [15]
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 639.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 668.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 644.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 673.
  [16 <./plugin_container.png>]
 Chapter 3.
 [17
@@ -948,7 +948,7 @@ Chapter 4.
 [18
 
 ] [19] [20] [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 2152--2152
+Underfull \hbox (badness 10000) in paragraph at lines 2181--2181
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
@@ -970,25 +970,25 @@ yter.TissUUmapsViewer
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4013.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4013.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4042.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4042.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4013.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4013.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4042.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4042.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: F649644EC231C214188BD7CA56342A5E;8482.
+(rerunfilecheck)             Checksum: B3E8D3B654059C8876CE2D6EB63353B7;8580.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4013.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4042.
  ) 
 Here is how much of TeX's memory you used:
- 14184 strings out of 483183
- 203997 string characters out of 5966292
- 650208 words of memory out of 5000000
- 28694 multiletter control sequences out of 15000+600000
+ 14187 strings out of 483183
+ 204059 string characters out of 5966292
+ 650251 words of memory out of 5000000
+ 28696 multiletter control sequences out of 15000+600000
  587175 words of font info for 68 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,13n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1003,10 +1003,10 @@ pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on index.pdf (32 pages, 960420 bytes).
+Output written on index.pdf (32 pages, 960690 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 546 compressed objects within 6 object streams
- 121 named destinations out of 1000 (max. 500000)
- 622 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 634 PDF objects out of 1000 (max. 8388607)
+ 550 compressed objects within 6 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 630 words of extra memory for PDF output out of 10000 (max. 10000000)
 
