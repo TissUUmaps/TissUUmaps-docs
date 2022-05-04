@@ -1,7 +1,7 @@
-\indexentry{module@\spxentry{module}!tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}|hyperpage}{18}
-\indexentry{tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}!module@\spxentry{module}|hyperpage}{18}
-\indexentry{opentmap() (in module tissuumaps.jupyter)@\spxentry{opentmap()}\spxextra{in module tissuumaps.jupyter}|hyperpage}{18}
-\indexentry{loaddata() (in module tissuumaps.jupyter)@\spxentry{loaddata()}\spxextra{in module tissuumaps.jupyter}|hyperpage}{18}
-\indexentry{TissUUmapsViewer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsViewer}\spxextra{class in tissuumaps.jupyter}|hyperpage}{19}
-\indexentry{screenshot() (tissuumaps.jupyter.TissUUmapsViewer method)@\spxentry{screenshot()}\spxextra{tissuumaps.jupyter.TissUUmapsViewer method}|hyperpage}{19}
-\indexentry{TissUUmapsServer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsServer}\spxextra{class in tissuumaps.jupyter}|hyperpage}{19}
+\indexentry{module@\spxentry{module}!tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}|hyperpage}{31}
+\indexentry{tissuumaps.jupyter@\spxentry{tissuumaps.jupyter}!module@\spxentry{module}|hyperpage}{31}
+\indexentry{opentmap() (in module tissuumaps.jupyter)@\spxentry{opentmap()}\spxextra{in module tissuumaps.jupyter}|hyperpage}{31}
+\indexentry{loaddata() (in module tissuumaps.jupyter)@\spxentry{loaddata()}\spxextra{in module tissuumaps.jupyter}|hyperpage}{31}
+\indexentry{TissUUmapsViewer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsViewer}\spxextra{class in tissuumaps.jupyter}|hyperpage}{32}
+\indexentry{screenshot() (tissuumaps.jupyter.TissUUmapsViewer method)@\spxentry{screenshot()}\spxextra{tissuumaps.jupyter.TissUUmapsViewer method}|hyperpage}{32}
+\indexentry{TissUUmapsServer (class in tissuumaps.jupyter)@\spxentry{TissUUmapsServer}\spxextra{class in tissuumaps.jupyter}|hyperpage}{32}

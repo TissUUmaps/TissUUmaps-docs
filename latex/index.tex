@@ -61,7 +61,7 @@
 
 
 \title{TissUUmaps}
-\date{Apr 29, 2022}
+\date{May 04, 2022}
 \release{3.0}
 \author{Nicolas Pielawski\and Axel Andersson\and Christophe Avenel\and Andrea Behanova\and Eduard Chelebian\and Anna Klemm\and Fredrik Nysjö\and Leslie Solorzano\and Carolina Wählby}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -189,7 +189,7 @@ Please cite our \sphinxhref{https://www.biorxiv.org/content/10.1101/2022.01.28.4
 \section{Changelog}
 \label{\detokenize{docs/intro/versions:changelog}}\label{\detokenize{docs/intro/versions::doc}}
 
-\subsection{3.0.8.6}
+\subsection{3.0.8.9}
 \label{\detokenize{docs/intro/versions:id1}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -478,7 +478,7 @@ CSV files can be exported from any spreadsheet program, or any programming langu
 \subsection{Load markers}
 \label{\detokenize{docs/starting/markers:load-markers}}
 \sphinxAtStartPar
-You can load the markers when you select the Markers tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
+You can load the markers when you select the \sphinxstyleemphasis{Markers} tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
 \sphinxincludegraphics{{markers}.png}
 
 
@@ -491,13 +491,13 @@ Before the markers are displayed you have to set up the markers settings.
 \subsubsection{File and coordinates}
 \label{\detokenize{docs/starting/markers:file-and-coordinates}}
 \sphinxAtStartPar
-The first step is to select the desired file from your computer under the tab File and coordinates \sphinxhyphen{} Choose file.
+The first step is to select the desired file from your computer under the tab \sphinxstyleemphasis{File and coordinates \sphinxhyphen{} Choose file}.
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{load_markers}.png}
 
 \sphinxAtStartPar
-You can change the Tab name to the desired name, so it is easier to navigate between them when there are more tabs.
+You can change the \sphinxstyleemphasis{Tab name} to the desired name, so it is easier to navigate between them when there are more tabs.
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{Tab_name}.png}
@@ -512,7 +512,7 @@ The next step is to select the column names from the .csv file corresponding to 
 \subsubsection{Render options}
 \label{\detokenize{docs/starting/markers:render-options}}
 \sphinxAtStartPar
-Here, you can define a key to group by, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the markers. In this example, we use the column genes, where different colors and shapes of markers represent different genes.
+Here, you can define a \sphinxstyleemphasis{key to group by}, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the markers. In this example, we use the column \sphinxstyleemphasis{genes}, where different colors and shapes of markers represent different genes.
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{group_by}.png}
@@ -524,7 +524,7 @@ There is an option to display an extra column, for example when the data are clu
 \sphinxincludegraphics{{group_by2}.png}
 
 \sphinxAtStartPar
-In Color options, you can select to color by groups where each group has a different color. Then on the right side, you can select the color palette:
+In \sphinxstyleemphasis{Color options}, you can select to color by groups where each group has a different color. Then on the right side, you can select the color palette:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -544,7 +544,7 @@ Dictionary \sphinxhyphen{} you can insert a specific dictionary in the text area
 \sphinxincludegraphics{{Color_options}.png}
 
 \sphinxAtStartPar
-If you want to color by markers, you have to select the column from the .csv file which will be used to create the colors, and the colormap, but only if the color column is numeral.
+If you want to \sphinxstyleemphasis{color by markers}, you have to select the column from the .csv file which will be used to create the colors, and the colormap, but only if the color column is numeral.
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{Color_options2}.png}
@@ -552,9 +552,137 @@ If you want to color by markers, you have to select the column from the .csv fil
 
 \subsubsection{Advanced options}
 \label{\detokenize{docs/starting/markers:advanced-options}}
+\sphinxAtStartPar
+TissUUmaps tool contains also advanced options when working with the data. The first one is adjustable marker size. This is usually done in the right upper corner of the visualization panel. However, in the advanced setting, the user can change the size factor of the slider to any value.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_size}.png}
+
+\sphinxAtStartPar
+Additionally, there can be used a different size per marker based on a selected column. In the example below, I  chose column \sphinxstyleemphasis{counts} which represents the number of counts in that cell (marker). This means that a larger marker represents a cell that contains more counts in it.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_size_ex}.png}
+
+\sphinxAtStartPar
+Another advanced option is the choice to display markers as pie\sphinxhyphen{}charts, it can represent the probability of that marker belonging to different groups. The user needs to select the \sphinxstyleemphasis{pie\sphinxhyphen{}chart column}, which contains mentioned probabilities for all the markers. All the probabilities for that specific marker need to be in a row divided by a semicolon.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_pie}.png}
+
+\sphinxAtStartPar
+In the example below the pie\sphinxhyphen{}charts represent the probability of the marker being of each cell type. In the left upper corner can be seen the legend of the cell types. By default, there are only 10 colors so the colors are used in the loop. This can be changed by using pie\sphinxhyphen{}chart colors from a dictionary.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_pie_ex}.png}
+
+\sphinxAtStartPar
+The shape of the markers can also be changed. By default, it is set up to be selected by the group, which means that each group has a different marker shape chosen from the list of shapes iteratively. The user can also pre\sphinxhyphen{}define the shapes from the dictionary to ensure visualization robustness in different sessions.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_shape}.png}
+
+\sphinxAtStartPar
+In the example below each group has specific color as well as a specific marker shape.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_shape_ex}.png}
+
+\sphinxAtStartPar
+Another option for the marker shape is \sphinxstyleemphasis{shape by marker}. Here, the user needs to select a column with category values, and each category is used for a different shape.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_shape2}.png}
+
+\sphinxAtStartPar
+In the example below, the selected column is ARIH1, which contains 10 categories, so you can see that there are 10 shapes in the visualization.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_shape2_ex}.png}
+
+\sphinxAtStartPar
+The last option in the marker shape is to \sphinxstyleemphasis{use a fixed shape}. This can be used if the user is not happy with all the different marker shapes and wants to make it homogeneous.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_shape3}.png}
+
+\sphinxAtStartPar
+In the example below, the selected shape is a clobber and you can see that all the markers are in the shape of a clobber.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_shape3_ex}.png}
+
+\sphinxAtStartPar
+The next advanced option is \sphinxstyleemphasis{marker opacity} which is adjustable. The user can change the opacity in order to display things underneath.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_opacity}.png}
+
+\sphinxAtStartPar
+In the example below, the opacity value was set to 0.6 which made the markers a bit transparent.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_opacity_ex}.png}
+
+\sphinxAtStartPar
+In the example below, we checked \sphinxstyleemphasis{use different opacity per marker}. The user needs to select opacity column which will be used for displaying different opacities in markers.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_opacity_ex2}.png}
+
+\sphinxAtStartPar
+The next option is the \sphinxstyleemphasis{marker tooltip}, which is the text which is displayed when the user clicks on the marker. By default, it displayed the key group the marker belongs to.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_tip}.png}
+
+\sphinxAtStartPar
+As you can see in the example below, the green marker we clicked on belongs to the cell type Proliferating epithelial 2.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_tip_ex}.png}
+
+\sphinxAtStartPar
+HUHU
+However this can be modified by writing text into the text area. In this example, we wrote \{tab\} \sphinxhyphen{} \{key\} \sphinxhyphen{} \{col\_counts\}. \sphinxstyleemphasis{\{tab\}} represents the tab name which we set when we loaded the markers, \sphinxstyleemphasis{\{key\}} represnts the key group to which the marker belongs and \sphinxstyleemphasis{\{col\_counts\}} represents the value of that marker in the column called counts. The word counts can be replaced by any column name in order to display it on the tooltip.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_tip2}.png}
+
+\sphinxAtStartPar
+In the example below, the green dot which we clicked on is from the tab Cell types, belongs to the cell type Proliferating epithelial 2 and it has 127 counts in it.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_tip2_ex}.png}
+
+\sphinxAtStartPar
+The last advanced options is the button \sphinxstyleemphasis{Generate button from tab}. This button incorporates all the display settings the user set up into a single button.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_gen_button}.png}
+
+\sphinxAtStartPar
+The user can choose the relative path to the csv file, button inner text and comment which will be displayed next to the button.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_gen_win}.png}
+
+\sphinxAtStartPar
+In the example below, you can see the generated button \sphinxstyleemphasis{Download data} placed on the top of the tabs panel. On the right of the button is placed text \sphinxstyleemphasis{My settings}.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Advanced_gen_ex}.png}
+
 
 \subsubsection{Table of markers}
 \label{\detokenize{docs/starting/markers:table-of-markers}}
+\sphinxAtStartPar
+\sphinxincludegraphics{{Table_general}.png}
+\sphinxincludegraphics{{Table_check}.png}
+\sphinxincludegraphics{{Table_Shape}.png}
+\sphinxincludegraphics{{Table_Color}.png}
+\sphinxincludegraphics{{Table_eye}.png}
+
 \sphinxstepscope
 
 

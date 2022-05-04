@@ -203,7 +203,7 @@
 </div>
 <div class="section" id="load-markers">
 <h2>Load markers<a class="headerlink" href="#load-markers" title="Permalink to this headline">¶</a></h2>
-<p>You can load the markers when you select the Markers tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
+<p>You can load the markers when you select the <em>Markers</em> tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
 <img alt="markers" src="../../_images/markers.png" /></p>
 </div>
 <div class="section" id="markers-settings">
@@ -211,34 +211,80 @@
 <p>Before the markers are displayed you have to set up the markers settings.</p>
 <div class="section" id="file-and-coordinates">
 <h3>File and coordinates<a class="headerlink" href="#file-and-coordinates" title="Permalink to this headline">¶</a></h3>
-<p>The first step is to select the desired file from your computer under the tab File and coordinates - Choose file.</p>
+<p>The first step is to select the desired file from your computer under the tab <em>File and coordinates - Choose file</em>.</p>
 <p><img alt="load markers" src="../../_images/load_markers.png" /></p>
-<p>You can change the Tab name to the desired name, so it is easier to navigate between them when there are more tabs.</p>
+<p>You can change the <em>Tab name</em> to the desired name, so it is easier to navigate between them when there are more tabs.</p>
 <p><img alt="Tab name" src="../../_images/Tab_name.png" /></p>
 <p>The next step is to select the column names from the .csv file corresponding to the X and Y coordinates.</p>
 <p><img alt="XY coordinates" src="../../_images/XY_coordinates.png" /></p>
 </div>
 <div class="section" id="render-options">
 <h3>Render options<a class="headerlink" href="#render-options" title="Permalink to this headline">¶</a></h3>
-<p>Here, you can define a key to group by, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the markers. In this example, we use the column genes, where different colors and shapes of markers represent different genes.</p>
+<p>Here, you can define a <em>key to group by</em>, what is a column from the .csv file which will be used to display the dataset grouped by different colors and shapes of the markers. In this example, we use the column <em>genes</em>, where different colors and shapes of markers represent different genes.</p>
 <p><img alt="group by" src="../../_images/group_by.png" /></p>
 <p>There is an option to display an extra column, for example when the data are clustered but you want to see the original genes and also the cluster names.</p>
 <p><img alt="group by2" src="../../_images/group_by2.png" /></p>
-<p>In Color options, you can select to color by groups where each group has a different color. Then on the right side, you can select the color palette:</p>
+<p>In <em>Color options</em>, you can select to color by groups where each group has a different color. Then on the right side, you can select the color palette:</p>
 <ul class="simple">
 <li><p>Key value - Colors are generated from the name of the group (first 4 letters). Groups starting with the same letter have similar colors.</p></li>
 <li><p>Randomly - Colors are generated randomly.</p></li>
 <li><p>Dictionary - you can insert a specific dictionary in the text area which will be used for generating the colors.</p></li>
 </ul>
 <p><img alt="Color options" src="../../_images/Color_options.png" /></p>
-<p>If you want to color by markers, you have to select the column from the .csv file which will be used to create the colors, and the colormap, but only if the color column is numeral.</p>
+<p>If you want to <em>color by markers</em>, you have to select the column from the .csv file which will be used to create the colors, and the colormap, but only if the color column is numeral.</p>
 <p><img alt="Color options2" src="../../_images/Color_options2.png" /></p>
 </div>
 <div class="section" id="advanced-options">
 <h3>Advanced options<a class="headerlink" href="#advanced-options" title="Permalink to this headline">¶</a></h3>
+<p>TissUUmaps tool contains also advanced options when working with the data. The first one is adjustable marker size. This is usually done in the right upper corner of the visualization panel. However, in the advanced setting, the user can change the size factor of the slider to any value.</p>
+<p><img alt="Advanced_size" src="../../_images/Advanced_size.png" /></p>
+<p>Additionally, there can be used a different size per marker based on a selected column. In the example below, I  chose column <em>counts</em> which represents the number of counts in that cell (marker). This means that a larger marker represents a cell that contains more counts in it.</p>
+<p><img alt="Advanced_size_ex" src="../../_images/Advanced_size_ex.png" /></p>
+<p>Another advanced option is the choice to display markers as pie-charts, it can represent the probability of that marker belonging to different groups. The user needs to select the <em>pie-chart column</em>, which contains mentioned probabilities for all the markers. All the probabilities for that specific marker need to be in a row divided by a semicolon.</p>
+<p><img alt="Advanced_pie" src="../../_images/Advanced_pie.png" /></p>
+<p>In the example below the pie-charts represent the probability of the marker being of each cell type. In the left upper corner can be seen the legend of the cell types. By default, there are only 10 colors so the colors are used in the loop. This can be changed by using pie-chart colors from a dictionary.</p>
+<p><img alt="Advanced_pie_ex" src="../../_images/Advanced_pie_ex.png" /></p>
+<p>The shape of the markers can also be changed. By default, it is set up to be selected by the group, which means that each group has a different marker shape chosen from the list of shapes iteratively. The user can also pre-define the shapes from the dictionary to ensure visualization robustness in different sessions.</p>
+<p><img alt="Advanced_shape" src="../../_images/Advanced_shape.png" /></p>
+<p>In the example below each group has specific color as well as a specific marker shape.</p>
+<p><img alt="Advanced_shape_ex" src="../../_images/Advanced_shape_ex.png" /></p>
+<p>Another option for the marker shape is <em>shape by marker</em>. Here, the user needs to select a column with category values, and each category is used for a different shape.</p>
+<p><img alt="Advanced_shape2" src="../../_images/Advanced_shape2.png" /></p>
+<p>In the example below, the selected column is ARIH1, which contains 10 categories, so you can see that there are 10 shapes in the visualization.</p>
+<p><img alt="Advanced_shape2_ex" src="../../_images/Advanced_shape2_ex.png" /></p>
+<p>The last option in the marker shape is to <em>use a fixed shape</em>. This can be used if the user is not happy with all the different marker shapes and wants to make it homogeneous.</p>
+<p><img alt="Advanced_shape3" src="../../_images/Advanced_shape3.png" /></p>
+<p>In the example below, the selected shape is a clobber and you can see that all the markers are in the shape of a clobber.</p>
+<p><img alt="Advanced_shape3_ex" src="../../_images/Advanced_shape3_ex.png" /></p>
+<p>The next advanced option is <em>marker opacity</em> which is adjustable. The user can change the opacity in order to display things underneath.</p>
+<p><img alt="Advanced_opacity" src="../../_images/Advanced_opacity.png" /></p>
+<p>In the example below, the opacity value was set to 0.6 which made the markers a bit transparent.</p>
+<p><img alt="Advanced_opacity_ex" src="../../_images/Advanced_opacity_ex.png" /></p>
+<p>In the example below, we checked <em>use different opacity per marker</em>. The user needs to select opacity column which will be used for displaying different opacities in markers.</p>
+<p><img alt="Advanced_opacity_ex2" src="../../_images/Advanced_opacity_ex2.png" /></p>
+<p>The next option is the <em>marker tooltip</em>, which is the text which is displayed when the user clicks on the marker. By default, it displayed the key group the marker belongs to.</p>
+<p><img alt="Advanced_tip" src="../../_images/Advanced_tip.png" /></p>
+<p>As you can see in the example below, the green marker we clicked on belongs to the cell type Proliferating epithelial 2.</p>
+<p><img alt="Advanced_tip_ex" src="../../_images/Advanced_tip_ex.png" /></p>
+<p>HUHU
+However this can be modified by writing text into the text area. In this example, we wrote {tab} - {key} - {col_counts}. <em>{tab}</em> represents the tab name which we set when we loaded the markers, <em>{key}</em> represnts the key group to which the marker belongs and <em>{col_counts}</em> represents the value of that marker in the column called counts. The word counts can be replaced by any column name in order to display it on the tooltip.</p>
+<p><img alt="Advanced_tip2" src="../../_images/Advanced_tip2.png" /></p>
+<p>In the example below, the green dot which we clicked on is from the tab Cell types, belongs to the cell type Proliferating epithelial 2 and it has 127 counts in it.</p>
+<p><img alt="Advanced_tip2_ex" src="../../_images/Advanced_tip2_ex.png" /></p>
+<p>The last advanced options is the button <em>Generate button from tab</em>. This button incorporates all the display settings the user set up into a single button.</p>
+<p><img alt="Advanced_gen_button" src="../../_images/Advanced_gen_button.png" /></p>
+<p>The user can choose the relative path to the csv file, button inner text and comment which will be displayed next to the button.</p>
+<p><img alt="Advanced_gen_win" src="../../_images/Advanced_gen_win.png" /></p>
+<p>In the example below, you can see the generated button <em>Download data</em> placed on the top of the tabs panel. On the right of the button is placed text <em>My settings</em>.</p>
+<p><img alt="Advanced_gen_ex" src="../../_images/Advanced_gen_ex.png" /></p>
 </div>
 <div class="section" id="table-of-markers">
 <h3>Table of markers<a class="headerlink" href="#table-of-markers" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Table_general" src="../../_images/Table_general.png" />
+<img alt="Table_check" src="../../_images/Table_check.png" />
+<img alt="Table_Shape" src="../../_images/Table_Shape.png" />
+<img alt="Table_Color" src="../../_images/Table_Color.png" />
+<img alt="Table_eye" src="../../_images/Table_eye.png" /></p>
 </div>
 </div>
 </div>
