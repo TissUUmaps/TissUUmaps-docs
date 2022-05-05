@@ -83,13 +83,15 @@ In the example below, the selected column is ARIH1, which contains 10 categories
 
 ![Advanced_shape2_ex](images/Advanced_shape2_ex.png)
 
-The last option in the marker shape is to *use a fixed shape*. This can be used if the user is not happy with all the different marker shapes and wants to make it homogeneous.
+The third option in the marker shape is to *use a fixed shape*. This can be used if the user is not happy with all the different marker shapes and wants to make it homogeneous.
 
 ![Advanced_shape3](images/Advanced_shape3.png)
 
 In the example below, the selected shape is a clobber and you can see that all the markers are in the shape of a clobber.
 
 ![Advanced_shape3_ex](images/Advanced_shape3_ex.png)
+
+The last option in the marker shape is to *remove outline*. This can be used to remove the dark outline of markers.
 
 The next advanced option is *marker opacity* which is adjustable. The user can change the opacity in order to display things underneath.
 
