@@ -1,4 +1,4 @@
-PWD /tmp/pages-1ESqovmLZY/latex
+PWD /tmp/pages-e5Bz5ozST3/latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -299,6 +299,16 @@ INPUT ./drag_drop_image.png
 INPUT ./drag_drop_image.png
 INPUT drag_drop_image.png
 INPUT ./drag_drop_image.png
+INPUT server_open_menu1.png
+INPUT ./server_open_menu1.png
+INPUT ./server_open_menu1.png
+INPUT server_open_menu1.png
+INPUT ./server_open_menu1.png
+INPUT server_open_menu2.png
+INPUT ./server_open_menu2.png
+INPUT ./server_open_menu2.png
+INPUT server_open_menu2.png
+INPUT ./server_open_menu2.png
 INPUT Filters.png
 INPUT ./Filters.png
 INPUT ./Filters.png

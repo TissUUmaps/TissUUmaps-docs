@@ -105,6 +105,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Images</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#supported-image-formats">Supported image formats</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#load-images">Load images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-images-using-tissuumaps-server">Load images using TissUUmaps server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#apply-filters">Apply filters</a></li>
 </ul>
 </li>
@@ -215,6 +216,16 @@
 <img alt="Image more layers" src="../../_images/image_layers_many.png" /></p>
 <p>You can also drag and drop the image from file explorer into TissUUmaps.
 <img alt="drag and drop" src="../../_images/drag_drop_image.png" /></p>
+</div>
+<div class="section" id="load-images-using-tissuumaps-server">
+<h2>Load images using TissUUmaps server<a class="headerlink" href="#load-images-using-tissuumaps-server" title="Permalink to this headline">¶</a></h2>
+<p>If you are running TissUUmaps in server mode and not through the GUI, you must specify an image folder in the command line:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m tissuumaps <span class="s2">&quot;/home/username/Documents/myImages/&quot;</span> -p <span class="m">5005</span>
+</pre></div>
+</div>
+<p>You can then access your images from your web browser by accessing the url <a class="reference external" href="http://localhost:5005">http://localhost:5005</a>, and using the <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">Open</span></code> menu.</p>
+<p><img alt="drag and drop" src="../../_images/server_open_menu1.png" /></p>
+<p><img alt="drag and drop" src="../../_images/server_open_menu2.png" /></p>
 </div>
 <div class="section" id="apply-filters">
 <h2>Apply filters<a class="headerlink" href="#apply-filters" title="Permalink to this headline">¶</a></h2>
