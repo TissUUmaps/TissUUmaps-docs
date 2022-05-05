@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,99 +999,99 @@ Package pdftex.def Info: Advanced_shape3_ex.png  used on input line 635.
 <Advanced_opacity.png, id=472, 329.73187pt x 79.04532pt>
 File: Advanced_opacity.png Graphic file (type png)
 <use Advanced_opacity.png>
-Package pdftex.def Info: Advanced_opacity.png  used on input line 641.
+Package pdftex.def Info: Advanced_opacity.png  used on input line 644.
 (pdftex.def)             Requested size: 329.73105pt x 79.0451pt.
 <Advanced_opacity_ex.png, id=473, 989.94844pt x 632.3625pt>
 File: Advanced_opacity_ex.png Graphic file (type png)
 <use Advanced_opacity_ex.png>
-Package pdftex.def Info: Advanced_opacity_ex.png  used on input line 647.
+Package pdftex.def Info: Advanced_opacity_ex.png  used on input line 650.
 (pdftex.def)             Requested size: 469.74702pt x 300.07619pt.
  [20 <./Advanced_shape3_ex.png> <./Advanced_opacity.png>]
 <Advanced_opacity_ex2.png, id=480, 991.45406pt x 633.86812pt>
 File: Advanced_opacity_ex2.png Graphic file (type png)
 <use Advanced_opacity_ex2.png>
-Package pdftex.def Info: Advanced_opacity_ex2.png  used on input line 653.
+Package pdftex.def Info: Advanced_opacity_ex2.png  used on input line 656.
 (pdftex.def)             Requested size: 469.75043pt x 300.33606pt.
  [21 <./Advanced_opacity_ex.png> <./Advanced_opacity_ex2.png>]
 <Advanced_tip.png, id=487, 253.69781pt x 63.98906pt>
 File: Advanced_tip.png Graphic file (type png)
 <use Advanced_tip.png>
-Package pdftex.def Info: Advanced_tip.png  used on input line 659.
+Package pdftex.def Info: Advanced_tip.png  used on input line 662.
 (pdftex.def)             Requested size: 253.69719pt x 63.98889pt.
 <Advanced_tip_ex.png, id=488, 993.7125pt x 632.3625pt>
 File: Advanced_tip_ex.png Graphic file (type png)
 <use Advanced_tip_ex.png>
-Package pdftex.def Info: Advanced_tip_ex.png  used on input line 665.
+Package pdftex.def Info: Advanced_tip_ex.png  used on input line 668.
 (pdftex.def)             Requested size: 469.75908pt x 298.93759pt.
 <Advanced_tip2.png, id=489, 222.8325pt x 63.98906pt>
 File: Advanced_tip2.png Graphic file (type png)
 <use Advanced_tip2.png>
-Package pdftex.def Info: Advanced_tip2.png  used on input line 671.
+Package pdftex.def Info: Advanced_tip2.png  used on input line 674.
 (pdftex.def)             Requested size: 222.83195pt x 63.98889pt.
 <Advanced_tip2_ex.png, id=490, 989.94844pt x 624.83438pt>
 File: Advanced_tip2_ex.png Graphic file (type png)
 <use Advanced_tip2_ex.png>
-Package pdftex.def Info: Advanced_tip2_ex.png  used on input line 677.
+Package pdftex.def Info: Advanced_tip2_ex.png  used on input line 680.
 (pdftex.def)             Requested size: 469.74702pt x 296.50385pt.
 
 [22 <./Advanced_tip.png> <./Advanced_tip_ex.png> <./Advanced_tip2.png>]
 <Advanced_gen_button.png, id=498, 164.86594pt x 67.75313pt>
 File: Advanced_gen_button.png Graphic file (type png)
 <use Advanced_gen_button.png>
-Package pdftex.def Info: Advanced_gen_button.png  used on input line 683.
+Package pdftex.def Info: Advanced_gen_button.png  used on input line 686.
 (pdftex.def)             Requested size: 164.86551pt x 67.75294pt.
 <Advanced_gen_win.png, id=499, 372.64218pt x 313.17pt>
 File: Advanced_gen_win.png Graphic file (type png)
 <use Advanced_gen_win.png>
-Package pdftex.def Info: Advanced_gen_win.png  used on input line 689.
+Package pdftex.def Info: Advanced_gen_win.png  used on input line 692.
 (pdftex.def)             Requested size: 372.64127pt x 313.16922pt.
 
 [23 <./Advanced_tip2_ex.png> <./Advanced_gen_button.png>]
 <Advanced_gen_ex.png, id=507, 989.19562pt x 546.54187pt>
 File: Advanced_gen_ex.png Graphic file (type png)
 <use Advanced_gen_ex.png>
-Package pdftex.def Info: Advanced_gen_ex.png  used on input line 695.
+Package pdftex.def Info: Advanced_gen_ex.png  used on input line 698.
 (pdftex.def)             Requested size: 469.75204pt x 259.54337pt.
  [24 <./Advanced_gen_win.png> <./Advanced_gen_ex.png>]
 <Table_general.png, id=514, 454.69875pt x 301.125pt>
 File: Table_general.png Graphic file (type png)
 <use Table_general.png>
-Package pdftex.def Info: Table_general.png  used on input line 704.
+Package pdftex.def Info: Table_general.png  used on input line 707.
 (pdftex.def)             Requested size: 454.69763pt x 301.12425pt.
 <Table_check.png, id=515, 1005.7575pt x 500.62032pt>
 File: Table_check.png Graphic file (type png)
 <use Table_check.png>
-Package pdftex.def Info: Table_check.png  used on input line 710.
+Package pdftex.def Info: Table_check.png  used on input line 713.
 (pdftex.def)             Requested size: 469.7442pt x 233.82492pt.
  [25 <./Table_general.png>]
 <Table_Shape.png, id=521, 459.21562pt x 305.64188pt>
 File: Table_Shape.png Graphic file (type png)
 <use Table_Shape.png>
-Package pdftex.def Info: Table_Shape.png  used on input line 716.
+Package pdftex.def Info: Table_Shape.png  used on input line 719.
 (pdftex.def)             Requested size: 459.2145pt x 305.64111pt.
 <Table_Color.png, id=522, 457.71pt x 414.04688pt>
 File: Table_Color.png Graphic file (type png)
 <use Table_Color.png>
-Package pdftex.def Info: Table_Color.png  used on input line 722.
+Package pdftex.def Info: Table_Color.png  used on input line 725.
 (pdftex.def)             Requested size: 457.7089pt x 414.04585pt.
  [26 <./Table_check.png> <./Table_Shape.png>]
 <Table_eye.png, id=530, 1025.33063pt x 521.69907pt>
 File: Table_eye.png Graphic file (type png)
 <use Table_eye.png>
-Package pdftex.def Info: Table_eye.png  used on input line 728.
+Package pdftex.def Info: Table_eye.png  used on input line 731.
 (pdftex.def)             Requested size: 469.74908pt x 239.01329pt.
  [27 <./Table_Color.png>] [28 <./Table_eye.png>]
 <plugin_container.png, id=544, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 834.
+Package pdftex.def Info: plugin_container.png  used on input line 837.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
 
 [29]
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 840.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 843.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 845.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 848.
  [30 <./plugin_container.png>]
 Chapter 3.
 [31
@@ -1101,7 +1101,7 @@ Chapter 4.
 [32
 
 ] [33] [34] [35] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 2353--2353
+Underfull \hbox (badness 10000) in paragraph at lines 2356--2356
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
@@ -1123,11 +1123,11 @@ yter.TissUUmapsViewer
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4214.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4214.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4217.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4217.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: 047454F161E59F36B72B96C872C9888E;8829.
@@ -1135,7 +1135,7 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4214.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4217.
  ) 
 Here is how much of TeX's memory you used:
  14366 strings out of 483183
@@ -1156,7 +1156,7 @@ pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on index.pdf (46 pages, 11844821 bytes).
+Output written on index.pdf (46 pages, 11844930 bytes).
 PDF statistics:
  756 PDF objects out of 1000 (max. 8388607)
  603 compressed objects within 7 object streams
