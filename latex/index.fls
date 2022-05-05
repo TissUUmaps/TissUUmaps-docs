@@ -1,4 +1,4 @@
-PWD /tmp/pages-bgHfZcKZux/latex
+PWD /tmp/pages-NGhaaUlNAd/latex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -479,6 +479,21 @@ INPUT ./Table_eye.png
 INPUT ./Table_eye.png
 INPUT Table_eye.png
 INPUT ./Table_eye.png
+INPUT Regions_Draw.png
+INPUT ./Regions_Draw.png
+INPUT ./Regions_Draw.png
+INPUT Regions_Draw.png
+INPUT ./Regions_Draw.png
+INPUT Regions_Draw_ex1.png
+INPUT ./Regions_Draw_ex1.png
+INPUT ./Regions_Draw_ex1.png
+INPUT Regions_Draw_ex1.png
+INPUT ./Regions_Draw_ex1.png
+INPUT Regions_Draw_ex2.png
+INPUT ./Regions_Draw_ex2.png
+INPUT ./Regions_Draw_ex2.png
+INPUT Regions_Draw_ex2.png
+INPUT ./Regions_Draw_ex2.png
 INPUT plugin_container.png
 INPUT ./plugin_container.png
 INPUT ./plugin_container.png
