@@ -29,8 +29,8 @@
 \contentsline {subsection}{\numberline {2.2.2}Load markers}{11}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Markers settings}{11}{subsection.2.2.3}%
 \contentsline {subsubsection}{File and coordinates}{11}{subsubsection*.3}%
-\contentsline {subsubsection}{Render options}{12}{subsubsection*.4}%
-\contentsline {subsubsection}{Advanced options}{15}{subsubsection*.5}%
+\contentsline {subsubsection}{Render options}{13}{subsubsection*.4}%
+\contentsline {subsubsection}{Advanced options}{16}{subsubsection*.5}%
 \contentsline {subsubsection}{Table of markers}{25}{subsubsection*.6}%
 \contentsline {section}{\numberline {2.3}Regions}{28}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Supported region formats}{28}{subsection.2.3.1}%

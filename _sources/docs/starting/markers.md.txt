@@ -10,6 +10,8 @@ CSV files can be exported from any spreadsheet program, or any programming langu
 You can load the markers when you select the *Markers* tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
 ![markers](images/markers.png)
 
+You can also load markers directly using drag and drop from a File Explorer if you are using the TissUUmaps GUI.
+
 ## Markers settings
 Before the markers are displayed you have to set up the markers settings.
 
