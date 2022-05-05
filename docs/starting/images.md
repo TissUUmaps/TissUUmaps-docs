@@ -29,6 +29,20 @@ Then click the button Add image layer and select the desired image from your com
 You can also drag and drop the image from file explorer into TissUUmaps.
 ![drag and drop](images/drag_drop_image.png)
 
+## Load images using TissUUmaps server
+
+If you are running TissUUmaps in server mode and not through the GUI, you must specify an image folder in the command line:
+```bash
+python -m tissuumaps "/home/username/Documents/myImages/" -p 5005
+```
+
+You can then access your images from your web browser by accessing the url [http://localhost:5005](http://localhost:5005), and using the `File > Open` menu.
+
+![drag and drop](images/server_open_menu1.png)
+
+![drag and drop](images/server_open_menu2.png)
+
+
 ## Apply filters
 
 You can apply several filters to the images. The ones we can be adjusted by default are saturation, brightness, and contrast. Additionally, when opening the Filter settings menu, there are various other filters, such as exposure, noise, erosion, etc. When you check their box, they are automatically added to the filter panel above. The filter's sliders can be adjusted so that the filter is applied at the desired intensity. Another option in filter settings is merging mode (bottom part), where you can merge the channels as a composite.
