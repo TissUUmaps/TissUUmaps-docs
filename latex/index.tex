@@ -862,6 +862,115 @@ In the figure below can be seen an example of the exported .cvs file.
 \sphinxAtStartPar
 For more information on the tmap file format and specifications, see {\hyperref[\detokenize{docs/advanced/tmap:the-tmap-file-format}]{\sphinxcrossref{\DUrole{std,std-ref}{The TMAP file format}}}}.
 
+
+\subsection{Existing projects}
+\label{\detokenize{docs/starting/projects:existing-projects}}
+
+\subsubsection{Human Developmental Lung Cell Atlas (pcw 5\sphinxhyphen{} pcw 14)}
+\label{\detokenize{docs/starting/projects:human-developmental-lung-cell-atlas-pcw-5-pcw-14}}
+\sphinxAtStartPar
+The human lung is a highly complex tubular organ, whose main function is the gas exchange between blood and breathed air. In contains a large number of specialized cell\sphinxhyphen{}types of epithelial, endothelial, neuronal, stromal and immune cells that are necessary for normal organ function and structural integrity. To understand how this cell heterogeneity develops to create a healthy mature lung, we focused on the 1st trimester of gestation and applied state of art technologies to capture the gene expression profiles of all the cells in the developing organ, in time and space.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{Lung_Cell_Atlas}.png}
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer}: Single\sphinxhyphen{}cell RNA\sphinxhyphen{}sequencing UMAP representation of single\sphinxhyphen{}cell clusters and sub\sphinxhyphen{}clusters, gene expression and metadata.
+
+\sphinxAtStartPar
+\sphinxstylestrong{In situ sequencing data (ISS) \sphinxhyphen{} TissUUmaps interactive viewer}: pcw 5  pcw 6  pcw 13In situ sequencing data. Spot location + identity, per bin pie chart view of cell type probabilities and imputed genes.
+
+\sphinxAtStartPar
+\sphinxstylestrong{SCRINSHOT data \sphinxhyphen{} TissUUmaps interactive viewer}: pcw 6  pcw 8  pcw 11  pcw 14SCRINSHOT data. Spot location + identity.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Spatial Transcriptomics data \sphinxhyphen{} TissUUmaps interactive viewer}: pcw 6  pcw 8  pcw 10  pcw 11Per gene or pie chart view of gene expression.
+
+\sphinxAtStartPar
+More information is available in the original \sphinxhref{https://doi.org/10.1101/2022.01.11.475631}{publication}: A. Sountoulidis, S.M. Salas, E. Braun, C. Avenel, J. Bergenstråhle, M. Vicari, P. Czarnewski, J. Theelke, A. Liontos, X. Abalo, Ž. Andrusivová, M. Asp, X. Li, L. Hu, S. Sariyar, A.M. Casals, B. Ayoglu, A. Firsova, J. Michaëlsson, E. Lundberg, C. Wählby, E. Sundström, S. Linnarsson, J. Lundeberg, M. Nilsson, C. Samakovlis. Developmental origins of cell heterogeneity in the human lung. BioRxiv doi: \sphinxurl{https://doi.org/10.1101/2022.01.11.475631}
+
+
+\subsection{Modelling of cell\sphinxhyphen{}type signatures in the developmental human heart}
+\label{\detokenize{docs/starting/projects:modelling-of-cell-type-signatures-in-the-developmental-human-heart}}
+\sphinxAtStartPar
+With the emergence of high throughput single cell techniques, the understanding of cellular diversity in biologically complex processes has rapidly increased. The next step towards comprehension of e.g. key organs in the mammal development is to obtain spatiotemporal atlases of the cellular diversity. However, targeted cell typing approaches relying on existing single cell data achieve incomplete and biased maps that could mask the molecular and cellular heterogeneity present in a tissue slide. Here we applied spage2vec, a de novo approach to spatially resolve and characterize cellular diversity during human heart development. Data from the original in situ sequencing experiment as well as identified cell types can be viewed in TissUUmaps.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{de_novo}.png}
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer}:
+Human heart
+
+\sphinxAtStartPar
+More information is available in the original \sphinxhref{https://doi.org/10.1101/2021.07.10.451822}{publication}: RS. Marco Salas, X. Yuan,  C. Sylven,  M. Nilsson,  C. Wählby and  G.Partel. De novo spatiotemporal modelling of cell\sphinxhyphen{}type signatures identifies novel cell populations in the developmental human heart. BioRxiv doi: \sphinxurl{https://doi.org/10.1101/2021.07.10.451822}
+
+
+\subsection{Automated identification of the mouse brain’s spatial compartments from in situ sequencing data}
+\label{\detokenize{docs/starting/projects:automated-identification-of-the-mouse-brain-s-spatial-compartments-from-in-situ-sequencing-data}}
+\sphinxAtStartPar
+Neuroanatomical compartments of the mouse brain are identified and outlined mainly based on manual annotations of samples using features related to tissue and cellular morphology, taking advantage of publicly available reference atlases. However, this task is challenging since sliced tissue sections are rarely perfectly parallel or angled with respect to sections in the reference atlas and organs from different individuals may vary in size and shape and requires manual annotation. Here, we show how in situ sequencing data combined with dimensionality reduction and unsupervised clustering can be used to identify spatial compartments that correspond to known anatomical compartments of the brain. Here we show results on four different sections of mouse brains.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{automated}.png}
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer}:
+Mouse brain
+
+\sphinxAtStartPar
+More information is available in this \sphinxhref{https://doi.org/10.1186/s12915-020-00874-5}{publication}: G. Partel, M.M. Hilscher, G. Milli, L. Solorzano, A.H. Klemm, M. Nilsson, and C. Wählby.  Automated identification of the mouse brain’s spatial compartments from in situ sequencing data.  BMC Biology, \sphinxurl{https://doi.org/10.1186/s12915-020-00874-5}, Oct 2020.
+
+\sphinxAtStartPar
+The original raw ISS data was published in Qian, X., Harris, K. D., Hauling, T., Nicoloutsopoulos, D., Muñoz\sphinxhyphen{}Manchado, A. B., Skene, N., … \& Nilsson, M. (2020). Probabilistic cell typing enables fine mapping of closely related cell types in situ. \sphinxhref{https://doi.org/10.1038/s41592-019-0631-4}{Nature methods}, 17(1), 101\sphinxhyphen{}106.
+
+\sphinxAtStartPar
+Data and code availability: All software was developed in Python 3 using open source libraries, and data processing of pipeline workflows was carried out using \sphinxhref{https://doi.org/10.1093/bioinformatics/btz133}{Anduril2} analysis framework. The processing pipelines, data, and the software version used to generate the analysis results and figures presented in this paper are available at \sphinxurl{https://doi.org/10.5281/zenodo.3928219} or from our github repository \sphinxurl{https://github.com/wahlby-lab/graph-iss}.
+
+
+\subsection{Spage2vec: Unsupervised representation of localized spatial gene expression signatures}
+\label{\detokenize{docs/starting/projects:spage2vec-unsupervised-representation-of-localized-spatial-gene-expression-signatures}}
+\sphinxAtStartPar
+Spage2vec is an unsupervised segmentation free approach for decrypting the spatial transcriptomic heterogeneity of complex tissues at subcellular resolution. Spage2vec represents the spatial transcriptomic landscape of tissue samples as a graph and leverage powerful machine learning graph representation technique to create a lower dimensional representation of local spatial gene expression. Here we visualize spage2vec localized gene expression signatures of different spatial transcriptomic datasets. We thank Mats Nilsson, Sten Linnarsson and Xiaowei Zhuang for making their datasets publicly available.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{spage2vec}.png}
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer 1}: In situ sequencing mouse brain hippocampal area CA1 Qian, X., Harris, K. D., Hauling, T., Nicoloutsopoulos, D., Muñoz\sphinxhyphen{}Manchado, A. B., Skene, N., … \& Nilsson, M. (2020). Probabilistic cell typing enables fine mapping of closely related cell types in situ. \sphinxhref{https://doi.org/10.1038/s41592-019-0631-4}{Nature methods}, 17(1), 101\sphinxhyphen{}106.
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer 2}: osmFISH mouse brain somatosensory cortex Codeluppi, S., Borm, L. E., Zeisel, A., La Manno, G., van Lunteren, J. A., Svensson, C. I., \& Linnarsson, S. (2018). Spatial organization of the somatosensory cortex revealed by osmFISH. \sphinxhref{https://doi.org/10.1038/s41592-018-0175-z}{Nature methods}, 15(11), 932\sphinxhyphen{}935.
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer 3}: MERFISH mouse brain hypothalamic preoptic area Moffitt, J. R., Bambah\sphinxhyphen{}Mukku, D., Eichhorn, S. W., Vaughn, E., Shekhar, K., Perez, J. D., … \& Zhuang, X. (2018). Molecular, spatial, and functional single\sphinxhyphen{}cell profiling of the hypothalamic preoptic region. \sphinxhref{https://doi.org/10.1126/science.aau5324}{Science}, 362(6416), eaau5324.
+
+\sphinxAtStartPar
+\sphinxstylestrong{TissUUmaps interactive viewer 4}: MERFISH human fibroblast cells (IMR90) Chen, K. H., Boettiger, A. N., Moffitt, J. R., Wang, S., \& Zhuang, X. (2015). Spatially resolved, highly multiplexed RNA profiling in single cells. \sphinxhref{https://doi.org/10.1126/science.aaa6090}{Science}, 348(6233), aaa6090.
+
+\sphinxAtStartPar
+Data and code availability: Spatial gene expression data are available in Zenodo database at \sphinxurl{https://doi.org/10.5281/zenodo.3897401}.
+Source code for reproducing analysis results and figures is available in Zenodo database at \sphinxurl{http://www.doi.org/10.5281/zenodo.4030404}.
+
+
+\subsection{Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population\sphinxhyphen{}based}
+\label{\detokenize{docs/starting/projects:artificial-intelligence-for-diagnosis-and-grading-of-prostate-cancer-in-biopsies-a-population-based}}
+\sphinxAtStartPar
+An increasing volume of prostate biopsies and a worldwide shortage of urological pathologists puts a
+strain on pathology departments. Additionally, the high intra\sphinxhyphen{}observer and inter\sphinxhyphen{}observer variability in grading can
+result in overtreatment and undertreatment of prostate cancer. To alleviate these problems, we aimed to develop an
+artificial intelligence (AI) system with clinically acceptable accuracy for prostate cancer detection, localisation, and
+Gleason grading. Here we show examples of full\sphinxhyphen{}resolution digitized biopsies and corresponding AI\sphinxhyphen{}based grading.
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{prostate}.png}
+
+\sphinxAtStartPar
+An overview of all sample \sphinxstylestrong{datasets} can be found here: Prostate cancer in biopsies 
+
+\sphinxAtStartPar
+More information is available in this \sphinxhref{https://www.sciencedirect.com/science/article/pii/S1470204519307387}{publication}: P. Ström, K. Kartasalo, H. Olsson, L. Solorzano et al. Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population\sphinxhyphen{}based, diagnostic study. The Lancet Oncology, Volume 21, Issue 2, 2020, Pages 222\sphinxhyphen{}232, ISSN 1470\sphinxhyphen{}2045,  doi: 10.1016/S1470\sphinxhyphen{}2045(19)30738\sphinxhyphen{}7, url: \sphinxurl{https://www.sciencedirect.com/science/article/pii/S1470204519307387}
+
 \sphinxstepscope
 
 
