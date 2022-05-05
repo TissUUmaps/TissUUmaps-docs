@@ -34,37 +34,37 @@
 \contentsline {subsubsection}{Table of markers}{25}{subsubsection*.6}%
 \contentsline {section}{\numberline {2.3}Regions}{28}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Supported region formats}{28}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Draw Regions}{29}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Draw Regions}{28}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Analyze Regions}{30}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Load Regions}{30}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Export Regions}{30}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Projects}{30}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Saving and loading projects}{30}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Exporting screenshots}{30}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Plugins}{31}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Load plugins}{31}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{31}{subsection.2.6.2}%
-\contentsline {subsubsection}{Javascript file}{31}{subsubsection*.7}%
-\contentsline {subsubsection}{Python file}{32}{subsubsection*.8}%
-\contentsline {chapter}{\numberline {3}Sharing projects}{33}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Apache server}{33}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Docker container}{33}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Advanced usage}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Jupyter notebooks}{34}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{34}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Napari}{35}{section.4.2}%
-\contentsline {section}{\numberline {4.3}AnnData}{36}{section.4.3}%
-\contentsline {section}{\numberline {4.4}The TMAP file format}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{36}{subsection.4.4.1}%
-\contentsline {subsubsection}{Layer}{38}{subsubsection*.15}%
-\contentsline {subsubsection}{LayerFilter}{38}{subsubsection*.16}%
-\contentsline {subsubsection}{Filter}{39}{subsubsection*.17}%
-\contentsline {subsubsection}{ColorScale}{39}{subsubsection*.18}%
-\contentsline {subsubsection}{Shape}{39}{subsubsection*.19}%
-\contentsline {subsubsection}{MarkerFile}{40}{subsubsection*.20}%
-\contentsline {subsubsection}{ExpectedHeader}{40}{subsubsection*.21}%
-\contentsline {subsubsection}{ExpectedRadios}{42}{subsubsection*.22}%
-\contentsline {subsubsection}{RegionFile}{43}{subsubsection*.23}%
-\contentsline {subsubsection}{Setting}{43}{subsubsection*.24}%
-\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{44}{subsection.4.4.2}%
-\contentsline {chapter}{Index}{46}{section*.25}%
+\contentsline {subsection}{\numberline {2.3.4}Import Regions}{31}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Export Regions}{32}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Projects}{33}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Saving and loading projects}{33}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Exporting screenshots}{33}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Plugins}{33}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Load plugins}{33}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{33}{subsection.2.6.2}%
+\contentsline {subsubsection}{Javascript file}{34}{subsubsection*.7}%
+\contentsline {subsubsection}{Python file}{34}{subsubsection*.8}%
+\contentsline {chapter}{\numberline {3}Sharing projects}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Apache server}{35}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Docker container}{35}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Advanced usage}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Jupyter notebooks}{36}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{36}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Napari}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}AnnData}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.4}The TMAP file format}{38}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{38}{subsection.4.4.1}%
+\contentsline {subsubsection}{Layer}{40}{subsubsection*.15}%
+\contentsline {subsubsection}{LayerFilter}{40}{subsubsection*.16}%
+\contentsline {subsubsection}{Filter}{41}{subsubsection*.17}%
+\contentsline {subsubsection}{ColorScale}{41}{subsubsection*.18}%
+\contentsline {subsubsection}{Shape}{41}{subsubsection*.19}%
+\contentsline {subsubsection}{MarkerFile}{42}{subsubsection*.20}%
+\contentsline {subsubsection}{ExpectedHeader}{42}{subsubsection*.21}%
+\contentsline {subsubsection}{ExpectedRadios}{44}{subsubsection*.22}%
+\contentsline {subsubsection}{RegionFile}{45}{subsubsection*.23}%
+\contentsline {subsubsection}{Setting}{45}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{46}{subsection.4.4.2}%
+\contentsline {chapter}{Index}{48}{section*.25}%

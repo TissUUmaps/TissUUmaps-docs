@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1084,80 +1084,109 @@ Package pdftex.def Info: Table_eye.png  used on input line 731.
 <Regions_Draw.png, id=537, 479.54156pt x 107.65219pt>
 File: Regions_Draw.png Graphic file (type png)
 <use Regions_Draw.png>
-Package pdftex.def Info: Regions_Draw.png  used on input line 784.
+Package pdftex.def Info: Regions_Draw.png  used on input line 790.
 (pdftex.def)             Requested size: 469.75728pt x 105.45735pt.
-<Regions_Draw_ex1.png, id=538, 1173.63469pt x 643.6547pt>
+ [28 <./Table_eye.png>]
+<Regions_Draw_ex1.png, id=543, 1173.63469pt x 643.6547pt>
 File: Regions_Draw_ex1.png Graphic file (type png)
 <use Regions_Draw_ex1.png>
-Package pdftex.def Info: Regions_Draw_ex1.png  used on input line 785.
+Package pdftex.def Info: Regions_Draw_ex1.png  used on input line 796.
 (pdftex.def)             Requested size: 469.75pt x 257.6341pt.
-<Regions_Draw_ex2.png, id=539, 1158.57843pt x 642.90187pt>
+<Regions_Draw_ex2.png, id=544, 1158.57843pt x 642.90187pt>
 File: Regions_Draw_ex2.png Graphic file (type png)
 <use Regions_Draw_ex2.png>
-Package pdftex.def Info: Regions_Draw_ex2.png  used on input line 786.
+Package pdftex.def Info: Regions_Draw_ex2.png  used on input line 802.
 (pdftex.def)             Requested size: 469.75206pt x 260.67793pt.
- [28 <./Table_eye.png>]
-[29 <./Regions_Draw.png> <./Regions_Draw_ex1.png>] [30 <./Regions_Draw_ex2.png>
-]
-<plugin_container.png, id=559, 479.54156pt x 170.13562pt>
+
+[29 <./Regions_Draw.png> <./Regions_Draw_ex1.png>]
+<Regions_Anlayze_ex.png, id=552, 1050.92625pt x 642.90187pt>
+File: Regions_Anlayze_ex.png Graphic file (type png)
+<use Regions_Anlayze_ex.png>
+Package pdftex.def Info: Regions_Anlayze_ex.png  used on input line 811.
+(pdftex.def)             Requested size: 469.7534pt x 287.38043pt.
+ [30 <./Regions_Draw_ex2.png>]
+<Regions_Import.png, id=558, 453.19313pt x 115.93312pt>
+File: Regions_Import.png Graphic file (type png)
+<use Regions_Import.png>
+Package pdftex.def Info: Regions_Import.png  used on input line 820.
+(pdftex.def)             Requested size: 453.19202pt x 115.93283pt.
+<Regions_Import_ex.png, id=559, 863.47594pt x 615.0478pt>
+File: Regions_Import_ex.png Graphic file (type png)
+<use Regions_Import_ex.png>
+Package pdftex.def Info: Regions_Import_ex.png  used on input line 826.
+(pdftex.def)             Requested size: 469.74841pt x 334.60786pt.
+ [31 <./Regions_Anlayze_ex.png> <./Regions_Import.png>]
+<Regions_Export.png, id=566, 357.58594pt x 197.23688pt>
+File: Regions_Export.png Graphic file (type png)
+<use Regions_Export.png>
+Package pdftex.def Info: Regions_Export.png  used on input line 835.
+(pdftex.def)             Requested size: 357.58505pt x 197.23637pt.
+<Regions_Export_ex.png, id=567, 506.6428pt x 242.40562pt>
+File: Regions_Export_ex.png Graphic file (type png)
+<use Regions_Export_ex.png>
+Package pdftex.def Info: Regions_Export_ex.png  used on input line 841.
+(pdftex.def)             Requested size: 469.76595pt x 224.76909pt.
+ [32 <./Regions_Import_ex.png> <./Regions_Export.png>] [33 <./Regions_Export_ex
+.png>]
+<plugin_container.png, id=581, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 842.
+Package pdftex.def Info: plugin_container.png  used on input line 888.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 848.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 894.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 853.
- [31 <./plugin_container.png>] [32]
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 899.
+ [34 <./plugin_container.png>]
 Chapter 3.
-[33
+[35
 
 ]
 Chapter 4.
-[34
+[36
 
-] [35] [36] [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 2361--2361
+] [37] [38] [39] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 2407--2407
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
 
-[39]
+[41]
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
 1.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
-) [40] [41]
-[42] [43] [44] (./index.ind [45]
+) [42] [43]
+[44] [45] [46] (./index.ind [47]
 Underfull \hbox (badness 6461) in paragraph at lines 21--23
 []\T1/txtt/m/n/10 screenshot() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 tis-su-umaps.jup
 yter.TissUUmapsViewer
  []
 
-[46
+[48
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4222.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4268.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4268.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4222.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4268.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4268.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 047454F161E59F36B72B96C872C9888E;8829.
+(rerunfilecheck)             Checksum: 749018C2C196D0540E884F929D862C15;8839.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4268.
  ) 
 Here is how much of TeX's memory you used:
- 14386 strings out of 483183
- 208235 string characters out of 5966293
- 652013 words of memory out of 5000000
- 28848 multiletter control sequences out of 15000+600000
+ 14418 strings out of 483183
+ 208946 string characters out of 5966293
+ 652302 words of memory out of 5000000
+ 28873 multiletter control sequences out of 15000+600000
  587175 words of font info for 68 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,13n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1172,10 +1201,10 @@ pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on index.pdf (48 pages, 15485879 bytes).
+Output written on index.pdf (50 pages, 17994861 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 610 compressed objects within 7 object streams
- 139 named destinations out of 1000 (max. 500000)
- 788 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 790 PDF objects out of 1000 (max. 8388607)
+ 617 compressed objects within 7 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 813 words of extra memory for PDF output out of 10000 (max. 10000000)
 
