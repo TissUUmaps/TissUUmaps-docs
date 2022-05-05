@@ -91,7 +91,13 @@ In the example below, the selected shape is a clobber and you can see that all t
 
 ![Advanced_shape3_ex](images/Advanced_shape3_ex.png)
 
-The last option in the marker shape is to *remove outline*. This can be used to remove the dark outline of markers.
+The last option in the marker shape is to *remove outline*. This can be used to remove the dark outline of markers when the check box is checked.
+
+![Advanced_shape4](images/Advanced_shape4.png)
+
+In the example below, the outline is included on the left side and the outline is removed on the right side.
+
+![Advanced_shape4_ex](images/Advanced_shape4_ex.png)
 
 The next advanced option is *marker opacity* which is adjustable. The user can change the opacity in order to display things underneath.
 
