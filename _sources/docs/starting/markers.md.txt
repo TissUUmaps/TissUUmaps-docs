@@ -109,8 +109,7 @@ As you can see in the example below, the green marker we clicked on belongs to t
 
 ![Advanced_tip_ex](images/Advanced_tip_ex.png)
 
-HUHU
-However this can be modified by writing text into the text area. In this example, we wrote {tab} - {key} - {col_counts}. *{tab}* represents the tab name which we set when we loaded the markers, *{key}* represnts the key group to which the marker belongs and *{col_counts}* represents the value of that marker in the column called counts. The word counts can be replaced by any column name in order to display it on the tooltip.
+However, this can be modified by writing text into the text area. In this example, we wrote {tab} - {key} - {col_counts}. *{tab}* represents the tab name that we set when we loaded the markers, *{key}* represents the key group to which the marker belongs and *{col_counts}* represents the value of that marker in the column called counts. The word counts can be replaced by any column name in order to display it on the tooltip.
 
 ![Advanced_tip2](images/Advanced_tip2.png)
 
@@ -118,7 +117,7 @@ In the example below, the green dot which we clicked on is from the tab Cell typ
 
 ![Advanced_tip2_ex](images/Advanced_tip2_ex.png)
 
-The last advanced options is the button *Generate button from tab*. This button incorporates all the display settings the user set up into a single button.
+The last advanced option is the button *Generate button from tab*. This button incorporates all the display settings the user set up into a single button.
 
 ![Advanced_gen_button](images/Advanced_gen_button.png)
 
@@ -132,8 +131,22 @@ In the example below, you can see the generated button *Download data* placed on
 
 ### Table of markers
 
+When the markers are loaded, a table of markers will appear in order to interact with the marker. Each row represents a group of markers with a specific color and shape. In the figure below, column *A)* represents if a specific row of markers is displayed or not, the second column *B)* represents the list of groups, the third column *C)* represents group counts, the fourth column *D)* represents the shape of the group markers, the fifth column *E)* represents the color of the group markers and the sixth column *F)* can display specific group when the cursor is on the eye icon.
+
 ![Table_general](images/Table_general.png)
+
+If the check box is checked - the group is displayed, if the check box is unchecked - the group is not displayed. In the example below, we checked two groups of cell types: Airway Fibroblast and Airway smooth muscle, and only these two groups are displayed on the left visualization panel. The first checkbox *All* ensures displaying of all the markers.
+
 ![Table_check](images/Table_check.png)
+
+In the fourth column *Shape*, the user can select which shape is preferred for each marker group. In the figure below, there is a list of 14 different shapes which can be used.
+
 ![Table_Shape](images/Table_Shape.png)
+
+In the fifth column *Color*, the user can select which color is preferred for each marker group. In the figure below, it is possible to choose from some list of basic colors, select a specific color by the cursor from the palette and also use numbers to generate color, either RGB, HSV, or HTML.
+
 ![Table_Color](images/Table_Color.png)
+
+In the example below can be seen that if the cursor is placed on the eye icon in the row Airway fibroblast, only markers of this group are displayed on the visualization panel.
+
 ![Table_eye](images/Table_eye.png)
