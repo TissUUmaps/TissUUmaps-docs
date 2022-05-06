@@ -106,7 +106,9 @@
 <li class="toctree-l2"><a class="reference internal" href="markers.html">Markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="regions.html">Regions</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Projects</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#saving-and-loading-projects">Saving and loading projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#saving-projects">Saving projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loading-projects">Loading projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-tmap-file-manually">Editing .tmap file manually</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#existing-projects">Existing projects</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#human-developmental-lung-cell-atlas-pcw-5-pcw-14">Human Developmental Lung Cell Atlas (pcw 5- pcw 14)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#modelling-of-cell-type-signatures-in-the-developmental-human-heart">Modelling of cell-type signatures in the developmental human heart</a></li>
@@ -196,10 +198,28 @@
             
   <div class="tex2jax_ignore mathjax_ignore section" id="projects">
 <h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="saving-and-loading-projects">
-<h2>Saving and loading projects<a class="headerlink" href="#saving-and-loading-projects" title="Permalink to this headline">¶</a></h2>
-<!-- TODO -->
+<div class="section" id="saving-projects">
+<h2>Saving projects<a class="headerlink" href="#saving-projects" title="Permalink to this headline">¶</a></h2>
+<p>When the user has finished the visualization adjustments, region drawings, etc., the project is ready to be saved in order to continue working on it later or just basically to save it as it is for further consistency. The user needs to press <em>File</em> in the menu and then <em>Save project</em> or Ctrl + S.</p>
+<p><img alt="Project_Save" src="../../_images/Project_Save.png" /></p>
+<p>In order to save the project together with the .csv file, it is necessary to generate a button first. The warning window below appears and the user needs to generate the button. The path to the .csv file needs to be relative to the path of the image. In this example, the image layer and the .csv file are in the exact same directory.</p>
+<p><img alt="Project_Save_GenButton" src="../../_images/Project_Save_GenButton.png" /></p>
+<p>Then the user selects a suitable directory to save the project and writes the project file name, i.e. My_project.tmap, and the project is saved.</p>
+<p><img alt="Project_Save_dic" src="../../_images/Project_Save_dic.png" /></p>
+</div>
+<div class="section" id="loading-projects">
+<h2>Loading projects<a class="headerlink" href="#loading-projects" title="Permalink to this headline">¶</a></h2>
+<p>The .tmap project can be loaded by two approaches. The first one is opening the TissUUmaps program, click <em>File</em> in the menu and then <em>Open</em> or Crtl + O. Then the user navigates in the directory and selects the .tmap file. By default, the directory navigates in the recent .tmap project.</p>
+<p><img alt="Project_load_open" src="../../_images/Project_load_open.png" /></p>
+<p>The second option is directly double click on the .tmap file in file explorer in your computer.</p>
+<p><img alt="Project_load_directly" src="../../_images/Project_load_directly.png" /></p>
+<p>After clicking the button <em>Download data</em>, both these approaches will lead to loading the project as can be seen in the example below.</p>
+<p><img alt="Project_load_result" src="../../_images/Project_load_result.png" /></p>
 <p>For more information on the tmap file format and specifications, see <a class="reference internal" href="../advanced/tmap.html#the-tmap-file-format"><span class="std std-ref">The TMAP file format</span></a>.</p>
+</div>
+<div class="section" id="editing-tmap-file-manually">
+<h2>Editing .tmap file manually<a class="headerlink" href="#editing-tmap-file-manually" title="Permalink to this headline">¶</a></h2>
+<p>Work in progress</p>
 </div>
 <div class="section" id="existing-projects">
 <h2>Existing projects<a class="headerlink" href="#existing-projects" title="Permalink to this headline">¶</a></h2>
