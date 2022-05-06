@@ -1,10 +1,38 @@
 # Projects
 
-## Saving and loading projects
+## Saving projects
 
-<!-- TODO -->
+When the user has finished the visualization adjustments, region drawings, etc., the project is ready to be saved in order to continue working on it later or just basically to save it as it is for further consistency. The user needs to press *File* in the menu and then *Save project* or Ctrl + S.
+
+![Project_Save](images/Project_Save.png)
+
+In order to save the project together with the .csv file, it is necessary to generate a button first. The warning window below appears and the user needs to generate the button. The path to the .csv file needs to be relative to the path of the image. In this example, the image layer and the .csv file are in the exact same directory.
+
+![Project_Save_GenButton](images/Project_Save_GenButton.png)
+
+Then the user selects a suitable directory to save the project and writes the project file name, i.e. My_project.tmap, and the project is saved.
+
+![Project_Save_dic](images/Project_Save_dic.png)
+
+## Loading projects
+
+The .tmap project can be loaded by two approaches. The first one is opening the TissUUmaps program, click *File* in the menu and then *Open* or Crtl + O. Then the user navigates in the directory and selects the .tmap file. By default, the directory navigates in the recent .tmap project.
+
+![Project_load_open](images/Project_load_open.png)
+
+The second option is directly double click on the .tmap file in file explorer in your computer.
+
+![Project_load_directly](images/Project_load_directly.png)
+
+After clicking the button *Download data*, both these approaches will lead to loading the project as can be seen in the example below.
+
+![Project_load_result](images/Project_load_result.png)
 
 For more information on the tmap file format and specifications, see {ref}`The TMAP file format`.
+
+## Editing .tmap file manually
+
+Work in progress
 
 ## Existing projects
 
