@@ -17,4 +17,5 @@ docs/intro/index
 docs/starting/index
 docs/sharing/index
 docs/advanced/index
+docs/support/index
 ```
