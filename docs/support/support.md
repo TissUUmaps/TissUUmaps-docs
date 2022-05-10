@@ -4,4 +4,4 @@ If you want to ask quentions about TissUUmaps please visit [forum.image.sc](http
 
 # How to issue an error on GitHub
 
-If you want to report a bug, please do so at [issues on GitHub](https://github.com/TissUUmaps/TissUUmapsCore/issues).
+If you want to report a bug, please do so at [issues on GitHub](https://github.com/TissUUmaps/TissUUmaps/issues).
