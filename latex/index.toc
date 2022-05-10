@@ -76,4 +76,7 @@
 \contentsline {subsubsection}{RegionFile}{56}{subsubsection*.28}%
 \contentsline {subsubsection}{Setting}{56}{subsubsection*.29}%
 \contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{57}{subsection.4.4.2}%
-\contentsline {chapter}{Index}{59}{section*.30}%
+\contentsline {chapter}{\numberline {5}Support}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}How to seek support and discussion}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}How to issue an error on GitHub}{59}{section.5.2}%
+\contentsline {chapter}{Index}{60}{section*.30}%
