@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.10)  10 MAY 2022 09:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.14)  14 MAY 2022 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,13 +828,13 @@ LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [3] [4] [5]
 Chapter 2.
-<image_layers.png, id=418, 836.3747pt x 482.55281pt>
+<image_layers.png, id=422, 836.3747pt x 482.55281pt>
 File: image_layers.png Graphic file (type png)
 <use image_layers.png>
-Package pdftex.def Info: image_layers.png  used on input line 465.
+Package pdftex.def Info: image_layers.png  used on input line 486.
 (pdftex.def)             Requested size: 469.77046pt x 271.03767pt.
 
-Underfull \hbox (badness 5008) in paragraph at lines 463--466
+Underfull \hbox (badness 5008) in paragraph at lines 484--487
 \T1/qtm/m/n/10 You can load the im-ages when you se-lect the Im-age layer tab a
 s you can see in the fig-ure be-low:
  []
@@ -842,375 +842,375 @@ s you can see in the fig-ure be-low:
 [6
 
 ]
-<image_layers_many.png, id=424, 904.1278pt x 484.05844pt>
+<image_layers_many.png, id=428, 904.1278pt x 484.05844pt>
 File: image_layers_many.png Graphic file (type png)
 <use image_layers_many.png>
-Package pdftex.def Info: image_layers_many.png  used on input line 469.
+Package pdftex.def Info: image_layers_many.png  used on input line 490.
 (pdftex.def)             Requested size: 469.74908pt x 251.50502pt.
 
-Underfull \hbox (badness 6741) in paragraph at lines 467--470
+Underfull \hbox (badness 6741) in paragraph at lines 488--491
 []\T1/qtm/m/n/10 Then click the but-ton Add im-age layer and se-lect the de-sir
 ed im-age from your com-puter. Sub-se-
  []
 
-<drag_drop_image.png, id=425, 1111.15125pt x 945.5325pt>
+<drag_drop_image.png, id=429, 1111.15125pt x 945.5325pt>
 File: drag_drop_image.png Graphic file (type png)
 <use drag_drop_image.png>
-Package pdftex.def Info: drag_drop_image.png  used on input line 473.
+Package pdftex.def Info: drag_drop_image.png  used on input line 494.
 (pdftex.def)             Requested size: 469.74916pt x 399.74678pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--474
+Underfull \hbox (badness 10000) in paragraph at lines 492--495
 []\T1/qtm/m/n/10 You can also drag and drop the im-age from file ex-plorer into
  Tis-sU-Umaps.
  []
 
 [7 <./image_layers.png> <./image_layers_many.png>]
-<server_open_menu1.png, id=433, 277.035pt x 157.33781pt>
+<server_open_menu1.png, id=437, 277.035pt x 157.33781pt>
 File: server_open_menu1.png Graphic file (type png)
 <use server_open_menu1.png>
-Package pdftex.def Info: server_open_menu1.png  used on input line 489.
+Package pdftex.def Info: server_open_menu1.png  used on input line 510.
 (pdftex.def)             Requested size: 277.03432pt x 157.33742pt.
  [8 <./drag_drop_image.png>]
-<server_open_menu2.png, id=438, 791.95876pt x 408.02437pt>
+<server_open_menu2.png, id=442, 791.95876pt x 408.02437pt>
 File: server_open_menu2.png Graphic file (type png)
 <use server_open_menu2.png>
-Package pdftex.def Info: server_open_menu2.png  used on input line 492.
+Package pdftex.def Info: server_open_menu2.png  used on input line 513.
 (pdftex.def)             Requested size: 469.76515pt x 242.02106pt.
-<Filters.png, id=439, 374.90062pt x 431.36156pt>
+<Filters.png, id=443, 374.90062pt x 431.36156pt>
 File: Filters.png Graphic file (type png)
 <use Filters.png>
-Package pdftex.def Info: Filters.png  used on input line 501.
+Package pdftex.def Info: Filters.png  used on input line 522.
 (pdftex.def)             Requested size: 374.8997pt x 431.3605pt.
 
 [9 <./server_open_menu1.png> <./server_open_menu2.png>] [10 <./Filters.png>]
-<markers.png, id=451, 902.6222pt x 512.66531pt>
+<markers.png, id=455, 902.6222pt x 512.66531pt>
 File: markers.png Graphic file (type png)
 <use markers.png>
-Package pdftex.def Info: markers.png  used on input line 522.
+Package pdftex.def Info: markers.png  used on input line 543.
 (pdftex.def)             Requested size: 469.76566pt x 266.80652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--523
+Underfull \hbox (badness 10000) in paragraph at lines 541--544
 \T1/qtm/m/n/10 You can load the mark-ers when you se-lect the \T1/qtm/m/it/10 M
 ark-ers \T1/qtm/m/n/10 tab and click the but-ton + as you can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--523
+Underfull \hbox (badness 10000) in paragraph at lines 541--544
 \T1/qtm/m/n/10 see in the fig-ure be-low. You can click the plus sev-eral times
  to load var-i-ous marker files.
  []
 
-<load_markers.png, id=452, 362.10281pt x 182.18062pt>
+<load_markers.png, id=456, 362.10281pt x 182.18062pt>
 File: load_markers.png Graphic file (type png)
 <use load_markers.png>
-Package pdftex.def Info: load_markers.png  used on input line 540.
+Package pdftex.def Info: load_markers.png  used on input line 561.
 (pdftex.def)             Requested size: 362.10191pt x 182.18016pt.
 [11 <./markers.png> <./load_markers.png>]
-<Tab_name.png, id=459, 361.35pt x 182.18062pt>
+<Tab_name.png, id=463, 361.35pt x 182.18062pt>
 File: Tab_name.png Graphic file (type png)
 <use Tab_name.png>
-Package pdftex.def Info: Tab_name.png  used on input line 546.
+Package pdftex.def Info: Tab_name.png  used on input line 567.
 (pdftex.def)             Requested size: 361.34912pt x 182.18016pt.
-<XY_coordinates.png, id=460, 359.84438pt x 248.42813pt>
+<XY_coordinates.png, id=464, 359.84438pt x 248.42813pt>
 File: XY_coordinates.png Graphic file (type png)
 <use XY_coordinates.png>
-Package pdftex.def Info: XY_coordinates.png  used on input line 552.
+Package pdftex.def Info: XY_coordinates.png  used on input line 573.
 (pdftex.def)             Requested size: 359.84349pt x 248.42752pt.
-<group_by.png, id=461, 356.0803pt x 286.06876pt>
+<group_by.png, id=465, 356.0803pt x 286.06876pt>
 File: group_by.png Graphic file (type png)
 <use group_by.png>
-Package pdftex.def Info: group_by.png  used on input line 561.
+Package pdftex.def Info: group_by.png  used on input line 582.
 (pdftex.def)             Requested size: 356.07944pt x 286.06805pt.
  [12 <./Tab_name.png> <./XY_coordinates.png>]
-<group_by2.png, id=468, 351.56343pt x 290.58563pt>
+<group_by2.png, id=472, 351.56343pt x 290.58563pt>
 File: group_by2.png Graphic file (type png)
 <use group_by2.png>
-Package pdftex.def Info: group_by2.png  used on input line 567.
+Package pdftex.def Info: group_by2.png  used on input line 588.
 (pdftex.def)             Requested size: 351.56256pt x 290.58492pt.
  [13 <./group_by.png>]
-<Color_options.png, id=474, 350.05782pt x 283.0575pt>
+<Color_options.png, id=478, 350.05782pt x 283.0575pt>
 File: Color_options.png Graphic file (type png)
 <use Color_options.png>
-Package pdftex.def Info: Color_options.png  used on input line 587.
+Package pdftex.def Info: Color_options.png  used on input line 608.
 (pdftex.def)             Requested size: 350.05695pt x 283.0568pt.
  [14 <./group_by2.png>]
-<Color_options2.png, id=480, 346.29375pt x 305.64188pt>
+<Color_options2.png, id=484, 346.29375pt x 305.64188pt>
 File: Color_options2.png Graphic file (type png)
 <use Color_options2.png>
-Package pdftex.def Info: Color_options2.png  used on input line 593.
+Package pdftex.def Info: Color_options2.png  used on input line 614.
 (pdftex.def)             Requested size: 346.2929pt x 305.64111pt.
  [15 <./Color_options.png> <./Color_options2.png>]
-<Advanced_size.png, id=487, 332.74312pt x 103.13531pt>
+<Advanced_size.png, id=491, 332.74312pt x 103.13531pt>
 File: Advanced_size.png Graphic file (type png)
 <use Advanced_size.png>
-Package pdftex.def Info: Advanced_size.png  used on input line 602.
+Package pdftex.def Info: Advanced_size.png  used on input line 623.
 (pdftex.def)             Requested size: 332.7423pt x 103.13504pt.
-<Advanced_size_ex.png, id=488, 992.20688pt x 627.84563pt>
+<Advanced_size_ex.png, id=492, 992.20688pt x 627.84563pt>
 File: Advanced_size_ex.png Graphic file (type png)
 <use Advanced_size_ex.png>
-Package pdftex.def Info: Advanced_size_ex.png  used on input line 608.
+Package pdftex.def Info: Advanced_size_ex.png  used on input line 629.
 (pdftex.def)             Requested size: 469.75891pt x 297.24301pt.
-<Advanced_pie.png, id=489, 335.00156pt x 106.14656pt>
+<Advanced_pie.png, id=493, 335.00156pt x 106.14656pt>
 File: Advanced_pie.png Graphic file (type png)
 <use Advanced_pie.png>
-Package pdftex.def Info: Advanced_pie.png  used on input line 614.
+Package pdftex.def Info: Advanced_pie.png  used on input line 635.
 (pdftex.def)             Requested size: 335.00073pt x 106.1463pt.
  [16 <./Advanced_size.png> <./Advanced_size_ex.png>]
-<Advanced_pie_ex.png, id=496, 1002.74625pt x 636.87938pt>
+<Advanced_pie_ex.png, id=501, 1002.74625pt x 636.87938pt>
 File: Advanced_pie_ex.png Graphic file (type png)
 <use Advanced_pie_ex.png>
-Package pdftex.def Info: Advanced_pie_ex.png  used on input line 620.
+Package pdftex.def Info: Advanced_pie_ex.png  used on input line 641.
 (pdftex.def)             Requested size: 469.76074pt x 298.35184pt.
-<Advanced_shape.png, id=497, 340.27126pt x 100.12407pt>
+<Advanced_shape.png, id=502, 340.27126pt x 100.12407pt>
 File: Advanced_shape.png Graphic file (type png)
 <use Advanced_shape.png>
-Package pdftex.def Info: Advanced_shape.png  used on input line 626.
+Package pdftex.def Info: Advanced_shape.png  used on input line 647.
 (pdftex.def)             Requested size: 340.27042pt x 100.12381pt.
-<Advanced_shape_ex.png, id=498, 990.70125pt x 634.62094pt>
+<Advanced_shape_ex.png, id=503, 990.70125pt x 634.62094pt>
 File: Advanced_shape_ex.png Graphic file (type png)
 <use Advanced_shape_ex.png>
-Package pdftex.def Info: Advanced_shape_ex.png  used on input line 632.
+Package pdftex.def Info: Advanced_shape_ex.png  used on input line 653.
 (pdftex.def)             Requested size: 469.75656pt x 300.92517pt.
 
 [17 <./Advanced_pie.png> <./Advanced_pie_ex.png> <./Advanced_shape.png>]
-<Advanced_shape2.png, id=508, 338.76563pt x 93.34875pt>
+<Advanced_shape2.png, id=512, 338.76563pt x 93.34875pt>
 File: Advanced_shape2.png Graphic file (type png)
 <use Advanced_shape2.png>
-Package pdftex.def Info: Advanced_shape2.png  used on input line 638.
+Package pdftex.def Info: Advanced_shape2.png  used on input line 659.
 (pdftex.def)             Requested size: 338.76479pt x 93.34851pt.
-<Advanced_shape2_ex.png, id=509, 988.44281pt x 595.47469pt>
+<Advanced_shape2_ex.png, id=513, 988.44281pt x 595.47469pt>
 File: Advanced_shape2_ex.png Graphic file (type png)
 <use Advanced_shape2_ex.png>
-Package pdftex.def Info: Advanced_shape2_ex.png  used on input line 644.
+Package pdftex.def Info: Advanced_shape2_ex.png  used on input line 665.
 (pdftex.def)             Requested size: 469.74146pt x 282.99878pt.
 
 [18 <./Advanced_shape_ex.png> <./Advanced_shape2.png>]
-<Advanced_shape3.png, id=516, 336.50719pt x 97.86563pt>
+<Advanced_shape3.png, id=520, 336.50719pt x 97.86563pt>
 File: Advanced_shape3.png Graphic file (type png)
 <use Advanced_shape3.png>
-Package pdftex.def Info: Advanced_shape3.png  used on input line 650.
+Package pdftex.def Info: Advanced_shape3.png  used on input line 671.
 (pdftex.def)             Requested size: 336.50635pt x 97.86537pt.
-<Advanced_shape3_ex.png, id=517, 989.94844pt x 594.72188pt>
+<Advanced_shape3_ex.png, id=521, 989.94844pt x 594.72188pt>
 File: Advanced_shape3_ex.png Graphic file (type png)
 <use Advanced_shape3_ex.png>
-Package pdftex.def Info: Advanced_shape3_ex.png  used on input line 656.
+Package pdftex.def Info: Advanced_shape3_ex.png  used on input line 677.
 (pdftex.def)             Requested size: 469.74702pt x 282.20543pt.
  [19 <./Advanced_shape2_ex.png> <./Advanced_shape3.png>]
-<Advanced_shape4.png, id=524, 441.90094pt x 106.14656pt>
+<Advanced_shape4.png, id=528, 441.90094pt x 106.14656pt>
 File: Advanced_shape4.png Graphic file (type png)
 <use Advanced_shape4.png>
-Package pdftex.def Info: Advanced_shape4.png  used on input line 662.
+Package pdftex.def Info: Advanced_shape4.png  used on input line 683.
 (pdftex.def)             Requested size: 441.89986pt x 106.1463pt.
-<Advanced_shape4_ex.png, id=525, 1176.64594pt x 475.7775pt>
+<Advanced_shape4_ex.png, id=529, 1176.64594pt x 475.7775pt>
 File: Advanced_shape4_ex.png Graphic file (type png)
 <use Advanced_shape4_ex.png>
-Package pdftex.def Info: Advanced_shape4_ex.png  used on input line 668.
+Package pdftex.def Info: Advanced_shape4_ex.png  used on input line 689.
 (pdftex.def)             Requested size: 469.75233pt x 189.94463pt.
  [20 <./Advanced_shape3_ex.png> <./Advanced_shape4.png> <./Advanced_shape4_ex.p
 ng>]
-<Advanced_opacity.png, id=533, 329.73187pt x 79.04532pt>
+<Advanced_opacity.png, id=537, 329.73187pt x 79.04532pt>
 File: Advanced_opacity.png Graphic file (type png)
 <use Advanced_opacity.png>
-Package pdftex.def Info: Advanced_opacity.png  used on input line 674.
+Package pdftex.def Info: Advanced_opacity.png  used on input line 695.
 (pdftex.def)             Requested size: 329.73105pt x 79.0451pt.
-<Advanced_opacity_ex.png, id=534, 989.94844pt x 632.3625pt>
+<Advanced_opacity_ex.png, id=538, 989.94844pt x 632.3625pt>
 File: Advanced_opacity_ex.png Graphic file (type png)
 <use Advanced_opacity_ex.png>
-Package pdftex.def Info: Advanced_opacity_ex.png  used on input line 680.
+Package pdftex.def Info: Advanced_opacity_ex.png  used on input line 701.
 (pdftex.def)             Requested size: 469.74702pt x 300.07619pt.
-<Advanced_opacity_ex2.png, id=535, 991.45406pt x 633.86812pt>
+<Advanced_opacity_ex2.png, id=539, 991.45406pt x 633.86812pt>
 File: Advanced_opacity_ex2.png Graphic file (type png)
 <use Advanced_opacity_ex2.png>
-Package pdftex.def Info: Advanced_opacity_ex2.png  used on input line 686.
+Package pdftex.def Info: Advanced_opacity_ex2.png  used on input line 707.
 (pdftex.def)             Requested size: 469.75043pt x 300.33606pt.
  [21 <./Advanced_opacity.png> <./Advanced_opacity_ex.png>]
-<Advanced_tip.png, id=542, 253.69781pt x 63.98906pt>
+<Advanced_tip.png, id=546, 253.69781pt x 63.98906pt>
 File: Advanced_tip.png Graphic file (type png)
 <use Advanced_tip.png>
-Package pdftex.def Info: Advanced_tip.png  used on input line 692.
+Package pdftex.def Info: Advanced_tip.png  used on input line 713.
 (pdftex.def)             Requested size: 253.69719pt x 63.98889pt.
-<Advanced_tip_ex.png, id=543, 993.7125pt x 632.3625pt>
+<Advanced_tip_ex.png, id=547, 993.7125pt x 632.3625pt>
 File: Advanced_tip_ex.png Graphic file (type png)
 <use Advanced_tip_ex.png>
-Package pdftex.def Info: Advanced_tip_ex.png  used on input line 698.
+Package pdftex.def Info: Advanced_tip_ex.png  used on input line 719.
 (pdftex.def)             Requested size: 469.75908pt x 298.93759pt.
  [22 <./Advanced_opacity_ex2.png> <./Advanced_tip.png>]
-<Advanced_tip2.png, id=550, 222.8325pt x 63.98906pt>
+<Advanced_tip2.png, id=554, 222.8325pt x 63.98906pt>
 File: Advanced_tip2.png Graphic file (type png)
 <use Advanced_tip2.png>
-Package pdftex.def Info: Advanced_tip2.png  used on input line 704.
+Package pdftex.def Info: Advanced_tip2.png  used on input line 725.
 (pdftex.def)             Requested size: 222.83195pt x 63.98889pt.
-<Advanced_tip2_ex.png, id=551, 989.94844pt x 624.83438pt>
+<Advanced_tip2_ex.png, id=555, 989.94844pt x 624.83438pt>
 File: Advanced_tip2_ex.png Graphic file (type png)
 <use Advanced_tip2_ex.png>
-Package pdftex.def Info: Advanced_tip2_ex.png  used on input line 710.
+Package pdftex.def Info: Advanced_tip2_ex.png  used on input line 731.
 (pdftex.def)             Requested size: 469.74702pt x 296.50385pt.
  [23 <./Advanced_tip_ex.png> <./Advanced_tip2.png>]
-<Advanced_gen_button.png, id=559, 164.86594pt x 67.75313pt>
+<Advanced_gen_button.png, id=563, 164.86594pt x 67.75313pt>
 File: Advanced_gen_button.png Graphic file (type png)
 <use Advanced_gen_button.png>
-Package pdftex.def Info: Advanced_gen_button.png  used on input line 716.
+Package pdftex.def Info: Advanced_gen_button.png  used on input line 737.
 (pdftex.def)             Requested size: 164.86551pt x 67.75294pt.
-<Advanced_gen_win.png, id=560, 372.64218pt x 313.17pt>
+<Advanced_gen_win.png, id=564, 372.64218pt x 313.17pt>
 File: Advanced_gen_win.png Graphic file (type png)
 <use Advanced_gen_win.png>
-Package pdftex.def Info: Advanced_gen_win.png  used on input line 722.
+Package pdftex.def Info: Advanced_gen_win.png  used on input line 743.
 (pdftex.def)             Requested size: 372.64127pt x 313.16922pt.
  [24 <./Advanced_tip2_ex.png> <./Advanced_gen_button.png>]
-<Advanced_gen_ex.png, id=567, 989.19562pt x 546.54187pt>
+<Advanced_gen_ex.png, id=571, 989.19562pt x 546.54187pt>
 File: Advanced_gen_ex.png Graphic file (type png)
 <use Advanced_gen_ex.png>
-Package pdftex.def Info: Advanced_gen_ex.png  used on input line 728.
+Package pdftex.def Info: Advanced_gen_ex.png  used on input line 749.
 (pdftex.def)             Requested size: 469.75204pt x 259.54337pt.
  [25 <./Advanced_gen_win.png> <./Advanced_gen_ex.png>]
-<Table_general.png, id=574, 454.69875pt x 301.125pt>
+<Table_general.png, id=578, 454.69875pt x 301.125pt>
 File: Table_general.png Graphic file (type png)
 <use Table_general.png>
-Package pdftex.def Info: Table_general.png  used on input line 737.
+Package pdftex.def Info: Table_general.png  used on input line 758.
 (pdftex.def)             Requested size: 454.69763pt x 301.12425pt.
-<Table_check.png, id=575, 1005.7575pt x 500.62032pt>
+<Table_check.png, id=579, 1005.7575pt x 500.62032pt>
 File: Table_check.png Graphic file (type png)
 <use Table_check.png>
-Package pdftex.def Info: Table_check.png  used on input line 743.
+Package pdftex.def Info: Table_check.png  used on input line 764.
 (pdftex.def)             Requested size: 469.7442pt x 233.82492pt.
 
 [26 <./Table_general.png>]
-<Table_Shape.png, id=581, 459.21562pt x 305.64188pt>
+<Table_Shape.png, id=585, 459.21562pt x 305.64188pt>
 File: Table_Shape.png Graphic file (type png)
 <use Table_Shape.png>
-Package pdftex.def Info: Table_Shape.png  used on input line 749.
+Package pdftex.def Info: Table_Shape.png  used on input line 770.
 (pdftex.def)             Requested size: 459.2145pt x 305.64111pt.
-<Table_Color.png, id=582, 457.71pt x 414.04688pt>
+<Table_Color.png, id=586, 457.71pt x 414.04688pt>
 File: Table_Color.png Graphic file (type png)
 <use Table_Color.png>
-Package pdftex.def Info: Table_Color.png  used on input line 755.
+Package pdftex.def Info: Table_Color.png  used on input line 776.
 (pdftex.def)             Requested size: 457.7089pt x 414.04585pt.
  [27 <./Table_check.png> <./Table_Shape.png>]
-<Table_eye.png, id=589, 1025.33063pt x 521.69907pt>
+<Table_eye.png, id=593, 1025.33063pt x 521.69907pt>
 File: Table_eye.png Graphic file (type png)
 <use Table_eye.png>
-Package pdftex.def Info: Table_eye.png  used on input line 761.
+Package pdftex.def Info: Table_eye.png  used on input line 782.
 (pdftex.def)             Requested size: 469.74908pt x 239.01329pt.
 
 [28 <./Table_Color.png>]
-<Regions_Draw.png, id=596, 479.54156pt x 107.65219pt>
+<Regions_Draw.png, id=600, 479.54156pt x 107.65219pt>
 File: Regions_Draw.png Graphic file (type png)
 <use Regions_Draw.png>
-Package pdftex.def Info: Regions_Draw.png  used on input line 820.
+Package pdftex.def Info: Regions_Draw.png  used on input line 841.
 (pdftex.def)             Requested size: 469.75728pt x 105.45735pt.
  [29 <./Table_eye.png>]
-<Regions_Draw_ex1.png, id=603, 1173.63469pt x 643.6547pt>
+<Regions_Draw_ex1.png, id=607, 1173.63469pt x 643.6547pt>
 File: Regions_Draw_ex1.png Graphic file (type png)
 <use Regions_Draw_ex1.png>
-Package pdftex.def Info: Regions_Draw_ex1.png  used on input line 826.
+Package pdftex.def Info: Regions_Draw_ex1.png  used on input line 847.
 (pdftex.def)             Requested size: 469.75pt x 257.6341pt.
-<Regions_Draw_ex2.png, id=604, 1158.57843pt x 642.90187pt>
+<Regions_Draw_ex2.png, id=608, 1158.57843pt x 642.90187pt>
 File: Regions_Draw_ex2.png Graphic file (type png)
 <use Regions_Draw_ex2.png>
-Package pdftex.def Info: Regions_Draw_ex2.png  used on input line 832.
+Package pdftex.def Info: Regions_Draw_ex2.png  used on input line 853.
 (pdftex.def)             Requested size: 469.75206pt x 260.67793pt.
  [30 <./Regions_Draw.png> <./Regions_Draw_ex1.png>]
-<Regions_Anlayze_ex.png, id=611, 1050.92625pt x 642.90187pt>
+<Regions_Anlayze_ex.png, id=615, 1050.92625pt x 642.90187pt>
 File: Regions_Anlayze_ex.png Graphic file (type png)
 <use Regions_Anlayze_ex.png>
-Package pdftex.def Info: Regions_Anlayze_ex.png  used on input line 841.
+Package pdftex.def Info: Regions_Anlayze_ex.png  used on input line 862.
 (pdftex.def)             Requested size: 469.7534pt x 287.38043pt.
  [31 <./Regions_Draw_ex2.png>]
-<Regions_Import.png, id=617, 453.19313pt x 115.93312pt>
+<Regions_Import.png, id=621, 453.19313pt x 115.93312pt>
 File: Regions_Import.png Graphic file (type png)
 <use Regions_Import.png>
-Package pdftex.def Info: Regions_Import.png  used on input line 850.
+Package pdftex.def Info: Regions_Import.png  used on input line 871.
 (pdftex.def)             Requested size: 453.19202pt x 115.93283pt.
-<Regions_Import_ex.png, id=618, 863.47594pt x 615.0478pt>
+<Regions_Import_ex.png, id=622, 863.47594pt x 615.0478pt>
 File: Regions_Import_ex.png Graphic file (type png)
 <use Regions_Import_ex.png>
-Package pdftex.def Info: Regions_Import_ex.png  used on input line 856.
+Package pdftex.def Info: Regions_Import_ex.png  used on input line 877.
 (pdftex.def)             Requested size: 469.74841pt x 334.60786pt.
  [32 <./Regions_Anlayze_ex.png> <./Regions_Import.png>]
-<Regions_Export.png, id=625, 357.58594pt x 197.23688pt>
+<Regions_Export.png, id=629, 357.58594pt x 197.23688pt>
 File: Regions_Export.png Graphic file (type png)
 <use Regions_Export.png>
-Package pdftex.def Info: Regions_Export.png  used on input line 865.
+Package pdftex.def Info: Regions_Export.png  used on input line 886.
 (pdftex.def)             Requested size: 357.58505pt x 197.23637pt.
-<Regions_Export_ex.png, id=626, 506.6428pt x 242.40562pt>
+<Regions_Export_ex.png, id=630, 506.6428pt x 242.40562pt>
 File: Regions_Export_ex.png Graphic file (type png)
 <use Regions_Export_ex.png>
-Package pdftex.def Info: Regions_Export_ex.png  used on input line 871.
+Package pdftex.def Info: Regions_Export_ex.png  used on input line 892.
 (pdftex.def)             Requested size: 469.76595pt x 224.76909pt.
  [33 <./Regions_Import_ex.png> <./Regions_Export.png>]
-<Project_Save.png, id=633, 1445.4pt x 779.91376pt>
+<Project_Save.png, id=637, 1445.4pt x 779.91376pt>
 File: Project_Save.png Graphic file (type png)
 <use Project_Save.png>
-Package pdftex.def Info: Project_Save.png  used on input line 885.
+Package pdftex.def Info: Project_Save.png  used on input line 906.
 (pdftex.def)             Requested size: 469.74944pt x 253.46896pt.
-<Project_Save_GenButton.png, id=634, 373.395pt x 331.2375pt>
+<Project_Save_GenButton.png, id=638, 373.395pt x 331.2375pt>
 File: Project_Save_GenButton.png Graphic file (type png)
 <use Project_Save_GenButton.png>
-Package pdftex.def Info: Project_Save_GenButton.png  used on input line 891.
+Package pdftex.def Info: Project_Save_GenButton.png  used on input line 912.
 (pdftex.def)             Requested size: 373.39409pt x 331.23668pt.
 [34 <./Regions_Export_ex.png> <./Project_Save.png>]
-<Project_Save_dic.png, id=640, 1435.61343pt x 782.17218pt>
+<Project_Save_dic.png, id=644, 1435.61343pt x 782.17218pt>
 File: Project_Save_dic.png Graphic file (type png)
 <use Project_Save_dic.png>
-Package pdftex.def Info: Project_Save_dic.png  used on input line 897.
+Package pdftex.def Info: Project_Save_dic.png  used on input line 918.
 (pdftex.def)             Requested size: 469.74516pt x 255.93352pt.
  [35 <./Project_Save_GenButton.png> <./Project_Save_dic.png>]
-<Project_load_open.png, id=648, 1445.4pt x 1583.9175pt>
+<Project_load_open.png, id=652, 1445.4pt x 1583.9175pt>
 File: Project_load_open.png Graphic file (type png)
 <use Project_load_open.png>
-Package pdftex.def Info: Project_load_open.png  used on input line 906.
+Package pdftex.def Info: Project_load_open.png  used on input line 927.
 (pdftex.def)             Requested size: 469.74944pt x 514.76709pt.
-<Project_load_directly.png, id=649, 687.31781pt x 348.55219pt>
+<Project_load_directly.png, id=653, 687.31781pt x 348.55219pt>
 File: Project_load_directly.png Graphic file (type png)
 <use Project_load_directly.png>
-Package pdftex.def Info: Project_load_directly.png  used on input line 912.
+Package pdftex.def Info: Project_load_directly.png  used on input line 933.
 (pdftex.def)             Requested size: 469.75061pt x 238.21962pt.
  [36 <./Project_load_open.png>]
-<Project_load_result.png, id=655, 1443.89438pt x 779.91376pt>
+<Project_load_result.png, id=659, 1443.89438pt x 779.91376pt>
 File: Project_load_result.png Graphic file (type png)
 <use Project_load_result.png>
-Package pdftex.def Info: Project_load_result.png  used on input line 918.
+Package pdftex.def Info: Project_load_result.png  used on input line 939.
 (pdftex.def)             Requested size: 469.74481pt x 253.73077pt.
  [37 <./Project_load_directly.png> <./Project_load_result.png>]
-<Lung_Cell_Atlas.png, id=663, 897.3525pt x 1008.76875pt>
+<Lung_Cell_Atlas.png, id=667, 897.3525pt x 1008.76875pt>
 File: Lung_Cell_Atlas.png Graphic file (type png)
 <use Lung_Cell_Atlas.png>
-Package pdftex.def Info: Lung_Cell_Atlas.png  used on input line 939.
+Package pdftex.def Info: Lung_Cell_Atlas.png  used on input line 960.
 (pdftex.def)             Requested size: 469.74786pt x 528.08768pt.
  [38] [39 <./Lung_Cell_Atlas.png>]
-<de_novo.png, id=675, 822.07124pt x 671.50874pt>
+<de_novo.png, id=679, 822.07124pt x 671.50874pt>
 File: de_novo.png Graphic file (type png)
 <use de_novo.png>
-Package pdftex.def Info: de_novo.png  used on input line 963.
+Package pdftex.def Info: de_novo.png  used on input line 984.
 (pdftex.def)             Requested size: 469.75204pt x 383.71687pt.
  [40 <./de_novo.png>]
-<automated.png, id=683, 96.36pt x 66.5298pt>
+<automated.png, id=687, 96.36pt x 66.5298pt>
 File: automated.png Graphic file (type png)
 <use automated.png>
-Package pdftex.def Info: automated.png  used on input line 979.
+Package pdftex.def Info: automated.png  used on input line 1000.
 (pdftex.def)             Requested size: 96.35974pt x 66.52963pt.
-<spage2vec.png, id=690, 533.71394pt x 548.5293pt>
+<spage2vec.png, id=694, 533.71394pt x 548.5293pt>
 File: spage2vec.png Graphic file (type png)
 <use spage2vec.png>
-Package pdftex.def Info: spage2vec.png  used on input line 1001.
+Package pdftex.def Info: spage2vec.png  used on input line 1022.
 (pdftex.def)             Requested size: 469.7756pt x 482.81609pt.
  [41 <./automated.png>] [42 <./spage2vec.png>]
-<prostate.png, id=709, 856.3995pt x 646.21425pt>
+<prostate.png, id=713, 856.3995pt x 646.21425pt>
 File: prostate.png Graphic file (type png)
 <use prostate.png>
-Package pdftex.def Info: prostate.png  used on input line 1030.
+Package pdftex.def Info: prostate.png  used on input line 1051.
 (pdftex.def)             Requested size: 469.7667pt x 354.47232pt.
  [43 <./prostate.png>]
-<plugin_container.png, id=720, 479.54156pt x 170.13562pt>
+<plugin_container.png, id=724, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 1070.
+Package pdftex.def Info: plugin_container.png  used on input line 1091.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1076.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1097.
 
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 1081.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 1102.
 
  [44 <./plugin_container.png>] [45]
 Chapter 3.
@@ -1221,7 +1221,7 @@ Chapter 4.
 [47
 
 ] [48] [49] [50] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 2589--2589
+Underfull \hbox (badness 10000) in paragraph at lines 2610--2610
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
@@ -1247,25 +1247,25 @@ yter.TissUUmapsViewer
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4469.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4469.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4488.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4488.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4469.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4469.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4488.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4488.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: D48AB18F692758612161E930FA2ABF16;12391.
+(rerunfilecheck)             Checksum: 2F0814ABFCECE1E02FC1FE429BCB0516;12489.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4469.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4488.
  ) 
 Here is how much of TeX's memory you used:
- 14546 strings out of 483183
- 211959 string characters out of 5966292
- 654226 words of memory out of 5000000
- 28964 multiletter control sequences out of 15000+600000
+ 14548 strings out of 483183
+ 211990 string characters out of 5966292
+ 654207 words of memory out of 5000000
+ 28965 multiletter control sequences out of 15000+600000
  587175 words of font info for 68 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,13n,51p,1793b,604s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1280,10 +1280,10 @@ pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on index.pdf (62 pages, 27541497 bytes).
+Output written on index.pdf (62 pages, 27541783 bytes).
 PDF statistics:
- 944 PDF objects out of 1000 (max. 8388607)
- 734 compressed objects within 8 object streams
- 165 named destinations out of 1000 (max. 500000)
- 974 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 948 PDF objects out of 1000 (max. 8388607)
+ 738 compressed objects within 8 object streams
+ 166 named destinations out of 1000 (max. 500000)
+ 982 words of extra memory for PDF output out of 10000 (max. 10000000)
 
