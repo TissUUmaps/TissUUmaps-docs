@@ -8,6 +8,6 @@ TissUUmaps contains following keyboard shorcuts:
 
 `0` - to hide right menu
 
-`R` - to toggle regions
+[//]: <> (`R` - to toggle regions)
 
-`← →` - to change image layers
+[//]: <> (`← →` - to change image layers )
