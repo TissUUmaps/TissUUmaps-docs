@@ -5,27 +5,27 @@
 \let\spxextra \sphinxstyleindexextra
 
   \bigletter L
-  \item \spxentry{loaddata()}\spxextra{in module tissuumaps.jupyter}, \hyperpage{52}
+  \item \spxentry{loaddata()}\spxextra{in module tissuumaps.jupyter}, \hyperpage{53}
 
   \indexspace
   \bigletter M
   \item \spxentry{module}
-    \subitem \spxentry{tissuumaps.jupyter}, \hyperpage{52}
+    \subitem \spxentry{tissuumaps.jupyter}, \hyperpage{53}
 
   \indexspace
   \bigletter O
-  \item \spxentry{opentmap()}\spxextra{in module tissuumaps.jupyter}, \hyperpage{52}
+  \item \spxentry{opentmap()}\spxextra{in module tissuumaps.jupyter}, \hyperpage{53}
 
   \indexspace
   \bigletter S
   \item \spxentry{screenshot()}\spxextra{tissuumaps.jupyter.TissUUmapsViewer method}, 
-		\hyperpage{53}
+		\hyperpage{54}
 
   \indexspace
   \bigletter T
   \item \spxentry{tissuumaps.jupyter}
-    \subitem \spxentry{module}, \hyperpage{52}
-  \item \spxentry{TissUUmapsServer}\spxextra{class in tissuumaps.jupyter}, \hyperpage{53}
-  \item \spxentry{TissUUmapsViewer}\spxextra{class in tissuumaps.jupyter}, \hyperpage{53}
+    \subitem \spxentry{module}, \hyperpage{53}
+  \item \spxentry{TissUUmapsServer}\spxextra{class in tissuumaps.jupyter}, \hyperpage{54}
+  \item \spxentry{TissUUmapsViewer}\spxextra{class in tissuumaps.jupyter}, \hyperpage{54}
 
 \end{sphinxtheindex}

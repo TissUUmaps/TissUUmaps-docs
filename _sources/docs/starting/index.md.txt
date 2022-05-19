@@ -10,4 +10,5 @@ regions
 projects
 capture
 plugins
+shortcuts
 ```
