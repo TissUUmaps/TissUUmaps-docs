@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.19)  19 MAY 2022 12:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.19)  19 MAY 2022 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1242,13 +1242,7 @@ LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
 (Font)              Font shape `T1/txtt/m/sl' tried instead on input line 1145.
 
- [50 <./plugin_container.png>]
-LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-1.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
-File: ts1txtt.fd 2000/12/15 v3.1
-)
-[51]
+ [50 <./plugin_container.png>] [51]
 Chapter 3.
 [52
 
@@ -1257,12 +1251,18 @@ Chapter 4.
 [53
 
 ] [54] [55] [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 2676--2676
+Underfull \hbox (badness 10000) in paragraph at lines 2670--2670
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
 
-[58] [59] [60] [61] [62] [63] [64]
+[58]
+LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
+1.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+File: ts1txtt.fd 2000/12/15 v3.1
+) [59] [60]
+[61] [62] [63] [64]
 Chapter 5.
 (./index.ind [65
 
@@ -1277,11 +1277,11 @@ yter.TissUUmapsViewer
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4554.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4554.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4548.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4548.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4554.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4554.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4548.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4548.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: A7B6A5AAE76F61B25B1287B7EC0E950E;12687.
@@ -1289,32 +1289,31 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4554.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4548.
  ) 
 Here is how much of TeX's memory you used:
- 14592 strings out of 483183
- 212744 string characters out of 5966292
+ 14591 strings out of 483183
+ 212728 string characters out of 5966292
  654604 words of memory out of 5000000
- 28996 multiletter control sequences out of 15000+600000
+ 28995 multiletter control sequences out of 15000+600000
  587175 words of font info for 68 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,13n,51p,1793b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/e
 nc/dvips/tex-gyre/q-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy5.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texm
-f/fonts/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/fonts/type1/public/te
-x-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/sh
-are/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/pu
-blic/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfon
-ts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on index.pdf (68 pages, 28002306 bytes).
+/cm/cmsy5.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/shar
+e/texmf/fonts/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/fonts/type1/pub
+lic/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></
+usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/ty
+pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
+1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
+Output written on index.pdf (68 pages, 27995015 bytes).
 PDF statistics:
- 995 PDF objects out of 1000 (max. 8388607)
- 770 compressed objects within 8 object streams
+ 991 PDF objects out of 1000 (max. 8388607)
+ 767 compressed objects within 8 object streams
  174 named destinations out of 1000 (max. 500000)
  1023 words of extra memory for PDF output out of 10000 (max. 10000000)
 
