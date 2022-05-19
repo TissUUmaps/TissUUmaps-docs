@@ -2,6 +2,27 @@
 
 ## Load plugins
 
+In order to load plugins, first, they need to be installed. This can be done in the menu `Plugins > Add plugin` as can be seen in the example below.
+
+![Add_plugin1](images/Add_plugin1.png)
+
+Consequently, the user can check any number of plugins they desire and press *OK*.
+
+![Add_plugin2](images/Add_plugin2.png)
+
+Then the tool warns the user then the installed plugins will be available after restarting TissUUmaps.
+
+![Add_plugin3](images/Add_plugin3.png)
+
+After restarting the TissUUmaps, all the installed plugins are listed in the menu `Plugins` as you can see in the figure below.
+
+![Add_plugin4](images/Add_plugin4.png)
+
+Once the user selects any of the installed plugins (in the example below I selected *Feature_Space*), a new tab *Plugins* appears in the upper right part of the screen with all the required boxes for filling.
+
+![Add_plugin5](images/Add_plugin5.png)
+
+
 ## Make your own plugin
 
 Download the Plugin Template python and javascript files from the [Plugin Update Site](https://tissuumaps.github.io/TissUUmaps/plugins/) and put both files in your local folder `$USER_PATH/.tissuumaps/plugins/`. You can then change the plugin name and add your own options and functions.
