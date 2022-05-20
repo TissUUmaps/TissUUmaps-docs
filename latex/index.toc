@@ -6,21 +6,22 @@
 \contentsline {subsection}{\numberline {1.2.2}PIP installation (for Linux and Mac)}{3}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}Citing TissUUmaps}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Changelog}{3}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}3.0.9.3}{3}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}3.0.9.1}{3}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}3.0.9}{4}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}3.0.8.9}{4}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}3.0.8.5}{4}{subsection.1.4.5}%
-\contentsline {subsection}{\numberline {1.4.6}3.0.8.4}{4}{subsection.1.4.6}%
-\contentsline {subsection}{\numberline {1.4.7}3.0.8.3}{4}{subsection.1.4.7}%
-\contentsline {subsection}{\numberline {1.4.8}3.0.8.2}{4}{subsection.1.4.8}%
-\contentsline {subsection}{\numberline {1.4.9}3.0.8.1}{5}{subsection.1.4.9}%
-\contentsline {subsection}{\numberline {1.4.10}3.0.8}{5}{subsection.1.4.10}%
-\contentsline {subsection}{\numberline {1.4.11}3.0.7}{5}{subsection.1.4.11}%
-\contentsline {subsection}{\numberline {1.4.12}3.0.6}{5}{subsection.1.4.12}%
-\contentsline {subsection}{\numberline {1.4.13}3.0.5}{5}{subsection.1.4.13}%
-\contentsline {subsection}{\numberline {1.4.14}3.0.4}{5}{subsection.1.4.14}%
-\contentsline {subsection}{\numberline {1.4.15}3.0}{6}{subsection.1.4.15}%
+\contentsline {subsection}{\numberline {1.4.1}3.0.9.5}{3}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}3.0.9.3}{3}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}3.0.9.1}{4}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}3.0.9}{4}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}3.0.8.9}{4}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}3.0.8.5}{4}{subsection.1.4.6}%
+\contentsline {subsection}{\numberline {1.4.7}3.0.8.4}{4}{subsection.1.4.7}%
+\contentsline {subsection}{\numberline {1.4.8}3.0.8.3}{5}{subsection.1.4.8}%
+\contentsline {subsection}{\numberline {1.4.9}3.0.8.2}{5}{subsection.1.4.9}%
+\contentsline {subsection}{\numberline {1.4.10}3.0.8.1}{5}{subsection.1.4.10}%
+\contentsline {subsection}{\numberline {1.4.11}3.0.8}{5}{subsection.1.4.11}%
+\contentsline {subsection}{\numberline {1.4.12}3.0.7}{5}{subsection.1.4.12}%
+\contentsline {subsection}{\numberline {1.4.13}3.0.6}{5}{subsection.1.4.13}%
+\contentsline {subsection}{\numberline {1.4.14}3.0.5}{6}{subsection.1.4.14}%
+\contentsline {subsection}{\numberline {1.4.15}3.0.4}{6}{subsection.1.4.15}%
+\contentsline {subsection}{\numberline {1.4.16}3.0}{6}{subsection.1.4.16}%
 \contentsline {chapter}{\numberline {2}Getting started}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Images}{7}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Supported image formats}{7}{subsection.2.1.1}%
