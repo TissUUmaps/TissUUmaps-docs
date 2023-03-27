@@ -61,7 +61,7 @@
 
 
 \title{TissUUmaps}
-\date{May 20, 2022}
+\date{Mar 27, 2023}
 \release{3.0}
 \author{Nicolas Pielawski\and Axel Andersson\and Christophe Avenel\and Andrea Behanova\and Eduard Chelebian\and Anna Klemm\and Fredrik Nysjö\and Leslie Solorzano\and Carolina Wählby}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -139,8 +139,8 @@ Install \sphinxcode{\sphinxupquote{libvips}} for your system: \sphinxurl{https:/
 An easy way to install \sphinxcode{\sphinxupquote{libvips}} is to use an \sphinxhref{https://docs.anaconda.com/anaconda/install/index.html}{Anaconda} environment with \sphinxcode{\sphinxupquote{libvips}}:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-conda create \PYGZhy{}y \PYGZhy{}n tissuumaps\PYGZus{}env \PYGZhy{}c conda\PYGZhy{}forge \PYG{n+nv}{python}\PYG{o}{=}\PYG{l+m}{3}.9 libvips
-conda activate tissuumaps\PYGZus{}env
+conda\PYG{+w}{ }create\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }\PYGZhy{}n\PYG{+w}{ }tissuumaps\PYGZus{}env\PYG{+w}{ }\PYGZhy{}c\PYG{+w}{ }conda\PYGZhy{}forge\PYG{+w}{ }\PYG{n+nv}{python}\PYG{o}{=}\PYG{l+m}{3}.9\PYG{+w}{ }libvips
+conda\PYG{+w}{ }activate\PYG{+w}{ }tissuumaps\PYGZus{}env
 \end{sphinxVerbatim}
 
 \item {} 
@@ -148,7 +148,7 @@ conda activate tissuumaps\PYGZus{}env
 Install the TissUUmaps library using \sphinxcode{\sphinxupquote{pip}}:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-pip install \PYG{l+s+s2}{\PYGZdq{}TissUUmaps[full]\PYGZdq{}}
+pip\PYG{+w}{ }install\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}TissUUmaps[full]\PYGZdq{}}
 \end{sphinxVerbatim}
 
 \item {} 
@@ -164,7 +164,7 @@ tissuumaps
 Or start TissUUmaps as a local server:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-tissuumaps\PYGZus{}server path\PYGZus{}to\PYGZus{}your\PYGZus{}images
+tissuumaps\PYGZus{}server\PYG{+w}{ }path\PYGZus{}to\PYGZus{}your\PYGZus{}images
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
@@ -189,8 +189,149 @@ Please cite our \sphinxhref{https://www.biorxiv.org/content/10.1101/2022.01.28.4
 \section{Changelog}
 \label{\detokenize{docs/intro/versions:changelog}}\label{\detokenize{docs/intro/versions::doc}}
 
-\subsection{3.0.9.5}
+\subsection{3.1.0.2}
 \label{\detokenize{docs/intro/versions:id1}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix crash on layer from a parent layer.
+
+\item {} 
+\sphinxAtStartPar
+Change dropdown selection from Chosen to Select2 for faster loading.
+
+\item {} 
+\sphinxAtStartPar
+Update docker to Alpine for security reasons.
+
+\item {} 
+\sphinxAtStartPar
+Small fixes
+
+\end{itemize}
+
+
+\subsection{3.1.0.1}
+\label{\detokenize{docs/intro/versions:id2}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Move docker to python\sphinxhyphen{}alpine for security reasons
+
+\item {} 
+\sphinxAtStartPar
+Add sorting options of markers (applied automatically on AnnData observations)
+
+\item {} 
+\sphinxAtStartPar
+Make Update View button always visible
+
+\item {} 
+\sphinxAtStartPar
+Minor fixes
+
+\end{itemize}
+
+
+\subsection{3.1}
+\label{\detokenize{docs/intro/versions:id3}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Adding HDF5 support on the client side
+
+\item {} 
+\sphinxAtStartPar
+Adding AnnData support on the server side / GUI
+
+\item {} 
+\sphinxAtStartPar
+Adding Network diagram visualization
+
+\item {} 
+\sphinxAtStartPar
+Tabs now saved automatically even without buttons
+
+\item {} 
+\sphinxAtStartPar
+Adding Plugin helpers in javascript
+
+\item {} 
+\sphinxAtStartPar
+Many fixes on the interface
+
+\item {} 
+\sphinxAtStartPar
+Move to PyQt6
+
+\end{itemize}
+
+
+\subsection{3.0.10.4}
+\label{\detokenize{docs/intro/versions:id4}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix path issue on json loading from server
+
+\end{itemize}
+
+
+\subsection{3.0.10.3}
+\label{\detokenize{docs/intro/versions:id5}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Reset all input dropdowns when new data selected
+
+\end{itemize}
+
+
+\subsection{3.0.10.2}
+\label{\detokenize{docs/intro/versions:id6}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Add scale factor for coordinates of markers
+
+\end{itemize}
+
+
+\subsection{3.0.10.1}
+\label{\detokenize{docs/intro/versions:id7}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Add optional offset (x, y) and scale properties to tmap.layers
+
+\end{itemize}
+
+
+\subsection{3.0.10}
+\label{\detokenize{docs/intro/versions:id8}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Add collection mode (to display images next to each other with markers correctly placed)
+
+\item {} 
+\sphinxAtStartPar
+IFrame mode (to hide navbar and make menu smaller when TissUUmaps is run inside an iFrame)
+
+\end{itemize}
+
+
+\subsection{3.0.9.6}
+\label{\detokenize{docs/intro/versions:id9}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Add debug menu when running in debug mode, with debug access in javascript
+
+\item {} 
+\sphinxAtStartPar
+Fix linux bugs with Qt displaying all blank
+
+\item {} 
+\sphinxAtStartPar
+Fix empty columns in marker csv file
+
+\end{itemize}
+
+
+\subsection{3.0.9.5}
+\label{\detokenize{docs/intro/versions:id10}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add / fix key shortcuts (https://tissuumaps.github.io/TissUUmaps\sphinxhyphen{}docs/docs/starting/shortcuts.html)
@@ -207,7 +348,7 @@ Add plugin support to docker server
 
 
 \subsection{3.0.9.3}
-\label{\detokenize{docs/intro/versions:id2}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id11}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Go back to webGL 1 for compatibility issue with Safari 14
@@ -220,7 +361,7 @@ Fix missing .tissuumaps folder for recent files
 
 
 \subsection{3.0.9.1}
-\label{\detokenize{docs/intro/versions:id3}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id12}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Enable larger markers at high resolutiion (up to 1024x1024px)
@@ -241,7 +382,7 @@ Clean code and use ci (pre\sphinxhyphen{}commit)
 
 
 \subsection{3.0.9}
-\label{\detokenize{docs/intro/versions:id4}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id13}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Move to webgl2
@@ -262,7 +403,7 @@ Minor fixes
 
 
 \subsection{3.0.8.9}
-\label{\detokenize{docs/intro/versions:id5}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id14}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Make it possible to update to newer version of plugins
@@ -291,7 +432,7 @@ Other minor fixes and cleaning
 
 
 \subsection{3.0.8.5}
-\label{\detokenize{docs/intro/versions:id6}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id15}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Minor fixes.
@@ -300,7 +441,7 @@ Minor fixes.
 
 
 \subsection{3.0.8.4}
-\label{\detokenize{docs/intro/versions:id7}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id16}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add tiling to viewport capture for higher resolution output
@@ -325,7 +466,7 @@ Add an option to remove markers’ outlines.
 
 
 \subsection{3.0.8.3}
-\label{\detokenize{docs/intro/versions:id8}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id17}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix png artifact in Firefox, by generating jpg tiles.
@@ -334,7 +475,7 @@ Fix png artifact in Firefox, by generating jpg tiles.
 
 
 \subsection{3.0.8.2}
-\label{\detokenize{docs/intro/versions:id9}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id18}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add high resolution capture of viewport, up to 4096x4096 pixels.
@@ -343,7 +484,7 @@ Add high resolution capture of viewport, up to 4096x4096 pixels.
 
 
 \subsection{3.0.8.1}
-\label{\detokenize{docs/intro/versions:id10}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id19}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix multiple dataset alignment when no background image
@@ -352,7 +493,7 @@ Fix multiple dataset alignment when no background image
 
 
 \subsection{3.0.8}
-\label{\detokenize{docs/intro/versions:id11}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id20}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix black images generated by VIPS
@@ -385,7 +526,7 @@ Add opacity per marker option
 
 
 \subsection{3.0.7}
-\label{\detokenize{docs/intro/versions:id12}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id21}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add menu to load plugins through an update\sphinxhyphen{}site
@@ -394,7 +535,7 @@ Add menu to load plugins through an update\sphinxhyphen{}site
 
 
 \subsection{3.0.6}
-\label{\detokenize{docs/intro/versions:id13}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id22}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix multiple plugins opening always last plugin
@@ -423,7 +564,7 @@ Add viewport capture
 
 
 \subsection{3.0.5}
-\label{\detokenize{docs/intro/versions:id14}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id23}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Move csv loading to Papa Parse streaming, to allow better memory management
@@ -432,7 +573,7 @@ Move csv loading to Papa Parse streaming, to allow better memory management
 
 
 \subsection{3.0.4}
-\label{\detokenize{docs/intro/versions:id15}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id24}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add filtering of markers
@@ -441,7 +582,7 @@ Add filtering of markers
 
 
 \subsection{3.0}
-\label{\detokenize{docs/intro/versions:id16}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id25}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add tissuumaps.jupyter module
@@ -530,7 +671,7 @@ You can also drag and drop the image from file explorer into TissUUmaps.
 If you are running TissUUmaps in server mode and not through the GUI, you must specify an image folder in the command line:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-python \PYGZhy{}m tissuumaps \PYG{l+s+s2}{\PYGZdq{}/home/username/Documents/myImages/\PYGZdq{}} \PYGZhy{}p \PYG{l+m}{5005}
+python\PYG{+w}{ }\PYGZhy{}m\PYG{+w}{ }tissuumaps\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}/home/username/Documents/myImages/\PYGZdq{}}\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }\PYG{l+m}{5005}
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
@@ -1255,7 +1396,7 @@ Start the docker container \sphinxcode{\sphinxupquote{cavenel/tissuumaps:latest}
 \end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-docker run \PYGZhy{}it \PYGZhy{}p \PYG{l+m}{56733}:80 \PYGZhy{}\PYGZhy{}name\PYG{o}{=}tissuumaps \PYGZhy{}v /path/to/local/images:/mnt/data cavenel/tissuumaps:latest
+docker\PYG{+w}{ }run\PYG{+w}{ }\PYGZhy{}it\PYG{+w}{ }\PYGZhy{}p\PYG{+w}{ }\PYG{l+m}{56733}:80\PYG{+w}{ }\PYGZhy{}\PYGZhy{}name\PYG{o}{=}tissuumaps\PYG{+w}{ }\PYGZhy{}v\PYG{+w}{ }/path/to/local/images:/mnt/data\PYG{+w}{ }cavenel/tissuumaps:latest
 \end{sphinxVerbatim}
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
@@ -1266,6 +1407,76 @@ Place your images in the local folder \sphinxcode{\sphinxupquote{/path/to/local/
 \item {} 
 \sphinxAtStartPar
 Open \sphinxurl{http://127.0.0.1:56733/} in your favorite browser.
+
+\end{enumerate}
+
+
+\section{Define TissUUmaps service in a Compose file}
+\label{\detokenize{docs/sharing/docker:define-tissuumaps-service-in-a-compose-file}}\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Install \sphinxhref{https://docs.docker.com/compose/install/}{docker\sphinxhyphen{}compose}.
+
+\item {} 
+\sphinxAtStartPar
+Create a file called \sphinxcode{\sphinxupquote{docker\sphinxhyphen{}compose.yml}} in your project directory and paste the following:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{version}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{3.9}\PYG{l+s+s2}{\PYGZdq{}}
+\PYG{n}{services}\PYG{p}{:}
+\PYG{n}{backend}\PYG{p}{:}
+    \PYG{n}{image}\PYG{p}{:} \PYG{n}{docker}\PYG{o}{.}\PYG{n}{io}\PYG{o}{/}\PYG{n}{cavenel}\PYG{o}{/}\PYG{n}{tissuumaps}\PYG{p}{:}\PYG{n}{latest}
+    \PYG{n}{volumes}\PYG{p}{:}
+    \PYG{o}{\PYGZhy{}} \PYG{n+nb}{type}\PYG{p}{:} \PYG{n}{bind}
+        \PYG{n}{source}\PYG{p}{:} \PYG{o}{.}\PYG{o}{/}\PYG{n}{data}
+        \PYG{n}{target}\PYG{p}{:} \PYG{o}{/}\PYG{n}{mnt}\PYG{o}{/}\PYG{n}{data}
+    \PYG{n}{restart}\PYG{p}{:} \PYG{n}{on}\PYG{o}{\PYGZhy{}}\PYG{n}{failure}
+    \PYG{n}{ports}\PYG{p}{:}
+    \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{127.0}\PYG{l+m+mf}{.0}\PYG{l+m+mf}{.1}\PYG{p}{:}\PYG{l+m+mi}{8050}\PYG{p}{:}\PYG{l+m+mi}{80}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+This \sphinxcode{\sphinxupquote{Compose}} file defines TissUUmaps backend service on port 8050.
+The web service uses an image that’s built from docker.io hub. It then binds the container and the host machine to the exposed port, 8050.
+
+\item {} 
+\sphinxAtStartPar
+Put your data in the source folder (here \sphinxcode{\sphinxupquote{./data}}). You can change the source path in the \sphinxcode{\sphinxupquote{docker\sphinxhyphen{}compose.yml}} file.
+
+\item {} 
+\sphinxAtStartPar
+From your project directory, start up your application by running \sphinxcode{\sphinxupquote{docker compose up}}.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYGZdl{}\PYG{+w}{ }docker\PYGZhy{}compose\PYG{+w}{ }up
+Creating\PYG{+w}{ }network\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}tmap\PYGZus{}compose\PYGZus{}default\PYGZdq{}}\PYG{+w}{ }with\PYG{+w}{ }the\PYG{+w}{ }default\PYG{+w}{ }driver
+Creating\PYG{+w}{ }tmap\PYGZus{}compose\PYGZus{}backend\PYGZus{}1\PYG{+w}{ }...\PYG{+w}{ }\PYG{k}{done}
+Attaching\PYG{+w}{ }to\PYG{+w}{ }tmap\PYGZus{}compose\PYGZus{}backend\PYGZus{}1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{1}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Starting\PYG{+w}{ }gunicorn\PYG{+w}{ }\PYG{l+m}{20}.1.0
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{1}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Listening\PYG{+w}{ }at:\PYG{+w}{ }http://0.0.0.0:80\PYG{+w}{ }\PYG{o}{(}\PYG{l+m}{1}\PYG{o}{)}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{1}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Using\PYG{+w}{ }worker:\PYG{+w}{ }gevent
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{7}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{7}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{8}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{8}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{9}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{9}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{10}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{10}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{11}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{11}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{12}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{12}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{13}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{13}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{2023}\PYGZhy{}03\PYGZhy{}27\PYG{+w}{ }\PYG{l+m}{11}:23:57\PYG{+w}{ }+0000\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}\PYG{l+m}{14}\PYG{o}{]}\PYG{+w}{ }\PYG{o}{[}INFO\PYG{o}{]}\PYG{+w}{ }Booting\PYG{+w}{ }worker\PYG{+w}{ }with\PYG{+w}{ }pid:\PYG{+w}{ }\PYG{l+m}{14}
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+backend\PYGZus{}1\PYG{+w}{  }\PYG{p}{|}\PYG{+w}{ }INFO:root:\PYG{+w}{ }*\PYG{+w}{ }TissUUmaps\PYG{+w}{ }version:\PYG{+w}{ }\PYG{l+m}{3}.1.0.1
+\end{sphinxVerbatim}
+
+\item {} 
+\sphinxAtStartPar
+Enter http://localhost:8050 in a browser to see TissUUmaps application running.
 
 \end{enumerate}
 

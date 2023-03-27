@@ -1,36 +1,36 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.5.20)  20 MAY 2022 12:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.27)  27 MAR 2023 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **index.tex
 (./index.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (./sphinxmanual.cls
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./sphinxmanual.cls
 Document Class: sphinxmanual 2019/12/01 v2.3.0 Document class (Sphinx manual)
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
+\bibindent=\dimen138
 )
 LaTeX Info: Redefining \and on input line 35.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 )
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+2500 (decimal 9472)
@@ -40,68 +40,68 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
    defining Unicode char U+2572 (decimal 9586)
 
 (/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
-Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 <<t1.cmap>>)
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
+Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen135
+\@emptytoks=\toks18
+\ex@=\dimen139
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
+\pmbraise@=\dimen140
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count176
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count177
-\leftroot@=\count178
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count179
-\DOTSCASE@=\count180
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count181
-\c@MaxMatrixCols=\count182
+\inf@bad=\count194
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count195
+\leftroot@=\count196
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count197
+\DOTSCASE@=\count198
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count199
+\c@MaxMatrixCols=\count266
 \dotsspace@=\muskip16
-\c@parentequation=\count183
-\dspbrk@lvl=\count184
-\tag@help=\toks17
-\row@=\count185
-\column@=\count186
-\maxfields@=\count187
-\andhelp@=\toks18
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks19
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks19
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks20
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks21
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -115,46 +115,40 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/02/14 3.40 The Babel package
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/02/14 3.40 Babel switching mechanism
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/02/14 3.40 Babel common definitions
-\babel@savecnt=\count188
-\U@D=\dimen144
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count272
+\U@D=\dimen148
+\l@unhyphenated=\language3
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count189
-)
-Package babel Info: \l@british = using hyphenrules for english
-(babel)             (\language0) on input line 82.
-Package babel Info: \l@UKenglish = using hyphenrules for english
-(babel)             (\language0) on input line 83.
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for english
-(babel)             (\language0) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for english
-(babel)             (\language0) on input line 108.
+\bbl@dirlevel=\count273
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 ))
 (/usr/share/texmf/tex/latex/tex-gyre/tgtermes.sty
 Package: tgtermes 2009/09/27 v1.2 TeX Gyre Termes as default roman family
 
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks23
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
@@ -171,38 +165,38 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip56
 \pyy=\skip57
 \pxx=\skip58
-\c@AlphaCnt=\count190
-\c@AlphaDecCnt=\count191
+\c@AlphaCnt=\count274
+\c@AlphaDecCnt=\count275
 ) (./sphinx.sty
 Package: sphinx 2021/01/27 v4.0.0 LaTeX package (Sphinx markup)
 
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
-\sphinxverbatimsep=\dimen145
-\sphinxverbatimborder=\dimen146
-\sphinxshadowsep=\dimen147
-\sphinxshadowsize=\dimen148
-\sphinxshadowrule=\dimen149
-\spx@notice@border=\dimen150
+\sphinxverbatimsep=\dimen149
+\sphinxverbatimborder=\dimen150
+\sphinxshadowsep=\dimen151
+\sphinxshadowsize=\dimen152
+\sphinxshadowrule=\dimen153
+\spx@notice@border=\dimen154
 
 (./sphinxoptionshyperref.sty
 File: sphinxoptionshyperref.sty 2021/01/27 hyperref
@@ -214,51 +208,46 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count192
-\float@exts=\toks22
-\float@box=\box47
-\@float@everytoks=\toks23
-\@floatcapt=\box48
+\c@float@type=\count276
+\float@exts=\toks24
+\float@box=\box52
+\@float@everytoks=\toks25
+\@floatcapt=\box53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen151
-\WF@size=\dimen152
-\c@WF@wrappedlines=\count193
-\WF@box=\box49
-\WF@everypar=\toks24
+\wrapoverhang=\dimen155
+\WF@size=\dimen156
+\c@WF@wrappedlines=\count277
+\WF@box=\box54
+\WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/capt-of/capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count194
-\mult@box=\box50
-\multicol@leftmargin=\dimen153
-\c@unbalance=\count195
-\c@collectmore=\count196
-\doublecol@number=\count197
-\multicoltolerance=\count198
-\multicolpretolerance=\count199
-\full@width=\dimen154
-\page@free=\dimen155
-\premulticols=\dimen156
-\postmulticols=\dimen157
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count278
+\mult@box=\box55
+\multicol@leftmargin=\dimen157
+\c@unbalance=\count279
+\c@collectmore=\count280
+\doublecol@number=\count281
+\multicoltolerance=\count282
+\multicolpretolerance=\count283
+\full@width=\dimen158
+\page@free=\dimen159
+\premulticols=\dimen160
+\postmulticols=\dimen161
 \multicolsep=\skip59
 \multicolbaselineskip=\skip60
-\partial@page=\box51
-\last@line=\box52
-\maxbalancingoverflow=\dimen158
-\mult@rightbox=\box53
-\mult@grightbox=\box54
-\mult@gfirstbox=\box55
-\mult@firstbox=\box56
-\@tempa=\box57
-\@tempa=\box58
-\@tempa=\box59
-\@tempa=\box60
-\@tempa=\box61
+\partial@page=\box56
+\last@line=\box57
+\maxbalancingoverflow=\dimen162
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@firstbox=\box60
+\mult@gfirstbox=\box61
 \@tempa=\box62
 \@tempa=\box63
 \@tempa=\box64
@@ -291,62 +280,66 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box91
 \@tempa=\box92
 \@tempa=\box93
-\c@minrows=\count266
-\c@columnbadness=\count267
-\c@finalcolumnbadness=\count268
-\last@try=\dimen159
-\multicolovershoot=\dimen160
-\multicolundershoot=\dimen161
-\mult@nat@firstbox=\box94
-\colbreak@box=\box95
-\mc@col@check@num=\count269
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\c@minrows=\count284
+\c@columnbadness=\count285
+\c@finalcolumnbadness=\count286
+\last@try=\dimen163
+\multicolovershoot=\dimen164
+\multicolundershoot=\dimen165
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count287
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen162
-\Gin@req@width=\dimen163
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
 )
 (./sphinxlatexgraphics.sty
 File: sphinxlatexgraphics.sty 2021/01/27 graphics
-\spx@image@maxheight=\dimen164
-\spx@image@box=\box96
+\spx@image@maxheight=\dimen168
+\spx@image@box=\box100
 ) (./sphinxlatexadmonitions.sty
 File: sphinxlatexadmonitions.sty 2021/01/27 admonitions
 
 (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip61
-\fb@frw=\dimen165
-\fb@frh=\dimen166
-\FrameRule=\dimen167
-\FrameSep=\dimen168
+\fb@frw=\dimen169
+\fb@frh=\dimen170
+\FrameRule=\dimen171
+\FrameSep=\dimen172
 ))
 (./sphinxlatexliterals.sty
 File: sphinxlatexliterals.sty 2021/12/06 code-blocks and parsed literals
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count270
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+\FV@CodeLineNo=\count288
 \FV@InFile=\read3
-\FV@TabBox=\box97
-\c@FancyVerbLine=\count271
-\FV@StepNumber=\count272
+\FV@TabBox=\box101
+\c@FancyVerbLine=\count289
+\FV@StepNumber=\count290
 \FV@OutFile=\write3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
-Package: alltt 1997/06/16 v2.0g defines alltt environment
+Package: alltt 2021/01/29 v2.0g defines alltt environment
 )
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -355,11 +348,11 @@ tim
 (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\sphinxcontinuationbox=\box98
-\sphinxvisiblespacebox=\box99
-\sphinxVerbatim@TitleBox=\box100
-\sphinxVerbatim@ContentsBox=\box101
-\spx@scratchbox=\box102
+\sphinxcontinuationbox=\box102
+\sphinxvisiblespacebox=\box103
+\sphinxVerbatim@TitleBox=\box104
+\sphinxVerbatim@ContentsBox=\box105
+\spx@scratchbox=\box106
 )
 (./sphinxlatexshadowbox.sty
 File: sphinxlatexshadowbox.sty 2021/01/27 sphinxShadowBox
@@ -375,66 +368,67 @@ File: sphinxlatextables.sty 2021/01/27 tables
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen169
-\ar@mcellbox=\box103
-\extrarowheight=\dimen170
-\NC@list=\toks25
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen173
+\ar@mcellbox=\box107
+\extrarowheight=\dimen174
+\NC@list=\toks27
 \extratabsurround=\skip62
 \backup@length=\skip63
-\ar@cellbox=\box104
+\ar@cellbox=\box108
 )
-\TY@count=\count273
-\TY@linewidth=\dimen171
-\tymin=\dimen172
-\tymax=\dimen173
-\TY@tablewidth=\dimen174
+\TY@count=\count291
+\TY@linewidth=\dimen175
+\tymin=\dimen176
+\tymax=\dimen177
+\TY@tablewidth=\dimen178
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip64
 \LTright=\skip65
 \LTpre=\skip66
 \LTpost=\skip67
-\LTchunksize=\count274
-\LTcapwidth=\dimen175
-\LT@head=\box105
-\LT@firsthead=\box106
-\LT@foot=\box107
-\LT@lastfoot=\box108
-\LT@cols=\count275
-\LT@rows=\count276
-\c@LT@tables=\count277
-\c@LT@chunks=\count278
-\LT@p@ftn=\toks26
+\LTchunksize=\count292
+\LTcapwidth=\dimen179
+\LT@head=\box109
+\LT@firsthead=\box110
+\LT@foot=\box111
+\LT@lastfoot=\box112
+\LT@gbox=\box113
+\LT@cols=\count293
+\LT@rows=\count294
+\c@LT@tables=\count295
+\c@LT@chunks=\count296
+\LT@p@ftn=\toks28
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box109
-\sift@deathcycles=\count279
-\@vwid@loff=\dimen176
-\@vwid@roff=\dimen177
+\@vwid@box=\box114
+\sift@deathcycles=\count297
+\@vwid@loff=\dimen180
+\@vwid@roff=\dimen181
 )
-\sphinx@TY@tablewidth=\dimen178
+\sphinx@TY@tablewidth=\dimen182
 )
 (./sphinxlatexnumfig.sty
 File: sphinxlatexnumfig.sty 2021/01/27 numbering
 ) (./sphinxlatexlists.sty
 File: sphinxlatexlists.sty 2021/01/27 lists
 )
-\c@sphinxscope=\count280
-\c@sphinxexplicit=\count281
+\c@sphinxscope=\count298
+\c@sphinxexplicit=\count299
  (./sphinxpackagefootnote.sty
 Package: sphinxpackagefootnote 2021/02/04 v1.1d footnotehyper adapted to sphinx
  (Sphinx team)
-\FNH@notes=\box110
-\FNH@toks=\toks27
-\FNH@width=\dimen179
+\FNH@notes=\box115
+\FNH@toks=\toks29
+\FNH@width=\dimen183
 ) (./sphinxlatexindbibtoc.sty
 File: sphinxlatexindbibtoc.sty 2021/01/27 index, bib., toc
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 ))
 (./sphinxlatexstylepage.sty
 File: sphinxlatexstylepage.sty 2021/01/27 page styling
@@ -447,8 +441,8 @@ Rollback for package 'parskip' requested -> version 'v1'.
 Package: parskip 2001/04/09 non-zero parskip adjustments
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
 \f@nch@headwidth=\skip68
 \f@nch@O@elh=\skip69
 \f@nch@O@erh=\skip70
@@ -463,16 +457,16 @@ s
 File: sphinxlatexstyleheadings.sty 2021/01/27 headings
 
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box111
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box116
 \beforetitleunit=\skip77
 \aftertitleunit=\skip78
-\ttl@plus=\dimen180
-\ttl@minus=\dimen181
-\ttl@toksa=\toks28
-\titlewidth=\dimen182
-\titlewidthlast=\dimen183
-\titlewidthfirst=\dimen184
+\ttl@plus=\dimen184
+\ttl@minus=\dimen185
+\ttl@toksa=\toks30
+\titlewidth=\dimen186
+\titlewidthlast=\dimen187
+\titlewidthfirst=\dimen188
 ))
 (./sphinxlatexstyletext.sty
 File: sphinxlatexstyletext.sty 2021/12/06 text styling
@@ -490,26 +484,26 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count282
-\Gm@cntv=\count283
-\c@Gm@tempcnt=\count284
-\Gm@bindingoffset=\dimen185
-\Gm@wd@mp=\dimen186
-\Gm@odd@mp=\dimen187
-\Gm@even@mp=\dimen188
-\Gm@layoutwidth=\dimen189
-\Gm@layoutheight=\dimen190
-\Gm@layouthoffset=\dimen191
-\Gm@layoutvoffset=\dimen192
-\Gm@dimlist=\toks29
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
+\Gm@bindingoffset=\dimen189
+\Gm@wd@mp=\dimen190
+\Gm@odd@mp=\dimen191
+\Gm@even@mp=\dimen192
+\Gm@layoutwidth=\dimen193
+\Gm@layoutheight=\dimen194
+\Gm@layouthoffset=\dimen195
+\Gm@layoutvoffset=\dimen196
+\Gm@dimlist=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -534,14 +528,18 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen193
-\Hy@linkcounter=\count285
-\Hy@pagecounter=\count286
+\@linkdim=\dimen197
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
 )
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
@@ -549,32 +547,31 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count287
-\pdfmajorversion=\count288
-Package hyperref Info: Option `unicode' set `true' on input line 4421.
+\Hy@SavedSpaceFactor=\count305
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
-Package hyperref Info: Option `breaklinks' set `true' on input line 4421.
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count289
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count306
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen194
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen198
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -583,37 +580,39 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count290
-\Field@Width=\dimen195
-\Fld@charsize=\dimen196
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring ON on input line 6448.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
+\Fld@menulength=\count307
+\Field@Width=\dimen199
+\Fld@charsize=\dimen256
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
-(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count291
-\c@Item=\count292
-\c@Hfootnote=\count293
+\Hy@abspage=\count308
+\c@Item=\count309
+\c@Hfootnote=\count310
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
 )
-\Fld@listcount=\count294
-\c@bookmark@seq@number=\count295
+\Fld@listcount=\count311
+\c@bookmark@seq@number=\count312
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -637,10 +636,15 @@ Package: sphinxmessages 2019/01/04 v2.0 Localized LaTeX macros (Sphinx team)
 
 
 Writing index file index.idx
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count296
-\l__pdf_internal_box=\box112
+LaTeX Font Info:    Trying to load font information for T1+qtm on input line 70
+.
+(/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd
+File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count313
+\l__pdf_internal_box=\box117
 )
 (./index.aux
 
@@ -698,24 +702,19 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Trying to load font information for T1+qtm on input line 70
-.
- (/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd
-File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
-)
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen197
-\scratchbox=\box113
-\nofMPsegments=\count298
-\nofMParguments=\count299
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen198
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count314
+\scratchdimen=\dimen257
+\scratchbox=\box118
+\nofMPsegments=\count315
+\nofMParguments=\count316
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count317
+\MPscratchDim=\dimen258
+\MPnumerator=\count318
+\makeMPintoPDFobject=\count319
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -725,7 +724,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@literalblock=\count303
+\c@literalblock=\count320
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -761,10 +760,9 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box114
 Package hyperref Info: Link coloring ON on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -772,7 +770,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count321
 )
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
@@ -826,445 +824,444 @@ LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
 
 (/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [3] [4] [5] [6]
+) [3] [4] [5] [6] [7]
 Chapter 2.
-<image_layers.png, id=439, 836.3747pt x 482.55281pt>
+<image_layers.png, id=484, 836.3747pt x 482.55281pt>
 File: image_layers.png Graphic file (type png)
 <use image_layers.png>
-Package pdftex.def Info: image_layers.png  used on input line 516.
+Package pdftex.def Info: image_layers.png  used on input line 657.
 (pdftex.def)             Requested size: 469.77046pt x 271.03767pt.
 
-Underfull \hbox (badness 5008) in paragraph at lines 514--517
+Underfull \hbox (badness 5008) in paragraph at lines 655--658
 \T1/qtm/m/n/10 You can load the im-ages when you se-lect the Im-age layer tab a
 s you can see in the fig-ure be-low:
  []
 
-[7
+[8
 
 ]
-<image_layers_many.png, id=445, 904.1278pt x 484.05844pt>
+<image_layers_many.png, id=491, 904.1278pt x 484.05844pt>
 File: image_layers_many.png Graphic file (type png)
 <use image_layers_many.png>
-Package pdftex.def Info: image_layers_many.png  used on input line 520.
+Package pdftex.def Info: image_layers_many.png  used on input line 661.
 (pdftex.def)             Requested size: 469.74908pt x 251.50502pt.
 
-Underfull \hbox (badness 6741) in paragraph at lines 518--521
+Underfull \hbox (badness 6741) in paragraph at lines 659--662
 []\T1/qtm/m/n/10 Then click the but-ton Add im-age layer and se-lect the de-sir
 ed im-age from your com-puter. Sub-se-
  []
 
-<drag_drop_image.png, id=446, 1111.15125pt x 945.5325pt>
+<drag_drop_image.png, id=492, 1111.15125pt x 945.5325pt>
 File: drag_drop_image.png Graphic file (type png)
 <use drag_drop_image.png>
-Package pdftex.def Info: drag_drop_image.png  used on input line 524.
+Package pdftex.def Info: drag_drop_image.png  used on input line 665.
 (pdftex.def)             Requested size: 469.74916pt x 399.74678pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
+Underfull \hbox (badness 10000) in paragraph at lines 663--666
 []\T1/qtm/m/n/10 You can also drag and drop the im-age from file ex-plorer into
  Tis-sU-Umaps.
  []
 
-[8 <./image_layers.png> <./image_layers_many.png>]
-<server_open_menu1.png, id=454, 277.035pt x 157.33781pt>
+[9 <./image_layers.png> <./image_layers_many.png>]
+<server_open_menu1.png, id=500, 277.035pt x 157.33781pt>
 File: server_open_menu1.png Graphic file (type png)
 <use server_open_menu1.png>
-Package pdftex.def Info: server_open_menu1.png  used on input line 540.
+Package pdftex.def Info: server_open_menu1.png  used on input line 681.
 (pdftex.def)             Requested size: 277.03432pt x 157.33742pt.
- [9 <./drag_drop_image.png>]
-<server_open_menu2.png, id=459, 791.95876pt x 408.02437pt>
+ [10 <./drag_drop_image.png>]
+<server_open_menu2.png, id=505, 791.95876pt x 408.02437pt>
 File: server_open_menu2.png Graphic file (type png)
 <use server_open_menu2.png>
-Package pdftex.def Info: server_open_menu2.png  used on input line 543.
+Package pdftex.def Info: server_open_menu2.png  used on input line 684.
 (pdftex.def)             Requested size: 469.76515pt x 242.02106pt.
-<Filters.png, id=460, 374.90062pt x 431.36156pt>
+<Filters.png, id=506, 374.90062pt x 431.36156pt>
 File: Filters.png Graphic file (type png)
 <use Filters.png>
-Package pdftex.def Info: Filters.png  used on input line 552.
+Package pdftex.def Info: Filters.png  used on input line 693.
 (pdftex.def)             Requested size: 374.8997pt x 431.3605pt.
-
-[10 <./server_open_menu1.png> <./server_open_menu2.png>] [11 <./Filters.png>]
-<markers.png, id=473, 902.6222pt x 512.66531pt>
+[11 <./server_open_menu1.png> <./server_open_menu2.png>] [12 <./Filters.png>]
+<markers.png, id=519, 902.6222pt x 512.66531pt>
 File: markers.png Graphic file (type png)
 <use markers.png>
-Package pdftex.def Info: markers.png  used on input line 573.
+Package pdftex.def Info: markers.png  used on input line 714.
 (pdftex.def)             Requested size: 469.76566pt x 266.80652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--574
+Underfull \hbox (badness 10000) in paragraph at lines 712--715
 \T1/qtm/m/n/10 You can load the mark-ers when you se-lect the \T1/qtm/m/it/10 M
 ark-ers \T1/qtm/m/n/10 tab and click the but-ton + as you can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--574
+Underfull \hbox (badness 10000) in paragraph at lines 712--715
 \T1/qtm/m/n/10 see in the fig-ure be-low. You can click the plus sev-eral times
  to load var-i-ous marker files.
  []
 
-<load_markers.png, id=474, 362.10281pt x 182.18062pt>
+<load_markers.png, id=520, 362.10281pt x 182.18062pt>
 File: load_markers.png Graphic file (type png)
 <use load_markers.png>
-Package pdftex.def Info: load_markers.png  used on input line 591.
+Package pdftex.def Info: load_markers.png  used on input line 732.
 (pdftex.def)             Requested size: 362.10191pt x 182.18016pt.
-[12 <./markers.png> <./load_markers.png>]
-<Tab_name.png, id=480, 361.35pt x 182.18062pt>
+[13 <./markers.png> <./load_markers.png>]
+<Tab_name.png, id=526, 361.35pt x 182.18062pt>
 File: Tab_name.png Graphic file (type png)
 <use Tab_name.png>
-Package pdftex.def Info: Tab_name.png  used on input line 597.
+Package pdftex.def Info: Tab_name.png  used on input line 738.
 (pdftex.def)             Requested size: 361.34912pt x 182.18016pt.
-<XY_coordinates.png, id=481, 359.84438pt x 248.42813pt>
+<XY_coordinates.png, id=527, 359.84438pt x 248.42813pt>
 File: XY_coordinates.png Graphic file (type png)
 <use XY_coordinates.png>
-Package pdftex.def Info: XY_coordinates.png  used on input line 603.
+Package pdftex.def Info: XY_coordinates.png  used on input line 744.
 (pdftex.def)             Requested size: 359.84349pt x 248.42752pt.
-<group_by.png, id=482, 356.0803pt x 286.06876pt>
+<group_by.png, id=528, 356.0803pt x 286.06876pt>
 File: group_by.png Graphic file (type png)
 <use group_by.png>
-Package pdftex.def Info: group_by.png  used on input line 612.
+Package pdftex.def Info: group_by.png  used on input line 753.
 (pdftex.def)             Requested size: 356.07944pt x 286.06805pt.
- [13 <./Tab_name.png> <./XY_coordinates.png>]
-<group_by2.png, id=489, 351.56343pt x 290.58563pt>
+ [14 <./Tab_name.png> <./XY_coordinates.png>]
+<group_by2.png, id=535, 351.56343pt x 290.58563pt>
 File: group_by2.png Graphic file (type png)
 <use group_by2.png>
-Package pdftex.def Info: group_by2.png  used on input line 618.
+Package pdftex.def Info: group_by2.png  used on input line 759.
 (pdftex.def)             Requested size: 351.56256pt x 290.58492pt.
- [14 <./group_by.png>]
-<Color_options.png, id=496, 350.05782pt x 283.0575pt>
+ [15 <./group_by.png>]
+<Color_options.png, id=541, 350.05782pt x 283.0575pt>
 File: Color_options.png Graphic file (type png)
 <use Color_options.png>
-Package pdftex.def Info: Color_options.png  used on input line 638.
+Package pdftex.def Info: Color_options.png  used on input line 779.
 (pdftex.def)             Requested size: 350.05695pt x 283.0568pt.
- [15 <./group_by2.png>]
-<Color_options2.png, id=502, 346.29375pt x 305.64188pt>
+ [16 <./group_by2.png>]
+<Color_options2.png, id=547, 346.29375pt x 305.64188pt>
 File: Color_options2.png Graphic file (type png)
 <use Color_options2.png>
-Package pdftex.def Info: Color_options2.png  used on input line 644.
+Package pdftex.def Info: Color_options2.png  used on input line 785.
 (pdftex.def)             Requested size: 346.2929pt x 305.64111pt.
- [16 <./Color_options.png> <./Color_options2.png>]
-<Advanced_size.png, id=509, 332.74312pt x 103.13531pt>
+ [17 <./Color_options.png> <./Color_options2.png>]
+<Advanced_size.png, id=555, 332.74312pt x 103.13531pt>
 File: Advanced_size.png Graphic file (type png)
 <use Advanced_size.png>
-Package pdftex.def Info: Advanced_size.png  used on input line 653.
+Package pdftex.def Info: Advanced_size.png  used on input line 794.
 (pdftex.def)             Requested size: 332.7423pt x 103.13504pt.
-<Advanced_size_ex.png, id=510, 992.20688pt x 627.84563pt>
+<Advanced_size_ex.png, id=556, 992.20688pt x 627.84563pt>
 File: Advanced_size_ex.png Graphic file (type png)
 <use Advanced_size_ex.png>
-Package pdftex.def Info: Advanced_size_ex.png  used on input line 659.
+Package pdftex.def Info: Advanced_size_ex.png  used on input line 800.
 (pdftex.def)             Requested size: 469.75891pt x 297.24301pt.
-<Advanced_pie.png, id=511, 335.00156pt x 106.14656pt>
+<Advanced_pie.png, id=557, 335.00156pt x 106.14656pt>
 File: Advanced_pie.png Graphic file (type png)
 <use Advanced_pie.png>
-Package pdftex.def Info: Advanced_pie.png  used on input line 665.
+Package pdftex.def Info: Advanced_pie.png  used on input line 806.
 (pdftex.def)             Requested size: 335.00073pt x 106.1463pt.
- [17 <./Advanced_size.png> <./Advanced_size_ex.png>]
-<Advanced_pie_ex.png, id=519, 1002.74625pt x 636.87938pt>
+ [18 <./Advanced_size.png> <./Advanced_size_ex.png>]
+<Advanced_pie_ex.png, id=564, 1002.74625pt x 636.87938pt>
 File: Advanced_pie_ex.png Graphic file (type png)
 <use Advanced_pie_ex.png>
-Package pdftex.def Info: Advanced_pie_ex.png  used on input line 671.
+Package pdftex.def Info: Advanced_pie_ex.png  used on input line 812.
 (pdftex.def)             Requested size: 469.76074pt x 298.35184pt.
-<Advanced_shape.png, id=520, 340.27126pt x 100.12407pt>
+<Advanced_shape.png, id=565, 340.27126pt x 100.12407pt>
 File: Advanced_shape.png Graphic file (type png)
 <use Advanced_shape.png>
-Package pdftex.def Info: Advanced_shape.png  used on input line 677.
+Package pdftex.def Info: Advanced_shape.png  used on input line 818.
 (pdftex.def)             Requested size: 340.27042pt x 100.12381pt.
-<Advanced_shape_ex.png, id=521, 990.70125pt x 634.62094pt>
+<Advanced_shape_ex.png, id=566, 990.70125pt x 634.62094pt>
 File: Advanced_shape_ex.png Graphic file (type png)
 <use Advanced_shape_ex.png>
-Package pdftex.def Info: Advanced_shape_ex.png  used on input line 683.
+Package pdftex.def Info: Advanced_shape_ex.png  used on input line 824.
 (pdftex.def)             Requested size: 469.75656pt x 300.92517pt.
 
-[18 <./Advanced_pie.png> <./Advanced_pie_ex.png> <./Advanced_shape.png>]
-<Advanced_shape2.png, id=529, 338.76563pt x 93.34875pt>
+[19 <./Advanced_pie.png> <./Advanced_pie_ex.png> <./Advanced_shape.png>]
+<Advanced_shape2.png, id=574, 338.76563pt x 93.34875pt>
 File: Advanced_shape2.png Graphic file (type png)
 <use Advanced_shape2.png>
-Package pdftex.def Info: Advanced_shape2.png  used on input line 689.
+Package pdftex.def Info: Advanced_shape2.png  used on input line 830.
 (pdftex.def)             Requested size: 338.76479pt x 93.34851pt.
-<Advanced_shape2_ex.png, id=530, 988.44281pt x 595.47469pt>
+<Advanced_shape2_ex.png, id=575, 988.44281pt x 595.47469pt>
 File: Advanced_shape2_ex.png Graphic file (type png)
 <use Advanced_shape2_ex.png>
-Package pdftex.def Info: Advanced_shape2_ex.png  used on input line 695.
+Package pdftex.def Info: Advanced_shape2_ex.png  used on input line 836.
 (pdftex.def)             Requested size: 469.74146pt x 282.99878pt.
 
-[19 <./Advanced_shape_ex.png> <./Advanced_shape2.png>]
-<Advanced_shape3.png, id=537, 336.50719pt x 97.86563pt>
+[20 <./Advanced_shape_ex.png> <./Advanced_shape2.png>]
+<Advanced_shape3.png, id=582, 336.50719pt x 97.86563pt>
 File: Advanced_shape3.png Graphic file (type png)
 <use Advanced_shape3.png>
-Package pdftex.def Info: Advanced_shape3.png  used on input line 701.
+Package pdftex.def Info: Advanced_shape3.png  used on input line 842.
 (pdftex.def)             Requested size: 336.50635pt x 97.86537pt.
-<Advanced_shape3_ex.png, id=538, 989.94844pt x 594.72188pt>
+<Advanced_shape3_ex.png, id=583, 989.94844pt x 594.72188pt>
 File: Advanced_shape3_ex.png Graphic file (type png)
 <use Advanced_shape3_ex.png>
-Package pdftex.def Info: Advanced_shape3_ex.png  used on input line 707.
+Package pdftex.def Info: Advanced_shape3_ex.png  used on input line 848.
 (pdftex.def)             Requested size: 469.74702pt x 282.20543pt.
- [20 <./Advanced_shape2_ex.png> <./Advanced_shape3.png>]
-<Advanced_shape4.png, id=545, 441.90094pt x 106.14656pt>
+ [21 <./Advanced_shape2_ex.png> <./Advanced_shape3.png>]
+<Advanced_shape4.png, id=590, 441.90094pt x 106.14656pt>
 File: Advanced_shape4.png Graphic file (type png)
 <use Advanced_shape4.png>
-Package pdftex.def Info: Advanced_shape4.png  used on input line 713.
+Package pdftex.def Info: Advanced_shape4.png  used on input line 854.
 (pdftex.def)             Requested size: 441.89986pt x 106.1463pt.
-<Advanced_shape4_ex.png, id=546, 1176.64594pt x 475.7775pt>
+<Advanced_shape4_ex.png, id=591, 1176.64594pt x 475.7775pt>
 File: Advanced_shape4_ex.png Graphic file (type png)
 <use Advanced_shape4_ex.png>
-Package pdftex.def Info: Advanced_shape4_ex.png  used on input line 719.
+Package pdftex.def Info: Advanced_shape4_ex.png  used on input line 860.
 (pdftex.def)             Requested size: 469.75233pt x 189.94463pt.
- [21 <./Advanced_shape3_ex.png> <./Advanced_shape4.png> <./Advanced_shape4_ex.p
+ [22 <./Advanced_shape3_ex.png> <./Advanced_shape4.png> <./Advanced_shape4_ex.p
 ng>]
-<Advanced_opacity.png, id=554, 329.73187pt x 79.04532pt>
+<Advanced_opacity.png, id=599, 329.73187pt x 79.04532pt>
 File: Advanced_opacity.png Graphic file (type png)
 <use Advanced_opacity.png>
-Package pdftex.def Info: Advanced_opacity.png  used on input line 725.
+Package pdftex.def Info: Advanced_opacity.png  used on input line 866.
 (pdftex.def)             Requested size: 329.73105pt x 79.0451pt.
-<Advanced_opacity_ex.png, id=555, 989.94844pt x 632.3625pt>
+<Advanced_opacity_ex.png, id=600, 989.94844pt x 632.3625pt>
 File: Advanced_opacity_ex.png Graphic file (type png)
 <use Advanced_opacity_ex.png>
-Package pdftex.def Info: Advanced_opacity_ex.png  used on input line 731.
+Package pdftex.def Info: Advanced_opacity_ex.png  used on input line 872.
 (pdftex.def)             Requested size: 469.74702pt x 300.07619pt.
-<Advanced_opacity_ex2.png, id=556, 991.45406pt x 633.86812pt>
+<Advanced_opacity_ex2.png, id=601, 991.45406pt x 633.86812pt>
 File: Advanced_opacity_ex2.png Graphic file (type png)
 <use Advanced_opacity_ex2.png>
-Package pdftex.def Info: Advanced_opacity_ex2.png  used on input line 737.
+Package pdftex.def Info: Advanced_opacity_ex2.png  used on input line 878.
 (pdftex.def)             Requested size: 469.75043pt x 300.33606pt.
- [22 <./Advanced_opacity.png> <./Advanced_opacity_ex.png>]
-<Advanced_tip.png, id=563, 253.69781pt x 63.98906pt>
+ [23 <./Advanced_opacity.png> <./Advanced_opacity_ex.png>]
+<Advanced_tip.png, id=609, 253.69781pt x 63.98906pt>
 File: Advanced_tip.png Graphic file (type png)
 <use Advanced_tip.png>
-Package pdftex.def Info: Advanced_tip.png  used on input line 743.
+Package pdftex.def Info: Advanced_tip.png  used on input line 884.
 (pdftex.def)             Requested size: 253.69719pt x 63.98889pt.
-<Advanced_tip_ex.png, id=564, 993.7125pt x 632.3625pt>
+<Advanced_tip_ex.png, id=610, 993.7125pt x 632.3625pt>
 File: Advanced_tip_ex.png Graphic file (type png)
 <use Advanced_tip_ex.png>
-Package pdftex.def Info: Advanced_tip_ex.png  used on input line 749.
+Package pdftex.def Info: Advanced_tip_ex.png  used on input line 890.
 (pdftex.def)             Requested size: 469.75908pt x 298.93759pt.
- [23 <./Advanced_opacity_ex2.png> <./Advanced_tip.png>]
-<Advanced_tip2.png, id=572, 222.8325pt x 63.98906pt>
+ [24 <./Advanced_opacity_ex2.png> <./Advanced_tip.png>]
+<Advanced_tip2.png, id=617, 222.8325pt x 63.98906pt>
 File: Advanced_tip2.png Graphic file (type png)
 <use Advanced_tip2.png>
-Package pdftex.def Info: Advanced_tip2.png  used on input line 755.
+Package pdftex.def Info: Advanced_tip2.png  used on input line 896.
 (pdftex.def)             Requested size: 222.83195pt x 63.98889pt.
-<Advanced_tip2_ex.png, id=573, 989.94844pt x 624.83438pt>
+<Advanced_tip2_ex.png, id=618, 989.94844pt x 624.83438pt>
 File: Advanced_tip2_ex.png Graphic file (type png)
 <use Advanced_tip2_ex.png>
-Package pdftex.def Info: Advanced_tip2_ex.png  used on input line 761.
+Package pdftex.def Info: Advanced_tip2_ex.png  used on input line 902.
 (pdftex.def)             Requested size: 469.74702pt x 296.50385pt.
- [24 <./Advanced_tip_ex.png> <./Advanced_tip2.png>]
-<Advanced_gen_button.png, id=580, 164.86594pt x 67.75313pt>
+ [25 <./Advanced_tip_ex.png> <./Advanced_tip2.png>]
+<Advanced_gen_button.png, id=625, 164.86594pt x 67.75313pt>
 File: Advanced_gen_button.png Graphic file (type png)
 <use Advanced_gen_button.png>
-Package pdftex.def Info: Advanced_gen_button.png  used on input line 767.
+Package pdftex.def Info: Advanced_gen_button.png  used on input line 908.
 (pdftex.def)             Requested size: 164.86551pt x 67.75294pt.
-<Advanced_gen_win.png, id=581, 372.64218pt x 313.17pt>
+<Advanced_gen_win.png, id=626, 372.64218pt x 313.17pt>
 File: Advanced_gen_win.png Graphic file (type png)
 <use Advanced_gen_win.png>
-Package pdftex.def Info: Advanced_gen_win.png  used on input line 773.
+Package pdftex.def Info: Advanced_gen_win.png  used on input line 914.
 (pdftex.def)             Requested size: 372.64127pt x 313.16922pt.
- [25 <./Advanced_tip2_ex.png> <./Advanced_gen_button.png>]
-<Advanced_gen_ex.png, id=588, 989.19562pt x 546.54187pt>
+ [26 <./Advanced_tip2_ex.png> <./Advanced_gen_button.png>]
+<Advanced_gen_ex.png, id=633, 989.19562pt x 546.54187pt>
 File: Advanced_gen_ex.png Graphic file (type png)
 <use Advanced_gen_ex.png>
-Package pdftex.def Info: Advanced_gen_ex.png  used on input line 779.
+Package pdftex.def Info: Advanced_gen_ex.png  used on input line 920.
 (pdftex.def)             Requested size: 469.75204pt x 259.54337pt.
- [26 <./Advanced_gen_win.png> <./Advanced_gen_ex.png>]
-<Table_general.png, id=595, 454.69875pt x 301.125pt>
+ [27 <./Advanced_gen_win.png> <./Advanced_gen_ex.png>]
+<Table_general.png, id=640, 454.69875pt x 301.125pt>
 File: Table_general.png Graphic file (type png)
 <use Table_general.png>
-Package pdftex.def Info: Table_general.png  used on input line 788.
+Package pdftex.def Info: Table_general.png  used on input line 929.
 (pdftex.def)             Requested size: 454.69763pt x 301.12425pt.
-<Table_check.png, id=596, 1005.7575pt x 500.62032pt>
+<Table_check.png, id=641, 1005.7575pt x 500.62032pt>
 File: Table_check.png Graphic file (type png)
 <use Table_check.png>
-Package pdftex.def Info: Table_check.png  used on input line 794.
+Package pdftex.def Info: Table_check.png  used on input line 935.
 (pdftex.def)             Requested size: 469.7442pt x 233.82492pt.
 
-[27 <./Table_general.png>]
-<Table_Shape.png, id=602, 459.21562pt x 305.64188pt>
+[28 <./Table_general.png>]
+<Table_Shape.png, id=647, 459.21562pt x 305.64188pt>
 File: Table_Shape.png Graphic file (type png)
 <use Table_Shape.png>
-Package pdftex.def Info: Table_Shape.png  used on input line 800.
+Package pdftex.def Info: Table_Shape.png  used on input line 941.
 (pdftex.def)             Requested size: 459.2145pt x 305.64111pt.
-<Table_Color.png, id=603, 457.71pt x 414.04688pt>
+<Table_Color.png, id=648, 457.71pt x 414.04688pt>
 File: Table_Color.png Graphic file (type png)
 <use Table_Color.png>
-Package pdftex.def Info: Table_Color.png  used on input line 806.
+Package pdftex.def Info: Table_Color.png  used on input line 947.
 (pdftex.def)             Requested size: 457.7089pt x 414.04585pt.
- [28 <./Table_check.png> <./Table_Shape.png>]
-<Table_eye.png, id=610, 1025.33063pt x 521.69907pt>
+ [29 <./Table_check.png> <./Table_Shape.png>]
+<Table_eye.png, id=656, 1025.33063pt x 521.69907pt>
 File: Table_eye.png Graphic file (type png)
 <use Table_eye.png>
-Package pdftex.def Info: Table_eye.png  used on input line 812.
+Package pdftex.def Info: Table_eye.png  used on input line 953.
 (pdftex.def)             Requested size: 469.74908pt x 239.01329pt.
 
-[29 <./Table_Color.png>]
-<Regions_Draw.png, id=618, 479.54156pt x 107.65219pt>
+[30 <./Table_Color.png>]
+<Regions_Draw.png, id=663, 479.54156pt x 107.65219pt>
 File: Regions_Draw.png Graphic file (type png)
 <use Regions_Draw.png>
-Package pdftex.def Info: Regions_Draw.png  used on input line 871.
+Package pdftex.def Info: Regions_Draw.png  used on input line 1012.
 (pdftex.def)             Requested size: 469.75728pt x 105.45735pt.
- [30 <./Table_eye.png>]
-<Regions_Draw_ex1.png, id=624, 1173.63469pt x 643.6547pt>
+ [31 <./Table_eye.png>]
+<Regions_Draw_ex1.png, id=669, 1173.63469pt x 643.6547pt>
 File: Regions_Draw_ex1.png Graphic file (type png)
 <use Regions_Draw_ex1.png>
-Package pdftex.def Info: Regions_Draw_ex1.png  used on input line 877.
+Package pdftex.def Info: Regions_Draw_ex1.png  used on input line 1018.
 (pdftex.def)             Requested size: 469.75pt x 257.6341pt.
-<Regions_Draw_ex2.png, id=625, 1158.57843pt x 642.90187pt>
+<Regions_Draw_ex2.png, id=670, 1158.57843pt x 642.90187pt>
 File: Regions_Draw_ex2.png Graphic file (type png)
 <use Regions_Draw_ex2.png>
-Package pdftex.def Info: Regions_Draw_ex2.png  used on input line 883.
+Package pdftex.def Info: Regions_Draw_ex2.png  used on input line 1024.
 (pdftex.def)             Requested size: 469.75206pt x 260.67793pt.
- [31 <./Regions_Draw.png> <./Regions_Draw_ex1.png>]
-<Regions_Anlayze_ex.png, id=632, 1050.92625pt x 642.90187pt>
+ [32 <./Regions_Draw.png> <./Regions_Draw_ex1.png>]
+<Regions_Anlayze_ex.png, id=677, 1050.92625pt x 642.90187pt>
 File: Regions_Anlayze_ex.png Graphic file (type png)
 <use Regions_Anlayze_ex.png>
-Package pdftex.def Info: Regions_Anlayze_ex.png  used on input line 892.
+Package pdftex.def Info: Regions_Anlayze_ex.png  used on input line 1033.
 (pdftex.def)             Requested size: 469.7534pt x 287.38043pt.
- [32 <./Regions_Draw_ex2.png>]
-<Regions_Import.png, id=638, 453.19313pt x 115.93312pt>
+ [33 <./Regions_Draw_ex2.png>]
+<Regions_Import.png, id=683, 453.19313pt x 115.93312pt>
 File: Regions_Import.png Graphic file (type png)
 <use Regions_Import.png>
-Package pdftex.def Info: Regions_Import.png  used on input line 901.
+Package pdftex.def Info: Regions_Import.png  used on input line 1042.
 (pdftex.def)             Requested size: 453.19202pt x 115.93283pt.
-<Regions_Import_ex.png, id=639, 863.47594pt x 615.0478pt>
+<Regions_Import_ex.png, id=684, 863.47594pt x 615.0478pt>
 File: Regions_Import_ex.png Graphic file (type png)
 <use Regions_Import_ex.png>
-Package pdftex.def Info: Regions_Import_ex.png  used on input line 907.
+Package pdftex.def Info: Regions_Import_ex.png  used on input line 1048.
 (pdftex.def)             Requested size: 469.74841pt x 334.60786pt.
- [33 <./Regions_Anlayze_ex.png> <./Regions_Import.png>]
-<Regions_Export.png, id=646, 357.58594pt x 197.23688pt>
+ [34 <./Regions_Anlayze_ex.png> <./Regions_Import.png>]
+<Regions_Export.png, id=692, 357.58594pt x 197.23688pt>
 File: Regions_Export.png Graphic file (type png)
 <use Regions_Export.png>
-Package pdftex.def Info: Regions_Export.png  used on input line 916.
+Package pdftex.def Info: Regions_Export.png  used on input line 1057.
 (pdftex.def)             Requested size: 357.58505pt x 197.23637pt.
-<Regions_Export_ex.png, id=647, 506.6428pt x 242.40562pt>
+<Regions_Export_ex.png, id=693, 506.6428pt x 242.40562pt>
 File: Regions_Export_ex.png Graphic file (type png)
 <use Regions_Export_ex.png>
-Package pdftex.def Info: Regions_Export_ex.png  used on input line 922.
+Package pdftex.def Info: Regions_Export_ex.png  used on input line 1063.
 (pdftex.def)             Requested size: 469.76595pt x 224.76909pt.
- [34 <./Regions_Import_ex.png> <./Regions_Export.png>]
-<Project_Save.png, id=654, 1445.4pt x 779.91376pt>
+ [35 <./Regions_Import_ex.png> <./Regions_Export.png>]
+<Project_Save.png, id=701, 1445.4pt x 779.91376pt>
 File: Project_Save.png Graphic file (type png)
 <use Project_Save.png>
-Package pdftex.def Info: Project_Save.png  used on input line 936.
+Package pdftex.def Info: Project_Save.png  used on input line 1077.
 (pdftex.def)             Requested size: 469.74944pt x 253.46896pt.
-<Project_Save_GenButton.png, id=655, 373.395pt x 331.2375pt>
+<Project_Save_GenButton.png, id=702, 373.395pt x 331.2375pt>
 File: Project_Save_GenButton.png Graphic file (type png)
 <use Project_Save_GenButton.png>
-Package pdftex.def Info: Project_Save_GenButton.png  used on input line 942.
+Package pdftex.def Info: Project_Save_GenButton.png  used on input line 1083.
 (pdftex.def)             Requested size: 373.39409pt x 331.23668pt.
-[35 <./Regions_Export_ex.png> <./Project_Save.png>]
-<Project_Save_dic.png, id=662, 1435.61343pt x 782.17218pt>
+[36 <./Regions_Export_ex.png> <./Project_Save.png>]
+<Project_Save_dic.png, id=708, 1435.61343pt x 782.17218pt>
 File: Project_Save_dic.png Graphic file (type png)
 <use Project_Save_dic.png>
-Package pdftex.def Info: Project_Save_dic.png  used on input line 948.
+Package pdftex.def Info: Project_Save_dic.png  used on input line 1089.
 (pdftex.def)             Requested size: 469.74516pt x 255.93352pt.
- [36 <./Project_Save_GenButton.png> <./Project_Save_dic.png>]
-<Project_load_open.png, id=669, 1445.4pt x 1583.9175pt>
+ [37 <./Project_Save_GenButton.png> <./Project_Save_dic.png>]
+<Project_load_open.png, id=715, 1445.4pt x 1583.9175pt>
 File: Project_load_open.png Graphic file (type png)
 <use Project_load_open.png>
-Package pdftex.def Info: Project_load_open.png  used on input line 957.
+Package pdftex.def Info: Project_load_open.png  used on input line 1098.
 (pdftex.def)             Requested size: 469.74944pt x 514.76709pt.
-<Project_load_directly.png, id=670, 687.31781pt x 348.55219pt>
+<Project_load_directly.png, id=716, 687.31781pt x 348.55219pt>
 File: Project_load_directly.png Graphic file (type png)
 <use Project_load_directly.png>
-Package pdftex.def Info: Project_load_directly.png  used on input line 963.
+Package pdftex.def Info: Project_load_directly.png  used on input line 1104.
 (pdftex.def)             Requested size: 469.75061pt x 238.21962pt.
- [37 <./Project_load_open.png>]
-<Project_load_result.png, id=676, 1443.89438pt x 779.91376pt>
+ [38 <./Project_load_open.png>]
+<Project_load_result.png, id=722, 1443.89438pt x 779.91376pt>
 File: Project_load_result.png Graphic file (type png)
 <use Project_load_result.png>
-Package pdftex.def Info: Project_load_result.png  used on input line 969.
+Package pdftex.def Info: Project_load_result.png  used on input line 1110.
 (pdftex.def)             Requested size: 469.74481pt x 253.73077pt.
- [38 <./Project_load_directly.png> <./Project_load_result.png>]
-<Lung_Cell_Atlas.png, id=684, 897.3525pt x 1008.76875pt>
+ [39 <./Project_load_directly.png> <./Project_load_result.png>]
+<Lung_Cell_Atlas.png, id=730, 897.3525pt x 1008.76875pt>
 File: Lung_Cell_Atlas.png Graphic file (type png)
 <use Lung_Cell_Atlas.png>
-Package pdftex.def Info: Lung_Cell_Atlas.png  used on input line 990.
+Package pdftex.def Info: Lung_Cell_Atlas.png  used on input line 1131.
 (pdftex.def)             Requested size: 469.74786pt x 528.08768pt.
- [39] [40 <./Lung_Cell_Atlas.png>]
-<de_novo.png, id=696, 822.07124pt x 671.50874pt>
+ [40] [41 <./Lung_Cell_Atlas.png>]
+<de_novo.png, id=743, 822.07124pt x 671.50874pt>
 File: de_novo.png Graphic file (type png)
 <use de_novo.png>
-Package pdftex.def Info: de_novo.png  used on input line 1014.
+Package pdftex.def Info: de_novo.png  used on input line 1155.
 (pdftex.def)             Requested size: 469.75204pt x 383.71687pt.
- [41 <./de_novo.png>]
-<automated.png, id=706, 96.36pt x 66.5298pt>
+ [42 <./de_novo.png>]
+<automated.png, id=751, 96.36pt x 66.5298pt>
 File: automated.png Graphic file (type png)
 <use automated.png>
-Package pdftex.def Info: automated.png  used on input line 1030.
+Package pdftex.def Info: automated.png  used on input line 1171.
 (pdftex.def)             Requested size: 96.35974pt x 66.52963pt.
-<spage2vec.png, id=713, 533.71394pt x 548.5293pt>
+<spage2vec.png, id=758, 533.71394pt x 548.5293pt>
 File: spage2vec.png Graphic file (type png)
 <use spage2vec.png>
-Package pdftex.def Info: spage2vec.png  used on input line 1052.
+Package pdftex.def Info: spage2vec.png  used on input line 1193.
 (pdftex.def)             Requested size: 469.7756pt x 482.81609pt.
- [42 <./automated.png>] [43 <./spage2vec.png>]
-<prostate.png, id=730, 856.3995pt x 646.21425pt>
+ [43 <./automated.png>] [44 <./spage2vec.png>]
+<prostate.png, id=775, 856.3995pt x 646.21425pt>
 File: prostate.png Graphic file (type png)
 <use prostate.png>
-Package pdftex.def Info: prostate.png  used on input line 1081.
+Package pdftex.def Info: prostate.png  used on input line 1222.
 (pdftex.def)             Requested size: 469.7667pt x 354.47232pt.
- [44 <./prostate.png>]
-<Add_plugin1.png, id=740, 769.37437pt x 623.32875pt>
+ [45 <./prostate.png>]
+<Add_plugin1.png, id=785, 769.37437pt x 623.32875pt>
 File: Add_plugin1.png Graphic file (type png)
 <use Add_plugin1.png>
-Package pdftex.def Info: Add_plugin1.png  used on input line 1112.
+Package pdftex.def Info: Add_plugin1.png  used on input line 1253.
 (pdftex.def)             Requested size: 469.7638pt x 380.5914pt.
-<Add_plugin2.png, id=741, 770.88pt x 621.07031pt>
+<Add_plugin2.png, id=786, 770.88pt x 621.07031pt>
 File: Add_plugin2.png Graphic file (type png)
 <use Add_plugin2.png>
-Package pdftex.def Info: Add_plugin2.png  used on input line 1118.
+Package pdftex.def Info: Add_plugin2.png  used on input line 1259.
 (pdftex.def)             Requested size: 469.75385pt x 378.46379pt.
- [45 <./Add_plugin1.png>]
-<Add_plugin3.png, id=746, 768.62157pt x 623.32875pt>
+ [46 <./Add_plugin1.png>]
+<Add_plugin3.png, id=791, 768.62157pt x 623.32875pt>
 File: Add_plugin3.png Graphic file (type png)
 <use Add_plugin3.png>
-Package pdftex.def Info: Add_plugin3.png  used on input line 1124.
+Package pdftex.def Info: Add_plugin3.png  used on input line 1265.
 (pdftex.def)             Requested size: 469.76155pt x 380.96234pt.
- [46 <./Add_plugin2.png>]
-<Add_plugin4.png, id=752, 769.37437pt x 624.83438pt>
+ [47 <./Add_plugin2.png>]
+<Add_plugin4.png, id=798, 769.37437pt x 624.83438pt>
 File: Add_plugin4.png Graphic file (type png)
 <use Add_plugin4.png>
-Package pdftex.def Info: Add_plugin4.png  used on input line 1130.
+Package pdftex.def Info: Add_plugin4.png  used on input line 1271.
 (pdftex.def)             Requested size: 469.7638pt x 381.51071pt.
- [47 <./Add_plugin3.png>]
-<Add_plugin5.png, id=759, 770.88pt x 624.08156pt>
+ [48 <./Add_plugin3.png>]
+<Add_plugin5.png, id=804, 770.88pt x 624.08156pt>
 File: Add_plugin5.png Graphic file (type png)
 <use Add_plugin5.png>
-Package pdftex.def Info: Add_plugin5.png  used on input line 1136.
+Package pdftex.def Info: Add_plugin5.png  used on input line 1277.
 (pdftex.def)             Requested size: 469.75385pt x 380.30829pt.
- [48 <./Add_plugin4.png>]
-<plugin_container.png, id=765, 479.54156pt x 170.13562pt>
+ [49 <./Add_plugin4.png>]
+<plugin_container.png, id=810, 479.54156pt x 170.13562pt>
 File: plugin_container.png Graphic file (type png)
 <use plugin_container.png>
-Package pdftex.def Info: plugin_container.png  used on input line 1151.
+Package pdftex.def Info: plugin_container.png  used on input line 1292.
 (pdftex.def)             Requested size: 469.75728pt x 166.67204pt.
- [49 <./Add_plugin5.png>]
+ [50 <./Add_plugin5.png>]
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1157.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1298.
 
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 1162.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 1303.
 
- [50 <./plugin_container.png>] [51]
+ [51 <./plugin_container.png>] [52]
 Chapter 3.
-[52
-
-]
-Chapter 4.
 [53
 
-] [54] [55] [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 2690--2690
+] [54]
+Chapter 4.
+[55
+
+] [56] [57] [58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 2901--2901
 []\T1/qtm/m/n/10 Tis-sU-Umaps sup-ports most fil-ters avail-able in OpenSead-ra
 gon via the [][]$https : / / github . com / usnistgov /
  []
 
-[58]
+[60]
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
 1.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
-) [59] [60]
-[61] [62] [63] [64]
+) [61] [62]
+[63] [64] [65] [66]
 Chapter 5.
-(./index.ind [65
+(./index.ind [67
 
 ]
 Underfull \hbox (badness 6461) in paragraph at lines 21--23
@@ -1272,33 +1269,25 @@ Underfull \hbox (badness 6461) in paragraph at lines 21--23
 yter.TissUUmapsViewer
  []
 
-[66
+[68
 
 
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4568.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4568.
- (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4568.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4568.
-
-Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 7BFA8F43EC69B532CE9D18930D1B6AA8;12785.
-
+]) (./index.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4568.
+Package rerunfilecheck Info: File `index.out' has not changed.
+(rerunfilecheck)             Checksum: 267F6CB76EA8B186890B2411E5DC12B6;13950.
  ) 
 Here is how much of TeX's memory you used:
- 14594 strings out of 483183
- 212790 string characters out of 5966292
- 654647 words of memory out of 5000000
- 28997 multiletter control sequences out of 15000+600000
- 587175 words of font info for 68 fonts, out of 8000000 for 9000
+ 15574 strings out of 480247
+ 253484 string characters out of 5896151
+ 720425 words of memory out of 5000000
+ 32890 multiletter control sequences out of 15000+600000
+ 524096 words of font info for 72 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 38i,13n,51p,1793b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,13n,76p,1795b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/e
 nc/dvips/tex-gyre/q-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
@@ -1310,10 +1299,10 @@ pe1/public/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
 1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on index.pdf (68 pages, 27995298 bytes).
+Output written on index.pdf (70 pages, 28003446 bytes).
 PDF statistics:
- 996 PDF objects out of 1000 (max. 8388607)
- 772 compressed objects within 8 object streams
- 175 named destinations out of 1000 (max. 500000)
- 1031 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1058 PDF objects out of 1200 (max. 8388607)
+ 828 compressed objects within 9 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 1111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

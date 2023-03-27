@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/rtd_sphinx_search.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -105,6 +105,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Sharing projects</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="apache.html">Apache server</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Docker container</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#define-tissuumaps-service-in-a-compose-file">Define TissUUmaps service in a Compose file</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced usage</a></li>
@@ -185,12 +186,64 @@
 <ol class="simple">
 <li><p>Start the docker container <code class="docutils literal notranslate"><span class="pre">cavenel/tissuumaps:latest</span></code> from Docker Hub:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it -p <span class="m">56733</span>:80 --name<span class="o">=</span>tissuumaps -v /path/to/local/images:/mnt/data cavenel/tissuumaps:latest
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>-p<span class="w"> </span><span class="m">56733</span>:80<span class="w"> </span>--name<span class="o">=</span>tissuumaps<span class="w"> </span>-v<span class="w"> </span>/path/to/local/images:/mnt/data<span class="w"> </span>cavenel/tissuumaps:latest
 </pre></div>
 </div>
 <ol class="simple">
 <li><p>Place your images in the local folder <code class="docutils literal notranslate"><span class="pre">/path/to/local/images/share</span></code>.</p></li>
 <li><p>Open <a class="reference external" href="http://127.0.0.1:56733/">http://127.0.0.1:56733/</a> in your favorite browser.</p></li>
+</ol>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="define-tissuumaps-service-in-a-compose-file">
+<h1>Define TissUUmaps service in a Compose file<a class="headerlink" href="#define-tissuumaps-service-in-a-compose-file" title="Permalink to this headline">¶</a></h1>
+<ol>
+<li><p>Install <a class="reference external" href="https://docs.docker.com/compose/install/">docker-compose</a>.</p></li>
+<li><p>Create a file called <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> in your project directory and paste the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="p">:</span> <span class="s2">&quot;3.9&quot;</span>
+<span class="n">services</span><span class="p">:</span>
+<span class="n">backend</span><span class="p">:</span>
+    <span class="n">image</span><span class="p">:</span> <span class="n">docker</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">cavenel</span><span class="o">/</span><span class="n">tissuumaps</span><span class="p">:</span><span class="n">latest</span>
+    <span class="n">volumes</span><span class="p">:</span>
+    <span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">bind</span>
+        <span class="n">source</span><span class="p">:</span> <span class="o">./</span><span class="n">data</span>
+        <span class="n">target</span><span class="p">:</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">data</span>
+    <span class="n">restart</span><span class="p">:</span> <span class="n">on</span><span class="o">-</span><span class="n">failure</span>
+    <span class="n">ports</span><span class="p">:</span>
+    <span class="o">-</span> <span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">8050</span><span class="p">:</span><span class="mi">80</span>
+</pre></div>
+</div>
+<p>This <code class="docutils literal notranslate"><span class="pre">Compose</span></code> file defines TissUUmaps backend service on port 8050.
+The web service uses an image that’s built from docker.io hub. It then binds the container and the host machine to the exposed port, 8050.</p>
+</li>
+<li><p>Put your data in the source folder (here <code class="docutils literal notranslate"><span class="pre">./data</span></code>). You can change the source path in the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file.</p></li>
+<li><p>From your project directory, start up your application by running <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">compose</span> <span class="pre">up</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>docker-compose<span class="w"> </span>up
+Creating<span class="w"> </span>network<span class="w"> </span><span class="s2">&quot;tmap_compose_default&quot;</span><span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>driver
+Creating<span class="w"> </span>tmap_compose_backend_1<span class="w"> </span>...<span class="w"> </span><span class="k">done</span>
+Attaching<span class="w"> </span>to<span class="w"> </span>tmap_compose_backend_1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Starting<span class="w"> </span>gunicorn<span class="w"> </span><span class="m">20</span>.1.0
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Listening<span class="w"> </span>at:<span class="w"> </span>http://0.0.0.0:80<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="o">)</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Using<span class="w"> </span>worker:<span class="w"> </span>gevent
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">7</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">7</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">8</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">8</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">9</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">9</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">10</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">10</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">11</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">11</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">12</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">12</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">13</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">13</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="o">[</span><span class="m">2023</span>-03-27<span class="w"> </span><span class="m">11</span>:23:57<span class="w"> </span>+0000<span class="o">]</span><span class="w"> </span><span class="o">[</span><span class="m">14</span><span class="o">]</span><span class="w"> </span><span class="o">[</span>INFO<span class="o">]</span><span class="w"> </span>Booting<span class="w"> </span>worker<span class="w"> </span>with<span class="w"> </span>pid:<span class="w"> </span><span class="m">14</span>
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </span>INFO:root:<span class="w"> </span>*<span class="w"> </span>TissUUmaps<span class="w"> </span>version:<span class="w"> </span><span class="m">3</span>.1.0.1
+</pre></div>
+</div>
+</li>
+<li><p>Enter http://localhost:8050 in a browser to see TissUUmaps application running.</p></li>
 </ol>
 </div>
 

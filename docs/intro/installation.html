@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/rtd_sphinx_search.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -200,13 +200,13 @@
 <ol>
 <li><p>Install <code class="docutils literal notranslate"><span class="pre">libvips</span></code> for your system: <a class="reference external" href="https://www.libvips.org/install.html">https://www.libvips.org/install.html</a></p>
 <p>An easy way to install <code class="docutils literal notranslate"><span class="pre">libvips</span></code> is to use an <a class="reference external" href="https://docs.anaconda.com/anaconda/install/index.html">Anaconda</a> environment with <code class="docutils literal notranslate"><span class="pre">libvips</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -y -n tissuumaps_env -c conda-forge <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9 libvips
-conda activate tissuumaps_env
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-y<span class="w"> </span>-n<span class="w"> </span>tissuumaps_env<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.9<span class="w"> </span>libvips
+conda<span class="w"> </span>activate<span class="w"> </span>tissuumaps_env
 </pre></div>
 </div>
 </li>
 <li><p>Install the TissUUmaps library using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install <span class="s2">&quot;TissUUmaps[full]&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;TissUUmaps[full]&quot;</span>
 </pre></div>
 </div>
 </li>
@@ -216,7 +216,7 @@ conda activate tissuumaps_env
 </div>
 </li>
 <li><p>Or start TissUUmaps as a local server:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tissuumaps_server path_to_your_images
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tissuumaps_server<span class="w"> </span>path_to_your_images
 </pre></div>
 </div>
 <p>And open <a class="reference external" href="http://127.0.0.1:5000/">http://127.0.0.1:5000/</a> in your favorite browser.</p>

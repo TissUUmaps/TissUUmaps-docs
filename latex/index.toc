@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}About TissUUmaps}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Installation}{2}{section.1.2}%
@@ -6,81 +6,91 @@
 \contentsline {subsection}{\numberline {1.2.2}PIP installation (for Linux and Mac)}{3}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}Citing TissUUmaps}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Changelog}{3}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}3.0.9.5}{3}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}3.0.9.3}{3}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}3.0.9.1}{4}{subsection.1.4.3}%
-\contentsline {subsection}{\numberline {1.4.4}3.0.9}{4}{subsection.1.4.4}%
-\contentsline {subsection}{\numberline {1.4.5}3.0.8.9}{4}{subsection.1.4.5}%
-\contentsline {subsection}{\numberline {1.4.6}3.0.8.5}{4}{subsection.1.4.6}%
-\contentsline {subsection}{\numberline {1.4.7}3.0.8.4}{4}{subsection.1.4.7}%
-\contentsline {subsection}{\numberline {1.4.8}3.0.8.3}{5}{subsection.1.4.8}%
-\contentsline {subsection}{\numberline {1.4.9}3.0.8.2}{5}{subsection.1.4.9}%
-\contentsline {subsection}{\numberline {1.4.10}3.0.8.1}{5}{subsection.1.4.10}%
-\contentsline {subsection}{\numberline {1.4.11}3.0.8}{5}{subsection.1.4.11}%
-\contentsline {subsection}{\numberline {1.4.12}3.0.7}{5}{subsection.1.4.12}%
-\contentsline {subsection}{\numberline {1.4.13}3.0.6}{5}{subsection.1.4.13}%
-\contentsline {subsection}{\numberline {1.4.14}3.0.5}{6}{subsection.1.4.14}%
-\contentsline {subsection}{\numberline {1.4.15}3.0.4}{6}{subsection.1.4.15}%
-\contentsline {subsection}{\numberline {1.4.16}3.0}{6}{subsection.1.4.16}%
-\contentsline {chapter}{\numberline {2}Getting started}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Images}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Supported image formats}{7}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Load images}{8}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Load images using TissUUmaps server}{9}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Apply filters}{10}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}Markers}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Supported marker format}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Load markers}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Markers settings}{12}{subsection.2.2.3}%
-\contentsline {subsubsection}{File and coordinates}{12}{subsubsection*.3}%
-\contentsline {subsubsection}{Render options}{14}{subsubsection*.4}%
-\contentsline {subsubsection}{Advanced options}{17}{subsubsection*.5}%
-\contentsline {subsubsection}{Table of markers}{27}{subsubsection*.6}%
-\contentsline {section}{\numberline {2.3}Regions}{30}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Supported region formats}{30}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Draw Regions}{30}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Analyze Regions}{32}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Import Regions}{33}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Export Regions}{34}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Projects}{35}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Saving projects}{35}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Loading projects}{37}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Editing .tmap file manually}{39}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Existing projects}{39}{subsection.2.4.4}%
-\contentsline {subsubsection}{Human Developmental Lung Cell Atlas (pcw 5\sphinxhyphen {} pcw 14)}{39}{subsubsection*.7}%
-\contentsline {subsubsection}{Modelling of cell\sphinxhyphen {}type signatures in the developmental human heart}{41}{subsubsection*.8}%
-\contentsline {subsubsection}{Automated identification of the mouse brain’s spatial compartments from in situ sequencing data}{42}{subsubsection*.9}%
-\contentsline {subsubsection}{Spage2vec: Unsupervised representation of localized spatial gene expression signatures}{42}{subsubsection*.10}%
-\contentsline {subsubsection}{Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population\sphinxhyphen {}based}{44}{subsubsection*.11}%
-\contentsline {section}{\numberline {2.5}Exporting screenshots}{45}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Plugins}{45}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Load plugins}{45}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{49}{subsection.2.6.2}%
-\contentsline {subsubsection}{Javascript file}{50}{subsubsection*.12}%
-\contentsline {subsubsection}{Python file}{50}{subsubsection*.13}%
-\contentsline {section}{\numberline {2.7}Shortcuts}{51}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Sharing projects}{52}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Apache server}{52}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Docker container}{52}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Advanced usage}{53}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Jupyter notebooks}{53}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{53}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Napari}{54}{section.4.2}%
-\contentsline {section}{\numberline {4.3}AnnData}{55}{section.4.3}%
-\contentsline {section}{\numberline {4.4}The TMAP file format}{55}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{55}{subsection.4.4.1}%
-\contentsline {subsubsection}{Layer}{57}{subsubsection*.20}%
-\contentsline {subsubsection}{LayerFilter}{57}{subsubsection*.21}%
-\contentsline {subsubsection}{Filter}{58}{subsubsection*.22}%
-\contentsline {subsubsection}{ColorScale}{58}{subsubsection*.23}%
-\contentsline {subsubsection}{Shape}{58}{subsubsection*.24}%
-\contentsline {subsubsection}{MarkerFile}{59}{subsubsection*.25}%
-\contentsline {subsubsection}{ExpectedHeader}{59}{subsubsection*.26}%
-\contentsline {subsubsection}{ExpectedRadios}{61}{subsubsection*.27}%
-\contentsline {subsubsection}{RegionFile}{62}{subsubsection*.28}%
-\contentsline {subsubsection}{Setting}{62}{subsubsection*.29}%
-\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{63}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Support}{65}{chapter.5}%
-\contentsline {section}{\numberline {5.1}How to seek support and discussion}{65}{section.5.1}%
-\contentsline {section}{\numberline {5.2}How to issue an error on GitHub}{65}{section.5.2}%
-\contentsline {chapter}{Index}{66}{section*.30}%
+\contentsline {subsection}{\numberline {1.4.1}3.1.0.2}{3}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}3.1.0.1}{3}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}3.1}{4}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}3.0.10.4}{4}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}3.0.10.3}{4}{subsection.1.4.5}%
+\contentsline {subsection}{\numberline {1.4.6}3.0.10.2}{4}{subsection.1.4.6}%
+\contentsline {subsection}{\numberline {1.4.7}3.0.10.1}{4}{subsection.1.4.7}%
+\contentsline {subsection}{\numberline {1.4.8}3.0.10}{4}{subsection.1.4.8}%
+\contentsline {subsection}{\numberline {1.4.9}3.0.9.6}{4}{subsection.1.4.9}%
+\contentsline {subsection}{\numberline {1.4.10}3.0.9.5}{5}{subsection.1.4.10}%
+\contentsline {subsection}{\numberline {1.4.11}3.0.9.3}{5}{subsection.1.4.11}%
+\contentsline {subsection}{\numberline {1.4.12}3.0.9.1}{5}{subsection.1.4.12}%
+\contentsline {subsection}{\numberline {1.4.13}3.0.9}{5}{subsection.1.4.13}%
+\contentsline {subsection}{\numberline {1.4.14}3.0.8.9}{5}{subsection.1.4.14}%
+\contentsline {subsection}{\numberline {1.4.15}3.0.8.5}{6}{subsection.1.4.15}%
+\contentsline {subsection}{\numberline {1.4.16}3.0.8.4}{6}{subsection.1.4.16}%
+\contentsline {subsection}{\numberline {1.4.17}3.0.8.3}{6}{subsection.1.4.17}%
+\contentsline {subsection}{\numberline {1.4.18}3.0.8.2}{6}{subsection.1.4.18}%
+\contentsline {subsection}{\numberline {1.4.19}3.0.8.1}{6}{subsection.1.4.19}%
+\contentsline {subsection}{\numberline {1.4.20}3.0.8}{6}{subsection.1.4.20}%
+\contentsline {subsection}{\numberline {1.4.21}3.0.7}{6}{subsection.1.4.21}%
+\contentsline {subsection}{\numberline {1.4.22}3.0.6}{7}{subsection.1.4.22}%
+\contentsline {subsection}{\numberline {1.4.23}3.0.5}{7}{subsection.1.4.23}%
+\contentsline {subsection}{\numberline {1.4.24}3.0.4}{7}{subsection.1.4.24}%
+\contentsline {subsection}{\numberline {1.4.25}3.0}{7}{subsection.1.4.25}%
+\contentsline {chapter}{\numberline {2}Getting started}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Images}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Supported image formats}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Load images}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Load images using TissUUmaps server}{10}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Apply filters}{11}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Markers}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Supported marker format}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Load markers}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Markers settings}{13}{subsection.2.2.3}%
+\contentsline {subsubsection}{File and coordinates}{13}{subsubsection*.3}%
+\contentsline {subsubsection}{Render options}{15}{subsubsection*.4}%
+\contentsline {subsubsection}{Advanced options}{18}{subsubsection*.5}%
+\contentsline {subsubsection}{Table of markers}{28}{subsubsection*.6}%
+\contentsline {section}{\numberline {2.3}Regions}{31}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Supported region formats}{31}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Draw Regions}{31}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Analyze Regions}{33}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Import Regions}{34}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Export Regions}{35}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Projects}{36}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Saving projects}{36}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Loading projects}{38}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Editing .tmap file manually}{40}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Existing projects}{40}{subsection.2.4.4}%
+\contentsline {subsubsection}{Human Developmental Lung Cell Atlas (pcw 5\sphinxhyphen {} pcw 14)}{40}{subsubsection*.7}%
+\contentsline {subsubsection}{Modelling of cell\sphinxhyphen {}type signatures in the developmental human heart}{42}{subsubsection*.8}%
+\contentsline {subsubsection}{Automated identification of the mouse brain’s spatial compartments from in situ sequencing data}{43}{subsubsection*.9}%
+\contentsline {subsubsection}{Spage2vec: Unsupervised representation of localized spatial gene expression signatures}{43}{subsubsection*.10}%
+\contentsline {subsubsection}{Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population\sphinxhyphen {}based}{45}{subsubsection*.11}%
+\contentsline {section}{\numberline {2.5}Exporting screenshots}{46}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Plugins}{46}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Load plugins}{46}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Make your own plugin}{50}{subsection.2.6.2}%
+\contentsline {subsubsection}{Javascript file}{51}{subsubsection*.12}%
+\contentsline {subsubsection}{Python file}{51}{subsubsection*.13}%
+\contentsline {section}{\numberline {2.7}Shortcuts}{52}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Sharing projects}{53}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Apache server}{53}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Docker container}{53}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Define TissUUmaps service in a Compose file}{53}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Advanced usage}{55}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Jupyter notebooks}{55}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{55}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Napari}{56}{section.4.2}%
+\contentsline {section}{\numberline {4.3}AnnData}{57}{section.4.3}%
+\contentsline {section}{\numberline {4.4}The TMAP file format}{57}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{57}{subsection.4.4.1}%
+\contentsline {subsubsection}{Layer}{59}{subsubsection*.20}%
+\contentsline {subsubsection}{LayerFilter}{59}{subsubsection*.21}%
+\contentsline {subsubsection}{Filter}{60}{subsubsection*.22}%
+\contentsline {subsubsection}{ColorScale}{60}{subsubsection*.23}%
+\contentsline {subsubsection}{Shape}{60}{subsubsection*.24}%
+\contentsline {subsubsection}{MarkerFile}{61}{subsubsection*.25}%
+\contentsline {subsubsection}{ExpectedHeader}{61}{subsubsection*.26}%
+\contentsline {subsubsection}{ExpectedRadios}{63}{subsubsection*.27}%
+\contentsline {subsubsection}{RegionFile}{64}{subsubsection*.28}%
+\contentsline {subsubsection}{Setting}{64}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{65}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Support}{67}{chapter.5}%
+\contentsline {section}{\numberline {5.1}How to seek support and discussion}{67}{section.5.1}%
+\contentsline {section}{\numberline {5.2}How to issue an error on GitHub}{67}{section.5.2}%
+\contentsline {chapter}{Index}{68}{section*.30}%
