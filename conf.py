@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'TissUUmaps'
-copyright = '2022, The TissUUmaps Team'
+copyright = '2023, The TissUUmaps Team'
 author = 'Nicolas Pielawski, Axel Andersson, Christophe Avenel, Andrea Behanova, Eduard Chelebian, Anna Klemm, Fredrik Nysjö, Leslie Solorzano, Carolina Wählby'
 
 # The full version, including alpha/beta/rc tags
