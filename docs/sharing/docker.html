@@ -201,15 +201,15 @@
 <li><p>Create a file called <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> in your project directory and paste the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="p">:</span> <span class="s2">&quot;3.9&quot;</span>
 <span class="n">services</span><span class="p">:</span>
-<span class="n">backend</span><span class="p">:</span>
+  <span class="n">backend</span><span class="p">:</span>
     <span class="n">image</span><span class="p">:</span> <span class="n">docker</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">cavenel</span><span class="o">/</span><span class="n">tissuumaps</span><span class="p">:</span><span class="n">latest</span>
     <span class="n">volumes</span><span class="p">:</span>
-    <span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">bind</span>
+      <span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">bind</span>
         <span class="n">source</span><span class="p">:</span> <span class="o">./</span><span class="n">data</span>
         <span class="n">target</span><span class="p">:</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">data</span>
     <span class="n">restart</span><span class="p">:</span> <span class="n">on</span><span class="o">-</span><span class="n">failure</span>
     <span class="n">ports</span><span class="p">:</span>
-    <span class="o">-</span> <span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">8050</span><span class="p">:</span><span class="mi">80</span>
+      <span class="o">-</span> <span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">8050</span><span class="p">:</span><span class="mi">80</span>
 </pre></div>
 </div>
 <p>This <code class="docutils literal notranslate"><span class="pre">Compose</span></code> file defines TissUUmaps backend service on port 8050.

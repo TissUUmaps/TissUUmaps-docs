@@ -1425,15 +1425,15 @@ Create a file called \sphinxcode{\sphinxupquote{docker\sphinxhyphen{}compose.yml
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{n}{version}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{3.9}\PYG{l+s+s2}{\PYGZdq{}}
 \PYG{n}{services}\PYG{p}{:}
-\PYG{n}{backend}\PYG{p}{:}
+  \PYG{n}{backend}\PYG{p}{:}
     \PYG{n}{image}\PYG{p}{:} \PYG{n}{docker}\PYG{o}{.}\PYG{n}{io}\PYG{o}{/}\PYG{n}{cavenel}\PYG{o}{/}\PYG{n}{tissuumaps}\PYG{p}{:}\PYG{n}{latest}
     \PYG{n}{volumes}\PYG{p}{:}
-    \PYG{o}{\PYGZhy{}} \PYG{n+nb}{type}\PYG{p}{:} \PYG{n}{bind}
+      \PYG{o}{\PYGZhy{}} \PYG{n+nb}{type}\PYG{p}{:} \PYG{n}{bind}
         \PYG{n}{source}\PYG{p}{:} \PYG{o}{.}\PYG{o}{/}\PYG{n}{data}
         \PYG{n}{target}\PYG{p}{:} \PYG{o}{/}\PYG{n}{mnt}\PYG{o}{/}\PYG{n}{data}
     \PYG{n}{restart}\PYG{p}{:} \PYG{n}{on}\PYG{o}{\PYGZhy{}}\PYG{n}{failure}
     \PYG{n}{ports}\PYG{p}{:}
-    \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{127.0}\PYG{l+m+mf}{.0}\PYG{l+m+mf}{.1}\PYG{p}{:}\PYG{l+m+mi}{8050}\PYG{p}{:}\PYG{l+m+mi}{80}
+      \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{127.0}\PYG{l+m+mf}{.0}\PYG{l+m+mf}{.1}\PYG{p}{:}\PYG{l+m+mi}{8050}\PYG{p}{:}\PYG{l+m+mi}{80}
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
