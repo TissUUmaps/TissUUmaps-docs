@@ -16,15 +16,15 @@ docker run -it -p 56733:80 --name=tissuumaps -v /path/to/local/images:/mnt/data 
     ```
     version: "3.9"
     services:
-    backend:
+      backend:
         image: docker.io/cavenel/tissuumaps:latest
         volumes:
-        - type: bind
+          - type: bind
             source: ./data
             target: /mnt/data
         restart: on-failure
         ports:
-        - 127.0.0.1:8050:80
+          - 127.0.0.1:8050:80
     ```
 
     This `Compose` file defines TissUUmaps backend service on port 8050.
