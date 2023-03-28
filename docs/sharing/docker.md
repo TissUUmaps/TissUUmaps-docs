@@ -1,5 +1,7 @@
 # Docker container
 
+## Start a TissUUmaps docker instance
+
 1. Start the docker container `cavenel/tissuumaps:latest` from Docker Hub:
 ```bash
 docker run -it -p 56733:80 --name=tissuumaps -v /path/to/local/images:/mnt/data cavenel/tissuumaps:latest
@@ -7,7 +9,7 @@ docker run -it -p 56733:80 --name=tissuumaps -v /path/to/local/images:/mnt/data 
 1. Place your images in the local folder `/path/to/local/images/share`.
 1. Open [http://127.0.0.1:56733/](http://127.0.0.1:56733/) in your favorite browser.
 
-# Define TissUUmaps service in a Compose file
+## Define TissUUmaps service in a Compose file
 
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
 
@@ -66,7 +68,7 @@ Compose is a tool for defining and running multi-container Docker applications. 
 
 1. Enter http://localhost:8050 in a browser to see TissUUmaps application running.
 
-# Configure sftp multi-user access (Optional)
+## Configure sftp multi-user access (Optional)
 
 Add the following lines to `/etc/ssh/sshd_config`:
 ```
@@ -110,7 +112,7 @@ The new users will be able to connect through sftp, and only see the files in `/
 
 Restart the ssh daemon with `sudo service ssh restart`.
 
-# Password protection of files hosted on TissUUmaps docker
+## Password protection of files hosted on TissUUmaps docker
 
 You can add login and password for any folder hosted on the TissUUmaps server by adding a `auth` file containing your login and password in the format:
 ```
