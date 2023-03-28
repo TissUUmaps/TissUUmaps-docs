@@ -1387,7 +1387,10 @@ Copy the exported folder on your Apache server
 
 
 \section{Docker container}
-\label{\detokenize{docs/sharing/docker:docker-container}}\label{\detokenize{docs/sharing/docker::doc}}\begin{enumerate}
+\label{\detokenize{docs/sharing/docker:docker-container}}\label{\detokenize{docs/sharing/docker::doc}}
+
+\subsection{Start a TissUUmaps docker instance}
+\label{\detokenize{docs/sharing/docker:start-a-tissuumaps-docker-instance}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
@@ -1411,7 +1414,7 @@ Open \sphinxurl{http://127.0.0.1:56733/} in your favorite browser.
 \end{enumerate}
 
 
-\section{Define TissUUmaps service in a Compose file}
+\subsection{Define TissUUmaps service in a Compose file}
 \label{\detokenize{docs/sharing/docker:define-tissuumaps-service-in-a-compose-file}}
 \sphinxAtStartPar
 Compose is a tool for defining and running multi\sphinxhyphen{}container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.
@@ -1487,7 +1490,7 @@ Enter http://localhost:8050 in a browser to see TissUUmaps application running.
 \end{enumerate}
 
 
-\section{Configure sftp multi\sphinxhyphen{}user access (Optional)}
+\subsection{Configure sftp multi\sphinxhyphen{}user access (Optional)}
 \label{\detokenize{docs/sharing/docker:configure-sftp-multi-user-access-optional}}
 \sphinxAtStartPar
 Add the following lines to \sphinxcode{\sphinxupquote{/etc/ssh/sshd\_config}}:
@@ -1538,7 +1541,7 @@ The new users will be able to connect through sftp, and only see the files in \s
 Restart the ssh daemon with \sphinxcode{\sphinxupquote{sudo service ssh restart}}.
 
 
-\section{Password protection of files hosted on TissUUmaps docker}
+\subsection{Password protection of files hosted on TissUUmaps docker}
 \label{\detokenize{docs/sharing/docker:password-protection-of-files-hosted-on-tissuumaps-docker}}
 \sphinxAtStartPar
 You can add login and password for any folder hosted on the TissUUmaps server by adding a \sphinxcode{\sphinxupquote{auth}} file containing your login and password in the format:

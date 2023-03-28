@@ -104,10 +104,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../starting/index.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Sharing projects</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="apache.html">Apache server</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Docker container</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#define-tissuumaps-service-in-a-compose-file">Define TissUUmaps service in a Compose file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configure-sftp-multi-user-access-optional">Configure sftp multi-user access (Optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#password-protection-of-files-hosted-on-tissuumaps-docker">Password protection of files hosted on TissUUmaps docker</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Docker container</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#start-a-tissuumaps-docker-instance">Start a TissUUmaps docker instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#define-tissuumaps-service-in-a-compose-file">Define TissUUmaps service in a Compose file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configure-sftp-multi-user-access-optional">Configure sftp multi-user access (Optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#password-protection-of-files-hosted-on-tissuumaps-docker">Password protection of files hosted on TissUUmaps docker</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced usage</a></li>
@@ -185,6 +188,8 @@
             
   <div class="tex2jax_ignore mathjax_ignore section" id="docker-container">
 <h1>Docker container<a class="headerlink" href="#docker-container" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="start-a-tissuumaps-docker-instance">
+<h2>Start a TissUUmaps docker instance<a class="headerlink" href="#start-a-tissuumaps-docker-instance" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Start the docker container <code class="docutils literal notranslate"><span class="pre">cavenel/tissuumaps:latest</span></code> from Docker Hub:</p></li>
 </ol>
@@ -196,8 +201,8 @@
 <li><p>Open <a class="reference external" href="http://127.0.0.1:56733/">http://127.0.0.1:56733/</a> in your favorite browser.</p></li>
 </ol>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="define-tissuumaps-service-in-a-compose-file">
-<h1>Define TissUUmaps service in a Compose file<a class="headerlink" href="#define-tissuumaps-service-in-a-compose-file" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="define-tissuumaps-service-in-a-compose-file">
+<h2>Define TissUUmaps service in a Compose file<a class="headerlink" href="#define-tissuumaps-service-in-a-compose-file" title="Permalink to this headline">¶</a></h2>
 <p>Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.</p>
 <p><strong>If you use compose, you don’t need to start the docker container from the previous section.</strong></p>
 <ol>
@@ -250,8 +255,8 @@ backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </spa
 <li><p>Enter http://localhost:8050 in a browser to see TissUUmaps application running.</p></li>
 </ol>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="configure-sftp-multi-user-access-optional">
-<h1>Configure sftp multi-user access (Optional)<a class="headerlink" href="#configure-sftp-multi-user-access-optional" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="configure-sftp-multi-user-access-optional">
+<h2>Configure sftp multi-user access (Optional)<a class="headerlink" href="#configure-sftp-multi-user-access-optional" title="Permalink to this headline">¶</a></h2>
 <p>Add the following lines to <code class="docutils literal notranslate"><span class="pre">/etc/ssh/sshd_config</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Subsystem</span> <span class="n">sftp</span> <span class="n">internal</span><span class="o">-</span><span class="n">sftp</span>
 <span class="n">Match</span> <span class="n">Group</span> <span class="n">sftpusers</span>
@@ -291,11 +296,12 @@ setfacl<span class="w"> </span>-m<span class="w"> </span>d:u:<span class="nv">$u
 <p>The new users will be able to connect through sftp, and only see the files in <code class="docutils literal notranslate"><span class="pre">/jail/shared/USER_NAME/files</span></code>. Files will be available on the web using <code class="docutils literal notranslate"><span class="pre">http://localhost:8050/MYFILE.tmap?path=/USER_NAME/files</span></code></p>
 <p>Restart the ssh daemon with <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">service</span> <span class="pre">ssh</span> <span class="pre">restart</span></code>.</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="password-protection-of-files-hosted-on-tissuumaps-docker">
-<h1>Password protection of files hosted on TissUUmaps docker<a class="headerlink" href="#password-protection-of-files-hosted-on-tissuumaps-docker" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="password-protection-of-files-hosted-on-tissuumaps-docker">
+<h2>Password protection of files hosted on TissUUmaps docker<a class="headerlink" href="#password-protection-of-files-hosted-on-tissuumaps-docker" title="Permalink to this headline">¶</a></h2>
 <p>You can add login and password for any folder hosted on the TissUUmaps server by adding a <code class="docutils literal notranslate"><span class="pre">auth</span></code> file containing your login and password in the format:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">login</span><span class="p">:</span><span class="n">password</span>
 </pre></div>
+</div>
 </div>
 </div>
 
