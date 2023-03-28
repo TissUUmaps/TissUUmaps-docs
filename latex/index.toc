@@ -72,25 +72,27 @@
 \contentsline {section}{\numberline {3.1}Apache server}{53}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Docker container}{53}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Define TissUUmaps service in a Compose file}{53}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Advanced usage}{55}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Jupyter notebooks}{55}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{55}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Napari}{56}{section.4.2}%
-\contentsline {section}{\numberline {4.3}AnnData}{57}{section.4.3}%
-\contentsline {section}{\numberline {4.4}The TMAP file format}{57}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{57}{subsection.4.4.1}%
-\contentsline {subsubsection}{Layer}{59}{subsubsection*.20}%
-\contentsline {subsubsection}{LayerFilter}{59}{subsubsection*.21}%
-\contentsline {subsubsection}{Filter}{60}{subsubsection*.22}%
-\contentsline {subsubsection}{ColorScale}{60}{subsubsection*.23}%
-\contentsline {subsubsection}{Shape}{60}{subsubsection*.24}%
-\contentsline {subsubsection}{MarkerFile}{61}{subsubsection*.25}%
-\contentsline {subsubsection}{ExpectedHeader}{61}{subsubsection*.26}%
-\contentsline {subsubsection}{ExpectedRadios}{63}{subsubsection*.27}%
-\contentsline {subsubsection}{RegionFile}{64}{subsubsection*.28}%
-\contentsline {subsubsection}{Setting}{64}{subsubsection*.29}%
-\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{65}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Support}{67}{chapter.5}%
-\contentsline {section}{\numberline {5.1}How to seek support and discussion}{67}{section.5.1}%
-\contentsline {section}{\numberline {5.2}How to issue an error on GitHub}{67}{section.5.2}%
-\contentsline {chapter}{Index}{68}{section*.30}%
+\contentsline {section}{\numberline {3.4}Configure sftp multi\sphinxhyphen {}user access (Optional)}{54}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Password protection of files hosted on TissUUmaps docker}{55}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Advanced usage}{56}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Jupyter notebooks}{56}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}tissuumaps.jupyter}{56}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Napari}{57}{section.4.2}%
+\contentsline {section}{\numberline {4.3}AnnData}{58}{section.4.3}%
+\contentsline {section}{\numberline {4.4}The TMAP file format}{58}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}TMAP project specifications}{58}{subsection.4.4.1}%
+\contentsline {subsubsection}{Layer}{60}{subsubsection*.20}%
+\contentsline {subsubsection}{LayerFilter}{60}{subsubsection*.21}%
+\contentsline {subsubsection}{Filter}{61}{subsubsection*.22}%
+\contentsline {subsubsection}{ColorScale}{61}{subsubsection*.23}%
+\contentsline {subsubsection}{Shape}{61}{subsubsection*.24}%
+\contentsline {subsubsection}{MarkerFile}{62}{subsubsection*.25}%
+\contentsline {subsubsection}{ExpectedHeader}{62}{subsubsection*.26}%
+\contentsline {subsubsection}{ExpectedRadios}{64}{subsubsection*.27}%
+\contentsline {subsubsection}{RegionFile}{65}{subsubsection*.28}%
+\contentsline {subsubsection}{Setting}{65}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {4.4.2}Example of a .tmap file}{66}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Support}{68}{chapter.5}%
+\contentsline {section}{\numberline {5.1}How to seek support and discussion}{68}{section.5.1}%
+\contentsline {section}{\numberline {5.2}How to issue an error on GitHub}{68}{section.5.2}%
+\contentsline {chapter}{Index}{69}{section*.30}%
