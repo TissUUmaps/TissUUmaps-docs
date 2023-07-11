@@ -50,7 +50,7 @@
             "description": "List of filters shown as active filters in the GUI under the Image layers tab",
             "type": "array",
             "items": [
-                { "$ref": "#definitions/Filter" }
+                { "$ref": "#/definitions/Filter" }
             ],
             "default": "[\"Saturation\", \"Brightness\", \"Contrast\"]"
         },
@@ -229,10 +229,10 @@
                     "type": "string"
                 },
                 "expectedHeader": {
-                    "$ref": "#definitions/ExpectedHeader"
+                    "$ref": "#/definitions/ExpectedHeader"
                 },
                 "expectedRadios": {
-                    "$ref": "#definitions/ExpectedRadios"
+                    "$ref": "#/definitions/ExpectedRadios"
                 },
                 "path": {
                     "description": "Relative file path to CSV file in which marker data is stored. If array of string, then a dropdown is created instead of a button.",
