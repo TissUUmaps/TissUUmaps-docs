@@ -2,7 +2,7 @@
 
 ## Supported region formats
 
-TissUUmaps can read and write region files in the [GeoJSON](https://geojson.org/) format.
+TissUUmaps can read and write region files in the <a href="https://geojson.org/" target="_blank">GeoJSON</a> format.
 
 Only a subset of the GeoJSON format is supported, as TissUUmaps uses only polygonal regions:
 
