@@ -61,7 +61,7 @@
 
 
 \title{TissUUmaps}
-\date{Mar 28, 2023}
+\date{Sep 25, 2023}
 \release{3.0}
 \author{Nicolas Pielawski\and Axel Andersson\and Christophe Avenel\and Andrea Behanova\and Eduard Chelebian\and Anna Klemm\and Fredrik Nysjö\and Leslie Solorzano\and Carolina Wählby}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -123,7 +123,7 @@ You can access the \sphinxhref{https://tissuumaps.github.io/gallery/}{TissUUmaps
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Download the Windows Installer from \sphinxhref{https://github.com/TissUUmaps/TissUUmaps/releases/latest}{the last release} and install it. Note that the installer is not signed yet and may trigger warnings from the browser and from the firewall. You can safely pass these warnings.
+Download the Windows Installer from the last release and install it. Note that the installer is not signed yet and may trigger warnings from the browser and from the firewall. You can safely pass these warnings.
 
 \end{enumerate}
 
@@ -133,14 +133,22 @@ Download the Windows Installer from \sphinxhref{https://github.com/TissUUmaps/Ti
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Install \sphinxcode{\sphinxupquote{libvips}} for your system: \sphinxurl{https://www.libvips.org/install.html}
+Install \sphinxcode{\sphinxupquote{libvips}} for your system: https://www.libvips.org/install.html:
 
 \sphinxAtStartPar
-An easy way to install \sphinxcode{\sphinxupquote{libvips}} is to use an \sphinxhref{https://docs.anaconda.com/anaconda/install/index.html}{Anaconda} environment with \sphinxcode{\sphinxupquote{libvips}}:
+An easy way to install \sphinxcode{\sphinxupquote{libvips}} is to use an Anaconda environment with \sphinxcode{\sphinxupquote{libvips}}:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-conda\PYG{+w}{ }create\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }\PYGZhy{}n\PYG{+w}{ }tissuumaps\PYGZus{}env\PYG{+w}{ }\PYGZhy{}c\PYG{+w}{ }conda\PYGZhy{}forge\PYG{+w}{ }\PYG{n+nv}{python}\PYG{o}{=}\PYG{l+m}{3}.9\PYG{+w}{ }libvips
+conda\PYG{+w}{ }create\PYG{+w}{ }\PYGZhy{}y\PYG{+w}{ }\PYGZhy{}n\PYG{+w}{ }tissuumaps\PYGZus{}env\PYG{+w}{ }\PYGZhy{}c\PYG{+w}{ }conda\PYGZhy{}forge\PYG{+w}{ }\PYG{n+nv}{python}\PYG{o}{=}\PYG{l+m}{3}.9
 conda\PYG{+w}{ }activate\PYG{+w}{ }tissuumaps\PYGZus{}env
+\end{sphinxVerbatim}
+
+\item {} 
+\sphinxAtStartPar
+Install dependencies using \sphinxcode{\sphinxupquote{conda}}:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+conda\PYG{+w}{ }install\PYG{+w}{ }\PYGZhy{}c\PYG{+w}{ }conda\PYGZhy{}forge\PYG{+w}{ }libvips\PYG{+w}{ }pyvips\PYG{+w}{ }openslide\PYGZhy{}python
 \end{sphinxVerbatim}
 
 \item {} 
@@ -150,6 +158,11 @@ Install the TissUUmaps library using \sphinxcode{\sphinxupquote{pip}}:
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 pip\PYG{+w}{ }install\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}TissUUmaps[full]\PYGZdq{}}
 \end{sphinxVerbatim}
+
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+If the installation fails with PyQt6, you can remove \sphinxcode{\sphinxupquote{{[}full{]}}} from the previous command and run step 5 to start TissUUmaps server.
+\end{sphinxadmonition}
 
 \item {} 
 \sphinxAtStartPar
@@ -189,8 +202,240 @@ Please cite our \sphinxhref{https://www.biorxiv.org/content/10.1101/2022.01.28.4
 \section{Changelog}
 \label{\detokenize{docs/intro/versions:changelog}}\label{\detokenize{docs/intro/versions::doc}}
 
-\subsection{3.1.0.2}
+\subsection{3.1.1.6}
 \label{\detokenize{docs/intro/versions:id1}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Add a min\sphinxhyphen{}max filter to image layers for better contrast (@glbarlow)
+
+\item {} 
+\sphinxAtStartPar
+Fix marker filtering
+
+\item {} 
+\sphinxAtStartPar
+Update license from BSD\sphinxhyphen{}3 to MIT
+
+\item {} 
+\sphinxAtStartPar
+Add collapsible sections in plugins
+
+\item {} 
+\sphinxAtStartPar
+Minor fixes
+
+\end{itemize}
+
+
+\subsection{3.1.1.5}
+\label{\detokenize{docs/intro/versions:id2}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix multiple images dropped on empty project
+
+\item {} 
+\sphinxAtStartPar
+Change threading to allow higher priority to GUI than to server side
+
+\item {} 
+\sphinxAtStartPar
+Add .tmap extension to all saved projects
+
+\item {} 
+\sphinxAtStartPar
+Fix pie charts display update and colors
+
+\item {} 
+\sphinxAtStartPar
+Add error message if update view fails
+
+\end{itemize}
+
+
+\subsection{3.1.1.4}
+\label{\detokenize{docs/intro/versions:id3}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix bug of modal not hiding properly
+
+\item {} 
+\sphinxAtStartPar
+Fix capture with scale of 1
+
+\item {} 
+\sphinxAtStartPar
+Fix loading of AnnData files without X matrix
+
+\item {} 
+\sphinxAtStartPar
+Add DEFAULT\_PROJECT parameter for docker and server
+
+\end{itemize}
+
+
+\subsection{3.1.1.3}
+\label{\detokenize{docs/intro/versions:id4}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Minor fixes
+
+\end{itemize}
+
+
+\subsection{3.1.1.2}
+\label{\detokenize{docs/intro/versions:id5}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Make load of HDF5 data parallel
+
+\item {} 
+\sphinxAtStartPar
+Add Colormaps and Channel splitting filters
+
+\end{itemize}
+
+
+\subsection{3.1.1}
+\label{\detokenize{docs/intro/versions:id6}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Move to OpenSeadragon 4.0.0
+
+\item {} 
+\sphinxAtStartPar
+Move docker to python\sphinxhyphen{}alpine for security reasons
+
+\item {} 
+\sphinxAtStartPar
+Add sorting options of markers (applied automatically on AnnData observations)
+
+\item {} 
+\sphinxAtStartPar
+Add zOrder parameter for draw order between datasets
+
+\item {} 
+\sphinxAtStartPar
+Make Update View button always visible
+
+\item {} 
+\sphinxAtStartPar
+Add colorbar canvas to png captures
+
+\item {} 
+\sphinxAtStartPar
+Add flip and rotation of markers for each collection item
+
+\item {} 
+\sphinxAtStartPar
+Add transformation inputs in Image Layers menu
+
+\item {} 
+\sphinxAtStartPar
+Add background color input
+
+\item {} 
+\sphinxAtStartPar
+Add gaussian marker shape
+
+\item {} 
+\sphinxAtStartPar
+Fix flask deprecated function
+
+\item {} 
+\sphinxAtStartPar
+Minor fixes
+
+\end{itemize}
+
+
+\subsection{3.1.0.8}
+\label{\detokenize{docs/intro/versions:id7}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix chunk size for h5 files
+
+\item {} 
+\sphinxAtStartPar
+Fix iPhone not loading markers with \textgreater{} 192 collection items
+
+\end{itemize}
+
+
+\subsection{3.1.0.7}
+\label{\detokenize{docs/intro/versions:id8}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Critical fix for Mac OS (see row\_major in WebGL2)
+
+\end{itemize}
+
+
+\subsection{3.1.0.6}
+\label{\detokenize{docs/intro/versions:id9}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Minor fixes
+
+\end{itemize}
+
+
+\subsection{3.1.0.5}
+\label{\detokenize{docs/intro/versions:id10}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Add flip and rotation of markers for each collection item
+
+\item {} 
+\sphinxAtStartPar
+Add transformation inputs in Image Layers menu
+
+\item {} 
+\sphinxAtStartPar
+Fix colormap with NaN values
+
+\end{itemize}
+
+
+\subsection{3.1.0.4}
+\label{\detokenize{docs/intro/versions:id11}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix issue with slow rendering of web\sphinxhyphen{}gl using instancing
+
+\item {} 
+\sphinxAtStartPar
+Hide colorbar on png captures when needed
+
+\item {} 
+\sphinxAtStartPar
+Other minor fixes
+
+\end{itemize}
+
+
+\subsection{3.1.0.3}
+\label{\detokenize{docs/intro/versions:id12}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Fix h5 autocomplete on iframes
+
+\item {} 
+\sphinxAtStartPar
+Fix wrong marker index for color column when more than 100k markers
+
+\item {} 
+\sphinxAtStartPar
+Add colorbar canvas to png captures
+
+\item {} 
+\sphinxAtStartPar
+Small fixes
+
+\end{itemize}
+
+
+\subsection{3.1.0.2}
+\label{\detokenize{docs/intro/versions:id13}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix crash on layer from a parent layer.
@@ -211,7 +456,7 @@ Small fixes
 
 
 \subsection{3.1.0.1}
-\label{\detokenize{docs/intro/versions:id2}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id14}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Move docker to python\sphinxhyphen{}alpine for security reasons
@@ -232,7 +477,7 @@ Minor fixes
 
 
 \subsection{3.1}
-\label{\detokenize{docs/intro/versions:id3}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id15}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Adding HDF5 support on the client side
@@ -265,7 +510,7 @@ Move to PyQt6
 
 
 \subsection{3.0.10.4}
-\label{\detokenize{docs/intro/versions:id4}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id16}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix path issue on json loading from server
@@ -274,7 +519,7 @@ Fix path issue on json loading from server
 
 
 \subsection{3.0.10.3}
-\label{\detokenize{docs/intro/versions:id5}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id17}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Reset all input dropdowns when new data selected
@@ -283,7 +528,7 @@ Reset all input dropdowns when new data selected
 
 
 \subsection{3.0.10.2}
-\label{\detokenize{docs/intro/versions:id6}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id18}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add scale factor for coordinates of markers
@@ -292,7 +537,7 @@ Add scale factor for coordinates of markers
 
 
 \subsection{3.0.10.1}
-\label{\detokenize{docs/intro/versions:id7}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id19}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add optional offset (x, y) and scale properties to tmap.layers
@@ -301,7 +546,7 @@ Add optional offset (x, y) and scale properties to tmap.layers
 
 
 \subsection{3.0.10}
-\label{\detokenize{docs/intro/versions:id8}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id20}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add collection mode (to display images next to each other with markers correctly placed)
@@ -314,7 +559,7 @@ IFrame mode (to hide navbar and make menu smaller when TissUUmaps is run inside 
 
 
 \subsection{3.0.9.6}
-\label{\detokenize{docs/intro/versions:id9}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id21}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add debug menu when running in debug mode, with debug access in javascript
@@ -331,7 +576,7 @@ Fix empty columns in marker csv file
 
 
 \subsection{3.0.9.5}
-\label{\detokenize{docs/intro/versions:id10}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id22}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add / fix key shortcuts (https://tissuumaps.github.io/TissUUmaps\sphinxhyphen{}docs/docs/starting/shortcuts.html)
@@ -348,7 +593,7 @@ Add plugin support to docker server
 
 
 \subsection{3.0.9.3}
-\label{\detokenize{docs/intro/versions:id11}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id23}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Go back to webGL 1 for compatibility issue with Safari 14
@@ -361,7 +606,7 @@ Fix missing .tissuumaps folder for recent files
 
 
 \subsection{3.0.9.1}
-\label{\detokenize{docs/intro/versions:id12}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id24}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Enable larger markers at high resolutiion (up to 1024x1024px)
@@ -382,7 +627,7 @@ Clean code and use ci (pre\sphinxhyphen{}commit)
 
 
 \subsection{3.0.9}
-\label{\detokenize{docs/intro/versions:id13}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id25}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Move to webgl2
@@ -403,7 +648,7 @@ Minor fixes
 
 
 \subsection{3.0.8.9}
-\label{\detokenize{docs/intro/versions:id14}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id26}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Make it possible to update to newer version of plugins
@@ -432,7 +677,7 @@ Other minor fixes and cleaning
 
 
 \subsection{3.0.8.5}
-\label{\detokenize{docs/intro/versions:id15}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id27}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Minor fixes.
@@ -441,7 +686,7 @@ Minor fixes.
 
 
 \subsection{3.0.8.4}
-\label{\detokenize{docs/intro/versions:id16}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id28}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add tiling to viewport capture for higher resolution output
@@ -466,7 +711,7 @@ Add an option to remove markers’ outlines.
 
 
 \subsection{3.0.8.3}
-\label{\detokenize{docs/intro/versions:id17}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id29}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix png artifact in Firefox, by generating jpg tiles.
@@ -475,7 +720,7 @@ Fix png artifact in Firefox, by generating jpg tiles.
 
 
 \subsection{3.0.8.2}
-\label{\detokenize{docs/intro/versions:id18}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id30}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add high resolution capture of viewport, up to 4096x4096 pixels.
@@ -484,7 +729,7 @@ Add high resolution capture of viewport, up to 4096x4096 pixels.
 
 
 \subsection{3.0.8.1}
-\label{\detokenize{docs/intro/versions:id19}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id31}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix multiple dataset alignment when no background image
@@ -493,7 +738,7 @@ Fix multiple dataset alignment when no background image
 
 
 \subsection{3.0.8}
-\label{\detokenize{docs/intro/versions:id20}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id32}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix black images generated by VIPS
@@ -526,7 +771,7 @@ Add opacity per marker option
 
 
 \subsection{3.0.7}
-\label{\detokenize{docs/intro/versions:id21}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id33}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add menu to load plugins through an update\sphinxhyphen{}site
@@ -535,7 +780,7 @@ Add menu to load plugins through an update\sphinxhyphen{}site
 
 
 \subsection{3.0.6}
-\label{\detokenize{docs/intro/versions:id22}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id34}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Fix multiple plugins opening always last plugin
@@ -564,7 +809,7 @@ Add viewport capture
 
 
 \subsection{3.0.5}
-\label{\detokenize{docs/intro/versions:id23}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id35}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Move csv loading to Papa Parse streaming, to allow better memory management
@@ -573,7 +818,7 @@ Move csv loading to Papa Parse streaming, to allow better memory management
 
 
 \subsection{3.0.4}
-\label{\detokenize{docs/intro/versions:id24}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id36}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add filtering of markers
@@ -582,7 +827,7 @@ Add filtering of markers
 
 
 \subsection{3.0}
-\label{\detokenize{docs/intro/versions:id25}}\begin{itemize}
+\label{\detokenize{docs/intro/versions:id37}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 Add tissuumaps.jupyter module
@@ -961,7 +1206,7 @@ In the example below can be seen that if the cursor is placed on the eye icon in
 \subsection{Supported region formats}
 \label{\detokenize{docs/starting/regions:supported-region-formats}}
 \sphinxAtStartPar
-TissUUmaps can read and write region files in the \sphinxhref{https://geojson.org/}{GeoJSON} format.
+TissUUmaps can read and write region files in the GeoJSON format.
 
 \sphinxAtStartPar
 Only a subset of the GeoJSON format is supported, as TissUUmaps uses only polygonal regions:
@@ -4834,13 +5079,13 @@ type
 \section{How to seek support and discussion}
 \label{\detokenize{docs/support/index:how-to-seek-support-and-discussion}}
 \sphinxAtStartPar
-If you want to ask quentions about TissUUmaps please visit \sphinxhref{https://forum.image.sc/tag/tissuumaps}{forum.image.sc}.
+If you want to ask questions about TissUUmaps please visit forum.image.sc.
 
 
 \section{How to issue an error on GitHub}
 \label{\detokenize{docs/support/index:how-to-issue-an-error-on-github}}
 \sphinxAtStartPar
-If you want to report a bug, please do so at \sphinxhref{https://github.com/TissUUmaps/TissUUmaps/issues}{issues on GitHub}.
+If you want to report a bug, please do so at issues on GitHub.
 
 
 

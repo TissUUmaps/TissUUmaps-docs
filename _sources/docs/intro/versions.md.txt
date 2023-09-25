@@ -1,5 +1,84 @@
 # Changelog
 
+## 3.1.1.6
+
+- Add a min-max filter to image layers for better contrast (@glbarlow)
+- Fix marker filtering
+- Update license from BSD-3 to MIT
+- Add collapsible sections in plugins
+- Minor fixes
+
+## 3.1.1.5
+
+- Fix multiple images dropped on empty project
+- Change threading to allow higher priority to GUI than to server side
+- Add .tmap extension to all saved projects
+- Fix pie charts display update and colors
+- Add error message if update view fails
+
+## 3.1.1.4
+
+- Fix bug of modal not hiding properly
+- Fix capture with scale of 1
+- Fix loading of AnnData files without X matrix
+- Add DEFAULT_PROJECT parameter for docker and server
+
+## 3.1.1.3
+
+- Minor fixes
+
+## 3.1.1.2
+
+- Make load of HDF5 data parallel
+- Add Colormaps and Channel splitting filters
+
+## 3.1.1
+
+- Move to OpenSeadragon 4.0.0
+- Move docker to python-alpine for security reasons
+- Add sorting options of markers (applied automatically on AnnData observations)
+- Add zOrder parameter for draw order between datasets
+- Make Update View button always visible
+- Add colorbar canvas to png captures
+- Add flip and rotation of markers for each collection item
+- Add transformation inputs in Image Layers menu
+- Add background color input
+- Add gaussian marker shape
+- Fix flask deprecated function
+- Minor fixes
+
+## 3.1.0.8
+
+- Fix chunk size for h5 files
+- Fix iPhone not loading markers with > 192 collection items
+
+## 3.1.0.7
+
+- Critical fix for Mac OS (see row_major in WebGL2)
+
+## 3.1.0.6
+
+- Minor fixes
+
+## 3.1.0.5
+
+- Add flip and rotation of markers for each collection item
+- Add transformation inputs in Image Layers menu
+- Fix colormap with NaN values
+
+## 3.1.0.4
+
+- Fix issue with slow rendering of web-gl using instancing
+- Hide colorbar on png captures when needed
+- Other minor fixes
+
+## 3.1.0.3
+
+- Fix h5 autocomplete on iframes
+- Fix wrong marker index for color column when more than 100k markers
+- Add colorbar canvas to png captures
+- Small fixes
+
 ## 3.1.0.2
 
 - Fix crash on layer from a parent layer.
