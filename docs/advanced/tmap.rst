@@ -6,7 +6,7 @@ The TMAP format contains a description of image layers, markers, regions, and se
 
 The TMAP format uses JSON, with the following specifications:
 
-.. jsonschema:: schemas/tmap.json
+.. jsonschema:: https://tissuumaps.github.io/TissUUmaps-schema/1/project.json
     :lift_definitions:
     :auto_reference:
     :auto_target:
