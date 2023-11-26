@@ -6,6 +6,8 @@ TissUUmaps can read CSV (Comma Separated Values) files with a header row, and at
 
 CSV files can be exported from any spreadsheet program, or any programming language (Python, R, etc.)
 
+TissUUmaps can also read hdf5 files, which is  a hierarchical file format commonly used in scientific computing. In the case of TissUUmaps, it is used to store the markers in a more efficient way than CSV files. TissUUmaps will give access to the markers stored in the hdf5 file in a similar way as for CSV files.
+
 ## Load markers
 You can load the markers when you select the *Markers* tab and click the button + as you can see in the figure below. You can click the plus several times to load various marker files.
 ![markers](images/markers.png)
