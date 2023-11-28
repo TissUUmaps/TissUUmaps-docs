@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/rtd_sphinx_search.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -215,29 +215,120 @@
 <h3>Javascript file<a class="headerlink" href="#javascript-file" title="Permalink to this headline">¶</a></h3>
 <p>When loading a plugin, the function <code class="docutils literal notranslate"><span class="pre">PluginName.init(container)</span></code> will be called. The <code class="docutils literal notranslate"><span class="pre">container</span></code> is an html Element that will be added to the plugin menu. Use this element to add options and texts related to your plugin.</p>
 <p><img alt="plugin container" src="../../_images/plugin_container.png" /></p>
-<p>Here is a minimal example of plugin:</p>
+<div class="section" id="javascript-example">
+<h4>Javascript example:<a class="headerlink" href="#javascript-example" title="Permalink to this headline">¶</a></h4>
+<p>File <code class="docutils literal notranslate"><span class="pre">Plugin_template.js</span></code>:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">Plugin_template</span><span class="p">;</span>
 <span class="nx">Plugin_template</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="s2">&quot;Template Plugin&quot;</span>
-<span class="p">}</span>
-<span class="w"> </span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Template Plugin&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">parameters</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">_section_test</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Test section&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Section 1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;section&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;collapsed&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">_message</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Message&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;default&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Hello world&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">_testButton</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;label&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Test button&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;button&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
+
 <span class="cm">/**</span>
 <span class="cm"> * This method is called when the document is loaded.</span>
-<span class="cm"> * The container element is a div where the plugin options will be displayed. */</span>
+<span class="cm"> * The container element is a div where the plugin options will be displayed.</span>
+<span class="cm"> * @summary After setting up the tmapp object, initialize it*/</span>
 <span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">init</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">container</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">container</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello world&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">interfaceUtils</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The plugin has been loaded&quot;</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * This method is called when a button is clicked or a parameter value is changed*/</span>
+<span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">inputTrigger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">input</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;inputTrigger&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">input</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;_testButton&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;_message&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">demo</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
+
+<span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">demo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">successCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">interfaceUtils</span><span class="p">.</span><span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">errorCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Error:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">);</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="w">  </span><span class="c1">// Call the Python API endpoint &quot;server_demo&quot;</span>
+<span class="w">  </span><span class="nx">Plugin_template</span><span class="p">.</span><span class="nx">api</span><span class="p">(</span>
+<span class="w">    </span><span class="s2">&quot;server_demo&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="nx">message</span><span class="p">},</span>
+<span class="w">    </span><span class="nx">successCallback</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">errorCallback</span><span class="p">,</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">};</span>
 </pre></div>
 </div>
-<p>You can access the TissUUmaps javascript API <a class="reference external" href="https://tissuumaps.github.io/TissUUmapsCore/">here</a>.</p>
+</div>
+<div class="section" id="plugin-parameters">
+<h4>Plugin parameters<a class="headerlink" href="#plugin-parameters" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">parameters</span></code> object contains the parameters of your plugin. Each parameter is an object with the following properties:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">label</span></code>: the text that will be displayed in front of the parameter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code>: the type of parameter. It can be one of the following:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">button</span></code>: an input button.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">checkbox</span></code>: a checkbox input.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span></code>: a text input.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">number</span></code>: a number input.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">select</span></code>: a dropdown list.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">label</span></code>: a text label.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">section</span></code>: a section that can be collapsed or expanded.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">default</span></code>: the default value of the parameter [for <code class="docutils literal notranslate"><span class="pre">type</span></code> in <code class="docutils literal notranslate"><span class="pre">checkbox</span></code>, <code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">select</span></code>, <code class="docutils literal notranslate"><span class="pre">text</span></code>].</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">options</span></code>: an array of options [for <code class="docutils literal notranslate"><span class="pre">type</span></code> in <code class="docutils literal notranslate"><span class="pre">select</span></code>].</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code>: the title of a section [for <code class="docutils literal notranslate"><span class="pre">type</span></code> in <code class="docutils literal notranslate"><span class="pre">section</span></code>].</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collapsed</span></code>: a boolean indicating if a section is collapsed or expanded by default [for <code class="docutils literal notranslate"><span class="pre">type</span></code> in <code class="docutils literal notranslate"><span class="pre">section</span></code>].</p></li>
+</ul>
+</div>
+<div class="section" id="javascript-api">
+<h4>Javascript API<a class="headerlink" href="#javascript-api" title="Permalink to this headline">¶</a></h4>
+<p>TissUUmaps offers helper functions to help you create your plugin:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">My_plugin_name.set(paramName,</span> <span class="pre">value)</span></code>: set the value of a parameter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">My_plugin_name.get(paramName)</span></code>: get the value of a parameter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">My_plugin_name.getInputID(paramName)</span></code>: get the id of the html element associated with a parameter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">My_plugin_name.api(endpoint,</span> <span class="pre">data,</span> <span class="pre">successCallback,</span> <span class="pre">errorCallback)</span></code>: call a Python method from Javascript. The endpoint is the name of the method, and the data is an object that will be passed as a parameter to the method. The successCallback and errorCallback are functions that will be called after the method has been called. The successCallback will be called with the result of the method as a parameter, and the errorCallback will be called with the error message as a parameter.</p></li>
+</ul>
+<p>You can access the complete TissUUmaps javascript API <a class="reference external" href="https://tissuumaps.github.io/TissUUmapsCore/">here</a>.</p>
+</div>
 </div>
 <div class="section" id="python-file">
 <h3>Python file<a class="headerlink" href="#python-file" title="Permalink to this headline">¶</a></h3>
 <p>You only need to use the Python file if your plugin needs to do processing on the server side. For pure javascript plugins, you can leave this file empty.</p>
 <p>The python file should implement the class <code class="docutils literal notranslate"><span class="pre">Plugin</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Plugin</span> <span class="p">():</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">abort</span><span class="p">,</span> <span class="n">make_response</span>
+
+<span class="k">class</span> <span class="nc">Plugin</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">app</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">app</span> <span class="o">=</span> <span class="n">app</span>
+
+    <span class="k">def</span> <span class="nf">server_demo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">jsonParam</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">jsonParam</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;No arguments, aborting.&quot;</span><span class="p">)</span>
+            <span class="n">abort</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">make_response</span><span class="p">(</span><span class="s2">&quot;The server received the message: &quot;</span> <span class="o">+</span> <span class="n">jsonParam</span><span class="p">[</span><span class="s2">&quot;message&quot;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">resp</span>
+
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">app</span></code> object being the flask application running the TissUUmaps server.</p>

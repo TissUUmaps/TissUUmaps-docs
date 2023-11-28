@@ -33,23 +33,96 @@ When loading a plugin, the function `PluginName.init(container)` will be called.
 
 ![plugin container](images/plugin_container.png)
 
-Here is a minimal example of plugin:
+#### Javascript example:
 
+File `Plugin_template.js`:
 ```javascript
 var Plugin_template;
 Plugin_template = {
-    name:"Template Plugin"
-}
- 
+  name: "Template Plugin",
+  parameters: {
+    _section_test: {
+      "label": "Test section",
+      "title": "Section 1",
+      "type": "section",
+      "collapsed": false
+    },
+    _message: {
+      "label": "Message",
+      "type": "text",
+      "default": "Hello world"
+    },
+    _testButton: {
+      "label": "Test button",
+      "type": "button",
+    },
+  }
+};
+
 /**
  * This method is called when the document is loaded.
- * The container element is a div where the plugin options will be displayed. */
+ * The container element is a div where the plugin options will be displayed.
+ * @summary After setting up the tmapp object, initialize it*/
 Plugin_template.init = function (container) {
-    container.innerHTML = "Hello world";
+  interfaceUtils.alert("The plugin has been loaded");
+};
+
+/**
+ * This method is called when a button is clicked or a parameter value is changed*/
+Plugin_template.inputTrigger = function (input) {
+  console.log("inputTrigger", input);
+  if (input === "_testButton") {
+    let message = Plugin_template.get("_message");
+    Plugin_template.demo(message);
+  }
 }
+
+Plugin_template.demo = function (message) {
+  let successCallback = function (data) {
+    interfaceUtils.alert(data);
+  };
+  let errorCallback = function (data) {
+    console.log("Error:", data);
+  };
+  // Call the Python API endpoint "server_demo"
+  Plugin_template.api(
+    "server_demo",
+    {message: message},
+    successCallback,
+    errorCallback,
+  );
+};
+
 ```
 
-You can access the TissUUmaps javascript API [here](https://tissuumaps.github.io/TissUUmapsCore/).
+#### Plugin parameters
+
+The `parameters` object contains the parameters of your plugin. Each parameter is an object with the following properties:
+
+- `label`: the text that will be displayed in front of the parameter.
+- `type`: the type of parameter. It can be one of the following:
+  - `button`: an input button.
+  - `checkbox`: a checkbox input.
+  - `text`: a text input.
+  - `number`: a number input.
+  - `select`: a dropdown list.
+  - `label`: a text label.
+  - `section`: a section that can be collapsed or expanded.
+- `default`: the default value of the parameter [for `type` in `checkbox`, `number`, `select`, `text`].
+- `options`: an array of options [for `type` in `select`].
+- `title`: the title of a section [for `type` in `section`].
+- `collapsed`: a boolean indicating if a section is collapsed or expanded by default [for `type` in `section`].
+
+#### Javascript API
+
+TissUUmaps offers helper functions to help you create your plugin:
+
+- `My_plugin_name.set(paramName, value)`: set the value of a parameter.
+- `My_plugin_name.get(paramName)`: get the value of a parameter.
+- `My_plugin_name.getInputID(paramName)`: get the id of the html element associated with a parameter.
+- `My_plugin_name.api(endpoint, data, successCallback, errorCallback)`: call a Python method from Javascript. The endpoint is the name of the method, and the data is an object that will be passed as a parameter to the method. The successCallback and errorCallback are functions that will be called after the method has been called. The successCallback will be called with the result of the method as a parameter, and the errorCallback will be called with the error message as a parameter.
+
+You can access the complete TissUUmaps javascript API [here](https://tissuumaps.github.io/TissUUmapsCore/).
 
 ### Python file
 
@@ -57,9 +130,21 @@ You only need to use the Python file if your plugin needs to do processing on th
 
 The python file should implement the class `Plugin`:
 ```python
-class Plugin ():
+import logging
+import time
+from flask import abort, make_response
+
+class Plugin:
     def __init__(self, app):
         self.app = app
+
+    def server_demo(self, jsonParam):
+        if not jsonParam:
+            logging.error("No arguments, aborting.")
+            abort(500)
+        resp = make_response("The server received the message: " + jsonParam["message"])
+        return resp
+
 ```
 The `app` object being the flask application running the TissUUmaps server.
 

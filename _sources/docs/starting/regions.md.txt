@@ -17,27 +17,102 @@ __Geometries__:
 
 The coordinate system must be the same as the image and marker coordinate systems.
 
-## Draw Regions
+TissUUmaps is a powerful annotation tool designed to facilitate the annotation process for biological tissues.
 
-Regions are polygons that can be drawn by the user or imported from an external file. If the user clicks on the button *Draw regions* shown underneath, the button is checked and the user can draw an unlimited number of regions. The user clicks on the image to outline the region of interest, then click on the first point to close the region and the region will appear in the right panel.
+## Toolbar Features
 
-The button *Fill all regions* fills the inner part of all the regions by semitransparent color. This can be done separately by clicking on the check box next to individual regions.
+When entering the Regions tab, the user will see the following toolbar:
+![Region toolbar](images/Regions_toolbar.png)
 
-![Regions_Draw](images/Regions_Draw.png)
+### Drawing Tools
 
-In the example below are three drawn regions selecting the hippocampus areas, all set to green color. You can set the class name in the *Class* column. You can see that the drawn regions are categorized into two main groups Hippocampus and White matter. The user can create an unlimited number of groups depending on his interest. This helps to have the regions organized and also it is very useful when exporting regions.
+When the user clicks on the drawing tool, a dropdown menu will appear with five different drawing tools:
+![Drawing tools](images/Regions_drawing_tools.png)
 
-![Regions_Draw_ex1](images/Regions_Draw_ex1.png)
+#### 1. Free Hand Drawing
 
-In the example below are two drawn regions selecting the white matter areas, one is set to yellow and the other one to blue color. The regions are interchangeable between groups, so if you want to move a region from group Hippocampus to group White matter, just change the class name in the region's row and it will be automatically moved to the desired group.
+The free hand drawing tool allows users to annotate regions with free-form shapes.
 
-![Regions_Draw_ex2](images/Regions_Draw_ex2.png)
+#### 2. Point-Based Drawing
 
-## Analyze Regions
+Use the point-based drawing tool to create annotations by placing individual points.
 
-The regions can be analyzed, meaning displaying a list of all the marker keys with their counts inside that region (expression). The example below shows the analyzed region1. In this case, the analysis contains gene expression, so the column *Key* contains a list of genes, and column *Name* could show an additional column from the dataset, in this case, it is undefined since we provided only column Genes. The last column *Count* shows the number of each gene inside the analyzed region.
+#### 3. Brush-Based Drawing
 
-![Regions_Anlayze_ex](images/Regions_Anlayze_ex.png)
+The brush-based drawing tool enables users to draw annotations using a brush-like tool. Press `Shift` to erase and `Ctrl` to add to selected region. 
+
+#### 4. Rectangle Drawing
+
+Create rectangular annotations by selecting the rectangle drawing tool. Pressing Shift while dragging makes it a square, and Ctrl centers it around the cursor.
+
+#### 5. Ellipse Drawing
+
+Similar to the rectangle tool, the ellipse drawing tool allows users to create ellipses. Press Shift for a circle and Ctrl for centering.
+
+### Other Tools
+
+- **Selection Tool**: Click on regions to select them. Press Shift to select multiple regions.
+- **Show Instance**: Color each region randomly to distinguish between polygons.
+- **Fill Opacity**: Control if regions are filled, and the opacity of the filling.
+- **Line Width**: Adjust line width and determine if it adapts when zooming.
+
+### Selected Region Tools
+
+When a region is selected, additional tools become available:
+
+- **Zoom to Selected Regions**
+- **Unselect All Regions (Shortcut: Escape)**
+- **Delete Selected Region**
+- **Duplicate Region**
+- **Scale Region**
+- **Erode/Dilate Regions**
+- **Split Multipolygons into Multiple Regions**
+- **Fill Holes in Regions**
+
+### Multiple Selected Regions
+
+When multiple regions are selected, access the "Boolean Operation" dropdown with options like:
+
+- **Merge Selected Regions**
+- **XOR Selected Regions**
+- **Intersect Selected Regions**
+
+## List of regions in the right menu
+
+![List of regions](images/Regions_List_menu.png)
+
+On the right side, there is a menu listing all regions ordered by class. For each region:
+
+- **Select**: Click to select the region in the viewer.
+- **Change Class**: Modify the class of the region.
+- **Change Name**: Edit the name of the region.
+- **Statistics**: View region statistics.
+- **Hide**: Toggle the visibility of the region.
+- **Delete**: Remove the region.
+
+For groups of regions of one class:
+
+- **Rename Class**
+- **Change Class Color**
+- **Hide All Regions**
+- **Delete All Regions**
+
+For all regions:
+
+- **Hide All**
+- **Delete All**
+
+## Region Statistics
+
+Clicking on the statistics button for a specific region reveals:
+
+- **Area**
+- **Perimeter**
+- **Number of Sub-regions**
+- **Bounds (left, top, right, bottom in pixel coordinates)**
+- **Number of Each Type of Markers**
+
+![Statistics Example](images/Regions_statistics.png)
 
 ## Import Regions
 

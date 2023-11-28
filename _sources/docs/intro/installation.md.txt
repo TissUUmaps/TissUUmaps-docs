@@ -4,9 +4,23 @@
 
 ## Windows installation
 
-1. Download the Windows Installer from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> and install it. Note that the installer is not signed yet and may trigger warnings from the browser and from the firewall. You can safely pass these warnings.
+1. Download the Windows Installer (`.exe`) from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> and install it. Note that the installer is not signed yet and may trigger warnings from the browser and from the firewall. You can safely pass these warnings.
 
-## PIP installation (for Linux and Mac)
+## MacOS installation
+
+1. Install vips with `brew install vips` (needs homebrew installed https://brew.sh/).
+1. Download the macOS installer (`.dmg`) from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> and install it. Download the `x86_64` file if you have an Intel CPU, or download the `arm64` file if you have an Apple Silicon (M1/M2) CPU.
+1. In the installer, drag-and-drop the TissUUmaps bundle to the Applications directory.
+1. When the copy is finished, double-click the Applications icon in the installer and right-click + open TissUUmaps from the Applications menu.
+        - A warning should be prompted "macOS cannot verify the developer of TissUUmaps (...)", click open and the program should launch.
+
+## Debian / Ubuntu installation
+
+1. Download the Ubuntu installer (`.deb`) from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> .deb file (20.04 or 22.04 depending on your Ubuntu version)
+
+## PIP installation
+
+If you want specific Python packages to be installed with TissUUmaps, or if your no installer is available for your operating system, you will need to install TissUUmaps using `pip`:
 
 1. Install `libvips` for your system: <a href="https://www.libvips.org/install.html" target="_blank">https://www.libvips.org/install.html</a>:
 

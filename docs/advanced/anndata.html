@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>AnnData &mdash; TissUUmaps 3.0 documentation</title>
+  <title>AnnData Handling in TissUUmaps &mdash; TissUUmaps 3.0 documentation</title>
   
 
   
@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/rtd_sphinx_search.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -106,7 +106,20 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Advanced usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter notebooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="napari.html">Napari</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">AnnData</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AnnData Handling in TissUUmaps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loading-anndata-objects">Loading AnnData Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anndata-specification-in-tissuumaps">AnnData Specification in TissUUmaps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#spatial-coordinates">Spatial Coordinates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#observations">Observations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gene-expressions">Gene Expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#variable-information">Variable Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#image-loading">Image Loading</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dropdowns">Dropdowns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="tmap.html">The TMAP file format</a></li>
 </ul>
 </li>
@@ -161,7 +174,7 @@
         
           <li><a href="index.html">Advanced usage</a> &raquo;</li>
         
-      <li>AnnData</li>
+      <li>AnnData Handling in TissUUmaps</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,9 +195,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="tex2jax_ignore mathjax_ignore section" id="anndata">
-<h1>AnnData<a class="headerlink" href="#anndata" title="Permalink to this headline">¶</a></h1>
-<p>Work in progress</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="anndata-handling-in-tissuumaps">
+<h1>AnnData Handling in TissUUmaps<a class="headerlink" href="#anndata-handling-in-tissuumaps" title="Permalink to this headline">¶</a></h1>
+<p>To visualize and manipulate annotated data matrices, TissUUmaps leverages the capabilities of the <strong>AnnData</strong> (Annotated Data) Python package, stored in the h5ad format. AnnData provides a flexible and efficient framework for working with annotated data in memory and on disk, bridging the functionality of pandas and xarray. Notable features of AnnData include support for sparse data, lazy operations, and a PyTorch interface.</p>
+<div class="section" id="loading-anndata-objects">
+<h2>Loading AnnData Objects<a class="headerlink" href="#loading-anndata-objects" title="Permalink to this headline">¶</a></h2>
+<p>You can load AnnData objects in the same way as you would load TissUUmaps projects or images, by dragging and dropping the file into the TissUUmaps interface. TissUUmaps will automatically detect the file type and load the AnnData object into the interface. You can also load AnnData objects by clicking on the “Open” button in the “File” menu and selecting the file from your computer.</p>
+</div>
+<div class="section" id="anndata-specification-in-tissuumaps">
+<h2>AnnData Specification in TissUUmaps<a class="headerlink" href="#anndata-specification-in-tissuumaps" title="Permalink to this headline">¶</a></h2>
+<p>TissUUmaps adheres to the specifications defined by the SCVerse community for AnnData objects. TissUUmaps can load AnnData objects stored in the HDF5 format.</p>
+<p>The key components of the AnnData structure in TissUUmaps are as follows:</p>
+<div class="section" id="spatial-coordinates">
+<h3>Spatial Coordinates<a class="headerlink" href="#spatial-coordinates" title="Permalink to this headline">¶</a></h3>
+<p>Spatial coordinates are crucial for spatial omics analysis. In TissUUmaps, these coordinates are stored as a 2-column matrix in one of the following locations:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/obsm/spatial</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/obsm/X_spatial</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/obsm/X_umap</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/obsm/tSNE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/obsm/UMAP</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="observations">
+<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this headline">¶</a></h3>
+<p>Observations are stored in the <code class="docutils literal notranslate"><span class="pre">/obs</span></code> section of the AnnData object. This section contains information related to individual observations.</p>
+</div>
+<div class="section" id="gene-expressions">
+<h3>Gene Expressions<a class="headerlink" href="#gene-expressions" title="Permalink to this headline">¶</a></h3>
+<p>Gene expressions are stored in the <code class="docutils literal notranslate"><span class="pre">X</span></code> section of the AnnData object. It’s important to note that the gene expression matrix should be in sparse Compressed Sparse Column (CSC) format. If the matrix is not in CSC format, TissUUmaps will create a new AnnData object with the gene expression matrix in CSC sparse format.</p>
+</div>
+<div class="section" id="variable-information">
+<h3>Variable Information<a class="headerlink" href="#variable-information" title="Permalink to this headline">¶</a></h3>
+<p>Variable information is stored in the <code class="docutils literal notranslate"><span class="pre">/var</span></code> section of the AnnData object.</p>
+</div>
+<div class="section" id="image-loading">
+<h3>Image Loading<a class="headerlink" href="#image-loading" title="Permalink to this headline">¶</a></h3>
+<p>TissUUmaps is equipped to load images stored in the following location:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/uns/spatial/{library_id}/images/hires</span></code></p></li>
+</ul>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">{library_id}</span></code> is an observation column obtained from <code class="docutils literal notranslate"><span class="pre">/obs/library_id</span></code>. Additionally, TissUUmaps utilizes a scale factor from <code class="docutils literal notranslate"><span class="pre">/uns/spatial/{library_id}/scalefactors/tissue_hires_scalef</span></code>.</p>
+</div>
+</div>
+<div class="section" id="dropdowns">
+<h2>Dropdowns<a class="headerlink" href="#dropdowns" title="Permalink to this headline">¶</a></h2>
+<p>Once loaded into TissUUmaps, each observation is accessible through dropdown menus. There are separate dropdowns for numerical and categorical observations, providing a convenient interface for users to explore and analyze their spatial omics data.</p>
+<p>The gene expression dropdown menu contains the X matrix.</p>
+<p><img alt="AnnData dropdowns" src="../../_images/AnnData_Dropdowns.png" /></p>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Here is an example of the TissUUmaps interface when loading an AnnData object with three samples. The dropdown menus are populated with the observations from the AnnData object. Here, the “celltype_annotation” is selected.</p>
+<p><img alt="Alt text" src="../../_images/AnnData_Preview.png" /></p>
+</div>
 </div>
 
 

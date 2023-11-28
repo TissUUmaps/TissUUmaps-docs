@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/rtd_sphinx_search.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -104,7 +104,9 @@
 <li class="toctree-l2"><a class="reference internal" href="about.html">About TissUUmaps</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#windows-installation">Windows installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pip-installation-for-linux-and-mac">PIP installation (for Linux and Mac)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#macos-installation">MacOS installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#debian-ubuntu-installation">Debian / Ubuntu installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pip-installation">PIP installation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="citing.html">Citing TissUUmaps</a></li>
@@ -192,11 +194,28 @@
 <div class="section" id="windows-installation">
 <h2>Windows installation<a class="headerlink" href="#windows-installation" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>Download the Windows Installer from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> and install it. Note that the installer is not signed yet and may trigger warnings from the browser and from the firewall. You can safely pass these warnings.</p></li>
+<li><p>Download the Windows Installer (<code class="docutils literal notranslate"><span class="pre">.exe</span></code>) from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> and install it. Note that the installer is not signed yet and may trigger warnings from the browser and from the firewall. You can safely pass these warnings.</p></li>
 </ol>
 </div>
-<div class="section" id="pip-installation-for-linux-and-mac">
-<h2>PIP installation (for Linux and Mac)<a class="headerlink" href="#pip-installation-for-linux-and-mac" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="macos-installation">
+<h2>MacOS installation<a class="headerlink" href="#macos-installation" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Install vips with <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">vips</span></code> (needs homebrew installed https://brew.sh/).</p></li>
+<li><p>Download the macOS installer (<code class="docutils literal notranslate"><span class="pre">.dmg</span></code>) from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> and install it. Download the <code class="docutils literal notranslate"><span class="pre">x86_64</span></code> file if you have an Intel CPU, or download the <code class="docutils literal notranslate"><span class="pre">arm64</span></code> file if you have an Apple Silicon (M1/M2) CPU.</p></li>
+<li><p>In the installer, drag-and-drop the TissUUmaps bundle to the Applications directory.</p></li>
+<li><p>When the copy is finished, double-click the Applications icon in the installer and right-click + open TissUUmaps from the Applications menu.
+- A warning should be prompted “macOS cannot verify the developer of TissUUmaps (…)”, click open and the program should launch.</p></li>
+</ol>
+</div>
+<div class="section" id="debian-ubuntu-installation">
+<h2>Debian / Ubuntu installation<a class="headerlink" href="#debian-ubuntu-installation" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Download the Ubuntu installer (<code class="docutils literal notranslate"><span class="pre">.deb</span></code>) from <a href="https://github.com/TissUUmaps/TissUUmaps/releases/latest" target="_blank">the last release</a> .deb file (20.04 or 22.04 depending on your Ubuntu version)</p></li>
+</ol>
+</div>
+<div class="section" id="pip-installation">
+<h2>PIP installation<a class="headerlink" href="#pip-installation" title="Permalink to this headline">¶</a></h2>
+<p>If you want specific Python packages to be installed with TissUUmaps, or if your no installer is available for your operating system, you will need to install TissUUmaps using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
 <ol>
 <li><p>Install <code class="docutils literal notranslate"><span class="pre">libvips</span></code> for your system: <a href="https://www.libvips.org/install.html" target="_blank">https://www.libvips.org/install.html</a>:</p>
 <p>An easy way to install <code class="docutils literal notranslate"><span class="pre">libvips</span></code> is to use an <a href="https://docs.anaconda.com/anaconda/install/index.html" target="_blank">Anaconda</a> environment with <code class="docutils literal notranslate"><span class="pre">libvips</span></code>:</p>

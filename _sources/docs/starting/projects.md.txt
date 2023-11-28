@@ -32,7 +32,7 @@ For more information on the tmap file format and specifications, see {ref}`The T
 
 ## Editing .tmap file manually
 
-Work in progress
+You can edit the `.tmap` file manually in a text editor. The `.tmap` file is a JSON file, which is a human-readable format. The `.tmap` file contains all the information about the project, including the image layers, regions, and annotations. You can read the specification of the `.tmap` file in {ref}`The TMAP file format`.
 
 ## Existing projects
 
