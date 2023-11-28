@@ -3,4 +3,4 @@ myst-parser==0.15.1
 sphinx-rtd-theme==0.5.2
 sphinx-panels==0.6.0
 sphinx-jsonschema==1.17.2
-tissuumaps>=3.2rc3
+tissuumaps>=3.2
