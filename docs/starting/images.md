@@ -49,3 +49,8 @@ You can apply several filters to the images. The ones we can be adjusted by def
 
 ![filters](images/Filters.png)
 
+## Apply transformations
+
+From the image list in the right menu, you can apply several transformations to each image individually: translation, scale, rotation and flip. Markers and regions linked to the image will be transformed accordingly.
+
+![Image transformation](images/image_tranformations.png)

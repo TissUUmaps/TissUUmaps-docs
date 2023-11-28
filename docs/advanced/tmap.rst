@@ -4,9 +4,11 @@ The TMAP file format
 
 The TMAP format contains a description of image layers, markers, regions, and settings. It is highly recommended to create .tmap files by saving projects from TissUUmaps, but you can also edit the files manually to add or change projects' settings, or generate them as exported data from other software for import in TissUUmaps.
 
+For more information on the TMAPS format, see the `TissUUmaps-schema github page <https://github.com/TissUUmaps/TissUUmaps-schema>`_.
+
 The TMAP format uses JSON, with the following specifications:
 
-.. jsonschema:: schemas/tmap.json
+.. jsonschema:: https://tissuumaps.github.io/TissUUmaps-schema/1/project.json
     :lift_definitions:
     :auto_reference:
     :auto_target:
