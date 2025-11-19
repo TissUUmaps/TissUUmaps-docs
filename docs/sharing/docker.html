@@ -252,6 +252,21 @@ backend_1<span class="w">  </span><span class="p">|</span><span class="w"> </spa
 </pre></div>
 </div>
 </li>
+<li><p>(Optional) You can mount a configuration file to /tissuumaps.cfg in the container by adding the following lines to the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bind</span>
+<span class="w">    </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/path/to/local/tissuumaps.cfg</span>
+<span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/tissuumaps.cfg</span>
+</pre></div>
+</div>
+<p>All environment variables defined in the configuration file will override the default ones. For example, to set TissUUmaps in read-only mode, with a custom plugin folder, slide directory, and default project path, you can create a <code class="docutils literal notranslate"><span class="pre">tissuumaps.cfg</span></code> file with the following content:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">READ_ONLY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">True</span>
+<span class="na">PLUGIN_FOLDER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/mnt/data/plugins/&quot;</span>
+<span class="na">SLIDE_DIR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/mnt/data/shared/&quot;</span>
+<span class="na">DEFAULT_PROJECT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;my_project.tmap&quot;</span>
+</pre></div>
+</div>
+</li>
 <li><p>Enter http://localhost:8050 in a browser to see TissUUmaps application running.</p></li>
 </ol>
 </div>

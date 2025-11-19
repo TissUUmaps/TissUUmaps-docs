@@ -66,6 +66,22 @@ Compose is a tool for defining and running multi-container Docker applications. 
     backend_1  | INFO:root: * TissUUmaps version: 3.1.0.1
     ```
 
+1. (Optional) You can mount a configuration file to /tissuumaps.cfg in the container by adding the following lines to the `docker-compose.yml` file:
+    ```yaml
+    volumes:
+      - type: bind
+        source: /path/to/local/tissuumaps.cfg
+        target: /tissuumaps.cfg
+    ```
+
+    All environment variables defined in the configuration file will override the default ones. For example, to set TissUUmaps in read-only mode, with a custom plugin folder, slide directory, and default project path, you can create a `tissuumaps.cfg` file with the following content:
+    ```ini
+    READ_ONLY = True
+    PLUGIN_FOLDER = "/mnt/data/plugins/"
+    SLIDE_DIR = "/mnt/data/shared/"
+    DEFAULT_PROJECT = "my_project.tmap"
+    ```
+
 1. Enter http://localhost:8050 in a browser to see TissUUmaps application running.
 
 ## Configure sftp multi-user access (Optional)
